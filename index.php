@@ -113,7 +113,7 @@ if(isset($_POST['message'])){
             and have released a number of
             <a href="https://profiles.wordpress.org/tallphil#content-plugins" target="_blank">WordPress plugins</a>.</p>
          <p>If you're interested in working with me or my code, don't hesitate to drop me an e-mail
-            using the form below. For more details about me, see my <a href="http://phil.ewels.co.uk/cv/">online CV</a>.</p>
+            using the form below. For more details about me, see my <a href="cv/">online CV</a>.</p>
        </section>
      </div>
    </div>

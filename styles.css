@@ -35,13 +35,18 @@ header {
 }
 header h1 {
   margin: 10px 0;
+}
+header h1, header h1 a, header h1 a:hover, header h1 a:active, header h1 a:focus {
   color: #FFF;
 }
 header h2 {
   margin: 0 0 10px;
 }
-header h2 small {
+header h2 small, header h2 small a, header h2 small a:hover, header h2 small a:active, header h2 small a:focus {
   color: #999;
+}
+header h1 a, header h1 a:hover, header h1 a:active, header h1 a:focus, header h2 small a, header h2 small a:hover, header h2 small a:active, header h2 small a:focus {
+  text-decoration: none;
 }
 
 /* Main Page */
@@ -57,7 +62,7 @@ main {
 footer {
   background-color: #333;
   color: #737373;
-  padding: 50px 0 20px;
+  padding: 30px 0;
   border-bottom: 1px solid #444;
   margin-bottom: 50px;
 }
@@ -168,4 +173,12 @@ footer form .fa {
 .tweets li a:hover, .tweets li a:focus, .tweets li a:active {
   text-decoration: none;
   color: #888;
+}
+
+/* CV */
+.cv-container ul {
+  padding-left: 20px;
+}
+.cv-container ul ul {
+  list-style-type:none;
 }
