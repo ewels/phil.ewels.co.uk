@@ -11,7 +11,7 @@ body {
 
 /* Header */
 header {
-  background: url('https://farm9.staticflickr.com/8529/8569422117_2e59409d2f_o.jpg') center center;
+  background: url('header.jpg') center center;
   background-size: cover;
   padding: 60px 50px 40px;
   display: flex;

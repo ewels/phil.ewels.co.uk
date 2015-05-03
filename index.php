@@ -77,7 +77,7 @@ if(isset($_POST['message'])){
       <h1><span class="slashes">//</span> Phil Ewels</h1>
       <h2 class="hidden-xs"><small>Bioinformatician in Stockholm, Sweden</span></small></h2>
     </div>
-    <img src="https://i1.rgstatic.net/i/profile/5046352fb448981726_l_fbbf8.jpg" class="hidden-xs">
+    <img src="phil_ewels.jpeg" class="hidden-xs">
   </div>
 </header>
 
@@ -176,6 +176,7 @@ if(isset($_POST['message'])){
         </ul>
         <section class="credits">
           <p>&copy; Phil Ewels, 2015. <a href="https://github.com/ewels/" target="_blank">See the source code for this website on GitHub</a>.</p>
+          <p>Header photo taken in Iceland. <a href="https://www.flickr.com/photos/tallphil/8569422117/in/set-72157633027461923" target="_blank">You can find it on flickr</a>.
           <div class="cc-licence">
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
               <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
