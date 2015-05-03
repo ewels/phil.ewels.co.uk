@@ -1,0 +1,171 @@
+/* http://phil.ewels.co.uk    */
+/* May 2015 redesign          */
+/* Site built with Bootstrap  */
+
+/* Global */
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+body {
+  background-color: #222;
+  font-family: 'Muli', sans-serif;
+}
+
+/* Header */
+header {
+  background: url('https://farm9.staticflickr.com/8529/8569422117_2e59409d2f_o.jpg') center center;
+  background-size: cover;
+  padding: 60px 50px 40px;
+  display: flex;
+  justify-content: center;
+}
+.header-panel {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 6px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 520px;
+}
+.header-panel div {
+  margin: auto 15px;
+}
+.header-panel img {
+  height: 90px;
+  width:90px;
+}
+.slashes {
+  color: #58E0FD;
+}
+header h1 {
+  margin: 10px 0;
+  color: #FFF;
+}
+header h2 {
+  margin: 0 0 10px;
+}
+header h2 small {
+  color: #999;
+}
+
+/* Main Page */
+main {
+  background-color: #FFF;
+  padding: 30px 0;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #737373;
+  padding: 50px 0 20px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 50px;
+}
+footer h4 {
+  font-weight:normal;
+}
+footer hr {
+  border-color: #444;
+}
+footer a {
+  color: #999;
+}
+footer a:hover, footer a:focus, footer a:active {
+  color: #CCC;
+}
+
+/* Links List */
+.links-list li {
+
+}
+.links-list a {
+  display: inline-block;
+  width:100%;
+  padding: 5px;
+  -webkit-transition: padding 0.1s, background-color 0.1s;
+  transition: padding 0.1s, background-color 0.1s;
+}
+.links-list a:hover, .links-list a:focus, .links-list a:active {
+  text-decoration: none;
+  background-color: #444;
+  padding-left: 7px;
+}
+.links-list li i.fa {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #666;
+}
+.credits {
+  font-size: 0.8em;
+}
+.cc-licence img {
+  float: left;
+  padding-right: 5px;
+  opacity: 0.4;
+}
+.cc-licence a:hover img, .cc-licence a:focus img, .cc-licence a:active img {
+  opacity: 0.6;
+}
+.credits a {
+  color: #737373;
+}
+.credits a:hover, .credits a:focus, .credits a:active {
+  color: #999;
+  text-decoration: none;
+}
+
+/* Contact Form */
+footer input.form-control, footer textarea.form-control, .btn-dark {
+  background-color: #444;
+  border: 1px solid #666;
+  color: #CCC;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+footer input.form-control:focus, footer textarea.form-control:focus {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  border: 1px solid #666;
+}
+.btn-dark {
+  color: #999;
+}
+.btn-dark:hover {
+  color: #FFF;
+  background-color: #555;
+}
+footer form a {
+  color: #737373;
+}
+footer form a:hover, footer form a:active, footer form a:focus {
+  color: #999;
+  text-decoration: none;
+}
+footer form .fa {
+  margin-left: 10px;
+}
+
+/* Recent Tweets */
+.tweets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.tweets li {
+  border-top: 1px solid #444;
+  padding:5px;
+}
+.tweets li:last-child{
+  border-bottom: 1px solid #444;
+}
+.tweets li:hover {
+  background-color: #393939;
+}
+.tweets li a {
+  padding: 3px 0;
+  font-size: 0.9em;
+  color: #737373;
+}
+.tweets li a:hover, .tweets li a:focus, .tweets li a:active {
+  text-decoration: none;
+  color: #888;
+}
