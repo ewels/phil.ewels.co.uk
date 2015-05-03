@@ -13,7 +13,7 @@ $tweets = json_decode($twitter->setGetfield($getfield)->buildOauth($url, $reques
 
 // Contact form
 $e = json_decode(file_get_contents('myemail.json'), true);
-$myemail = $e['name'].'@'.$e['domain'].'.'.$e['tld']; // attempting to block spam from being visible on github
+$myemail = $e['name'].'@'.$e['domain'].'.'.$e['tld']; // attempting to block spam due to being visible on github
 $name = $email = $subject = $message = '';
 if(isset($_POST['message'])){
   $msg = false; $error = false;
@@ -21,7 +21,7 @@ if(isset($_POST['message'])){
     $error = true; $msg = "Error - E-mail address doesn't look valid";
   }
   $bad = array("content-type","bcc:","to:","cc:","href");
-  $to = 'phil@ewels.co.uk';
+  $to = $myemail;
   $name = str_replace($bad, '', trim($_POST['name']));
   $email = str_replace($bad, '', trim($_POST['email']));
   $subject = str_replace($bad, '', trim($_POST['subject']));
@@ -175,7 +175,7 @@ if(isset($_POST['message'])){
           <li><a href="http://orcid.org/0000-0003-4101-2502" target="_blank"><i class="fa fa-globe"></i>ORCiD</a></li>
         </ul>
         <section class="credits">
-          <p>&copy; Phil Ewels, 2015. <a href="https://github.com/ewels/" target="_blank">See the source code for this website on GitHub</a>.</p>
+          <p>&copy; Phil Ewels, 2015. <a href="https://github.com/ewels/phil.ewels.co.uk" target="_blank">See the source code for this website on GitHub</a>.</p>
           <p>Header photo taken in Iceland. <a href="https://www.flickr.com/photos/tallphil/8569422117/in/set-72157633027461923" target="_blank">You can find it on flickr</a>.
           <div class="cc-licence">
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
