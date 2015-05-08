@@ -195,9 +195,24 @@ footer form .fa {
 }
 
 /* CV */
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  margin-top: 40px;
+}
+
 .cv-container ul {
   padding-left: 20px;
 }
+.cv-container > ul > li {
+  margin-bottom: 12px;
+}
 .cv-container ul ul {
-  list-style-type:none;
+  list-style-type: none;
+  font-weight: 300;
+}
+.cv-container ul ul li:nth-child(2) {
+  font-size: 0.9em;
 }
