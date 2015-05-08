@@ -218,6 +218,7 @@ if(isset($_POST['message'])){
           echo '<li><a href="https://twitter.com/tallphil/status/'.$tweets[$i]->id.'" target="_blank">'.$tweets[$i]->text.'</a></li>';
         } ?>
         </ul>
+        <p class="twitterfeed-link"><a href="http://twitter.com/tallphil" target="_blank" title="@tallphil on twitter.com">@tallphil <i class="fa fa-twitter"></i></a></p>
       </div>
     </div>
   </div>

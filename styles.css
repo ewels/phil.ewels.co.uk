@@ -181,6 +181,18 @@ footer form .fa {
   text-decoration: none;
   color: #888;
 }
+.twitterfeed-link {
+  text-align: right;
+  font-size: 0.9em;
+  margin-top:8px;
+}
+.twitterfeed-link a {
+  color: #737373;
+}
+.twitterfeed-link a:hover, .twitterfeed-link a:focus, .twitterfeed-link a:active {
+  text-decoration: none;
+  color: #888;
+}
 
 /* CV */
 .cv-container ul {
