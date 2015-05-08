@@ -15,8 +15,8 @@ $tweets = json_decode($twitter->setGetfield($getfield)->buildOauth($url, $reques
 $e = json_decode(file_get_contents('myemail.json'), true);
 $myemail = $e['name'].'@'.$e['domain'].'.'.$e['tld']; // attempting to block spam due to being visible on github
 $name = $email = $subject = $message = '';
+$msg = false; $error = false;
 if(isset($_POST['message'])){
-  $msg = false; $error = false;
   if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     $error = true; $msg = "Error - E-mail address doesn't look valid";
   }
@@ -31,6 +31,12 @@ if(isset($_POST['message'])){
   }
   if (!$name || !$email || !$subject || !$message) {
     $error = true; $msg = "Error - Name, email, subject and message cannot be blank.";
+  }
+  //verify captcha
+  $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$e['recaptcha_secret']."&response=".$_POST['g-recaptcha-response']);
+  $response = json_decode($response, true);
+  if($response["success"] !== true)  {
+      $error = true; $msg = "Error - Anti-spam captcha verification failed. Please try again.";
   }
   if(!$error){
     $headers = "From: phil.ewels.co.uk website <mailer@ewels.co.uk>\r\nReply-To: $name <$email>\r\nX-Mailer: PHP/".phpversion();
@@ -58,6 +64,11 @@ if(isset($_POST['message'])){
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Google reCaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!-- Custom Styles -->
     <link href="styles.css" rel="stylesheet">
 
@@ -66,6 +77,16 @@ if(isset($_POST['message'])){
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script type="text/javascript">
+      $(function() {
+        // Show the reCaptcha only when an e-mail is started..
+        $("form input[type='text'], form textarea").keyup(function(){
+          $('.g-recaptcha').slideDown();
+        });
+      });
+    </script>
+
   </head>
 </html>
 
@@ -149,6 +170,11 @@ if(isset($_POST['message'])){
               <div class="form-group">
                 <textarea name="message" class="form-control" rows="4" placeholder="Message" required><?php echo $message; ?></textarea>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="g-recaptcha center-block" <?php if(!$error){ echo 'style="display: none;"'; } ?> data-theme="dark" data-sitekey="6LdLgAYTAAAAAIfNMlaNEc3K39HSOn6tEA41Ngf-"></div>
             </div>
           </div>
           <div class="row">

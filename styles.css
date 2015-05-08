@@ -149,6 +149,13 @@ footer form .fa {
   margin-left: 10px;
 }
 
+/* reCaptcha */
+.g-recaptcha {
+  width: 304px;
+  opacity: 0.5;
+}
+
+
 /* Recent Tweets */
 .tweets {
   list-style-type: none;
