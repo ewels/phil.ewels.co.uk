@@ -1,82 +1,104 @@
-/* http://phil.ewels.co.uk    */
-/* May 2015 redesign          */
-/* Site built with Bootstrap  */
+/* ===========================================================
+ * http://phil.ewels.co.uk - July 2015 redesign
+ * ========================================================== */
 
-/* Global */
+ /* Global */
 @import url(http://fonts.googleapis.com/css?family=Muli:300,400);
 body {
-  background-color: #222;
+  background-color: #efefef;
   font-family: 'Muli', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-align: center;
+  color: #333;
+}
+section {
+  height:100%;
+  width:100%;
+}
+footer {
+  width: 100%;
+}
+section p {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-/* Header */
+#side_nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -100px;
+  top: 50%;
+  right: 17px;
+}
+#side_nav a {
+  display: block;
+  float:right;
+  clear:right;
+  height: 20px;
+  margin: 10px;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  color: #efefef;
+}
+#side_nav a img, #side_nav a svg {
+  height: 18px;
+  margin-bottom: -2px;
+  color: #efefef;
+  fill: currentColor;
+}
+
+#research { background-color: #77E1FB; }
+#code {     background-color: #E72425; }
+#data_vis { background-color: #aaffee; }
+#websites { background-color: #aaffee; }
+#links {    background-color: #aaffee; }
+#contact {  background-color: #aaffee; }
+
+/* Homepage */
 header {
-  background: url('header.jpg') center center;
-  background-size: cover;
-  padding: 60px 50px 40px;
-  display: flex;
-  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
 }
-.header-panel {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 6px solid rgba(0, 0, 0, 0.2);
-  display: flex;
-  max-width: 520px;
-}
-.header-panel div {
-  margin: auto 15px;
-}
-.header-panel img {
-  height: 90px;
-  width:90px;
+header img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 80px; /* Saf3+, Chrome */
+  border-radius: 80px; /* Opera 10.5, IE 9 */
 }
 .slashes {
   color: #58E0FD;
 }
-header h1 {
-  margin: 10px 0;
+#home nav a {
+  display: block;
 }
-header h1, header h1 a, header h1 a:hover, header h1 a:active, header h1 a:focus {
-  color: #FFF;
-}
-header h2 {
-  margin: 0 0 10px;
-}
-header h2 small, header h2 small a, header h2 small a:hover, header h2 small a:active, header h2 small a:focus {
-  color: #999;
-}
-header h1 a, header h1 a:hover, header h1 a:active, header h1 a:focus, header h2 small a, header h2 small a:hover, header h2 small a:active, header h2 small a:focus {
-  text-decoration: none;
+#home nav a img, #home nav a svg {
+  width: 30px;
+  fill: #333;
 }
 
-/* Main Page */
-main {
-  background-color: #FFF;
-  padding: 30px 0;
-  font-size: 1.1em;
-  line-height: 1.6em;
-  text-align: justify;
-}
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: #737373;
+  color: #666666;
   padding: 30px 0;
-  border-bottom: 1px solid #444;
   margin-bottom: 50px;
-}
-footer h4 {
-  font-weight:normal;
-}
-footer hr {
-  border-color: #444;
+  font-size: 0.8em;
 }
 footer a {
-  color: #999;
+  color: #999999;
 }
 footer a:hover, footer a:focus, footer a:active {
-  color: #CCC;
+  color: #333333;
+}
+.cc-licence img {
+  float: left;
+  padding-right: 5px;
+  opacity: 0.4;
+}
+.cc-licence a:hover img, .cc-licence a:focus img, .cc-licence a:active img {
+  opacity: 0.6;
 }
 
 /* Links List */
@@ -92,31 +114,12 @@ footer a:hover, footer a:focus, footer a:active {
 }
 .links-list a:hover, .links-list a:focus, .links-list a:active {
   text-decoration: none;
-  background-color: #444;
   padding-left: 7px;
 }
 .links-list li i.fa {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid #666;
-}
-.credits {
-  font-size: 0.8em;
-}
-.cc-licence img {
-  float: left;
-  padding-right: 5px;
-  opacity: 0.4;
-}
-.cc-licence a:hover img, .cc-licence a:focus img, .cc-licence a:active img {
-  opacity: 0.6;
-}
-.credits a {
-  color: #737373;
-}
-.credits a:hover, .credits a:focus, .credits a:active {
-  color: #999;
-  text-decoration: none;
 }
 
 /* Contact Form */
@@ -155,47 +158,7 @@ footer form .fa {
   opacity: 0.5;
 }
 
-
-/* Recent Tweets */
-.tweets {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.tweets li {
-  border-top: 1px solid #444;
-  padding:5px;
-}
-.tweets li:last-child{
-  border-bottom: 1px solid #444;
-}
-.tweets li:hover {
-  background-color: #393939;
-}
-.tweets li a {
-  padding: 3px 0;
-  font-size: 0.9em;
-  color: #737373;
-}
-.tweets li a:hover, .tweets li a:focus, .tweets li a:active {
-  text-decoration: none;
-  color: #888;
-}
-.twitterfeed-link {
-  text-align: right;
-  font-size: 0.9em;
-  margin-top:8px;
-}
-.twitterfeed-link a {
-  color: #737373;
-}
-.twitterfeed-link a:hover, .twitterfeed-link a:focus, .twitterfeed-link a:active {
-  text-decoration: none;
-  color: #888;
-}
-
 /* CV */
-
 h1 {
   font-size: 42px;
 }
