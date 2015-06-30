@@ -3,31 +3,67 @@
  * ========================================================== */
 
  /* Global */
-@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+ @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+html, body {
+  padding:0;
+  margin:0;
+}
 body {
   background-color: #efefef;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 1.1em;
   line-height: 1.6em;
   text-align: center;
   color: #333;
 }
 section {
-  height:100%;
-  width:100%;
-}
-footer {
+  position: relative;
+  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section p {
-  max-width: 500px;
-  margin: 0 auto;
+section .section_header {
+  width: 300px;
+  height: 300px;
+  background-color: #333;
+  -webkit-border-radius: 150px; /* Saf3+, Chrome */
+  border-radius: 150px; /* Opera 10.5, IE 9 */
+}
+section .section_header h2 {
+  color: #efefef;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+section .section_header img {
+  height: 150px;
+}
+section .section_body {
+  width: 500px;
+  padding: 20px;
+  text-align: left;
+}
+h1 {
+  font-weight: 400;
 }
 
+/* Page colours */
+#about { background-color: #efefef !important; }
+#research, .navlink_research:hover img, .navlink_research:focus img, .navlink_research:active img { background-color: #1b9e77 !important; }
+#code, .navlink_code:hover img, .navlink_code:focus img, .navlink_code:active img { background-color: #d95f02 !important; }
+#data_vis, .navlink_datavis:hover img, .navlink_datavis:focus img, .navlink_datavis:active img { background-color: #66a61e !important; }
+#websites, .navlink_web:hover img, .navlink_web:focus img, .navlink_web:active img { background-color: #e7298a !important; }
+#links, .navlink_links:hover img, .navlink_links:focus img, .navlink_links:active img { background-color: #e6ab02 !important; }
+#contact, .navlink_contact:hover img, .navlink_contact:focus img, .navlink_contact:active img { background-color: #7570b3 !important; }
+
+/* Side navigation */
 #side_nav {
   position: fixed;
-  z-index: 100;
-  margin-top: -100px;
+  z-index: 10;
+  margin-top: -210px;
   top: 50%;
   right: 17px;
 }
@@ -35,18 +71,29 @@ section p {
   display: block;
   float:right;
   clear:right;
-  height: 20px;
-  margin: 10px;
+  height: 50px;
+  margin: 5px;
   position: relative;
   text-align: right;
   text-decoration: none;
-  color: #efefef;
+  color: transparent;
+  transition: all 0.2s ease;
 }
-#side_nav a img, #side_nav a svg {
-  height: 18px;
-  margin-bottom: -2px;
+#side_nav a:hover, #side_nav a:focus {
+  color: #333;
+  margin-right: 15px;
+}
+#side_nav a img {
+  height: 50px;
+  margin-bottom: -20px;
+  margin-left: 10px;
   color: #efefef;
-  fill: currentColor;
+  -webkit-border-radius: 25px; /* Saf3+, Chrome */
+  border-radius: 25px; /* Opera 10.5, IE 9 */
+  transition: all 0.2s ease;
+}
+#side_nav a:hover img {
+  background-color: #333;
 }
 
 #research { background-color: #77E1FB; }
@@ -56,7 +103,10 @@ section p {
 #links {    background-color: #aaffee; }
 #contact {  background-color: #aaffee; }
 
-/* Homepage */
+/* Home */
+#about {
+  z-index: 10000;
+}
 header {
   width: 400px;
   margin: 0 auto;
@@ -70,20 +120,38 @@ header img {
 .slashes {
   color: #58E0FD;
 }
-#home nav a {
-  display: block;
+#about nav {
+  margin-top: 20px;
+  text-align:left;
+  position:relative;
+  left: 50%;
+  margin-left: -29px;
 }
-#home nav a img, #home nav a svg {
-  width: 30px;
-  fill: #333;
+#about nav a {
+  display:block;
+  text-decoration: none;
+  color: #333;
+  line-height: 59px;
+  height: 59px;
+  margin-bottom: 20px;
 }
-
+#about nav a img {
+  width: 58px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  -webkit-border-radius: 60px; /* Saf3+, Chrome */
+  border-radius: 60px; /* Opera 10.5, IE 9 */
+  transition: all 0.2s ease;
+  background-color: #333;
+  border: 0 solid #333;
+}
 
 /* Footer */
 footer {
   color: #666666;
-  padding: 30px 0;
-  margin-bottom: 50px;
+  padding: 30px;
+  margin-bottom: 30px;
   font-size: 0.8em;
 }
 footer a {
@@ -93,9 +161,9 @@ footer a:hover, footer a:focus, footer a:active {
   color: #333333;
 }
 .cc-licence img {
-  float: left;
-  padding-right: 5px;
   opacity: 0.4;
+  margin-right: 10px;
+  margin-bottom: -3px;
 }
 .cc-licence a:hover img, .cc-licence a:focus img, .cc-licence a:active img {
   opacity: 0.6;
