@@ -6,6 +6,9 @@ The repository holds the code used on my mini-website,
 Feel free to use any of this code as you wish.
 It's released under a [Creative Commons Attribution-ShareAlike 3.0 International License](http://creativecommons.org/licenses/by/3.0/).
 
+Background photo taken by Phil Ewels, showing lake Vättern in Sweden
+on a Midsummer night in 2014.
+
 Flipping animation based on a [tutorial](https://davidwalsh.name/css-flip)
 by David Walsh.
 
