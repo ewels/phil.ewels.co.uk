@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <!--
-  Site based on:
+  Site design based on:
 	==========================
 	Identity by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	==========================
+	Flipping card, e-mail, projects and general hacking by Phil Ewels.
 -->
 <html>
 	<head>
@@ -32,8 +34,8 @@
 						</header>
 						
 						<nav>
-							<a href="#projects">Projects</a>
-							<a href="#contact">Contact Me</a>
+							<a href="#projects" class="flipper">Projects</a>
+							<a href="#contact" class="flipper">Contact Me</a>
 						</nav>
 						
 						<footer>
@@ -54,35 +56,89 @@
 						</footer>
 					
 					</div>
-					<!-- <div class="back">
-						<section class="projects">
+					<div class="back">
+						<section id="projects">
 							<h2>Projects</h2>
+							<div class="projects_wrapper">
+								<ul class="project_list">
+									<li>
+										<a href="http://multiqc.info">
+											<img src="images/MultiQC_logo.png" alt="MultiQC" />
+											MultiQC
+										</a>
+										<ul>
+											<li>Aggregate results from bioinformatics analyses across many samples into a single report.</li>
+										</ul>
+									</li>
+									<li>
+										<a href="http://clusterflow.io">
+											<img src="images/ClusterFlow_logo.png" alt="Cluster Flow" />
+											Cluster Flow
+										</a>
+										<ul>
+											<li>A simple and flexible bioinformatics pipeline tool.</li>
+										</ul>
+									</li>
+									<li>
+										<a href="https://github.com/ewels/labrador">
+											<img src="images/Labrador_logo.png" alt="Labrador" />
+											Labrador
+										</a>
+										<ul>
+											<li>A web interface to manage and automate the processing of publicly available datasets.</li>
+										</ul>
+									</li>
+									<li>
+										<a href="http://qcfail.com">
+											<img src="images/QCFail_logo.png" alt="QC Fail" />
+											QC Fail
+										</a>
+										<ul>
+											<li>Articles written about common next-generation sequencing problems.</li>
+										</ul>
+									</li>
+									<li>
+										<a href="https://profiles.wordpress.org/tallphil#content-plugins">
+											<img src="images/WordPress_logo.png" alt="WordPress Plugins" />
+											WordPress Plugins
+										</a>
+										<ul>
+											<li>A handful of plugins that I've written and released for general use.</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="button flipper">Back</a>
 						</section>
 						
-						<section class="contact">
+						<section id="contact" style="display:none;">
 							<h2>Get In Touch</h2>
-							<form method="post" action="#">
+							<form method="post" action="mail.php" id="contactform">
 								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
+									<input type="text" name="name" id="name" placeholder="Name" required="required" />
 								</div>
 								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
+									<input type="email" name="email" id="email" placeholder="Email" required="required" />
 								</div>
 								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+									<textarea name="message" id="message" placeholder="Message" rows="3" required="required"></textarea>
+								</div>
+								<div class="field">
+									<div class="g-recaptcha" data-theme="light" data-sitekey="6LdLgAYTAAAAAIfNMlaNEc3K39HSOn6tEA41Ngf-"></div>
 								</div>
 								<ul class="actions">
-									<li><a href="#" class="button">Send</a></li>
+									<li><a href="#" class="button flipper">Back</a></li>
+									<li><button type="submit" id="contact_submit">Send</button></li>
 								</ul>
 							</form>
 						</section>
-					</div> -->
+					</div>
 				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Phil Ewels</li><li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li><a href="https://github.com/ewels/phil.ewels.co.uk/">See source code</a></li><li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
@@ -91,6 +147,7 @@
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+			<script src='https://www.google.com/recaptcha/api.js'></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
