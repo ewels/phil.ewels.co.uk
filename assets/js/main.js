@@ -19,13 +19,9 @@ $(function(){
   // Flip the card!
   $('.flipper').click(function(e){
     e.preventDefault();
-    if($(this).attr('href') == '#projects'){
-      $('#projects').show();
-      $('#contact').hide();
-    }
-    if($(this).attr('href') == '#contact'){
-      $('#projects').hide();
-      $('#contact').show();
+    if($(this).attr('href') != '#'){
+      $('.back section').hide();
+      $($(this).attr('href')).show();
     }
     $("#main").toggleClass('flipped');
   });
