@@ -553,6 +553,10 @@
 					-ms-transition: fill 0.2s ease-in-out;
 					transition: fill 0.2s ease-in-out;
 				}
+        ul.icons li a.gscholar svg {
+          top: 16px;
+          left: 12px;
+        }
 
 					ul.icons li a:before {
 						-moz-osx-font-smoothing: grayscale;
