@@ -1880,6 +1880,19 @@
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+/* Publication */
+.publication {
+	text-align: left;
+
+}
+.publication h4 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.publication p {
+	font-size: 1em;
+}
+
 /* Button */
 
 	input[type="submit"],
@@ -3094,8 +3107,18 @@
 
 	#header {
 		padding: 5em 5em 1em 5em ;
-		text-align: center;
+		text-align: left;
+		max-width: 900px;
+		margin: 0 auto;
 	}
+
+		#header .image {
+			float: left;
+			padding-right: 2em;
+		}
+		#header .image img {
+			max-width: 10em;
+		}
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
