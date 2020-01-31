@@ -2,6 +2,11 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600");
 
+.small {
+	font-size: 80%;
+	font-weight: lighter;
+}
+
 /*
 	Identity by HTML5 UP
 	html5up.net | @n33co
@@ -451,7 +456,7 @@
 		color: #616f77 !important;
 		opacity: 1.0;
 	}
-	
+
 	.g-recaptcha div div {
 		margin: 0 auto;
 	}
@@ -540,7 +545,7 @@
 					text-indent: 3.75em;
 					white-space: nowrap;
 				}
-				
+
 				ul.icons li a svg {
 					width: 28px;
 					height: 28px;
@@ -591,7 +596,7 @@
 						border-color: #58E0FD;
 						background-color: #efefef;
 					}
-					
+
 					#linkHoverText {
 						text-transform: none !important;
 						display: inline-block;
@@ -634,9 +639,9 @@
 		dl dd {
 			margin-left: 1.5em;
 		}
-		
-		
-	
+
+
+
 	.card_wrapper {
 		overflow-y: scroll;
 		height: 330px;
@@ -715,8 +720,8 @@
 	  font-size: 1em;
 	}
 
-	
-	
+
+
 
 /* Button */
 
@@ -834,14 +839,14 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		
+
 		-webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
 	}
-	
+
 	#main .front, #main .back {
 		-webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -871,7 +876,7 @@
 		height: 100%;
 		padding: 1.5em 3em 1.5em;
 	}
-	
+
 	#main.flipped {
 		-webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -926,7 +931,7 @@
 			-ms-transform: rotateX(15deg);
 			transform: rotateX(15deg);
 		}
-		
+
 		nav {
 			border-top: 1px solid #dedede;
 			border-bottom: 1px solid #dedede;
@@ -997,7 +1002,7 @@
 		min-height: 100%;
 		padding: 1.5em;
 		z-index: 2;
-		
+
 		-webkit-perspective: 800px;
 		-moz-perspective: 800px;
 		-o-perspective: 800px;
