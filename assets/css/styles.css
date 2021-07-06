@@ -1,23 +1,25 @@
-#primary_nav,
-#overview_content,
-#detail_content {
+#sidebar,
+#content,
+#detail {
   height: 100%;
   top: 0;
   position: fixed;
 }
-#primary_nav {
+#sidebar {
   transition: left 0.5s;
   left: 0;
   width: 400px;
   overflow-x: hidden;
   z-index: 1;
+  background-image: url("../img/DJI_0081.JPG");
+  background-size: cover;
 }
-#overview_content {
+#content {
   transition: margin 0.5s, width 0.5s;
   margin-left: 400px;
-  width: 100%;
+  width: calc(100% - 400px);
 }
-#detail_content {
+#detail {
   transition: right 0.5s;
   right: -50%;
   width: 50%;
@@ -27,4 +29,17 @@
 #social li a img {
   width: 18px;
   height: 16px;
+}
+
+#content .list-group-item {
+  border-radius: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-left: 0;
+  border-right: 0;
+}
+
+.mx-n5 {
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
 }

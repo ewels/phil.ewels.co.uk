@@ -19,87 +19,187 @@
     <title>Phil Ewels</title>
   </head>
   <body>
-    <section id="primary_nav" class="bg-dark text-white">
-      <div class="text-center my-5">
-        <img
-          src="assets/img/phil_ewels.jpg"
-          class="rounded-circle w-50 shadow mb-3"
-          alt="Philip Ewels"
-        />
+    <header id="sidebar" class="bg-dark text-white border-end">
+      <div class="my-4 py-4" style="background-color: rgba(0, 0, 0, 0.5)">
+        <div class="text-center pt-3">
+          <div class="row d-flex align-items-center">
+            <div class="col-3"><hr /></div>
+            <div class="col-6">
+              <img
+                src="assets/img/phil_ewels.jpg"
+                class="rounded-circle w-100 shadow mb-3"
+                alt="Philip Ewels"
+              />
+            </div>
+            <div class="col-3"><hr /></div>
+          </div>
 
-        <h1 class="display-1">Phil Ewels</h1>
-      </div>
-      <ul class="nav nav-pills flex-column m-3">
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white active" aria-current="page" href="#">
-            <i class="bi bi-person-circle me-2"></i> About me
-          </a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="#">
-            <i class="bi bi-journal-bookmark-fill me-2"></i> Projects
-          </a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="#">
-            <i class="bi bi-file-earmark-text me-2"></i> Publications
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">
-            <i class="bi bi-envelope me-2"></i> Contact me
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-pills nav-fill my-4 pt-1 px-5" id="social">
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">
-            <i class="bi bi-github"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">
-            <i class="bi bi-twitter"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">
-            <img src="assets/img/orcid.svg" />
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">
-            <img src="assets/img/google_scholar.svg" />
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">
-            <img src="assets/img/research_gate.svg" />
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="overview_content" class="bg-light">
-      <div class="container">
-        This is the main body content that is always visible
-
-        <ul>
-          <li><span onclick="openDetails()">open details</span></li>
-          <li><span onclick="closeDetails()">close details</span></li>
+          <h1 class="display-1">Phil Ewels</h1>
+        </div>
+        <ul class="nav nav-pills flex-column mx-3 my-5">
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-person-circle me-2"></i> About me
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-journal-bookmark-fill me-2"></i> Projects
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-file-earmark-text me-2"></i> Publications
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-envelope me-2"></i> Contact me
+            </a>
+          </li>
+        </ul>
+        <hr />
+        <ul class="nav nav-pills nav-fill mt-4 px-5" id="social">
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted"
+              target="_blank"
+              href="https://github.com/ewels/"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted"
+              target="_blank"
+              href="http://twitter.com/tallphil"
+            >
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted"
+              target="_blank"
+              href="http://orcid.org/0000-0003-4101-2502"
+            >
+              <img src="assets/img/orcid.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted"
+              target="_blank"
+              href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
+            >
+              <img src="assets/img/google_scholar.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted"
+              target="_blank"
+              href="http://www.researchgate.net/profile/Philip_Ewels"
+            >
+              <img src="assets/img/research_gate.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-muted"
+              target="_blank"
+              href="http://uk.linkedin.com/in/philewels"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
         </ul>
       </div>
+    </header>
+
+    <section id="content" class="bg-light">
+      <article id="about" class="p-5">
+        <h2 class="display-4">Hi there!</h2>
+        <p class="lead">I'm a bioinformatician living in Stockholm, Sweden.</p>
+        <h3>Where to find me</h3>
+        <p>
+          <a
+            href="https://github.com/ewels/"
+            target="_blank"
+            class="btn btn-outline-dark"
+          >
+            GitHub <i class="bi bi-github mx-1"></i> @ewels
+          </a>
+          <a
+            href="http://twitter.com/tallphil"
+            target="_blank"
+            class="btn btn-outline-info"
+          >
+            Twitter <i class="bi bi-twitter mx-1"></i>
+            @tallphil
+          </a>
+        </p>
+
+        <h3 class="mt-5">Where I've worked</h3>
+        <p>Click on a job to see more about the positions.</p>
+        <div class="list-group mx-n5">
+          <a
+            href="#"
+            onclick="openDetails()"
+            class="list-group-item list-group-item-action"
+          >
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
+            >
+              <div>
+                <h5 class="mb-1">The National Genomics Infrastructure (NGI)</h5>
+                <p class="text-muted mb-0">SciLifeLab, Stockholm, Sweden</p>
+              </div>
+              <div>
+                <i class="bi bi-arrow-right text-black-50"></i>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            onclick="openDetails()"
+            class="list-group-item list-group-item-action"
+          >
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
+            >
+              <div>
+                <h5 class="mb-1">The Babraham Institute</h5>
+                <p class="text-muted mb-0">Cambridge, UK</p>
+              </div>
+              <div>
+                <i class="bi bi-arrow-right text-black-50"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </article>
     </section>
 
-    <section id="detail_content" class="bg-white">
-      <div class="container">
-        This content is only visible when the user follows an item on the detail
-        page
+    <section id="detail" class="bg-white border-start">
+      <div class="p-3">
+        <button
+          class="btn btn-text float-end text-muted"
+          onclick="closeDetails()"
+        >
+          Close <i class="bi bi-x-lg"></i>
+        </button>
+        <aside id="ngi">
+          <h3>SciLifeLab National Genomics Infrastructure</h3>
+          <p class="lead">
+            The NGI is one of the largest technical platforms at SciLifeLab.
+          </p>
+          <p>
+            We provide access to technology for sequencing, genotyping and
+            associated bioinformatics support to researchers based in Sweden.
+          </p>
+        </aside>
       </div>
     </section>
 
