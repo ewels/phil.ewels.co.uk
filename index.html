@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <title>Phil Ewels</title>
+  </head>
+  <body>
+    <section id="primary_nav" class="bg-dark text-white">
+      <div class="text-center my-5">
+        <img
+          src="assets/img/phil_ewels.jpg"
+          class="rounded-circle w-50 shadow mb-3"
+          alt="Philip Ewels"
+        />
+
+        <h1 class="display-1">Phil Ewels</h1>
+      </div>
+      <ul class="nav nav-pills flex-column m-3">
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white active" aria-current="page" href="#">
+            <i class="bi bi-person-circle me-2"></i> About me
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="#">
+            <i class="bi bi-journal-bookmark-fill me-2"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="#">
+            <i class="bi bi-file-earmark-text me-2"></i> Publications
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">
+            <i class="bi bi-envelope me-2"></i> Contact me
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills nav-fill my-4 pt-1 px-5" id="social">
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">
+            <img src="assets/img/orcid.svg" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">
+            <img src="assets/img/google_scholar.svg" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">
+            <img src="assets/img/research_gate.svg" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="overview_content" class="bg-light">
+      <div class="container">
+        This is the main body content that is always visible
+
+        <ul>
+          <li><span onclick="openDetails()">open details</span></li>
+          <li><span onclick="closeDetails()">close details</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="detail_content" class="bg-white">
+      <div class="container">
+        This content is only visible when the user follows an item on the detail
+        page
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

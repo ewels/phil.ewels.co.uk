@@ -1,0 +1,30 @@
+#primary_nav,
+#overview_content,
+#detail_content {
+  height: 100%;
+  top: 0;
+  position: fixed;
+}
+#primary_nav {
+  transition: left 0.5s;
+  left: 0;
+  width: 400px;
+  overflow-x: hidden;
+  z-index: 1;
+}
+#overview_content {
+  transition: margin 0.5s, width 0.5s;
+  margin-left: 400px;
+  width: 100%;
+}
+#detail_content {
+  transition: right 0.5s;
+  right: -50%;
+  width: 50%;
+  z-index: 2;
+}
+
+#social li a img {
+  width: 18px;
+  height: 16px;
+}
