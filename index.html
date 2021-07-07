@@ -20,7 +20,7 @@
   </head>
   <body>
     <header id="sidebar" class="bg-dark text-white border-end">
-      <div class="my-4 py-4" style="background-color: rgba(0, 0, 0, 0.5)">
+      <div class="my-4 py-4">
         <div class="text-center pt-3">
           <div class="row d-flex align-items-center">
             <div class="col-3"><hr /></div>
@@ -62,56 +62,71 @@
         <ul class="nav nav-pills nav-fill mt-4 px-5" id="social">
           <li class="nav-item">
             <a
-              class="nav-link text-muted"
+              class="nav-link text-white"
               target="_blank"
               href="https://github.com/ewels/"
+              title="GitHub"
+              data-bs-toggle="tooltip"
             >
               <i class="bi bi-github"></i>
             </a>
           </li>
           <li class="nav-item">
             <a
-              class="nav-link text-muted"
+              class="nav-link text-white"
               target="_blank"
               href="http://twitter.com/tallphil"
+              title="twitter"
+              data-bs-toggle="tooltip"
             >
               <i class="bi bi-twitter"></i>
             </a>
           </li>
           <li class="nav-item">
             <a
-              class="nav-link text-muted"
+              class="nav-link text-white"
               target="_blank"
-              href="http://orcid.org/0000-0003-4101-2502"
+              href="http://uk.linkedin.com/in/philewels"
+              title="LinkedIn"
+              data-bs-toggle="tooltip"
             >
-              <img src="assets/img/orcid.svg" />
+              <i class="bi bi-linkedin"></i>
             </a>
           </li>
           <li class="nav-item">
             <a
-              class="nav-link text-muted"
+              class="nav-link text-white"
+              target="_blank"
+              href="http://orcid.org/0000-0003-4101-2502"
+              title="ORCID"
+              data-bs-toggle="tooltip"
+            >
+              <img src="assets/img/ORCIDid_iconbwvector.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
               target="_blank"
               href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
+              title="Google Scholar"
+              data-bs-toggle="tooltip"
             >
               <img src="assets/img/google_scholar.svg" />
             </a>
           </li>
           <li class="nav-item">
             <a
-              class="nav-link text-muted"
+              class="nav-link text-white"
               target="_blank"
               href="http://www.researchgate.net/profile/Philip_Ewels"
+              title="ResearchGate"
+              data-bs-toggle="tooltip"
             >
-              <img src="assets/img/research_gate.svg" />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link text-muted"
-              target="_blank"
-              href="http://uk.linkedin.com/in/philewels"
-            >
-              <i class="bi bi-linkedin"></i>
+              <img
+                src="assets/img/research_gate.svg"
+                style="filter: saturate(0) brightness(0) invert(1)"
+              />
             </a>
           </li>
         </ul>
@@ -121,28 +136,77 @@
     <section id="content" class="bg-light">
       <article id="about" class="p-5">
         <h2 class="display-4">Hi there!</h2>
-        <p class="lead">I'm a bioinformatician living in Stockholm, Sweden.</p>
+        <p class="lead mb-1">
+          I'm a bioinformatician living in Stockholm, Sweden.
+        </p>
+        <p>
+          I work with high-throughput genomics data and open-source software.
+        </p>
         <h3>Where to find me</h3>
         <p>
           <a
             href="https://github.com/ewels/"
             target="_blank"
-            class="btn btn-outline-dark"
+            class="btn btn-outline-dark shadow-sm"
           >
             GitHub <i class="bi bi-github mx-1"></i> @ewels
           </a>
           <a
             href="http://twitter.com/tallphil"
             target="_blank"
-            class="btn btn-outline-info"
+            class="btn btn-outline-info shadow-sm"
           >
             Twitter <i class="bi bi-twitter mx-1"></i>
             @tallphil
           </a>
+          <a
+            href="http://uk.linkedin.com/in/philewels"
+            target="_blank"
+            class="btn btn-outline-primary shadow-sm"
+          >
+            LinkedIn <i class="bi bi-linkedin mx-1"></i>
+          </a>
+        </p>
+        <p>
+          <a
+            href="http://orcid.org/0000-0003-4101-2502"
+            target="_blank"
+            class="btn btn-outline-secondary border-dark shadow-sm"
+          >
+            ORCID <img src="assets/img/ORCIDid_iconvector.svg" class="mx-1" />
+          </a>
+          <a
+            href="http://orcid.org/0000-0003-4101-2502"
+            target="_blank"
+            class="btn btn-outline-dark border-dark shadow-sm"
+          >
+            ResearchGate
+            <img src="assets/img/research_gate.svg" class="mx-1" />
+          </a>
+          <a
+            href="http://orcid.org/0000-0003-4101-2502"
+            target="_blank"
+            class="btn btn-outline-secondary border-dark shadow-sm"
+          >
+            Google Scholar
+            <img src="assets/img/google_scholar.svg" class="mx-1" />
+          </a>
         </p>
 
         <h3 class="mt-5">Where I've worked</h3>
-        <p>Click on a job to see more about the positions.</p>
+        <p class="lead">
+          I'm a molecular biologist turned bioinformatician turned
+          research-software engineer.
+        </p>
+        <p>
+          My research background is in epigenetics, notably 3D nuclear structure
+          and DNA methylation. More recently I have primarily worked with
+          infrastructure and development of open-source bioinformatics tools.
+        </p>
+        <p>
+          These are the places I have worked - click to find out more about the
+          positions.
+        </p>
         <div class="list-group mx-n5">
           <a
             href="#"
@@ -154,7 +218,19 @@
             >
               <div>
                 <h5 class="mb-1">The National Genomics Infrastructure (NGI)</h5>
-                <p class="text-muted mb-0">SciLifeLab, Stockholm, Sweden</p>
+                <p class="text-muted mb-0">
+                  <img
+                    src="assets/img/flag_se.svg"
+                    alt="Sweden"
+                    class="mx-1"
+                    style="width: 18px"
+                  />
+                  SciLifeLab, Stockholm, Sweden
+                  <span
+                    class="badge bg-light text-secondary border fw-normal ms-2"
+                    >3 positions</span
+                  >
+                </p>
               </div>
               <div>
                 <i class="bi bi-arrow-right text-black-50"></i>
@@ -171,11 +247,76 @@
             >
               <div>
                 <h5 class="mb-1">The Babraham Institute</h5>
-                <p class="text-muted mb-0">Cambridge, UK</p>
+                <p class="text-muted mb-0">
+                  <img
+                    src="assets/img/flag_uk.svg"
+                    alt="United Kingdom"
+                    class="mx-1"
+                    style="width: 18px"
+                  />
+                  Cambridge, UK
+                  <span
+                    class="badge bg-light text-secondary border fw-normal ms-2"
+                    >2 positions</span
+                  >
+                </p>
               </div>
               <div>
                 <i class="bi bi-arrow-right text-black-50"></i>
               </div>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article id="about" class="p-5">
+        <h2 class="display-4">Projects</h2>
+        <div class="list-group mx-n5">
+          <a
+            href="#"
+            onclick="openDetails()"
+            class="list-group-item list-group-item-action"
+          >
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
+            >
+              <img
+                src="assets/img/nf-core-logo-square.svg"
+                alt="nf-core"
+                class="flex-shrink-1 me-3"
+                style="width: 38px"
+              />
+              <div class="flex-grow-1">
+                <h5 class="mb-1">nf-core</h5>
+                <p class="text-muted mb-0">
+                  A community effort to collect a curated set of analysis
+                  pipelines built using Nextflow.
+                </p>
+              </div>
+              <i class="bi bi-arrow-right text-black-50"></i>
+            </div>
+          </a>
+          <a
+            href="#"
+            onclick="openDetails()"
+            class="list-group-item list-group-item-action"
+          >
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
+            >
+              <img
+                src="assets/img/MultiQC_logo_circle.svg"
+                alt="MultiQC"
+                class="flex-shrink-1 me-3"
+                style="width: 38px"
+              />
+              <div class="flex-grow-1">
+                <h5 class="mb-1">MultiQC</h5>
+                <p class="text-muted mb-0">
+                  Aggregate results from bioinformatics analyses across many
+                  samples into a single report.
+                </p>
+              </div>
+              <i class="bi bi-arrow-right text-black-50"></i>
             </div>
           </a>
         </div>

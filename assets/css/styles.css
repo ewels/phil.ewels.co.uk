@@ -1,8 +1,8 @@
 #sidebar,
 #content,
 #detail {
-  height: 100%;
   top: 0;
+  bottom: 0;
   position: fixed;
 }
 #sidebar {
@@ -11,13 +11,14 @@
   width: 400px;
   overflow-x: hidden;
   z-index: 1;
-  background-image: url("../img/DJI_0081.JPG");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
 }
 #content {
   transition: margin 0.5s, width 0.5s;
   margin-left: 400px;
   width: calc(100% - 400px);
+  overflow-y: scroll;
 }
 #detail {
   transition: right 0.5s;
@@ -26,11 +27,21 @@
   z-index: 2;
 }
 
+#sidebar > div {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 #social li a img {
   width: 18px;
   height: 16px;
+  filter: invert(1);
 }
 
+#content .btn img {
+  width: 18px;
+  height: 18px;
+  padding-bottom: 2px;
+  transition: filter 0.15s ease-in-out;
+}
 #content .list-group-item {
   border-radius: 0;
   padding-left: 3rem;
