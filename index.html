@@ -49,6 +49,11 @@
           </li>
           <li class="nav-item mb-2">
             <a class="nav-link text-white" href="#">
+              <i class="bi bi-easel me-2"></i> Presentations
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white" href="#">
               <i class="bi bi-file-earmark-text me-2"></i> Publications
             </a>
           </li>
@@ -210,8 +215,7 @@
         <div class="list-group mx-n5">
           <a
             href="#"
-            onclick="openDetails()"
-            class="list-group-item list-group-item-action"
+            class="list-group-item list-group-item-action details_btn"
           >
             <div
               class="d-flex w-100 justify-content-between align-items-center"
@@ -222,7 +226,7 @@
                   <img
                     src="assets/img/flag_se.svg"
                     alt="Sweden"
-                    class="mx-1"
+                    class="mx-1 shadow-sm"
                     style="width: 18px"
                   />
                   SciLifeLab, Stockholm, Sweden
@@ -239,8 +243,7 @@
           </a>
           <a
             href="#"
-            onclick="openDetails()"
-            class="list-group-item list-group-item-action"
+            class="list-group-item list-group-item-action details_btn"
           >
             <div
               class="d-flex w-100 justify-content-between align-items-center"
@@ -251,7 +254,7 @@
                   <img
                     src="assets/img/flag_uk.svg"
                     alt="United Kingdom"
-                    class="mx-1"
+                    class="mx-1 shadow-sm"
                     style="width: 18px"
                   />
                   Cambridge, UK
@@ -273,8 +276,7 @@
         <div class="list-group mx-n5">
           <a
             href="#"
-            onclick="openDetails()"
-            class="list-group-item list-group-item-action"
+            class="list-group-item list-group-item-action details_btn"
           >
             <div
               class="d-flex w-100 justify-content-between align-items-center"
@@ -325,10 +327,7 @@
 
     <section id="detail" class="bg-white border-start">
       <div class="p-3">
-        <button
-          class="btn btn-text float-end text-muted"
-          onclick="closeDetails()"
-        >
+        <button class="btn btn-text float-end text-muted close_details_btn">
           Close <i class="bi bi-x-lg"></i>
         </button>
         <aside id="ngi">
@@ -343,6 +342,7 @@
         </aside>
       </div>
     </section>
+    <div id="borderbar"></div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
