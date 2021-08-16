@@ -50,6 +50,13 @@ body {
 #sidebar > div {
   background-color: rgba(0, 0, 0, 0.8);
 }
+#primary-nav a {
+  transition: padding-left 0.2s, background-color 0.2s;
+}
+#primary-nav a:hover {
+  padding-left: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 #social li a img {
   width: 18px;
   height: 16px;
@@ -68,6 +75,17 @@ body {
   padding-right: 3rem;
   border-left: 0;
   border-right: 0;
+}
+
+#content .details_btn {
+  transition: padding 0.2s, border-left-width 0.2s;
+  border-left: 0px solid var(--bs-primary);
+}
+#content .details_btn:hover,
+#content .details_btn.clicked {
+  padding-left: 3.2rem;
+  padding-right: 2rem;
+  border-left-width: 0.5rem;
 }
 
 .mx-n5 {
