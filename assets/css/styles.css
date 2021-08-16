@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
 
+:root {
+  --sidebar-width: 400px;
+  --borderbar-width: 30px;
+}
+
 body {
   font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -18,7 +23,7 @@ body {
 #sidebar {
   transition: left 0.5s;
   left: 0;
-  width: 400px;
+  width: var(--sidebar-width);
   overflow-x: hidden;
   z-index: 1;
   background-image: url("../img/bg.jpg");
@@ -26,18 +31,18 @@ body {
 }
 #content {
   transition: margin 0.5s, width 0.5s;
-  margin-left: 400px;
-  width: calc(100% - 460px);
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width) - var(--borderbar-width));
 }
 #detail {
   transition: right 0.5s;
-  right: calc(-50% - 60px);
-  width: calc(50% - 30px);
+  right: calc(-50% - var(--borderbar-width));
+  width: calc(50% - var(--borderbar-width)/2);
   z-index: 2;
 }
 #borderbar {
   right: 0;
-  width: 60px;
+  width: var(--borderbar-width);
   background-image: url("../img/bg.jpg");
   background-size: cover;
   z-index: 1000;
