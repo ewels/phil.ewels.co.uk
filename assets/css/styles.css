@@ -37,7 +37,7 @@ body {
 #detail {
   transition: right 0.5s;
   right: calc(-50% - var(--borderbar-width));
-  width: calc(50% - var(--borderbar-width)/2);
+  width: calc(50% - var(--borderbar-width) / 2);
   z-index: 2;
 }
 #borderbar {
