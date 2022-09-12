@@ -1,4 +1,5 @@
 import * as React from "react";
+import { SocialLinks, SocialIcon } from "./social";
 
 const SideNavItem = ({ anchor, title, children }) => {
   return (
@@ -10,19 +11,11 @@ const SideNavItem = ({ anchor, title, children }) => {
   );
 };
 
-const SideNavSocialIcon = ({ img_url, icon_class, title, children }) => {
-  if (img_url) {
-    return <img src={"assets/img/" + img_url} alt={title} />;
-  } else {
-    return <i class={"bi bi-" + icon_class}></i>;
-  }
-};
-
 const SideNavSocial = ({ url, title, icon_class, img_url, children }) => {
   return (
     <li class="nav-item">
       <a class="nav-link text-white" target="_blank" href={url} title={title} data-bs-toggle="tooltip">
-        <SideNavSocialIcon icon_class={icon_class} img_url={img_url} title={title} />
+        <SocialIcon icon_class={icon_class} img_url={img_url} title={title} />
       </a>
     </li>
   );
@@ -55,20 +48,14 @@ const Sidebar = () => {
         </ul>
         <hr />
         <ul class="nav nav-pills nav-fill mt-4 px-5" id="social">
-          <SideNavSocial url="https://github.com/ewels/" title="GitHub" icon_class="github" />
-          <SideNavSocial url="http://twitter.com/tallphil" title="twitter" icon_class="twitter" />
-          <SideNavSocial url="http://linkedin.com/in/philewels" title="ORCID" icon_class="linkedin" />
-          <SideNavSocial url="http://orcid.org/0000-0003-4101-2502" title="LinkedIn" img="ORCIDid_iconbwvector.svg" />
-          <SideNavSocial
-            url="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
-            title="Google Scholar"
-            img_url="google_scholar.svg"
-          />
-          <SideNavSocial
-            url="http://www.researchgate.net/profile/Philip_Ewels"
-            title="ResearchGate"
-            img_url="research_gate.svg"
-          />
+          {SocialLinks.map((social) => (
+            <SideNavSocial
+              url={social.url}
+              title={social.title}
+              icon_class={social.icon_class}
+              img_url={social.img_url}
+            />
+          ))}
         </ul>
       </div>
     </header>
