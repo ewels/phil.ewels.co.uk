@@ -1,5 +1,6 @@
 // Step 1: Import React
 import * as React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Sidebar from "../components/sidebar";
 import AboutSection from "../sections/about";
 

@@ -1,10 +1,15 @@
 import * as React from "react";
-import { SocialLinks, SocialIcon } from "../components/social.js";
+import { SocialLinks } from "../components/social.js";
+import sweden_flag from "../images/flag_se.svg";
+import uk_flag from "../images/flag_uk.svg";
+import logo_seqera from "../images/seqera_icon.svg";
+import logo_scilifelab from "../images/scilifelab_icon.svg";
+import logo_babraham from "../images/bi_logo.svg";
 
-const AboutSectionSocial = ({ url, title, icon_class, img_url, children }) => {
+const AboutSectionSocial = ({ url, title, icon, children }) => {
   return (
-    <a href={url} title={title} target="_blank" class="btn btn-outline-dark shadow-sm me-2">
-      {title} <SocialIcon icon_class={icon_class} img_url={img_url} title={title} />
+    <a href={url} title={title} target="_blank" rel="noreferrer" class="btn btn-outline-dark shadow-sm me-2">
+      {title} {icon}
     </a>
   );
 };
@@ -17,12 +22,7 @@ const AboutSection = () => {
       <p>I work with high-throughput genomics data and open-source software.</p>
       <p>
         {SocialLinks.map((social) => (
-          <AboutSectionSocial
-            url={social.url}
-            title={social.title}
-            icon_class={social.icon_class}
-            img_url={social.img_url}
-          />
+          <AboutSectionSocial url={social.url} title={social.title} icon={social.icon} />
         ))}
       </p>
 
@@ -36,12 +36,12 @@ const AboutSection = () => {
       <div class="list-group mx-n5">
         <a href="#work/ngi" class="list-group-item list-group-item-action details_btn">
           <div class="d-flex w-100 justify-content-between align-items-center">
-            <img src="assets/img/seqera_icon.svg" alt="Seqera Labs" class="me-4" style={{ width: "30px" }} />
+            <img src={logo_seqera} alt="Seqera Labs" class="me-4" style={{ width: "30px" }} />
             <div style={{ flexGrow: 1 }}>
               <h5 class="mb-1">Seqera Labs</h5>
               <p class="text-muted mb-0">
                 Stockholm, Sweden (remote)
-                <img src="assets/img/flag_se.svg" alt="Sweden" class="mx-1 shadow-sm" style={{ width: "18px" }} />
+                <img src={sweden_flag} alt="Sweden" class="mx-1 shadow-sm" style={{ width: "18px" }} />
                 <span class="badge bg-light text-secondary border fw-normal ms-2">1 position</span>
               </p>
             </div>
@@ -52,12 +52,12 @@ const AboutSection = () => {
         </a>
         <a href="#work/ngi" class="list-group-item list-group-item-action details_btn">
           <div class="d-flex w-100 justify-content-between align-items-center">
-            <img src="assets/img/scilifelab_icon.svg" alt="SciLifeLab Logo" class="me-4" style={{ width: "30px" }} />
+            <img src={logo_scilifelab} alt="SciLifeLab Logo" class="me-4" style={{ width: "30px" }} />
             <div style={{ flexGrow: 1 }}>
               <h5 class="mb-1">SciLifeLab, The National Genomics Infrastructure (NGI)</h5>
               <p class="text-muted mb-0">
                 Stockholm, Sweden
-                <img src="assets/img/flag_se.svg" alt="Sweden" class="mx-1 shadow-sm" style={{ width: "18px" }} />
+                <img src={sweden_flag} alt="Sweden" class="mx-1 shadow-sm" style={{ width: "18px" }} />
                 <span class="badge bg-light text-secondary border fw-normal ms-2">3 positions</span>
               </p>
             </div>
@@ -68,17 +68,12 @@ const AboutSection = () => {
         </a>
         <a href="#work/babraham" class="list-group-item list-group-item-action details_btn">
           <div class="d-flex w-100 justify-content-between align-items-center">
-            <img src="assets/img/bi_logo.svg" alt="Babraham Institute" class="me-4" style={{ width: "30px" }} />
+            <img src={logo_babraham} alt="Babraham Institute" class="me-4" style={{ width: "30px" }} />
             <div style={{ flexGrow: 1 }}>
               <h5 class="mb-1">The Babraham Institute</h5>
               <p class="text-muted mb-0">
                 Cambridge, UK
-                <img
-                  src="assets/img/flag_uk.svg"
-                  alt="United Kingdom"
-                  class="mx-1 shadow-sm"
-                  style={{ width: "18px" }}
-                />
+                <img src={uk_flag} alt="United Kingdom" class="mx-1 shadow-sm" style={{ width: "18px" }} />
                 <span class="badge bg-light text-secondary border fw-normal ms-2">2 positions</span>
               </p>
             </div>

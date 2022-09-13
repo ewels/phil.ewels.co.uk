@@ -1,21 +1,23 @@
 import * as React from "react";
-import { SocialLinks, SocialIcon } from "./social";
+import { PersonCircle, JournalBookmark, Easel, FileEarmarkText, Envelope } from "react-bootstrap-icons";
+import { SocialLinks } from "./social";
+import avatar from "../images/phil_ewels.jpg";
 
 const SideNavItem = ({ anchor, title, children }) => {
   return (
     <li class="nav-item mb-2">
       <a class="nav-link text-white" href="#{ anchor }">
-        <i class="bi bi-person-circle me-2"></i> {title}
+        {children} {title}
       </a>
     </li>
   );
 };
 
-const SideNavSocial = ({ url, title, icon_class, img_url, children }) => {
+const SideNavSocial = ({ url, title, icon, children }) => {
   return (
     <li class="nav-item">
-      <a class="nav-link text-white" target="_blank" href={url} title={title} data-bs-toggle="tooltip">
-        <SocialIcon icon_class={icon_class} img_url={img_url} title={title} />
+      <a class="nav-link text-white" target="_blank" rel="noreferrer" href={url} title={title} data-bs-toggle="tooltip">
+        {icon}
       </a>
     </li>
   );
@@ -31,7 +33,7 @@ const Sidebar = () => {
               <hr />
             </div>
             <div class="col-6">
-              <img src="assets/img/phil_ewels.jpg" class="rounded-circle w-100 shadow mb-3" alt="Philip Ewels" />
+              <img src={avatar} class="rounded-circle w-100 shadow mb-3" alt="Philip Ewels" />
             </div>
             <div class="col-3">
               <hr />
@@ -40,21 +42,26 @@ const Sidebar = () => {
           <h1 class="display-1">Phil Ewels</h1>
         </div>
         <ul class="nav nav-pills flex-column mx-3 my-5" id="primary-nav">
-          <SideNavItem anchor="about" title="About me" />
-          <SideNavItem anchor="projects" title="Projects" />
-          <SideNavItem anchor="presentations" title="Presentations" />
-          <SideNavItem anchor="publications" title="Publications" />
-          <SideNavItem anchor="contact" title="Contact me" />
+          <SideNavItem anchor="about" title="About me">
+            <PersonCircle />
+          </SideNavItem>
+          <SideNavItem anchor="projects" title="Projects">
+            <JournalBookmark />
+          </SideNavItem>
+          <SideNavItem anchor="presentations" title="Presentations">
+            <Easel />
+          </SideNavItem>
+          <SideNavItem anchor="publications" title="Publications">
+            <FileEarmarkText />
+          </SideNavItem>
+          <SideNavItem anchor="contact" title="Contact me">
+            <Envelope />
+          </SideNavItem>
         </ul>
         <hr />
         <ul class="nav nav-pills nav-fill mt-4 px-5" id="social">
           {SocialLinks.map((social) => (
-            <SideNavSocial
-              url={social.url}
-              title={social.title}
-              icon_class={social.icon_class}
-              img_url={social.img_url}
-            />
+            <SideNavSocial url={social.url} title={social.title} icon={social.icon_mono} />
           ))}
         </ul>
       </div>

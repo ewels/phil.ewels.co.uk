@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
+
+:root {
+  --sidebar-width: 400px;
+  --borderbar-width: 30px;
+}
+
+body {
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#sidebar,
+#content,
+#detail,
+#borderbar {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+}
+#sidebar {
+  transition: left 0.5s;
+  left: 0;
+  width: var(--sidebar-width);
+  overflow-x: hidden;
+  z-index: 1;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+#content {
+  transition: margin 0.5s, width 0.5s;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width) - var(--borderbar-width));
+}
+#detail {
+  transition: right 0.5s;
+  right: calc(-50% - var(--borderbar-width));
+  width: calc(50% - (var(--borderbar-width) / 2));
+  z-index: 2;
+}
+#borderbar {
+  right: 0;
+  width: var(--borderbar-width);
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#sidebar > div {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#primary-nav a {
+  transition: padding-left 0.2s, background-color 0.2s;
+}
+#primary-nav a:hover {
+  padding-left: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#social li a img {
+  width: 18px;
+  height: 16px;
+  filter: invert(1);
+}
+
+#content .btn img {
+  width: 18px;
+  height: 18px;
+  padding-bottom: 2px;
+  transition: filter 0.15s ease-in-out;
+}
+#content .list-group-item {
+  border-radius: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-left: 0;
+  border-right: 0;
+}
+
+#content .details_btn {
+  transition: padding 0.2s, border-left-width 0.2s;
+  border-left: 0px solid var(--bs-primary);
+}
+#content .details_btn:hover,
+#content .details_btn.clicked {
+  padding-left: 3.2rem;
+  padding-right: 2rem;
+  border-left-width: 0.5rem;
+}
+
+.mx-n5 {
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
+}
