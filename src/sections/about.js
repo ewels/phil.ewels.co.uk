@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ArrowRight } from "react-bootstrap-icons";
 import { SocialLinks } from "../components/social.js";
 import sweden_flag from "../images/flag_se.svg";
 import uk_flag from "../images/flag_uk.svg";
@@ -46,7 +47,7 @@ const AboutSection = () => {
               </p>
             </div>
             <div>
-              <i class="bi bi-arrow-right text-black-50"></i>
+              <ArrowRight className="text-black-50" />
             </div>
           </div>
         </a>
@@ -62,7 +63,7 @@ const AboutSection = () => {
               </p>
             </div>
             <div>
-              <i class="bi bi-arrow-right text-black-50"></i>
+              <ArrowRight className="text-black-50" />
             </div>
           </div>
         </a>
@@ -78,7 +79,7 @@ const AboutSection = () => {
               </p>
             </div>
             <div>
-              <i class="bi bi-arrow-right text-black-50"></i>
+              <ArrowRight className="text-black-50" />
             </div>
           </div>
         </a>

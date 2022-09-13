@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/main.css";
 import Sidebar from "../components/sidebar";
 import AboutSection from "../sections/about";
 
@@ -12,8 +13,7 @@ const IndexPage = () => {
       <section id="content" class="bg-light p-5">
         <AboutSection />
       </section>
-      <h1>Welcome to my Gatsby site!</h1>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <div id="borderbar"></div>
     </main>
   );
 };

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PersonCircle, JournalBookmark, Easel, FileEarmarkText, Envelope } from "react-bootstrap-icons";
+import { PersonCircle, JournalBookmarkFill, Easel, FileEarmarkText, Envelope } from "react-bootstrap-icons";
 import { SocialLinks } from "./social";
 import avatar from "../images/phil_ewels.jpg";
 
@@ -43,19 +43,19 @@ const Sidebar = () => {
         </div>
         <ul class="nav nav-pills flex-column mx-3 my-5" id="primary-nav">
           <SideNavItem anchor="about" title="About me">
-            <PersonCircle />
+            <PersonCircle className="me-2" />
           </SideNavItem>
           <SideNavItem anchor="projects" title="Projects">
-            <JournalBookmark />
+            <JournalBookmarkFill className="me-2" />
           </SideNavItem>
           <SideNavItem anchor="presentations" title="Presentations">
-            <Easel />
+            <Easel className="me-2" />
           </SideNavItem>
           <SideNavItem anchor="publications" title="Publications">
-            <FileEarmarkText />
+            <FileEarmarkText className="me-2" />
           </SideNavItem>
           <SideNavItem anchor="contact" title="Contact me">
-            <Envelope />
+            <Envelope className="me-2" />
           </SideNavItem>
         </ul>
         <hr />

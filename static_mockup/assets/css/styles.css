@@ -42,7 +42,7 @@ body {
 #borderbar {
   right: 0;
   width: var(--borderbar-width);
-  background-image: url("../img/bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: cover;
   z-index: 1000;
 }
