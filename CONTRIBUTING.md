@@ -1,7 +1,7 @@
 # Contributing
 
 This website was based on the _Astro Modern Personal Website_ template:
-https://github.com/manuelernestog/astro-modern-personal-website
+<https://github.com/manuelernestog/astro-modern-personal-website>
 
 The rest of these contribution docs are basically a cut down version of the readme of that template at the time I used it (Nov 2022).
 
