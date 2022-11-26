@@ -78,17 +78,6 @@ You can change your avatar shape using [mask classes](https://daisyui.com/compon
 
 The used social-icons are SVG form [BoxIcons](https://boxicons.com/) pack.
 
-#### TimeLine
-
-The timeline components are used to conform the CV.
-
-```html
-<div class="time-line-container">
-  <TimeLineElement title="Element Title" subtitle="Subtitle" desc="Description" />
-  ...
-</div>
-```
-
 #### Card & HorizontalCard
 
 ```html
