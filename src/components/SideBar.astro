@@ -4,7 +4,7 @@ import { Icon } from "astro-icon";
 
 <div data-theme="dark" class="drawer-side bg-black/80">
   <label for="my-drawer" class="drawer-overlay bg-black/80"></label>
-  <div class="menu py-10 overflow-y-auto bg-black/80 text-base-content">
+  <div class="menu pt-10 overflow-y-auto bg-black/80 text-base-content">
     <div class="flex items-center">
       <hr class="w-1/5 opacity-25" />
       <div class="avatar w-1/2 block m-auto">
@@ -14,7 +14,7 @@ import { Icon } from "astro-icon";
       </div>
       <hr class="w-1/5 opacity-25" />
     </div>
-    <span class="text-white text-7xl text-thin text-center my-4">Phil Ewels</span>
+    <span class="text-white text-6xl text-thin text-center mt-8">Phil Ewels</span>
     <ul class="my-menu-items my-8 mx-5">
       <!-- Sidebar content here -->
       <li><a href="/"><Icon name="bi:person-circle" size="16" /> About me</a></li>
@@ -28,23 +28,17 @@ import { Icon } from "astro-icon";
       </li>
     </ul>
     <div class="grow"></div>
-    <div class="social-icons px-4 my-2 flex self-center">
-      <a href="https://github.com/ewels/" target="_blank" class="tooltip mx-3" data-tip="GitHub" aria-label="GitHub">
+    <div class="social-icons mt-5 px-6 py-8 flex justify-between border-t border-slate-700">
+      <a href="https://github.com/ewels/" target="_blank" class="tooltip" data-tip="GitHub" aria-label="GitHub">
         <Icon name="mdi:github" size="24px" />
       </a>
-      <a
-        href="http://twitter.com/tallphil"
-        target="_blank"
-        class="tooltip mx-3"
-        data-tip="twitter"
-        aria-label="twitter"
-      >
+      <a href="http://twitter.com/tallphil" target="_blank" class="tooltip" data-tip="twitter" aria-label="twitter">
         <Icon name="mdi:twitter" size="24px" />
       </a>
       <a
         href="http://uk.linkedin.com/in/philewels"
         target="_blank"
-        class="tooltip mx-3"
+        class="tooltip"
         data-tip="LinkedIn"
         aria-label="LinkedIn"
       >
@@ -53,7 +47,7 @@ import { Icon } from "astro-icon";
       <a
         href="http://orcid.org/0000-0003-4101-2502"
         target="_blank"
-        class="tooltip mx-3"
+        class="tooltip"
         data-tip="ORCiD"
         aria-label="ORCiD"
       >
@@ -62,7 +56,7 @@ import { Icon } from "astro-icon";
       <a
         href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
         target="_blank"
-        class="tooltip mx-3"
+        class="tooltip"
         data-tip="Google Scholar"
         aria-label="Google Scholar"
       >
@@ -71,7 +65,7 @@ import { Icon } from "astro-icon";
       <a
         href="http://www.researchgate.net/profile/Philip_Ewels"
         target="_blank"
-        class="tooltip mx-3"
+        class="tooltip"
         data-tip="Research Gate"
         aria-label="Research Gate"
       >
