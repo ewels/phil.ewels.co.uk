@@ -2,26 +2,28 @@
 import { Icon } from "astro-icon";
 ---
 
-<div class="drawer-side bg-base-200">
-  <label for="my-drawer" class="drawer-overlay bg-base-200"></label>
-  <div class="menu p-4 overflow-y-auto w-[19rem] bg-base-200 text-base-content">
-    <div class="w-fit">
-      <a href="/">
-        <div class="avatar transition ease-in-out w-1/2 hover:scale-[102%] block m-auto mt-3 mb-6">
-          <div>
-            <img src="/phil_ewels.jpg" class="mask mask-circle" alt="Philip Ewels" />
-          </div>
-        </div>
-      </a>
+<div data-theme="dark" class="drawer-side bg-black/80">
+  <label for="my-drawer" class="drawer-overlay bg-black/80"></label>
+  <div class="menu py-10 overflow-y-auto bg-black/80 text-base-content">
+    <div class="flex items-center">
+      <hr class="w-1/5 opacity-25" />
+      <div class="avatar w-1/2 block m-auto">
+        <a href="/">
+          <img src="/phil_ewels.jpg" class="mask mask-circle" alt="Philip Ewels" />
+        </a>
+      </div>
+      <hr class="w-1/5 opacity-25" />
     </div>
-    <ul>
+    <h1 class="text-white text-7xl text-thin text-center my-4">Phil Ewels</h1>
+    <ul class="my-menu-items my-8 mx-5">
       <!-- Sidebar content here -->
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/blog/1">Blog</a></li>
+      <li><a href="/"><Icon name="bi:person-circle" size="16" /> About me</a></li>
+      <li><a href="/projects"><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a></li>
+      <li><a href="/blog/1"><Icon name="bi:easel" size="16" /> Presentations</a></li>
+      <li><a href="/projects"><Icon name="bi:file-earmark-text" size="16" /> Publications</a></li>
+      <li><a href="/blog/1"><Icon name="bi:journal-bookmark-fill" size="16" /> Blog</a></li>
       <li><a href="/cv">CV</a></li>
-      <li><a href="https://manuelernestog.github.io/paylink/" target="_blank">Support my Work</a></li>
-      <li><a href="mailto:contact.manuelernestog@gmail.com">Contact</a></li>
+      <li><a href="mailto:phil.ewels@seqera.io"><Icon name="bi:envelope" size="16" /> Contact me</a></li>
     </ul>
     <div class="grow"></div>
     <div class="social-icons px-4 my-2 flex self-center">
