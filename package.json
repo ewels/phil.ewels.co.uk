@@ -17,6 +17,7 @@
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^1.0.1",
     "astro": "^1.2.3",
+    "astro-icon": "^0.8.0",
     "daisyui": "^2.27.0"
   },
   "devDependencies": {
