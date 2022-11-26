@@ -14,15 +14,18 @@ import { Icon } from "astro-icon";
       </div>
       <hr class="w-1/5 opacity-25" />
     </div>
-    <h1 class="text-white text-7xl text-thin text-center my-4">Phil Ewels</h1>
+    <span class="text-white text-7xl text-thin text-center my-4">Phil Ewels</span>
     <ul class="my-menu-items my-8 mx-5">
       <!-- Sidebar content here -->
       <li><a href="/"><Icon name="bi:person-circle" size="16" /> About me</a></li>
       <li><a href="/projects"><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a></li>
-      <li><a href="/blog/1"><Icon name="bi:easel" size="16" /> Presentations</a></li>
-      <li><a href="/projects"><Icon name="bi:file-earmark-text" size="16" /> Publications</a></li>
-      <li><a href="/blog/1"><Icon name="bi:journal-bookmark-fill" size="16" /> Blog</a></li>
-      <li><a href="mailto:phil.ewels@seqera.io"><Icon name="bi:envelope" size="16" /> Contact me</a></li>
+      <li><a href="/presentations"><Icon name="bi:easel" size="16" /> Presentations</a></li>
+      <li><a href="/publications"><Icon name="bi:file-earmark-text" size="16" /> Publications</a></li>
+      <li>
+        <a href="mailto:phil.ewels@seqera.io"
+          ><Icon name="bi:envelope" size="16" /> Contact me <Icon name="bi:box-arrow-up-right" size="16" />
+        </a>
+      </li>
     </ul>
     <div class="grow"></div>
     <div class="social-icons px-4 my-2 flex self-center">

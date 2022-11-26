@@ -6,11 +6,9 @@ import { Icon } from "astro-icon";
 const workplaces = (await Astro.glob("./work/*.{md,mdx}")).sort(
   (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
-const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout>
@@ -97,33 +95,8 @@ const last_posts = posts.slice(0, 3);
     <h2 class="text-4xl mb-5">Projects</h2>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
   {
-    last_posts.map((post) => (
+    projects.map((post) => (
       <>
         <HorizontalCard
           title={post.frontmatter.title}
