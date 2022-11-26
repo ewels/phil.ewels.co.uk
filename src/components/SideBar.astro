@@ -9,7 +9,7 @@ import { Icon } from "astro-icon";
       <a href="/">
         <div class="avatar transition ease-in-out w-1/2 hover:scale-[102%] block m-auto mt-3 mb-6">
           <div>
-            <img class="mask mask-circle" src="/profile.jpg" alt="profile image" />
+            <img src="/phil_ewels.jpg" class="mask mask-circle" alt="Philip Ewels" />
           </div>
         </div>
       </a>
@@ -26,22 +26,41 @@ import { Icon } from "astro-icon";
     </ul>
     <div class="grow"></div>
     <div class="social-icons px-4 my-2 flex self-center">
-      <a href="https://github.com/ewels/" target="_blank" class="mx-3" aria-label="GitHub">
+      <a href="https://github.com/ewels/" target="_blank" class="tooltip mx-3" data-tip="GitHub" aria-label="GitHub">
         <Icon name="mdi:github" size="24px" />
       </a>
-      <a href="http://twitter.com/tallphil" target="_blank" class="mx-3" aria-label="twitter">
+      <a
+        href="http://twitter.com/tallphil"
+        target="_blank"
+        class="tooltip mx-3"
+        data-tip="twitter"
+        aria-label="twitter"
+      >
         <Icon name="mdi:twitter" size="24px" />
       </a>
-      <a href="http://uk.linkedin.com/in/philewels" target="_blank" class="mx-3" aria-label="LinkedIn">
+      <a
+        href="http://uk.linkedin.com/in/philewels"
+        target="_blank"
+        class="tooltip mx-3"
+        data-tip="LinkedIn"
+        aria-label="LinkedIn"
+      >
         <Icon name="mdi:linkedin" size="24px" />
       </a>
-      <a href="http://orcid.org/0000-0003-4101-2502" target="_blank" class="mx-3" aria-label="ORCiD">
+      <a
+        href="http://orcid.org/0000-0003-4101-2502"
+        target="_blank"
+        class="tooltip mx-3"
+        data-tip="ORCiD"
+        aria-label="ORCiD"
+      >
         <Icon name="simple-icons:orcid" size="24px" />
       </a>
       <a
         href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
         target="_blank"
-        class="mx-3"
+        class="tooltip mx-3"
+        data-tip="Google Scholar"
         aria-label="Google Scholar"
       >
         <Icon name="simple-icons:googlescholar" size="24px" />
@@ -49,13 +68,14 @@ import { Icon } from "astro-icon";
       <a
         href="http://www.researchgate.net/profile/Philip_Ewels"
         target="_blank"
-        class="mx-3"
+        class="tooltip mx-3"
+        data-tip="Research Gate"
         aria-label="Research Gate"
       >
         <Icon name="simple-icons:researchgate" size="24px" />
       </a>
       <!--
-      <a href="/rss.xml" target="_blank" class="mx-3" aria-label="RSS Feed">
+      <a href="/rss.xml" target="_blank" class="tooltip mx-3" aria-data-tipRSS Feed" aria-label="RSS Feed">
         <Icon name="bi:rss-fill" size="24px" />
       </a>
       -->
