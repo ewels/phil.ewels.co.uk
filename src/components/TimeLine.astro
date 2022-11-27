@@ -1,0 +1,17 @@
+---
+const { title, subtitle, desc } = Astro.props;
+---
+
+<div class="flex">
+  <div class="education__time">
+    <span class="w-4 h-4 bg-primary block rounded-full mt-2"></span>
+    <span class="education__line bg-primary block h-full w-[2px] translate-x-[7px]"></span>
+  </div>
+  <div class="experience__data bd-grid px-5">
+    <div class="font-semibold mb-1">{title}</div>
+    <div class="font-light text-sm">{subtitle}</div>
+    <p class="my-2 text-sm text-slate-600 text-justify">
+      {desc}
+    </p>
+  </div>
+</div>
