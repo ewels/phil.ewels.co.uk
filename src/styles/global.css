@@ -2,9 +2,15 @@
   display: none;
 }
 .drawer-side {
+  width: 350px;
+}
+.border-bar {
+  width: 30px;
+}
+.border-bar,
+.drawer-side {
   background-image: url(/background.jpg);
   background-size: cover;
-  width: 350px;
 }
 .my-menu-items li a {
   background: 0;
