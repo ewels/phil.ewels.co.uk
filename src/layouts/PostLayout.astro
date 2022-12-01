@@ -9,11 +9,12 @@ export interface Props {
     pubDate?: string;
     updatedDate?: string;
     heroImage?: string;
+    iconImage?: string;
   };
 }
 
 const {
-  content: { title, description, pubDate, updatedDate, heroImage }
+  content: { title, description, pubDate, updatedDate, heroImage, iconImage },
 } = Astro.props;
 ---
 
@@ -21,7 +22,12 @@ const {
   <main class="md:flex md:justify-center">
     <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
       {heroImage && <img src={heroImage} alt={title} class="w-full mb-6" />}
-      <h1 class="title my-2 text-4xl font-bold">{title}</h1>
+      <div class="flex flex-row items-center">
+        <h1 class="title my-2 text-4xl font-bold grow">
+          {title}
+        </h1>
+        {iconImage && <img src={iconImage} alt={title} class="float-right w-16 my-0" />}
+      </div>
       {pubDate && <time>{pubDate}</time>}
       {
         updatedDate && (
@@ -32,7 +38,7 @@ const {
         )
       }
       <div class="divider my-2"></div>
-        <slot />
+      <slot />
     </article>
   </main>
 </BaseLayout>
