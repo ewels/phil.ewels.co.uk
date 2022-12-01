@@ -7,8 +7,8 @@ const posts = (await Astro.glob("./*.{md,mdx}")).sort(
 );
 ---
 
-<BaseLayout title="Presentations">
-  <h1 class="text-7xl mb-8">Presentations</h1>
+<BaseLayout title="Talks">
+  <h1 class="text-7xl mb-8">Talks</h1>
   {
     posts.map((post) => (
       <>
