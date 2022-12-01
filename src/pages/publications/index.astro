@@ -9,21 +9,17 @@ const posts = (await Astro.glob("./*.{md,mdx}")).sort(
 
 <BaseLayout title="Publications">
   <h1 class="text-7xl mb-8">Publications</h1>
-  <ul>
-    <!--List the array of astronaut info-->
-    {
-      posts.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.frontmatter.title}
-            img={post.frontmatter.heroImage}
-            desc={post.frontmatter.description}
-            url={post.url}
-            target="_self"
-          />
-          <div class="divider my-0" />
-        </>
-      ))
-    }
-  </ul>
+  {
+    posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.frontmatter.title}
+          img={post.frontmatter.heroImage}
+          desc={post.frontmatter.description}
+          url={post.url}
+          target="_self"
+        />
+      </>
+    ))
+  }
 </BaseLayout>

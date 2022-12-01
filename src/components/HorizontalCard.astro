@@ -6,30 +6,28 @@ import { Icon } from "astro-icon";
 <div
   class="bg-white -mx-10 px-10 transition-[border,margin] ease-in-out border-t last:border-b border-slate-300 border-l-primary hover:border-l-8 hover:-mr-12"
 >
-  <a href={url} target={target}>
-    <div class="hero-content p-2 flex-row">
-      <img src={img} alt={title} class="w-8" />
-      <div class="grow w-full">
-        <h1 class="text-xl font-bold">
-          {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
-        </h1>
-        <p class="py-1 text-1xl text-gray-500 font-light">
-          {desc}
-          {descImage && <img src={descImage} class="ml-2 w-[18px] hidden md:inline-block" />}
-          {
-            tags &&
-              tags.map((tag) => (
-                <span class="ml-2 border rounded px-1 py-0.5 text-xs text-slate-500 bg-gray-50 whitespace-nowrap hidden md:inline-block">
-                  {tag}
-                </span>
-              ))
-          }
-        </p>
-      </div>
-      <div class="hidden md:block">
-        <Icon name="bi:arrow-right" size="16" class="text-black-50" />
-      </div>
+  <a href={url} target={target} class="horizontal-card p-2 2xl:p-4">
+    <img src={img} alt={title} class="w-8" />
+    <div class="grow w-full">
+      <h1 class="text-xl font-bold block 2xl:inline 2xl:ml-4">
+        {title}
+        {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+      </h1>
+      <p class="py-1 text-1xl text-gray-500 font-light block 2xl:inline 2xl:ml-4">
+        {desc}
+        {descImage && <img src={descImage} class="ml-2 w-[18px] hidden md:inline-block" />}
+        {
+          tags &&
+            tags.map((tag) => (
+              <span class="ml-2 border rounded px-1 py-0.5 text-xs text-slate-500 bg-gray-50 whitespace-nowrap hidden md:inline-block">
+                {tag}
+              </span>
+            ))
+        }
+      </p>
+    </div>
+    <div class="hidden md:block">
+      <Icon name="bi:arrow-right" size="16" class="text-black-50" />
     </div>
   </a>
 </div>
