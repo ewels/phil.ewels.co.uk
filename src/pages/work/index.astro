@@ -9,6 +9,12 @@ const workplaces = (await Astro.glob("./*.{md,mdx}")).sort(
 
 <BaseLayout title="Where I've worked">
   <h1 class="text-7xl mb-8">Where I've worked</h1>
+  <p class="text-xl mb-3">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
+  <p class="text-base opacity-80 mb-5">
+    I began my career working with research in epigenetics, notably 3D nuclear structure and DNA methylation. I later
+    started working with infrastructure and development of open-source bioinformatics tools. These are the places I have
+    worked - click to find out more about the positions.
+  </p>
   <ul>
     <!--List the array of astronaut info-->
     {

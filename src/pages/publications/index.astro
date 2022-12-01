@@ -17,7 +17,6 @@ const posts = (await Astro.glob("./*.{md,mdx}")).sort(
           img={post.frontmatter.heroImage}
           desc={post.frontmatter.description}
           url={post.url}
-          target="_self"
         />
       </>
     ))

@@ -15,7 +15,7 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   <div class="pb-3">
     <h2 class="text-6xl mb-5">Hi there!</h2>
     <p class="text-xl mb-3">I'm a bioinformatician living in Stockholm, Sweden.</p>
-    <p>I work with high-throughput genomics data and open-source software.</p>
+    <p class="text-base opacity-80">I work with high-throughput genomics data and open-source software.</p>
   </div>
   <div class="pb-12 mt-2">
     <a
@@ -71,7 +71,7 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   <div class="pb-12 mt-5">
     <h2 class="text-4xl mb-5">Where I've worked</h2>
     <p class="text-xl mb-3">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
-    <p class="mb-5">
+    <p class="mb-5 text-base opacity-80">
       I began my career working with research in epigenetics, notably 3D nuclear structure and DNA methylation. I later
       started working with infrastructure and development of open-source bioinformatics tools. These are the places I
       have worked - click to find out more about the positions.

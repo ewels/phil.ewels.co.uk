@@ -16,10 +16,9 @@ const posts = (await Astro.glob("./*.{md,mdx}")).sort(
         <>
           <HorizontalCard
             title={post.frontmatter.title}
-            img={post.frontmatter.heroImage}
+            img={post.frontmatter.iconImage}
             desc={post.frontmatter.description}
             url={post.url}
-            target="_self"
           />
         </>
       ))
