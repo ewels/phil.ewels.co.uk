@@ -3,7 +3,7 @@ layout: "../../layouts/PostLayout.astro"
 title: "Seqera Labs"
 description: "Stockholm, Sweden (remote)"
 startDate: "May 1 2022"
-# heroImage: "/images/work/seqera.svg"
+heroImage: "/images/work/seqera_office.jpg"
 iconImage: "/images/work/seqera.svg"
 descImage: "/images/work/flag_se.svg"
 tags: [1 position]
