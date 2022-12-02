@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 
 const posts = (await Astro.glob("./*.{md,mdx}")).sort(
@@ -8,7 +9,7 @@ const posts = (await Astro.glob("./*.{md,mdx}")).sort(
 ---
 
 <BaseLayout title="Projects">
-  <h1 class="text-7xl mb-8">Projects</h1>
+  <PageTitle>Projects</PageTitle>
   <ul>
     <!--List the array of astronaut info-->
     {

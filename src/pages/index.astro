@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
+import HomepageButton from "../components/HomepageButton.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { Icon } from "astro-icon";
 
@@ -14,67 +16,33 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
 <BaseLayout>
   <div class="pb-3">
     <img src="/phil_ewels.jpg" class="w-1/2 my-5 mx-auto mask mask-circle md:hidden" alt="Philip Ewels" />
-    <h2 class="text-6xl mb-5 text-center md:text-left">Hi there!</h2>
+    <PageTitle extraClass="text-center md:text-left">Hi there!</PageTitle>
     <p class="text-xl mb-3 text-center md:text-left">I'm a bioinformatician living in Stockholm, Sweden.</p>
-    <p class="text-base opacity-80 text-center md:text-left">
+    <p class="text-base opacity-80 text-center md:text-left font-light">
       I work with high-throughput genomics data and open-source software.
     </p>
   </div>
   <div class="pb-12 mt-2 text-center md:text-left">
-    <a
-      href="https://github.com/ewels/"
-      target="_blank"
-      class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
-      aria-label="GitHub"
-    >
-      <Icon name="mdi:github" size="18px" /> GitHub
-    </a>
-    <a
-      href="http://twitter.com/tallphil"
-      target="_blank"
-      class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
-      aria-label="twitter"
-    >
-      <Icon name="mdi:twitter" size="18px" /> Twitter
-    </a>
-    <a
-      href="http://uk.linkedin.com/in/philewels"
-      target="_blank"
-      class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
-      aria-label="LinkedIn"
-    >
-      <Icon name="mdi:linkedin" size="18px" /> LinkedIn
-    </a>
-    <a
-      href="http://orcid.org/0000-0003-4101-2502"
-      target="_blank"
-      class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
-      aria-label="ORCiD"
-    >
-      <Icon name="simple-icons:orcid" size="18px" /> ORCiD
-    </a>
-    <a
+    <HomepageButton href="https://github.com/ewels/" title="GitHub" icon="mdi:github" />
+    <HomepageButton href="http://twitter.com/tallphil" title="twitter" icon="mdi:twitter" />
+    <HomepageButton href="http://uk.linkedin.com/in/philewels" title="LinkedIn" icon="mdi:linkedin" />
+    <HomepageButton href="http://orcid.org/0000-0003-4101-2502" title="ORCiD" icon="simple-icons:orcid" />
+    <HomepageButton
       href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
-      target="_blank"
-      class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
-      aria-label="Google Scholar"
-    >
-      <Icon name="simple-icons:googlescholar" size="18px" /> Google Scholar
-    </a>
-    <a
+      title="Google Scholar"
+      icon="simple-icons:googlescholar"
+    />
+    <HomepageButton
       href="http://www.researchgate.net/profile/Philip_Ewels"
-      target="_blank"
-      class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
-      aria-label="Research Gate"
-    >
-      <Icon name="simple-icons:researchgate" size="18px" /> Research Gate
-    </a>
+      title="Research Gate"
+      icon="simple-icons:researchgate"
+    />
   </div>
 
   <div class="pb-12 mt-5">
     <h2 class="text-4xl mb-5">Where I've worked</h2>
     <p class="text-xl mb-3">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
-    <p class="mb-5 text-base opacity-80">
+    <p class="mb-5 text-base font-light opacity-80">
       I began my career working with research in epigenetics, notably 3D nuclear structure and DNA methylation. I later
       started working with infrastructure and development of open-source bioinformatics tools. These are the places I
       have worked - click to find out more about the positions.

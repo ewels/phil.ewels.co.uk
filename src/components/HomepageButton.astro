@@ -1,0 +1,14 @@
+---
+const { href, target = "_blank", title, icon } = Astro.props;
+import { Icon } from "astro-icon";
+---
+
+<a
+  href={href}
+  target={target}
+  class="btn btn-ghost border-neutral btn-sm gap-2 mr-1 normal-case mb-2"
+  aria-label={title}
+>
+  <Icon name={icon} size="18px" />
+  {title}
+</a>

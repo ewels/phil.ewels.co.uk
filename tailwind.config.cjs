@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      display: ['"Source Sans Pro"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
-      body: ['"Source Sans Pro"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
-      sans: ['"Source Sans Pro"', "system-ui", "-apple-system", '"Helvetica Neue"', "Arial", "sans-serif"],
+      display: ['"Mona-Sans"', "system-ui", "-apple-system", "sans-serif"],
+      body: ['"Mona-Sans"', "system-ui", "-apple-system", "sans-serif"],
+      sans: ['"Mona-Sans"', "system-ui", "-apple-system", "sans-serif"],
     },
     fontSize: {
       xs: ["0.875rem", "1.5rem"],
