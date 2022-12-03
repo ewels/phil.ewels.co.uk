@@ -1,5 +1,5 @@
 ---
-const { extraClass } = Astro.props;
+const { extraClass, printJS } = Astro.props;
 import { Icon } from "astro-icon";
 ---
 
@@ -9,7 +9,7 @@ import { Icon } from "astro-icon";
   <Icon name="ph:moon-bold" class="moon swap-off fill-current w-6 h-6" />
 </div>
 
-<script is:inline>
+<script class="hidden" is:inline>
   const theme = (() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");

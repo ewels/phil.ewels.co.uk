@@ -22,7 +22,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
         <div class="drawer-content flex flex-col bg-base-100 dark:bg-stone-900">
           <Header title={SITE_TITLE} />
           <main class="p-4 md:p-10 text-black dark:text-zinc-200">
-            <ThemeIcon extraClass="float-right" />
+            <ThemeIcon extraClass="float-right hidden md:flex" />
             <slot />
           </main>
           <Footer />
