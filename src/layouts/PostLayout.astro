@@ -20,13 +20,21 @@ const {
 
 <BaseLayout title={title} description={description} image={heroImage}>
   <main class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
-      {heroImage && <img src={heroImage} alt={title} class="w-full mb-6 drop-shadow-lg border" />}
+    <article class="prose prose-lg dark:prose-invert max-w-[750px] prose-img:mx-auto">
+      {heroImage && <img src={heroImage} alt={title} class="w-full mb-6 drop-shadow-lg border dark:border-zinc-600" />}
       <div class="flex flex-row items-center">
         <h1 class="title my-2 text-4xl font-bold grow">
           {title}
         </h1>
-        {iconImage && <img src={iconImage} alt={title} class="float-right w-16 my-0" />}
+        {
+          iconImage && (
+            <img
+              src={iconImage}
+              alt={title}
+              class="float-right w-16 my-0 dark:bg-white dark:p-4 dark:w-24 dark:rounded"
+            />
+          )
+        }
       </div>
       {pubDate && <time>{pubDate}</time>}
       {

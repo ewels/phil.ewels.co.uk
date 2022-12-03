@@ -1,10 +1,18 @@
-<footer class="footer footer-center block mt-5 py-6 border-t">
-  <div class="inline opacity-25">
-    <a href="https://github.com/ewels/phil.ewels.co.uk/" target="_blank" class="underline"> See website source code</a>
-    <span class="mx-2">|</span> Modified from
-    <a href="https://github.com/manuelernestog/astro-modern-personal-website" target="_blank" class="underline">
-      astro-modern-personal-website
-    </a> by
-    <a href="https://manuelernestog.github.io" target="_blank" class="underline"> Manuel Ernesto</a>
+---
+import { Icon } from "astro-icon";
+---
+
+<footer class="footer footer-center block mt-8 py-6 border-t dark:border-zinc-700">
+  <div class="inline text-gray-400 dark:text-gray-600">
+    Website built using
+    <a href="https://astro.build/" target="_blank" class="underline">Astro</a>,
+    <a href="https://tailwindcss.com/" target="_blank" class="underline">TailwindCSS</a>
+    and
+    <a href="https://daisyui.com/" target="_blank" class="underline">daisyUI</a>
+    <span class="mx-2">|</span>
+    <a href="https://github.com/ewels/phil.ewels.co.uk/" target="_blank">
+      <span class="underline">See website source code</span>
+      <Icon name="mdi:github" size="24px" class="inline" />
+    </a>
   </div>
 </footer>
