@@ -16,3 +16,40 @@ import { Icon } from "astro-icon";
     </a>
   </div>
 </footer>
+
+<script class="hidden" is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+    document.getElementById("themeToggle").checked = true;
+  }
+
+  window.localStorage.setItem("theme", theme);
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    var toggles = document.getElementsByClassName("themeToggle");
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].checked = isDark;
+    }
+  };
+
+  var toggles = document.getElementsByClassName("themeToggle");
+  for (var i = 0; i < toggles.length; i++) {
+    toggles[i].addEventListener("click", handleToggleClick);
+  }
+</script>
