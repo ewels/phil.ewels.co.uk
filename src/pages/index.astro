@@ -15,14 +15,14 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
 
 <BaseLayout>
   <div class="pb-3">
-    <img src="/phil_ewels.jpg" class="w-1/2 my-5 mx-auto mask mask-circle md:hidden" alt="Philip Ewels" />
+    <img src="/phil_ewels.jpg" class="mask mask-circle my-5 mx-auto w-1/2 md:hidden" alt="Philip Ewels" />
     <PageTitle extraClass="text-center md:text-left">Hi there!</PageTitle>
-    <p class="text-xl mb-3 text-center md:text-left">I'm a bioinformatician living in Stockholm, Sweden.</p>
-    <p class="text-base opacity-80 text-center md:text-left font-light">
+    <p class="mb-3 text-center text-xl md:text-left">I'm a bioinformatician living in Stockholm, Sweden.</p>
+    <p class="text-center text-base font-light opacity-80 md:text-left">
       I work with high-throughput genomics data and open-source software.
     </p>
   </div>
-  <div class="pb-12 mt-2 text-center md:text-left">
+  <div class="mt-2 pb-12 text-center md:text-left">
     <HomepageButton href="https://github.com/ewels/" title="GitHub" icon="mdi:github" />
     <HomepageButton href="http://twitter.com/tallphil" title="Twitter" icon="mdi:twitter" />
     <HomepageButton href="http://uk.linkedin.com/in/philewels" title="LinkedIn" icon="mdi:linkedin" />
@@ -39,9 +39,9 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
     />
   </div>
 
-  <div class="pb-12 mt-5">
-    <h2 class="text-4xl mb-5">Where I've worked</h2>
-    <p class="text-xl mb-3">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
+  <div class="mt-5 pb-12">
+    <h2 class="mb-5 text-4xl">Where I've worked</h2>
+    <p class="mb-3 text-xl">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
     <p class="mb-5 text-base font-light opacity-80">
       I began my career working with research in epigenetics, notably 3D nuclear structure and DNA methylation. I later
       started working with infrastructure and development of open-source bioinformatics tools. These are the places I
@@ -64,7 +64,7 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   </div>
 
   <div class="mt-12">
-    <h2 class="text-4xl mb-5">Projects</h2>
+    <h2 class="mb-5 text-4xl">Projects</h2>
 
     {
       projects.map((post) => (

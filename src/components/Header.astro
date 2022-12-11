@@ -4,7 +4,7 @@ import { Icon } from "astro-icon";
 ---
 
 <div
-  class="sticky lg:hidden top-0 z-30 flex items-center h-16 w-full bg-opacity-60 backdrop-blur bg-base-100 text-base-content shadow-sm"
+  class="sticky top-0 z-30 flex h-16 w-full items-center bg-base-100 bg-opacity-60 text-base-content shadow-sm backdrop-blur lg:hidden"
 >
   <div class="navbar">
     <div class="flex-1">
@@ -14,7 +14,7 @@ import { Icon } from "astro-icon";
             <Icon name="ic:outline-menu" size="24" />
             Menu
           </a>
-          <ul class="p-2 bg-base-100 border shadow">
+          <ul class="border bg-base-100 p-2 shadow">
             <li><a href="/"><Icon name="bi:house-door" size="16" /> Home</a></li>
             <li><a href="/work"><Icon name="bi:person-circle" size="16" /> Where I've worked</a></li>
             <li><a href="/projects"><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a></li>
@@ -28,6 +28,6 @@ import { Icon } from "astro-icon";
     </div>
   </div>
   <div class="flex-none">
-    <a class="btn btn-ghost no-animation normal-case text-xl mr-4" href="/">Phil Ewels</a>
+    <a class="btn-ghost no-animation btn mr-4 text-xl normal-case" href="/">Phil Ewels</a>
   </div>
 </div>

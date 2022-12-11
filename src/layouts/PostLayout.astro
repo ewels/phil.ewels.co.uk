@@ -19,10 +19,10 @@ const {
 
 <BaseLayout title={title} description={description} image={heroImage}>
   <main class="md:flex md:justify-center">
-    <article class="prose prose-lg dark:prose-invert max-w-[750px] prose-img:mx-auto">
-      {heroImage && <img src={heroImage} alt={title} class="w-full mb-6 drop-shadow-lg border dark:border-zinc-600" />}
+    <article class="prose-lg prose max-w-[750px] prose-img:mx-auto dark:prose-invert">
+      {heroImage && <img src={heroImage} alt={title} class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600" />}
       <div class="flex flex-row items-center">
-        <h1 class="title my-2 text-4xl font-bold grow">
+        <h1 class="title my-2 grow text-4xl font-bold">
           {title}
         </h1>
         {
@@ -30,7 +30,7 @@ const {
             <img
               src={iconImage}
               alt={title}
-              class="float-right w-16 my-0 dark:bg-white dark:p-4 dark:w-24 dark:rounded"
+              class="float-right my-0 w-16 dark:w-24 dark:rounded dark:bg-white dark:p-4"
             />
           )
         }

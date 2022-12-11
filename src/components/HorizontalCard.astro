@@ -4,22 +4,22 @@ import { Icon } from "astro-icon";
 ---
 
 <div
-  class="bg-white dark:bg-black/20 -mx-4 px-4 md:-mx-10 md:px-10 transition-[border,margin] ease-in-out border-t last:border-b border-slate-300 dark:border-zinc-600 border-l-primary hover:border-l-8 hover:-mr-6 md:hover:-mr-12"
+  class="-mx-4 border-t border-slate-300 border-l-primary bg-white px-4 transition-[border,margin] ease-in-out last:border-b hover:-mr-6 hover:border-l-8 dark:border-zinc-600 dark:bg-black/20 md:-mx-10 md:px-10 md:hover:-mr-12"
 >
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4">
-    <img src={img} alt={title} class="dark:bg-zinc-100 p-2 rounded w-12" />
-    <div class="grow w-full">
-      <h1 class="text-xl font-medium block 2xl:inline 2xl:ml-4">
+    <img src={img} alt={title} class="w-12 rounded p-2 dark:bg-zinc-100" />
+    <div class="w-full grow">
+      <h1 class="block text-xl font-medium 2xl:ml-4 2xl:inline">
         {title}
-        {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+        {badge && <div class="badge-secondary badge mx-2">{badge}</div>}
       </h1>
-      <p class="py-1 text-1xl text-gray-500 dark:text-gray-300 font-light block 2xl:inline 2xl:ml-4">
+      <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300 2xl:ml-4 2xl:inline">
         {desc}
-        {descImage && <img src={descImage} class="ml-2 w-[18px] hidden md:inline-block" />}
+        {descImage && <img src={descImage} class="ml-2 hidden w-[18px] md:inline-block" />}
         {
           tags &&
             tags.map((tag) => (
-              <span class="ml-2 border dark:border-zinc-600 rounded px-1 py-0.5 text-xs text-slate-500 dark:text-slate-300 bg-gray-50 dark:bg-stone-800 whitespace-nowrap hidden md:inline-block">
+              <span class="ml-2 hidden whitespace-nowrap rounded border bg-gray-50 px-1 py-0.5 text-xs text-slate-500 dark:border-zinc-600 dark:bg-stone-800 dark:text-slate-300 md:inline-block">
                 {tag}
               </span>
             ))
