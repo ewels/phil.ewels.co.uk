@@ -1,0 +1,32 @@
+---
+const { author } = Astro.props;
+import { Icon } from "astro-icon";
+
+var longname = (author.given ?? "") + " " + author.family;
+var shortname = author.family + " " + (author.given ? author.given.substr(0, 1) : "");
+if (!author.family && author.name) {
+  longname = author.name;
+  shortname = author.name;
+}
+---
+
+<li>
+  {
+    author.ORCID ? (
+      <a href={author.ORCID} title={longname} class="tooltip" data-tip={longname} target="_blank">
+        <Icon name="simple-icons:orcid" size="16px" class="inline opacity-50" />
+        {shortname}
+      </a>
+    ) : (
+      <span title={longname} class="tooltip" data-tip={longname}>
+        {shortname}
+      </span>
+    )
+  }
+</li>
+
+<style>
+  a {
+    white-space: nowrap;
+  }
+</style>

@@ -31,7 +31,7 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/colors/themes")["[data-theme=autumn]"],
+          ...require("daisyui/src/colors/themes")["[data-theme=emerald]"],
           primary: "#0d6efd",
           "base-100": "#f8f9fa",
         },

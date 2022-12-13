@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Author from "../../components/Author.astro";
+import publications from "./publications.json";
+
+// Find which pages to generate statically
+export function getStaticPaths() {
+  const paths = publications.map((pub) => {
+    return { params: { slug: pub.slug } };
+  });
+  return paths;
+}
+const { slug } = Astro.params;
+
+// Find the current publication we're looking at
+const publication = publications.filter((pub) => pub.slug == slug)[0];
+
+// Fetch information about this paper from crossref
+const response = await fetch("https://api.crossref.org/works/" + publication.doi);
+const data = await response.json();
+const pub = data.message;
+const title = pub.title[0];
+const journal = pub["container-title"].length ? pub["container-title"] : pub["institution"][0]["name"];
+const pub_year = pub.published["date-parts"][0][0];
+---
+
+<BaseLayout title="slug">
+  <h1 class="mb-4 text-xl font-bold md:text-3xl">{title}</h1>
+  <h2 class="mb-2"><span class="mr-2 italic">{journal}</span> ({pub_year})</h2>
+  <h3 class="mb-4"><ul class="authors">{pub.author.map((author) => <Author author={author} />)}</ul></h3>
+
+  <div class="columns-1 py-8 md:columns-2">
+    <div>
+      <span
+        class="__dimensions_badge_embed__"
+        data-doi={publication.doi}
+        data-hide-zero-citations="true"
+        data-legend="always"></span>
+      <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+    </div>
+
+    <div class="py-5 md:text-right"><a class="btn" href={pub.URL}>DOI: {publication.doi}</a></div>
+  </div>
+  {
+    pub.abstract && (
+      <div class="py-5">
+        <h3 class="mb-2 text-lg font-bold">Abstract</h3>
+        <p>{pub.abstract}</p>
+      </div>
+    )
+  }
+</BaseLayout>
+
+<style lang="scss" is:global>
+  .authors {
+    li {
+      display: inline;
+      margin-right: 0.5rem;
+    }
+    li:not(:last-child):after {
+      content: ", ";
+      margin-left: -0.1rem;
+    }
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, url, badge, descImage, tags, target = "_self" } = Astro.props;
+const { title, subtitle, img, desc, url, badge, descImage, tags, target = "_self" } = Astro.props;
 import { Icon } from "astro-icon";
 ---
 
@@ -7,12 +7,13 @@ import { Icon } from "astro-icon";
   class="-mx-4 border-t border-slate-300 border-l-primary bg-white px-4 transition-[border,margin] ease-in-out last:border-b hover:-mr-6 hover:border-l-8 dark:border-zinc-600 dark:bg-black/20 md:-mx-10 md:px-10 md:hover:-mr-12"
 >
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4">
-    <img src={img} alt={title} class="w-12 rounded p-2 dark:bg-zinc-100" />
+    {img && <img src={img} alt={title} class="w-12 rounded p-2 dark:bg-zinc-100" />}
     <div class="w-full grow">
-      <h1 class="block text-xl font-medium 2xl:ml-4 2xl:inline">
+      <h1 class={"block font-medium 2xl:ml-4 2xl:inline " + (subtitle ? "text-lg" : "text-xl")}>
         {title}
         {badge && <div class="badge-secondary badge mx-2">{badge}</div>}
       </h1>
+      {subtitle && <h2 class="text-l">{subtitle} </h2>}
       <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300 2xl:ml-4 2xl:inline">
         {desc}
         {descImage && <img src={descImage} class="ml-2 hidden w-[18px] md:inline-block" />}
