@@ -2,14 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageTitle from "../components/PageTitle.astro";
 import HomepageButton from "../components/HomepageButton.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
-import { Icon } from "astro-icon";
+import publications from "./publications/publications.json";
 
 const workplaces = (await Astro.glob("./work/*.{md,mdx}")).sort(
   (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf()
 );
 const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
+const talks = (await Astro.glob("./talks/*.{md,mdx}")).sort(
+  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf()
 );
 ---
 
@@ -39,44 +41,56 @@ const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
     />
   </div>
 
-  <div class="mt-5 pb-12">
-    <h2 class="mb-5 text-4xl">Where I've worked</h2>
-    <p class="mb-3 text-xl">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
-    <p class="mb-5 text-base font-light opacity-80">
-      I began my career working with research in epigenetics, notably 3D nuclear structure and DNA methylation. I later
-      started working with infrastructure and development of open-source bioinformatics tools. These are the places I
-      have worked - click to find out more about the positions.
-    </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="mt-5 border rounded p-5 shadow">
+    <h2 class="mb-5 text-2xl">Where I've worked</h2>
+    <p class="mb-3">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
+    <div class="flex justify-around">
     {
       workplaces.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.frontmatter.title}
-            img={post.frontmatter.iconImage}
-            desc={post.frontmatter.description}
-            descImage={post.frontmatter.descImage}
-            tags={post.frontmatter.tags}
-            url={post.url}
-          />
-        </>
+        <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
+          <img src={post.frontmatter.iconImage} alt={post.frontmatter.title} class="w-12 rounded p-2 dark:bg-zinc-100 border"  />
+        </a>
       ))
     }
+    </div>
   </div>
 
-  <div class="mt-12">
-    <h2 class="mb-5 text-4xl">Projects</h2>
-
-    {
+  <div class="mt-5 border rounded p-5 shadow">
+    <h2 class="mb-5 text-2xl">Projects</h2>
+    <p class="mb-3">Explore some of the projects I've worked on.</p>
+    <div class="flex justify-around">
+        {
       projects.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.frontmatter.title}
-            img={post.frontmatter.iconImage}
-            desc={post.frontmatter.description}
-            url={post.url}
-          />
-        </>
+        <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
+          <img src={post.frontmatter.iconImage} alt={post.frontmatter.title} class="w-12 rounded p-2 dark:bg-zinc-100 border"  />
+        </a>
       ))
     }
+    </div>
   </div>
+
+  <div class="mt-5 border rounded p-5 shadow">
+    <h2 class="mb-5 text-2xl">Talks</h2>
+    <p class="mb-3">Find recordings and slides from presentations I've given.</p>
+    <div class="flex justify-around">
+        {
+      talks.map((post) => (
+        <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
+          <img src={post.frontmatter.iconImage} alt={post.frontmatter.title} class="w-12 rounded p-2 dark:bg-zinc-100 border"  />
+        </a>
+      ))
+    }
+    </div>
+  </div>
+
+  <div class="mt-5 border rounded p-5 shadow">
+    <h2 class="mb-5 text-2xl">Publications</h2>
+    <p class="mb-3">Delve into journal articles that I've written or worked on.</p>
+    <p>Read { publications.length } publications</p>
+  </div>
+  </div>
+
+  <h2 class="mb-5 text-2xl">Contact me</h2>
+  <p>Want to talk? Get in touch.</p>
 </BaseLayout>
