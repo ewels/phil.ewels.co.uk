@@ -25,7 +25,7 @@ module.exports = {
       "9xl": ["7.5rem", "1"],
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui"), require("@tailwindcss/aspect-ratio")],
   daisyui: {
     styled: true,
     themes: [

@@ -1,0 +1,61 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { title, subtitle, location, type, date, event_url, pdf, iconImage, heroImage } = Astro.props.frontmatter;
+---
+
+<BaseLayout title={title} description={subtitle} image={heroImage}>
+  <main class="md:flex md:justify-center">
+    <article>
+      {heroImage && <img src={heroImage} alt={title} class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600" />}
+      <div class="flex flex-row items-center">
+        <h1 class="my-2 grow text-4xl font-bold">
+          {title}
+        </h1>
+        {
+          iconImage && (
+            <img
+              src={iconImage}
+              alt={title}
+              class="float-right my-0 w-16 dark:w-24 dark:rounded dark:bg-white dark:p-4"
+            />
+          )
+        }
+      </div>
+      <h2 class="mt-0 text-xl">{subtitle}</h2>
+      <ul>
+        {type && <li class="badge badge-secondary badge-outline">{type}</li>}
+        {date && <li class="badge badge-secondary badge-outline">{date}</li>}
+        {location && <li class="badge badge-secondary badge-outline">{location}</li>}
+        {
+          event_url && (
+            <li class="badge badge-secondary badge-outline">
+              <a href={event_url}>Website</a>
+            </li>
+          )
+        }
+      </ul>
+      <div class="divider my-2"></div>
+      <div class="prose-lg prose max-w-[750px] prose-img:mx-auto dark:prose-invert">
+        <slot />
+      </div>
+      {
+        pdf && (
+          <div class="my-8">
+            <a href={pdf} class="btn-info btn">
+              Download slides (PDF)
+            </a>
+            <div class="aspect-w-16 aspect-h-9 mt-8">
+              <iframe
+                src={pdf}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
+          </div>
+        )
+      }
+    </article>
+  </main>
+</BaseLayout>
