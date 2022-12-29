@@ -1,11 +1,10 @@
 ---
-const { extraClass, printJS = false } = Astro.props;
 import { Icon } from "astro-icon";
 
 // Javascript is in Footer.astro
 ---
 
-<div class={"flex items-center gap-1.5 " + extraClass}>
+<div class="flex items-center gap-1.5">
   <Icon name="ph:sun-bold" class="sun swap-on fill-current w-6 h-6" />
   <input id="themeToggle" type="checkbox" class="themeToggle toggle" />
   <Icon name="ph:moon-bold" class="moon swap-off fill-current w-6 h-6" />

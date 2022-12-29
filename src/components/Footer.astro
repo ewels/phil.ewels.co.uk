@@ -1,4 +1,5 @@
 ---
+import ThemeIcon from "./ThemeIcon.astro";
 import { Icon } from "astro-icon";
 ---
 
@@ -14,6 +15,9 @@ import { Icon } from "astro-icon";
       <span class="underline">See website source code</span>
       <Icon name="mdi:github" size="24px" class="inline" />
     </a>
+  </div>
+  <div class="float-right mr-6 hidden text-black dark:text-zinc-200 md:block">
+    <ThemeIcon />
   </div>
 </footer>
 
