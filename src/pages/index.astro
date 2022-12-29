@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageTitle from "../components/PageTitle.astro";
 import HomepageButton from "../components/HomepageButton.astro";
+import HomepageCard from "../components/HomepageCard.astro";
 import publications from "./publications/publications.json";
 
 const workplaces = (await Astro.glob("./work/*.{md,mdx}")).sort(
@@ -41,68 +42,33 @@ const talks = (await Astro.glob("./talks/*.{md,mdx}")).sort(
     />
   </div>
 
-  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-    <div class="mt-5 rounded border p-5 shadow">
-      <h2 class="mb-5 text-2xl">Where I've worked</h2>
-      <p class="mb-3">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
-      <div class="flex justify-around">
-        {
-          workplaces.map((post) => (
-            <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
-              <img
-                src={post.frontmatter.iconImage}
-                alt={post.frontmatter.title}
-                class="w-12 rounded border p-2 dark:bg-zinc-100"
-              />
-            </a>
-          ))
-        }
-      </div>
-    </div>
-
-    <div class="mt-5 rounded border p-5 shadow">
-      <h2 class="mb-5 text-2xl">Projects</h2>
-      <p class="mb-3">Explore some of the projects I've worked on.</p>
-      <div class="flex justify-around">
-        {
-          projects.map((post) => (
-            <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
-              <img
-                src={post.frontmatter.iconImage}
-                alt={post.frontmatter.title}
-                class="w-12 rounded border p-2 dark:bg-zinc-100"
-              />
-            </a>
-          ))
-        }
-      </div>
-    </div>
-
-    <div class="mt-5 rounded border p-5 shadow">
-      <h2 class="mb-5 text-2xl">Talks</h2>
-      <p class="mb-3">Find recordings and slides from presentations I've given.</p>
-      <div class="flex justify-around">
-        {
-          talks.map((post) => (
-            <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
-              <img
-                src={post.frontmatter.iconImage}
-                alt={post.frontmatter.title}
-                class="w-12 rounded border p-2 dark:bg-zinc-100"
-              />
-            </a>
-          ))
-        }
-      </div>
-    </div>
-
-    <div class="mt-5 rounded border p-5 shadow">
-      <h2 class="mb-5 text-2xl">Publications</h2>
-      <p class="mb-3">Delve into journal articles that I've written or worked on.</p>
-      <p>Read {publications.length} publications</p>
-    </div>
+  <div class="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2">
+    <HomepageCard
+      title="Where I've worked"
+      description="I'm a molecular biologist, turned bioinformatician, turned research-software engineer."
+      href="/work"
+      items={workplaces}
+    />
+    <HomepageCard
+      title="Projects"
+      description="Explore some of the projects I've worked on."
+      href="/projects"
+      items={projects}
+    />
+    <HomepageCard
+      title="Talks"
+      description="Find recordings and slides from presentations I've given."
+      href="/talks"
+      items={talks}
+    />
+    <HomepageCard
+      title="Publications"
+      description="Delve into journal articles that I've written or worked on."
+      href="/publications"
+      btn_text={"Read " + publications.length + " publications"}
+    />
   </div>
 
-  <h2 class="mb-5 text-2xl">Contact me</h2>
+  <h2 class="mb-10 text-2xl">Contact me</h2>
   <p>Want to talk? Get in touch.</p>
 </BaseLayout>
