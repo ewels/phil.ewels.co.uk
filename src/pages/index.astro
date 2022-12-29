@@ -11,9 +11,7 @@ const workplaces = (await Astro.glob("./work/*.{md,mdx}")).sort(
 const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
-const talks = (await Astro.glob("./talks/*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf()
-);
+const talks = await Astro.glob("./talks/**/*.{md,mdx}");
 ---
 
 <BaseLayout>
@@ -59,7 +57,7 @@ const talks = (await Astro.glob("./talks/*.{md,mdx}")).sort(
       title="Talks"
       description="Find recordings and slides from presentations I've given."
       href="/talks"
-      items={talks}
+      btn_text={"Explore " + talks.length + " talks"}
     />
     <HomepageCard
       title="Publications"

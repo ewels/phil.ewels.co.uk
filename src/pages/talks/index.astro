@@ -3,23 +3,32 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageTitle from "../../components/PageTitle.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 
-const posts = (await Astro.glob("./*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+const posts = (await Astro.glob("./**/*.{md,mdx}")).sort(
+  (a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
 );
+var year = null;
 ---
 
 <BaseLayout title="Talks">
   <PageTitle>Talks</PageTitle>
   {
-    posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.frontmatter.title}
-          img={post.frontmatter.heroImage}
-          desc={post.frontmatter.description}
-          url={post.url}
-        />
-      </>
-    ))
+    posts.map((post) => {
+      var year_heading = null;
+      if (year != post.frontmatter.date.split("-")[0]) {
+        year = post.frontmatter.date.split("-")[0];
+        year_heading = year;
+      }
+      return (
+        <>
+          {year_heading && <h2 class="my-4 text-2xl font-bold">{year_heading}</h2>}
+          <HorizontalCard
+            title={post.frontmatter.title}
+            img={post.frontmatter.iconImage}
+            desc={post.frontmatter.subtitle}
+            url={post.url}
+          />
+        </>
+      );
+    })
   }
 </BaseLayout>
