@@ -9,7 +9,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "add_pub": "python add_pub.py"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.11.6",
