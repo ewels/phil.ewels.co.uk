@@ -4,7 +4,6 @@ doi: 10.1186/s13148-021-01097-3
 slug: wojewodzic-clinical-epigenetics
 title: Ultralow amounts of DNA from long-term archived serum samples produce high-quality methylomes
 journal: Clinical Epigenetics
-pubYear: 2021
 pubDate: 2021-5-12
 ---
 

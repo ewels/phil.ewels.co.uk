@@ -4,7 +4,6 @@ doi: 10.1101/2021.04.21.440736
 slug: chen-biorxiv
 title: A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines
 journal: bioRxiv
-pubYear: 2021
 pubDate: 2021-4-22
 ---
 

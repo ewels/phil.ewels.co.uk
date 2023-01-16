@@ -100,7 +100,6 @@ def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict)
         "slug": slug,
         "title": pub["title"][0],
         "journal": journal,
-        "pubYear": pub["published"]["date-parts"][0][0],
         "pubDate": "{}-{}-{}".format(*pub["published"]["date-parts"][0]),
     }
     # Create the publication markdown file
