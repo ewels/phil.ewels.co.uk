@@ -104,8 +104,12 @@ def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict)
         "slug": slug,
         "title": pub["title"][0],
         "journal": journal,
-        "pubDate": "{}-{}-{}".format(*pub["published"]["date-parts"][0]),
     }
+    try:
+        frontmatter["pubDate"] = "{}-{}-{}".format(*pub["published"]["date-parts"][0])
+    except IndexError:
+        frontmatter["pubDate"] = "{}-{}-01".format(*pub["published"]["date-parts"][0])
+
     # Create the publication markdown file
     print(f"[magenta]Creating [green]'{doi}': [yellow]{md_path}")
     md_path.parent.mkdir(parents=True, exist_ok=True)
