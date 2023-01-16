@@ -1,7 +1,3191 @@
 {
-  "10.1021/acs.jproteome.1c00123": {},
-  "10.1186/s13148-021-01097-3": {},
-  "10.1101/2021.04.21.440736": {},
-  "10.1038/s41591-020-0929-x": {},
-  "10.1038/s41587-020-0439-x": {}
+  "10.1021/acs.jproteome.1c00123": {
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          16
+        ]
+      ],
+      "date-time": "2023-01-16T19:51:32Z",
+      "timestamp": 1673898692999
+    },
+    "reference-count": 52,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              21
+            ]
+          ],
+          "date-time": "2021-06-21T00:00:00Z",
+          "timestamp": 1624233600000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100002347",
+        "name": "Bundesministerium f\u00fcr Bildung und Forschung",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "FKZ: 31A535A"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001645",
+        "name": "Boehringer Ingelheim Fonds",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "EXC 2180 \u2013 390900677"
+        ]
+      },
+      {
+        "name": "Chan Zuckerberg Initiative program \u201cEssential Open-Source Software for Science (EOSS)\u201d"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Proteome Res."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1021/acs.jproteome.1c00123",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2021-06-21T23:40:30Z",
+      "timestamp": 1624318830000
+    },
+    "page": "3758-3766",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": [
+      "DIAproteomics: A Multifunctional Data Analysis Pipeline for Data-Independent Acquisition Proteomics and Peptidomics"
+    ],
+    "prefix": "10.1021",
+    "volume": "20",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-7135-0073",
+        "authenticated-orcid": true,
+        "given": "Leon",
+        "family": "Bichmann",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Applied Bioinformatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          },
+          {
+            "name": "Institute for Cell Biology, Department of Immunology, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Shubham",
+        "family": "Gupta",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Donnelly Center for Biomolecular Research, University of Toronto, Toronto, Ontario ON M5S 3E1, Canada"
+          }
+        ]
+      },
+      {
+        "given": "George",
+        "family": "Rosenberger",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Systems Biology, Columbia University, New York, New York 10032, United States"
+          }
+        ]
+      },
+      {
+        "given": "Leon",
+        "family": "Kuchenbecker",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Applied Bioinformatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2833-6070",
+        "authenticated-orcid": true,
+        "given": "Timo",
+        "family": "Sachsenberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Applied Bioinformatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Phil",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Oliver",
+        "family": "Alka",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Applied Bioinformatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8948-9209",
+        "authenticated-orcid": true,
+        "given": "Julianus",
+        "family": "Pfeuffer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Applied Bioinformatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          },
+          {
+            "name": "Institute for Informatics, Freie Universit\u00e4t Berlin, Berlin 14195, Germany"
+          },
+          {
+            "name": "Zuse Institute Berlin, Berlin 14195, Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1739-4598",
+        "authenticated-orcid": true,
+        "given": "Oliver",
+        "family": "Kohlbacher",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Applied Bioinformatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          },
+          {
+            "name": "Institute for Biological and Medical Informatics, University of T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          },
+          {
+            "name": "Institute for Translational Bioinformatics, University Hospital T\u00fcbingen, T\u00fcbingen 72076, Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3500-8152",
+        "authenticated-orcid": true,
+        "given": "Hannes",
+        "family": "R\u00f6st",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Donnelly Center for Biomolecular Research, University of Toronto, Toronto, Ontario ON M5S 3E1, Canada"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          21
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1/cit1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/mcp.O111.016717"
+      },
+      {
+        "key": "ref2/cit2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.12688/f1000research.7042.1"
+      },
+      {
+        "key": "ref3/cit3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.3234"
+      },
+      {
+        "key": "ref4/cit4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.celrep.2019.06.046"
+      },
+      {
+        "key": "ref5/cit5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-020-17641-3"
+      },
+      {
+        "key": "ref6/cit6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1039/D0MO00072H"
+      },
+      {
+        "key": "ref7/cit7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7554/eLife.07661"
+      },
+      {
+        "key": "ref8/cit8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pmic.201700177"
+      },
+      {
+        "key": "ref9/cit9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bmc.4523"
+      },
+      {
+        "key": "ref10/cit10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jprot.2020.103671"
+      },
+      {
+        "key": "ref11/cit11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.mcpro.2021.100080"
+      },
+      {
+        "key": "ref12/cit12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14789450.2017.1322904"
+      },
+      {
+        "key": "ref13/cit13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-020-18071-x"
+      },
+      {
+        "key": "ref14/cit14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4334"
+      },
+      {
+        "key": "ref15/cit15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-020-14609-1"
+      },
+      {
+        "key": "ref16/cit16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13361-014-0981-1"
+      },
+      {
+        "key": "ref17/cit17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.3255"
+      },
+      {
+        "key": "ref18/cit18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nprot.2015.015"
+      },
+      {
+        "key": "ref19/cit19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkv1145"
+      },
+      {
+        "key": "ref20/cit20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkj040"
+      },
+      {
+        "key": "ref21/cit21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/sdata.2014.31"
+      },
+      {
+        "key": "ref22/cit22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkx664"
+      },
+      {
+        "key": "ref23/cit23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.3450"
+      },
+      {
+        "key": "ref24/cit24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41592-019-0426-7"
+      },
+      {
+        "key": "ref25/cit25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkz299"
+      },
+      {
+        "key": "ref26/cit26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41592-019-0427-6"
+      },
+      {
+        "key": "ref27/cit27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pmic.202070021"
+      },
+      {
+        "key": "ref28/cit28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4390"
+      },
+      {
+        "key": "ref29/cit29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pmic.200900375"
+      },
+      {
+        "key": "ref30/cit30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.2841"
+      },
+      {
+        "key": "ref31/cit31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3134"
+      },
+      {
+        "key": "ref32/cit32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3685"
+      },
+      {
+        "key": "ref33/cit33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-018-07454-w"
+      },
+      {
+        "key": "ref34/cit34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.analchem.9b01556"
+      },
+      {
+        "key": "ref35/cit35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/mas.21540"
+      },
+      {
+        "key": "ref36/cit36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.jproteome.0c00704"
+      },
+      {
+        "key": "ref37/cit37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btaa1093"
+      },
+      {
+        "key": "ref38/cit38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7287/peerj.preprints.27766v1"
+      },
+      {
+        "key": "ref39/cit39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.3959"
+      },
+      {
+        "key": "ref40/cit40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4398"
+      },
+      {
+        "key": "ref41/cit41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/mcp.TIR118.001132"
+      },
+      {
+        "key": "ref42/cit42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btu305"
+      },
+      {
+        "key": "ref43/cit43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3820"
+      },
+      {
+        "key": "ref44/cit44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41587-020-0439-x"
+      },
+      {
+        "key": "ref45/cit45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/mcp.R110.000133"
+      },
+      {
+        "key": "ref46/cit46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/mcp.TIR120.002048"
+      },
+      {
+        "key": "ref47/cit47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.3954"
+      },
+      {
+        "key": "ref48/cit48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2020.01.21.914788"
+      },
+      {
+        "key": "ref49/cit49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/sagmb-2013-0021"
+      },
+      {
+        "key": "ref50/cit50",
+        "unstructured": "Hagberg, A.; Schult, D.; Swart, P. Exploring Network Structure, Dynamics, and Function using NetworkX, In  Proceedings of the 7th Python in Science Conference (SciPy 2008); Varoquaux, G., Vaught, T., Millman, J., Eds. 2008; pp 11\u201315. http://conference.scipy.org/proceedings/SciPy2008/paper_2/ (accessed 2020-11-10)."
+      },
+      {
+        "key": "ref51/cit51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2020.11.03.365585"
+      },
+      {
+        "key": "ref52/cit52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pmic.201500526"
+      }
+    ],
+    "container-title": [
+      "Journal of Proteome Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.1c00123",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "unspecified"
+      },
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.1c00123",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          27
+        ]
+      ],
+      "date-time": "2021-08-27T14:09:22Z",
+      "timestamp": 1630073362000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/acs.jproteome.1c00123"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          21
+        ]
+      ]
+    },
+    "references-count": 52,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/acs.jproteome.1c00123"
+    ],
+    "URL": "http://dx.doi.org/10.1021/acs.jproteome.1c00123",
+    "relation": {},
+    "ISSN": [
+      "1535-3893",
+      "1535-3907"
+    ],
+    "issn-type": [
+      {
+        "value": "1535-3893",
+        "type": "print"
+      },
+      {
+        "value": "1535-3907",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "General Chemistry",
+      "Biochemistry"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          21
+        ]
+      ]
+    }
+  },
+  "10.1186/s13148-021-01097-3": {
+    "indexed": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2022-03-30T05:15:42Z",
+      "timestamp": 1648617342810
+    },
+    "reference-count": 17,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              12
+            ]
+          ],
+          "date-time": "2021-05-12T00:00:00Z",
+          "timestamp": 1620777600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              12
+            ]
+          ],
+          "date-time": "2021-05-12T00:00:00Z",
+          "timestamp": 1620777600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100008730",
+        "name": "Kreftforeningen",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "190157-2017"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Clin Epigenet"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>Long-term stored serum is considered challenging for epigenomic analyses: as there are no cells, circulating DNA is scarce, and amplification removes epigenetic signals. Additionally, pre-analytical treatments and storage might introduce biases and fragmentation to the DNA. In particular, starting with low-input DNA can result in low-diversity libraries. However, successful whole-genome bisulphite sequencing (WGBS) of such serum samples has the potential to open biobanks for epigenetic analyses and deliver novel prediagnostic biomarkers. Here, we perform WGBS using the Accel-NGS library preparation kit on ultralow amounts of DNA from long-term archived samples with diverse pretreatments from the Janus Serum Bank.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Results</jats:title>\n                <jats:p>Ninety-four of the 96 samples produced satisfactory methylation calls; an average of 578\u00a0M reads per sample generated a mean coverage of 17\u00d7 and mean duplication level of 35%. Failed samples were related to poor bisulphite conversion rather than to sequencing or library preparation. We demonstrate the feasibility of WGBS on ultralow DNA yields from serum samples stored up to 48\u00a0years.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusions</jats:title>\n                <jats:p>Our results show the potential of large serum biobank collections for future epigenomic studies and biomarker discovery.</jats:p>\n              </jats:sec>",
+    "DOI": "10.1186/s13148-021-01097-3",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2021-05-12T10:03:06Z",
+      "timestamp": 1620813786000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Ultralow amounts of DNA from long-term archived serum samples produce high-quality methylomes"
+    ],
+    "prefix": "10.1186",
+    "volume": "13",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-2501-5201",
+        "authenticated-orcid": false,
+        "given": "Marcin W.",
+        "family": "Wojewodzic",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Magnus",
+        "family": "Leithaug",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Marianne",
+        "family": "Lauritzen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Robert",
+        "family": "Lyle",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sofia",
+        "family": "Haglund",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Carl-Johan",
+        "family": "Rubin",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Philip A.",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Tom",
+        "family": "Grotmol",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2677-2722",
+        "authenticated-orcid": false,
+        "given": "Trine B.",
+        "family": "Rounge",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          12
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1097_CR1",
+        "doi-asserted-by": "publisher",
+        "author": "M Li",
+        "year": "2019",
+        "unstructured": "Li M, Zou D, Li Z, Gao R, Sang J, Zhang Y, et al. EWAS Atlas: a curated knowledgebase of epigenome-wide association studies. Nucleic Acids Res. 2019. https://doi.org/10.1093/nar/gky1027.",
+        "journal-title": "Nucleic Acids Res",
+        "DOI": "10.1093/nar/gky1027"
+      },
+      {
+        "key": "1097_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "521",
+        "DOI": "10.1038/s41431-019-0543-x",
+        "volume": "28",
+        "author": "TB Rounge",
+        "year": "2020",
+        "unstructured": "Rounge TB, Lauritzen M, Erlandsen SE, Langseth H, Holmen OL, Gislefoss RE. Ultralow amounts of DNA from long-term archived serum samples produce quality genotypes. Eur J Hum Genet. 2020;28:521\u20134.",
+        "journal-title": "Eur J Hum Genet"
+      },
+      {
+        "key": "1097_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "22",
+        "DOI": "10.1186/s13148-018-0455-6",
+        "volume": "10",
+        "author": "K Groen",
+        "year": "2018",
+        "unstructured": "Groen K, Lea RA, Maltby VE, Scott RJ, Lechner-Scott J. Letter to the editor: blood processing and sample storage have negligible effects on methylation. Clin Epigenet. 2018;10:22.",
+        "journal-title": "Clin Epigenet"
+      },
+      {
+        "key": "1097_CR4",
+        "first-page": "1101",
+        "volume": "46",
+        "author": "KV Hjerkind",
+        "year": "2017",
+        "unstructured": "Hjerkind KV, Gislefoss RE, Tretli S, Nystad W, Bj\u00f8rge T, Engeland A, Meyer HE, Holvik K, Ursin G, Langseth H. Cohort profile update: the Janus serum bank cohort in Norway. Int J Epidemiol. 2017;46:1101\u20132.",
+        "journal-title": "Int J Epidemiol"
+      },
+      {
+        "key": "1097_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "627",
+        "DOI": "10.1038/jhg.2016.21",
+        "volume": "61",
+        "author": "K Oexle",
+        "year": "2016",
+        "unstructured": "Oexle K. Evaluation of the evenness score in next-generation sequencing. J Hum Genet. 2016;61:627\u201332.",
+        "journal-title": "J Hum Genet"
+      },
+      {
+        "key": "1097_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1381",
+        "DOI": "10.1158/1055-9965.EPI-15-0289",
+        "volume": "24",
+        "author": "TB Rounge",
+        "year": "2015",
+        "unstructured": "Rounge TB, Lauritzen M, Langseth H, Enerly E, Lyle R, Gislefoss RE. microRNA biomarker discovery and high-throughput DNA sequencing are possible using long-term archived serum samples. Cancer Epidemiol Biomark Prev. 2015;24:1381\u20137.",
+        "journal-title": "Cancer Epidemiol Biomark Prev"
+      },
+      {
+        "key": "1097_CR7",
+        "first-page": "Unit 7.9.1\u201317",
+        "volume": "Chapter 7",
+        "author": "RP Darst",
+        "year": "2010",
+        "unstructured": "Darst RP, Pardo CE, Ai L, Brown KD, Kladde MP. Bisulfite sequencing of DNA. Curr Protoc Mol Biol. 2010;Chapter 7:Unit 7.9.1\u201317.",
+        "journal-title": "Curr Protoc Mol Biol"
+      },
+      {
+        "key": "1097_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "86",
+        "DOI": "10.1186/1471-2105-13-86",
+        "volume": "13",
+        "author": "EA Houseman",
+        "year": "2012",
+        "unstructured": "Houseman EA, Accomando WP, Koestler DC, Christensen BC, Marsit CJ, Nelson HH, et al. DNA methylation arrays as surrogate measures of cell mixture distribution. BMC Bioinform. 2012;13:86.",
+        "journal-title": "BMC Bioinform"
+      },
+      {
+        "key": "1097_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "93",
+        "DOI": "10.1186/s13148-019-0689-y",
+        "volume": "11",
+        "author": "X Liu",
+        "year": "2019",
+        "unstructured": "Liu X, Ren J, Luo N, Guo H, Zheng Y, Li J, et al. Comprehensive DNA methylation analysis of tissue of origin of plasma cell-free DNA by methylated CpG tandem amplification and sequencing (MCTA-Seq). Clin Epigenet. 2019;11:93.",
+        "journal-title": "Clin Epigenet"
+      },
+      {
+        "key": "1097_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "276",
+        "DOI": "10.1038/s41587-020-0439-x",
+        "volume": "38",
+        "author": "PA Ewels",
+        "year": "2020",
+        "unstructured": "Ewels PA, Peltzer A, Fillinger S, Patel H, Alneberg J, Wilm A, et al. The nf-core framework for community-curated bioinformatics pipelines. Nat Biotechnol. 2020;38:276\u20138.",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "key": "1097_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "10",
+        "DOI": "10.1093/bioinformatics/btr167",
+        "volume": "10",
+        "author": "F Krueger",
+        "year": "2011",
+        "unstructured": "Krueger F, Andrews SR. Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. Bioinformatics. 2011;10:10. https://doi.org/10.1093/bioinformatics/btr167.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "1097_CR12",
+        "unstructured": "Babraham bioinformatics\u2014FastQC a quality control tool for high throughput sequence data. [Cited 2021 Mar 18]. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/."
+      },
+      {
+        "key": "1097_CR13",
+        "unstructured": "FelixKrueger. FelixKrueger/TrimGalore [Internet] [Cited 2021 Mar 18]. https://github.com/FelixKrueger/TrimGalore."
+      },
+      {
+        "key": "1097_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "325",
+        "DOI": "10.1038/nmeth.2375",
+        "volume": "10",
+        "author": "T Daley",
+        "year": "2013",
+        "unstructured": "Daley T, Smith AD. Predicting the molecular complexity of sequencing libraries. Nat Methods. 2013;10:325\u20137.",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "1097_CR15",
+        "doi-asserted-by": "publisher",
+        "author": "P Ewels",
+        "year": "2016",
+        "unstructured": "Ewels P, Magnusson M, Lundin S, K\u00e4ller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016. https://doi.org/10.1093/bioinformatics/btw354.",
+        "journal-title": "Bioinformatics",
+        "DOI": "10.1093/bioinformatics/btw354"
+      },
+      {
+        "key": "1097_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "261",
+        "DOI": "10.1186/s13059-019-1827-8",
+        "volume": "20",
+        "author": "SC Hicks",
+        "year": "2019",
+        "unstructured": "Hicks SC, Irizarry RA. methylCC: technology-independent estimation of cell type composition using differentially methylated regions. Genome Biol. 2019;20:261.",
+        "journal-title": "Genome Biol"
+      },
+      {
+        "key": "1097_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "2678",
+        "DOI": "10.1093/bioinformatics/bts503",
+        "volume": "28",
+        "author": "F Garc\u00eda-Alcalde",
+        "year": "2012",
+        "unstructured": "Garc\u00eda-Alcalde F, Okonechnikov K, Carbonell J, Cruz LM, G\u00f6tz S, Tarazona S, et al. Qualimap: evaluating next-generation sequencing alignment data. Bioinformatics. 2012;28:2678\u20139.",
+        "journal-title": "Bioinformatics"
+      }
+    ],
+    "container-title": [
+      "Clinical Epigenetics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s13148-021-01097-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s13148-021-01097-3/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s13148-021-01097-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2021-05-12T10:05:48Z",
+      "timestamp": 1620813948000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-021-01097-3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          12
+        ]
+      ]
+    },
+    "references-count": 17,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1097"
+    ],
+    "URL": "http://dx.doi.org/10.1186/s13148-021-01097-3",
+    "relation": {},
+    "ISSN": [
+      "1868-7075",
+      "1868-7083"
+    ],
+    "issn-type": [
+      {
+        "value": "1868-7075",
+        "type": "print"
+      },
+      {
+        "value": "1868-7083",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Genetics (clinical)",
+      "Developmental Biology",
+      "Genetics",
+      "Molecular Biology"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "19 March 2021",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "2 May 2021",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "12 May 2021",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The study was approved by Norwegian Regional Committees for Medical and Health Research Ethics (REC 2018/442).",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethical approval"
+        }
+      },
+      {
+        "value": "Not Applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare that they have no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "107"
+  },
+  "10.1101/2021.04.21.440736": {
+    "institution": [
+      {
+        "name": "bioRxiv"
+      }
+    ],
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2023-01-13T15:50:37Z",
+      "timestamp": 1673625037509
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          22
+        ]
+      ]
+    },
+    "group-title": "Genomics",
+    "reference-count": 75,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          22
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The human genome contains more than 200,000 gene isoforms. However, different isoforms can be highly similar, and with an average length of 1.5kb remain difficult to study with short read sequencing. To systematically evaluate the ability to study the transcriptome at a resolution of individual isoforms we profiled 5 human cell lines with short read cDNA sequencing and Nanopore long read direct RNA, amplification-free direct cDNA, PCR-cDNA sequencing. The long read protocols showed a high level of consistency, with amplification-free RNA and cDNA sequencing being most similar. While short and long reads generated comparable gene expression estimates, they differed substantially for individual isoforms. We find that increased read length improves read-to-transcript assignment, identifies interactions between alternative promoters and splicing, enables the discovery of novel transcripts from repetitive regions, facilitates the quantification of full-length fusion isoforms and enables the simultaneous profiling of m6A RNA modifications when RNA is sequenced directly. Our study demonstrates the advantage of long read RNA sequencing and provides a comprehensive resource that will enable the development and benchmarking of computational methods for profiling complex transcriptional events at isoform-level resolution.</jats:p>",
+    "DOI": "10.1101/2021.04.21.440736",
+    "type": "posted-content",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          22
+        ]
+      ],
+      "date-time": "2021-04-22T18:59:25Z",
+      "timestamp": 1619117965000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 26,
+    "title": [
+      "A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines"
+    ],
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-7876-4877",
+        "authenticated-orcid": false,
+        "given": "Ying",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Nadia M.",
+        "family": "Davidson",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Yuk Kei",
+        "family": "Wan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Harshil",
+        "family": "Patel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Fei",
+        "family": "Yao",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Hwee Meng",
+        "family": "Low",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher",
+        "family": "Hendra",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Laura",
+        "family": "Watten",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Andre",
+        "family": "Sim",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Chelsea",
+        "family": "Sawyer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Viktoriia",
+        "family": "Iakovleva",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Puay Leng",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Lixia",
+        "family": "Xin",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Hui En Vanessa",
+        "family": "Ng",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jia Min",
+        "family": "Loo",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Xuewen",
+        "family": "Ong",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Hui Qi Amanda",
+        "family": "Ng",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jiaxu",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Wei Qian Casslynn",
+        "family": "Koh",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Suk Yeah Polly",
+        "family": "Poon",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Dominik",
+        "family": "Stanojevic",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Hoang-Dai",
+        "family": "Tran",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Kok Hao Edwin",
+        "family": "Lim",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Shen Yon",
+        "family": "Toh",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Philip Andrew",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Huck-Hui",
+        "family": "Ng",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "N.Gopalakrishna",
+        "family": "Iyer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Alexandre",
+        "family": "Thiery",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Wee Joo",
+        "family": "Chng",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Leilei",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ramanuj",
+        "family": "DasGupta",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mile",
+        "family": "Sikic",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Yun-Shen",
+        "family": "Chan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Boon Ooi Patrick",
+        "family": "Tan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Yue",
+        "family": "Wan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Wai Leong",
+        "family": "Tam",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Qiang",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Chiea Chuan",
+        "family": "Khor",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Torsten",
+        "family": "W\u00fcstefeld",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ploy N.",
+        "family": "Pratanwanich",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Michael I.",
+        "family": "Love",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Wee Siong Sho",
+        "family": "Goh",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sarah B.",
+        "family": "Ng",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Alicia",
+        "family": "Oshlack",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0825-4991",
+        "authenticated-orcid": false,
+        "given": "Jonathan",
+        "family": "G\u00f6ke",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "name": "SG-NEx consortium",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "reference": [
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkz1138"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aaz1776"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim-Hellmuth, S. et al. Cell type-specific genetic regulation of gene expression across human tissues. Science 369, (2020).",
+        "DOI": "10.1126/science.aaz8528"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cell.2019.08.018"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-020-1970-0"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ccell.2018.07.001"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature07509"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.8",
+        "doi-asserted-by": "crossref",
+        "first-page": "631",
+        "DOI": "10.1038/s41576-019-0150-2",
+        "article-title": "RNA sequencing: the teenage years",
+        "volume": "20",
+        "year": "2019",
+        "journal-title": "Nat. Rev. Genet."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3682"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-016-0881-8"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csbj.2020.06.014"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aaa0355"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.133744.111"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.120535.111"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.1621"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12864-017-4002-1"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.17",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1186/s12864-020-6643-8",
+        "article-title": "A large-scale comparative study of isoform expressions measured on four platforms",
+        "volume": "21",
+        "year": "2020",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bib/bbw016"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1521",
+        "DOI": "10.12688/f1000research.7563.1",
+        "article-title": "Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences",
+        "volume": "4",
+        "year": "2015",
+        "journal-title": "F1000Res."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.2705"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-020-15171-6"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-019-1910-1"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-019-11272-z"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.24",
+        "doi-asserted-by": "crossref",
+        "first-page": "1297",
+        "DOI": "10.1038/s41592-019-0617-2",
+        "article-title": "Nanopore native RNA sequencing of a human poly(A) transcriptome",
+        "volume": "16",
+        "year": "2019",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-018-1462-9"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth. 4577"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.27",
+        "doi-asserted-by": "crossref",
+        "first-page": "792",
+        "DOI": "10.1038/nmeth.3958",
+        "article-title": "Spliced synthetic genes as internal controls in RNA sequencing experiments",
+        "volume": "13",
+        "year": "2016",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3820"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41587-020-0439-x"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nrc2091"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1124",
+        "DOI": "10.1080/15476286.2016.1251543",
+        "article-title": "Next-generation sequencing technologies for detection of modified nucleotides in RNAs",
+        "volume": "14",
+        "year": "2017",
+        "journal-title": "RNA Biol."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.3444"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pratanwanich, P. N. , Yao, F. , Chen, Y. , Koh, C. W. Q. & Hendra, C. Detection of differential RNA modifications from direct RNA sequencing of human cell lines. bioRxiv (2020).",
+        "DOI": "10.1101/2020.06.18.160010"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12943-018-0930-x"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41576-018-0050-x"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41576-020-0251-y"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.stem.2015.01.005"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41588-019-0373-3"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/scitranslmed.aac8201"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.15252/embr.201642743"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.41",
+        "doi-asserted-by": "crossref",
+        "first-page": "539",
+        "DOI": "10.1146/annurev-genet-040620-022145",
+        "article-title": "A Field Guide to Eukaryotic Transposable Elements",
+        "volume": "54",
+        "year": "2020",
+        "journal-title": "Annu. Rev. Genet."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1164",
+        "DOI": "10.1093/bib/bbz058",
+        "article-title": "Comparative assessment of long-read error correction software applied to Nanopore RNA-sequencing data",
+        "volume": "21",
+        "year": "2020",
+        "journal-title": "Brief. Bioinform."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btu538"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12859-017-1610-3"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5281/zenodo.3900025"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/672931"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.47",
+        "doi-asserted-by": "crossref",
+        "first-page": "747",
+        "DOI": "10.1038/s41587-020-0469-4",
+        "article-title": "Benchmarking single-cell RNA-sequencing protocols for cell atlas projects",
+        "volume": "38",
+        "year": "2020",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.48",
+        "doi-asserted-by": "crossref",
+        "first-page": "74",
+        "DOI": "10.1186/s13059-020-01981-w",
+        "article-title": "Obstacles to detecting isoforms using full-length scRNA-seq data",
+        "volume": "21",
+        "year": "2020",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.49",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Buen Abad Najar, C. F. , Yosef, N. & Lareau, L. F. Coverage-dependent bias creates the appearance of binary splicing in single cells. Elife 9, (2020).",
+        "DOI": "10.7554/eLife.54603"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.50",
+        "doi-asserted-by": "crossref",
+        "first-page": "4025",
+        "DOI": "10.1038/s41467-020-17800-6",
+        "article-title": "High throughput error corrected Nanopore single cell transcriptome sequencing",
+        "volume": "11",
+        "year": "2020",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1806447115"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3838"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.53",
+        "first-page": "1438",
+        "article-title": "From reads to genes to pathways: differential expression analysis of RNA-Seq experiments using Rsubread and the edgeR quasi-likelihood pipeline",
+        "volume": "5",
+        "year": "2016",
+        "journal-title": "F1000Res."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-020-1935-5"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.55",
+        "unstructured": "Smit, A. F. A. , Hubley, R. & Green, P. RepeatMasker. (1996)."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5281/zenodo.4249716"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-019-1727-y"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/bty191"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pcbi.1003118"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-014-0550-8"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1307202110"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.62",
+        "doi-asserted-by": "crossref",
+        "first-page": "1356",
+        "DOI": "10.12688/f1000research.8900.2",
+        "article-title": "DRIMSeq: a Dirichlet-multinomial framework for multivariate count outcomes in genomics",
+        "volume": "5",
+        "year": "2016",
+        "journal-title": "F1000Res."
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13073-015-0167-x"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/gb-2011-12-1-r6"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0048745"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pcbi.1002464"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.0904720106"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.113225.110"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkr362"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0039987"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.71",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1593/tlo.13457"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.72",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0091264"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.73",
+        "doi-asserted-by": "crossref",
+        "first-page": "1379",
+        "DOI": "10.1016/j.omtn.2020.01.023",
+        "article-title": "Pan-Cancer Analysis Reveals the Diverse Landscape of Novel Sense and Antisense Fusion Transcripts",
+        "volume": "19",
+        "year": "2020",
+        "journal-title": "Mol. Ther. Nucleic Acids"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btx469"
+      },
+      {
+        "key": "2021042404201416000_2021.04.21.440736v1.75",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btw313"
+      }
+    ],
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/2021.04.21.440736",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2021-04-24T11:21:01Z",
+      "timestamp": 1619263261000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://biorxiv.org/lookup/doi/10.1101/2021.04.21.440736"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          22
+        ]
+      ]
+    },
+    "references-count": 75,
+    "URL": "http://dx.doi.org/10.1101/2021.04.21.440736",
+    "relation": {},
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          22
+        ]
+      ]
+    },
+    "subtype": "preprint"
+  },
+  "10.1038/s41591-020-0929-x": {
+    "indexed": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          6
+        ]
+      ],
+      "date-time": "2022-12-06T05:44:02Z",
+      "timestamp": 1670305442455
+    },
+    "reference-count": 14,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              2
+            ]
+          ],
+          "date-time": "2020-06-02T00:00:00Z",
+          "timestamp": 1591056000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              2
+            ]
+          ],
+          "date-time": "2020-06-02T00:00:00Z",
+          "timestamp": 1591056000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Med"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41591-020-0929-x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          2
+        ]
+      ],
+      "date-time": "2020-06-02T10:06:02Z",
+      "timestamp": 1591092362000
+    },
+    "page": "1161-1165",
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 20,
+    "title": [
+      "Building an international consortium for tracking coronavirus health status"
+    ],
+    "prefix": "10.1038",
+    "volume": "26",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-6859-1164",
+        "authenticated-orcid": false,
+        "given": "Eran",
+        "family": "Segal",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Feng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7067-7752",
+        "authenticated-orcid": false,
+        "given": "Xihong",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-5327-7631",
+        "authenticated-orcid": false,
+        "given": "Gary",
+        "family": "King",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2267-0801",
+        "authenticated-orcid": false,
+        "given": "Ophir",
+        "family": "Shalem",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Smadar",
+        "family": "Shilo",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "William E.",
+        "family": "Allen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Faisal",
+        "family": "Alquaddoomi",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Han",
+        "family": "Altae-Tran",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4868-1805",
+        "authenticated-orcid": false,
+        "given": "Simon",
+        "family": "Anders",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ran",
+        "family": "Balicer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Tal",
+        "family": "Bauman",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4950-6825",
+        "authenticated-orcid": false,
+        "given": "Ximena",
+        "family": "Bonilla",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9987-9470",
+        "authenticated-orcid": false,
+        "given": "Gisel",
+        "family": "Booman",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7284-6767",
+        "authenticated-orcid": false,
+        "given": "Andrew T.",
+        "family": "Chan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ori",
+        "family": "Cohen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Silvano",
+        "family": "Coletti",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Natalie",
+        "family": "Davidson",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Yuval",
+        "family": "Dor",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-8813-0816",
+        "authenticated-orcid": false,
+        "given": "David A.",
+        "family": "Drew",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Olivier",
+        "family": "Elemento",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Georgina",
+        "family": "Evans",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": false,
+        "given": "Phil",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Joshua",
+        "family": "Gale",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Amir",
+        "family": "Gavrieli",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Benjamin",
+        "family": "Geiger",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5646-1314",
+        "authenticated-orcid": false,
+        "given": "Yonatan H.",
+        "family": "Grad",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Casey S.",
+        "family": "Greene",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Iman",
+        "family": "Hajirasouliha",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6337-5251",
+        "authenticated-orcid": false,
+        "given": "Roman",
+        "family": "Jerala",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Andre",
+        "family": "Kahles",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Olli",
+        "family": "Kallioniemi",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ayya",
+        "family": "Keshet",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ljupco",
+        "family": "Kocarev",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Gregory",
+        "family": "Landua",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Tomer",
+        "family": "Meir",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Aline",
+        "family": "Muller",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Long H.",
+        "family": "Nguyen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2856-9165",
+        "authenticated-orcid": false,
+        "given": "Matej",
+        "family": "Oresic",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Svetlana",
+        "family": "Ovchinnikova",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9951-5116",
+        "authenticated-orcid": false,
+        "given": "Hedi",
+        "family": "Peterson",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jana",
+        "family": "Prodanova",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jay",
+        "family": "Rajagopal",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Gunnar",
+        "family": "R\u00e4tsch",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Hagai",
+        "family": "Rossman",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5875-8429",
+        "authenticated-orcid": false,
+        "given": "Johan",
+        "family": "Rung",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Andrea",
+        "family": "Sboner",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-7607-559X",
+        "authenticated-orcid": false,
+        "given": "Alexandros",
+        "family": "Sigaras",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-9795-0365",
+        "authenticated-orcid": false,
+        "given": "Tim",
+        "family": "Spector",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ron",
+        "family": "Steinherz",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Irene",
+        "family": "Stevens",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5604-4107",
+        "authenticated-orcid": false,
+        "given": "Jaak",
+        "family": "Vilo",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Paul",
+        "family": "Wilmes",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "929_CR1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Tariq, A. et al. medRxiv https://doi.org/10.1101/2020.02.21.20026435 (2020).",
+        "DOI": "10.1101/2020.02.21.20026435"
+      },
+      {
+        "key": "929_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2124",
+        "DOI": "10.2105/AJPH.2015.302696",
+        "volume": "105",
+        "author": "MS Smolinski",
+        "year": "2015",
+        "unstructured": "Smolinski, M. S. et al. Am. J. Public Health 105, 2124\u20132130 (2015).",
+        "journal-title": "Am. J. Public Health"
+      },
+      {
+        "key": "929_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "638",
+        "DOI": "10.1126/science.abb6105",
+        "volume": "368",
+        "author": "H Tian",
+        "year": "2020",
+        "unstructured": "Tian, H. et al. Science 368, 638\u2013642 (2020).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "929_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "1708",
+        "DOI": "10.1056/NEJMoa2002032",
+        "volume": "382",
+        "author": "W-J Guan",
+        "year": "2020",
+        "unstructured": "Guan, W.-J. et al. N. Engl. J. Med. 382, 1708\u20131720 (2020).",
+        "journal-title": "N. Engl. J. Med."
+      },
+      {
+        "key": "929_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1239",
+        "DOI": "10.1001/jama.2020.2648",
+        "volume": "323",
+        "author": "Z Wu",
+        "year": "2020",
+        "unstructured": "Wu, Z. & McGoogan, J. M. JAMA 323, 1239\u20131242 (2020).",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "929_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1343",
+        "DOI": "10.1001/jama.2020.3413",
+        "volume": "323",
+        "author": "AA Adalja",
+        "year": "2020",
+        "unstructured": "Adalja, A. A., Toner, E. & Inglesby, T. V. JAMA 323, 1343\u20131344 (2020).",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "929_CR7",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Gudbjartsson, D. F. et al. N. Engl. J. Med. https://doi.org/10.1056/NEJMoa2006100 (2020).",
+        "DOI": "10.1056/NEJMoa2006100"
+      },
+      {
+        "key": "929_CR8",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Mizumoto, K., Kagaya, K., Zarebski, A. & Chowell, G. Eurosurveillance https://doi.org/10.2807/1560-7917.ES.2020.25.10.2000180 (2020).",
+        "DOI": "10.2807/1560-7917.ES.2020.25.10.2000180"
+      },
+      {
+        "key": "929_CR9",
+        "doi-asserted-by": "publisher",
+        "author": "D Sutton",
+        "year": "2020",
+        "unstructured": "Sutton, D., Fuchs, K., D\u2019Alton, M. & Goffman, D. N. Engl. J. Med. https://doi.org/10.1056/NEJMc2009316 (2020).",
+        "journal-title": "N. Engl. J. Med.",
+        "DOI": "10.1056/NEJMc2009316"
+      },
+      {
+        "key": "929_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "634",
+        "DOI": "10.1038/s41591-020-0857-9",
+        "volume": "26",
+        "author": "H Rossman",
+        "year": "2020",
+        "unstructured": "Rossman, H. et al. Nat. Med. 26, 634\u2013638 (2020).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "929_CR11",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Drew, D. A. et al. Science https://doi.org/10.1126/science.abc0473 (2020).",
+        "DOI": "10.1126/science.abc0473"
+      },
+      {
+        "key": "929_CR12",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Menni, C. et al. Nat. Med. https://doi.org/10.1038/s41591-020-0916-2 (2020).",
+        "DOI": "10.1038/s41591-020-0916-2"
+      },
+      {
+        "key": "929_CR13",
+        "first-page": "35",
+        "volume": "6",
+        "author": "FK Dankar",
+        "year": "2013",
+        "unstructured": "Dankar, F. K. & El Emam, K. Trans. Data Priv. 6, 35\u201367 (2013).",
+        "journal-title": "Trans. Data Priv."
+      },
+      {
+        "key": "929_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "78",
+        "DOI": "10.1214/07-STS247",
+        "volume": "23",
+        "author": "G King",
+        "year": "2008",
+        "unstructured": "King, G. & Lu, Y. Stat. Sci. 23, 78\u201391 (2008).",
+        "journal-title": "Stat. Sci."
+      }
+    ],
+    "container-title": [
+      "Nature Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/s41591-020-0929-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41591-020-0929-x",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41591-020-0929-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          2
+        ]
+      ],
+      "date-time": "2021-12-02T13:31:48Z",
+      "timestamp": 1638451908000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.nature.com/articles/s41591-020-0929-x"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          2
+        ]
+      ]
+    },
+    "references-count": 14,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "929"
+    ],
+    "URL": "http://dx.doi.org/10.1038/s41591-020-0929-x",
+    "relation": {},
+    "ISSN": [
+      "1078-8956",
+      "1546-170X"
+    ],
+    "issn-type": [
+      {
+        "value": "1078-8956",
+        "type": "print"
+      },
+      {
+        "value": "1546-170X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Medicine"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          2
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2 June 2020",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "26 June 2020",
+        "order": 2,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Correction",
+        "order": 3,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "A Correction to this paper has been published:",
+        "order": 4,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "https://doi.org/10.1038/s41591-020-0983-4",
+        "URL": "https://doi.org/10.1038/s41591-020-0983-4",
+        "order": 5,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      },
+      {
+        "value": "This content has been made available to all.",
+        "name": "free",
+        "label": "Free to read"
+      }
+    ]
+  },
+  "10.1038/s41587-020-0439-x": {
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          16
+        ]
+      ],
+      "date-time": "2023-01-16T01:09:42Z",
+      "timestamp": 1673831382634
+    },
+    "reference-count": 20,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              13
+            ]
+          ],
+          "date-time": "2020-02-13T00:00:00Z",
+          "timestamp": 1581552000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              13
+            ]
+          ],
+          "date-time": "2020-02-13T00:00:00Z",
+          "timestamp": 1581552000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100010661",
+        "name": "EC | Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "815668 (BovReg)"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "KO-2313/6-2",
+          "398967434\u2013TRR 261",
+          "Liver Cancer SFB/TR 209"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Biotechnol"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41587-020-0439-x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          13
+        ]
+      ],
+      "date-time": "2020-02-13T17:03:06Z",
+      "timestamp": 1581613386000
+    },
+    "page": "276-278",
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 428,
+    "title": [
+      "The nf-core framework for community-curated bioinformatics pipelines"
+    ],
+    "prefix": "10.1038",
+    "volume": "38",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": false,
+        "given": "Philip A.",
+        "family": "Ewels",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6503-2180",
+        "authenticated-orcid": false,
+        "given": "Alexander",
+        "family": "Peltzer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8835-2219",
+        "authenticated-orcid": false,
+        "given": "Sven",
+        "family": "Fillinger",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2707-7940",
+        "authenticated-orcid": false,
+        "given": "Harshil",
+        "family": "Patel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Johannes",
+        "family": "Alneberg",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Andreas",
+        "family": "Wilm",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2827-9261",
+        "authenticated-orcid": false,
+        "given": "Maxime Ulysse",
+        "family": "Garcia",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Paolo",
+        "family": "Di Tommaso",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4375-0691",
+        "authenticated-orcid": false,
+        "given": "Sven",
+        "family": "Nahnsen",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          13
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "439_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "358",
+        "DOI": "10.1038/s41587-019-0080-8",
+        "volume": "37",
+        "author": "S-A Sansone",
+        "year": "2019",
+        "unstructured": "Sansone, S.-A. et al. Nat. Biotechnol. 37, 358\u2013367 (2019).",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "439_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "513",
+        "DOI": "10.1038/d41586-018-05990-5",
+        "volume": "560",
+        "author": "JM Perkel",
+        "year": "2018",
+        "unstructured": "Perkel, J. M. Nature 560, 513\u2013515 (2018).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "439_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "452",
+        "DOI": "10.1038/533452a",
+        "volume": "533",
+        "author": "M Baker",
+        "year": "2016",
+        "unstructured": "Baker, M. Nature 533, 452\u2013454 (2016).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "439_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "D38",
+        "DOI": "10.1093/nar/gkv1116",
+        "volume": "44",
+        "author": "J Ison",
+        "year": "2016",
+        "unstructured": "Ison, J. et al. Nucleic Acids Res. 44, D38\u2013D47 (2016).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "issue": "0",
+        "key": "439_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "bau069",
+        "DOI": "10.1093/database/bau069",
+        "volume": "2014",
+        "author": "V. J. Henry",
+        "year": "2014",
+        "unstructured": "Henry, V.J., Bandrowski, A.E., Pepin, A.-S., Gonzalez, B.J. & Desfeux, A. Database (Oxford) https://doi.org/10.1093/database/bau069 (2014).",
+        "journal-title": "Database"
+      },
+      {
+        "key": "439_CR6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/gb4161",
+        "volume": "15",
+        "author": "D Blankenberg",
+        "year": "2014",
+        "unstructured": "Blankenberg, D. et al. Genome Biol. 15, 403 (2014).",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "key": "439_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "11.10.1",
+        "DOI": "10.1002/0471250953.bi1110s43",
+        "volume": "43",
+        "author": "GA Van der Auwera",
+        "year": "2013",
+        "unstructured": "Van der Auwera, G. A. et al. Curr. Protoc. Bioinforma. 43, 11.10.1\u201311.10.33 (2013).",
+        "journal-title": "Curr. Protoc. Bioinforma."
+      },
+      {
+        "key": "439_CR8",
+        "first-page": "530",
+        "volume": "18",
+        "author": "J Leipzig",
+        "year": "2017",
+        "unstructured": "Leipzig, J. Brief. Bioinform. 18, 530\u2013536 (2017).",
+        "journal-title": "Brief. Bioinform."
+      },
+      {
+        "key": "439_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "316",
+        "DOI": "10.1038/nbt.3820",
+        "volume": "35",
+        "author": "P Di Tommaso",
+        "year": "2017",
+        "unstructured": "Di Tommaso, P. et al. Nat. Biotechnol. 35, 316\u2013319 (2017).",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "439_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "614",
+        "DOI": "10.3389/fgene.2019.00614",
+        "volume": "10",
+        "author": "A Federico",
+        "year": "2019",
+        "unstructured": "Federico, A. et al. Front. Genet. 10, 614 (2019).",
+        "journal-title": "Front. Genet."
+      },
+      {
+        "key": "439_CR11",
+        "unstructured": "K\u00f6ster, J. & Rahmann, S. in German Conference on Bioinformatics 2012 (Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2012)."
+      },
+      {
+        "key": "439_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "W537",
+        "DOI": "10.1093/nar/gky379",
+        "volume": "46",
+        "author": "E Afgan",
+        "year": "2018",
+        "unstructured": "Afgan, E. et al. Nucleic Acids Res. 46, W537\u2013W544 (2018).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "439_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "D726",
+        "DOI": "10.1093/nar/gkv1160",
+        "volume": "44",
+        "author": "CA Sloan",
+        "year": "2016",
+        "unstructured": "Sloan, C. A. et al. Nucleic Acids Res. 44, D726\u2013D732 (2016).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "439_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "631",
+        "DOI": "10.1016/j.cels.2018.03.014",
+        "volume": "6",
+        "author": "B Gr\u00fcning",
+        "year": "2018",
+        "unstructured": "Gr\u00fcning, B. et al. Cell Syst. 6, 631\u2013635 (2018).",
+        "journal-title": "Cell Syst."
+      },
+      {
+        "key": "439_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "232",
+        "DOI": "10.1007/s41019-017-0050-4",
+        "volume": "2",
+        "author": "S M\u00f6ller",
+        "year": "2017",
+        "unstructured": "M\u00f6ller, S. et al. Data Sci. Eng. 2, 232\u2013244 (2017).",
+        "journal-title": "Data Sci. Eng."
+      },
+      {
+        "key": "439_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1001745",
+        "DOI": "10.1371/journal.pbio.1001745",
+        "volume": "12",
+        "author": "G Wilson",
+        "year": "2014",
+        "unstructured": "Wilson, G. et al. PLoS Biol. 12, e1001745 (2014).",
+        "journal-title": "PLoS Biol."
+      },
+      {
+        "key": "439_CR17",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Potter, M. & Smith, T. Zenodo https://doi.org/10.5281/zenodo.45042 (2015).",
+        "DOI": "10.5281/zenodo.45042"
+      },
+      {
+        "key": "439_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "475",
+        "DOI": "10.1038/s41592-018-0046-7",
+        "volume": "15",
+        "author": "B Gr\u00fcning",
+        "year": "2018",
+        "unstructured": "Gr\u00fcning, B. et al. Nat. Methods 15, 475\u2013476 (2018).",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "439_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "52",
+        "DOI": "10.12688/f1000research.10137.1",
+        "volume": "6",
+        "author": "BD O\u2019Connor",
+        "year": "2017",
+        "unstructured": "O\u2019Connor, B. D. et al. F1000 Res. 6, 52 (2017).",
+        "journal-title": "F1000 Res."
+      },
+      {
+        "key": "439_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "2580",
+        "DOI": "10.1093/bioinformatics/btx192",
+        "volume": "33",
+        "author": "F da Veiga Leprevost",
+        "year": "2017",
+        "unstructured": "da Veiga Leprevost, F. et al. Bioinformatics 33, 2580\u20132582 (2017).",
+        "journal-title": "Bioinformatics"
+      }
+    ],
+    "container-title": [
+      "Nature Biotechnology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/s41587-020-0439-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41587-020-0439-x",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41587-020-0439-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          2
+        ]
+      ],
+      "date-time": "2021-12-02T13:58:01Z",
+      "timestamp": 1638453481000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.nature.com/articles/s41587-020-0439-x"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          13
+        ]
+      ]
+    },
+    "references-count": 20,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "439"
+    ],
+    "URL": "http://dx.doi.org/10.1038/s41587-020-0439-x",
+    "relation": {},
+    "ISSN": [
+      "1087-0156",
+      "1546-1696"
+    ],
+    "issn-type": [
+      {
+        "value": "1087-0156",
+        "type": "print"
+      },
+      {
+        "value": "1546-1696",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Biomedical Engineering",
+      "Molecular Medicine",
+      "Applied Microbiology and Biotechnology",
+      "Bioengineering",
+      "Biotechnology"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          13
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "13 February 2020",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      }
+    ]
+  }
 }
