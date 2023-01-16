@@ -1,0 +1,57 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Author from "../components/Author.astro";
+
+export interface Props {
+  content: {
+    doi: string;
+    slug: string;
+    title: string;
+    description?: string;
+    journal: string;
+    pubDate?: string;
+    updatedDate?: string;
+    heroImage?: string;
+    iconImage?: string;
+  };
+}
+
+const {
+  content: { doi, slug, title, description, journal, pubDate, updatedDate, heroImage, iconImage },
+} = Astro.props;
+
+// Get data for this publication
+import publications from "../pages/publications/publications.json";
+const pub = publications[doi];
+const pub_year = pub.published["date-parts"][0][0];
+---
+
+<BaseLayout title={title} description={description}>
+  <h1 class="mb-4 text-xl font-bold md:text-3xl">{title}</h1>
+  <h2 class="mb-2"><span class="mr-2 italic">{journal}</span> ({pub_year})</h2>
+  <h3 class="mb-4"><ul class="authors">{pub.author.map((author) => <Author author={author} />)}</ul></h3>
+
+  <div class="columns-1 py-8 md:columns-2">
+    <div>
+      <span class="__dimensions_badge_embed__" data-doi={doi} data-hide-zero-citations="true" data-legend="always"
+      ></span>
+      <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+    </div>
+
+    <div class="py-5 md:text-right"><a class="btn" href={pub.URL}>DOI: {doi}</a></div>
+  </div>
+  <slot />
+</BaseLayout>
+
+<style lang="scss" is:global>
+  .authors {
+    li {
+      display: inline;
+      margin-right: 0.5rem;
+    }
+    li:not(:last-child):after {
+      content: ", ";
+      margin-left: -0.1rem;
+    }
+  }
+</style>

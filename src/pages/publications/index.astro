@@ -4,37 +4,45 @@ import PageTitle from "../../components/PageTitle.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 
 import publications from "./publications.json";
+const pubs = (await Astro.glob("./**/*.{md,mdx}")).sort(
+  (a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
+);
+var year = null;
 
-for (var i = 0; i < publications.length; i++) {
-  const response = await fetch("https://api.crossref.org/works/" + publications[i].doi);
-  const data = await response.json();
-  const pub = data.message;
-  publications[i]["title"] = pub.title[0];
-  publications[i]["journal"] = pub["container-title"].length ? pub["container-title"] : pub["institution"][0]["name"];
-  publications[i]["pub_year"] = pub.published["date-parts"][0][0];
-  var authors = pub.author;
+function short_authors(authors) {
   const num_authors = 10;
   if (authors.length > num_authors) {
     authors = authors.slice(0, num_authors - 1).concat({ family: "..." }, authors.slice(-1));
   }
-  publications[i]["authors"] = authors.map((author) =>
-    author.family ? author.family + " " + (author.given ?? "" ? author.given.substr(0, 1) : "") : author.name
-  );
+  return authors
+    .map((author) =>
+      author.family ? author.family + " " + (author.given ?? "" ? author.given.substr(0, 1) : "") : author.name
+    )
+    .join(", ");
 }
 ---
 
 <BaseLayout title="Publications">
   <PageTitle>Publications</PageTitle>
   {
-    publications.map((pub) => (
-      <>
-        <HorizontalCard
-          title={pub.title}
-          subtitle={pub.journal + " (" + pub.pub_year + ")"}
-          desc={pub.authors.join(", ")}
-          url={"/publications/" + pub.slug}
-        />
-      </>
-    ))
+    pubs.map((post) => {
+      const pub = publications[post.frontmatter.doi];
+      var year_heading = null;
+      if (year != pub.published["date-parts"][0][0]) {
+        year = pub.published["date-parts"][0][0];
+        year_heading = year;
+      }
+      return (
+        <>
+          {year_heading && <h2 class="my-4 text-2xl font-bold">{year_heading}</h2>}
+          <HorizontalCard
+            title={post.frontmatter.title}
+            subtitle={post.frontmatter + " (" + pub.published["date-parts"][0][0] + ")"}
+            desc={short_authors(pub.authors)}
+            url={post.url}
+          />
+        </>
+      );
+    })
   }
 </BaseLayout>
