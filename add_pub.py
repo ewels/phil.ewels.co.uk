@@ -81,7 +81,9 @@ def fetch_publication(doi: str):
                     if yaml_data and yaml_data.get("doi", "") == doi:
                         return filepath
             elif filepath.is_dir():
-                check_pubs_directory(filepath, doi)
+                md_path = check_pubs_directory(filepath, doi)
+                if md_path is not None:
+                    return md_path
 
     root_directory = Path("src/pages/publications/")
     md_path = check_pubs_directory(root_directory, doi)
@@ -89,6 +91,8 @@ def fetch_publication(doi: str):
     if md_path is None:
         md_exists = False
         md_path = root_directory / str(pub_year) / f"{slug}.md"
+    else:
+        print(f"Found DOI '{doi}': [yellow]{md_path}")
 
     return (pub, slug, journal, md_path, md_exists)
 
@@ -103,7 +107,7 @@ def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict)
         "pubDate": "{}-{}-{}".format(*pub["published"]["date-parts"][0]),
     }
     # Create the publication markdown file
-    print(f"[green]Creating {md_path}")
+    print(f"[magenta]Creating [green]'{doi}': [yellow]{md_path}")
     md_path.parent.mkdir(parents=True, exist_ok=True)
     with md_path.open("w") as f:
         f.write("---\n")
