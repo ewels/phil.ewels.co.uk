@@ -59,12 +59,11 @@ def fetch_publication(doi: str):
     pub_year = pub["published"]["date-parts"][0][0]
 
     # Build a slug from the first author surname and the year
-    slug = (
-        "{}-{}".format(pub["author"][0]["family"], journal)
-        .lower()
-        .replace(" ", "-")
-        .replace("--", "-")
-    )
+    try:
+        slug = "{}-{}".format(pub["author"][0]["family"], journal)
+    except KeyError:
+        slug = "{}-{}".format(journal, pub_year)
+    slug = slug.lower().replace(" ", "-").replace("--", "-").replace(',','')
 
     # Check if we already have are markdown file for this DOI
     def check_pubs_directory(directory, doi):
