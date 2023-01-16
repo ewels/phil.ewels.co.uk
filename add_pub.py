@@ -5,36 +5,51 @@ from rich import print
 import requests
 import typer
 import yaml
+import re
+import json
+from typing import Optional
 
 
-def main(doi: str):
-    print(f"Adding publication: '{doi}'")
+def main(doi: Optional[str] = typer.Argument(None)):
+
+    # Load publications.json file
+    with open("src/pages/publications/publications.json") as f:
+        publications = json.load(f)
+
+    # Only do all DOIs if one wasn't requested
+    if doi is None:
+        print(f"[green]Updating all publications")
+        dois = publications.keys()
+    else:
+        print(f"[green]Adding publication: '{doi}'")
+        dois = [doi]
+
+    # Go through requested DOIs
+    for doi in dois:
+        # Get info from crossref
+        fetch_pub = fetch_publication(doi)
+        if not fetch_pub:
+            exit(1)
+        pub, slug, journal, md_path, md_exists = fetch_pub
+        publications[doi] = pub
+        # Create the markdown file if it doesn't exist
+        if not md_exists:
+            create_markdown(md_path, doi, slug, journal, pub)
+
+    # Save the publications.json file
+    with open("src/pages/publications/publications.json", "w") as f:
+        json.dump(publications, f, indent=2)
+
+
+def fetch_publication(doi: str):
 
     # Fetch the DOI from the Crossref API
     response = requests.get(f"https://api.crossref.org/works/{doi}")
     if response.status_code == 404:
-        print(f"DOI not found: {doi}")
-        exit(1)
+        print(f"[red]DOI not found: {doi}")
+        return False
     data = response.json()
     pub = data["message"]
-
-    # Parse the authors nicely
-    authors_data = pub["author"]
-    max_authors = 10
-    if len(authors_data) > max_authors:
-        authors_data = "{}...{}".format(
-            authors_data[0, max_authors - 1], authors_data[-1]
-        )
-    authors = []
-    for author in authors_data:
-        if "family" in author:
-            authors.append(
-                "{} {}".format(
-                    author["family"], author["given"][0] if "given" in author else ""
-                )
-            )
-        else:
-            authors.append(author["name"])
 
     # Clean journal name and publication year
     if len(pub.get("container-title", "")):
@@ -45,24 +60,13 @@ def main(doi: str):
 
     # Build a slug from the first author surname and the year
     slug = (
-        "{}-{}".format(authors_data[0]["family"], journal)
+        "{}-{}".format(pub["author"][0]["family"], journal)
         .lower()
         .replace(" ", "-")
         .replace("--", "-")
     )
 
-    # Build the publication dict
-    publication = {
-        "doi": doi,
-        "slug": slug,
-        "title": pub["title"][0],
-        "journal": journal,
-        "pub_year": pub_year,
-        "authors_short_text": ", ".join(authors),
-        "pub": pub,
-    }
-
-    # Check if we don't already have this publication
+    # Check if we already have are markdown file for this DOI
     def check_pubs_directory(directory, doi):
         for filepath in directory.iterdir():
             if filepath.is_file() and filepath.suffix == ".md":
@@ -75,29 +79,56 @@ def main(doi: str):
                         yaml_lines.append(line)
                     yaml_data = yaml.safe_load("\n".join(yaml_lines))
                     if yaml_data and yaml_data.get("doi", "") == doi:
-                        print(f"Error: Publication already exists: {filepath}")
-                        exit(1)
+                        return filepath
             elif filepath.is_dir():
                 check_pubs_directory(filepath, doi)
 
     root_directory = Path("src/pages/publications/")
-    check_pubs_directory(root_directory, doi)
-    print("No existing publication found")
+    md_path = check_pubs_directory(root_directory, doi)
+    md_exists = True
+    if md_path is None:
+        md_exists = False
+        md_path = root_directory / str(pub_year) / f"{slug}.md"
 
-    # Create the publication directory
-    publication_directory = root_directory / str(pub_year)
-    publication_directory.mkdir(parents=True, exist_ok=True)
+    return (pub, slug, journal, md_path, md_exists)
 
+
+def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict):
+    frontmatter = {
+        "layout": "../../layouts/PublicationLayout.astro",
+        "doi": doi,
+        "slug": slug,
+        "title": pub["title"][0],
+        "journal": journal,
+        "pubYear": pub["published"]["date-parts"][0][0],
+        "pubDate": "{}-{}-{}".format(*pub["published"]["date-parts"][0]),
+    }
     # Create the publication markdown file
-    publication_filepath = publication_directory / f"{slug}.md"
-    print(f"Creating {publication_filepath}")
-    with publication_filepath.open("w") as f:
+    print(f"[green]Creating {md_path}")
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    with md_path.open("w") as f:
         f.write("---\n")
-        f.write(yaml.dump(publication, sort_keys=False))
-        f.write("---\n")
+        f.write(yaml.dump(frontmatter, sort_keys=False, width=180))
+        f.write("---\n\n")
+        abstract_replace = {
+            "<jats:title>": "## ",
+            "</jats:title>": "\n",
+            "<jats:sec>": "\n",
+            "</jats:sec>": "\n",
+            "<jats:p>": "\n",
+            "</jats:p>": "\n\n",
+            "<jats:italic>": "_",
+            "</jats:italic>": "_",
+            "<jats:bold>": "**",
+            "</jats:bold>": "**",
+        }
         if "abstract" in pub:
-            f.write(pub["abstract"] + "\n")
-    print(publication)
+            abstract = pub["abstract"]
+            for k, v in abstract_replace.items():
+                abstract = abstract.replace(k, v)
+            abstract = "\n".join([l.strip() for l in abstract.splitlines()])
+            abstract = re.sub(r"\n\n+", r"\n\n", abstract)
+            f.write(abstract + "\n")
 
 
 if __name__ == "__main__":
