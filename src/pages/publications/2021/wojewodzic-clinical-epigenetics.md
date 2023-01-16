@@ -21,5 +21,3 @@ Ninety-four of the 96 samples produced satisfactory methylation calls; an averag
 ## Conclusions
 
 Our results show the potential of large serum biobank collections for future epigenomic studies and biomarker discovery.
-
-

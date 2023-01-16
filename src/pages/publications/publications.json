@@ -1,13 +1,7 @@
 {
   "10.1021/acs.jproteome.1c00123": {
     "indexed": {
-      "date-parts": [
-        [
-          2023,
-          1,
-          16
-        ]
-      ],
+      "date-parts": [[2023, 1, 16]],
       "date-time": "2023-01-16T19:51:32Z",
       "timestamp": 1673898692999
     },
@@ -17,13 +11,7 @@
     "license": [
       {
         "start": {
-          "date-parts": [
-            [
-              2021,
-              6,
-              21
-            ]
-          ],
+          "date-parts": [[2021, 6, 21]],
           "date-time": "2021-06-21T00:00:00Z",
           "timestamp": 1624233600000
         },
@@ -37,9 +25,7 @@
         "DOI": "10.13039/501100002347",
         "name": "Bundesministerium f\u00fcr Bildung und Forschung",
         "doi-asserted-by": "publisher",
-        "award": [
-          "FKZ: 31A535A"
-        ]
+        "award": ["FKZ: 31A535A"]
       },
       {
         "DOI": "10.13039/501100001645",
@@ -50,9 +36,7 @@
         "DOI": "10.13039/501100001659",
         "name": "Deutsche Forschungsgemeinschaft",
         "doi-asserted-by": "publisher",
-        "award": [
-          "EXC 2180 \u2013 390900677"
-        ]
+        "award": ["EXC 2180 \u2013 390900677"]
       },
       {
         "name": "Chan Zuckerberg Initiative program \u201cEssential Open-Source Software for Science (EOSS)\u201d"
@@ -62,28 +46,14 @@
       "domain": [],
       "crossmark-restriction": false
     },
-    "short-container-title": [
-      "J. Proteome Res."
-    ],
+    "short-container-title": ["J. Proteome Res."],
     "published-print": {
-      "date-parts": [
-        [
-          2021,
-          7,
-          2
-        ]
-      ]
+      "date-parts": [[2021, 7, 2]]
     },
     "DOI": "10.1021/acs.jproteome.1c00123",
     "type": "journal-article",
     "created": {
-      "date-parts": [
-        [
-          2021,
-          6,
-          21
-        ]
-      ],
+      "date-parts": [[2021, 6, 21]],
       "date-time": "2021-06-21T23:40:30Z",
       "timestamp": 1624318830000
     },
@@ -224,13 +194,7 @@
     ],
     "member": "316",
     "published-online": {
-      "date-parts": [
-        [
-          2021,
-          6,
-          21
-        ]
-      ]
+      "date-parts": [[2021, 6, 21]]
     },
     "reference": [
       {
@@ -493,9 +457,7 @@
         "DOI": "10.1002/pmic.201500526"
       }
     ],
-    "container-title": [
-      "Journal of Proteome Research"
-    ],
+    "container-title": ["Journal of Proteome Research"],
     "original-title": [],
     "language": "en",
     "link": [
@@ -513,13 +475,7 @@
       }
     ],
     "deposited": {
-      "date-parts": [
-        [
-          2021,
-          8,
-          27
-        ]
-      ],
+      "date-parts": [[2021, 8, 27]],
       "date-time": "2021-08-27T14:09:22Z",
       "timestamp": 1630073362000
     },
@@ -532,36 +488,19 @@
     "subtitle": [],
     "short-title": [],
     "issued": {
-      "date-parts": [
-        [
-          2021,
-          6,
-          21
-        ]
-      ]
+      "date-parts": [[2021, 6, 21]]
     },
     "references-count": 52,
     "journal-issue": {
       "issue": "7",
       "published-print": {
-        "date-parts": [
-          [
-            2021,
-            7,
-            2
-          ]
-        ]
+        "date-parts": [[2021, 7, 2]]
       }
     },
-    "alternative-id": [
-      "10.1021/acs.jproteome.1c00123"
-    ],
+    "alternative-id": ["10.1021/acs.jproteome.1c00123"],
     "URL": "http://dx.doi.org/10.1021/acs.jproteome.1c00123",
     "relation": {},
-    "ISSN": [
-      "1535-3893",
-      "1535-3907"
-    ],
+    "ISSN": ["1535-3893", "1535-3907"],
     "issn-type": [
       {
         "value": "1535-3893",
@@ -572,29 +511,14 @@
         "type": "electronic"
       }
     ],
-    "subject": [
-      "General Chemistry",
-      "Biochemistry"
-    ],
+    "subject": ["General Chemistry", "Biochemistry"],
     "published": {
-      "date-parts": [
-        [
-          2021,
-          6,
-          21
-        ]
-      ]
+      "date-parts": [[2021, 6, 21]]
     }
   },
   "10.1186/s13148-021-01097-3": {
     "indexed": {
-      "date-parts": [
-        [
-          2022,
-          3,
-          30
-        ]
-      ],
+      "date-parts": [[2022, 3, 30]],
       "date-time": "2022-03-30T05:15:42Z",
       "timestamp": 1648617342810
     },
@@ -604,13 +528,7 @@
     "license": [
       {
         "start": {
-          "date-parts": [
-            [
-              2021,
-              5,
-              12
-            ]
-          ],
+          "date-parts": [[2021, 5, 12]],
           "date-time": "2021-05-12T00:00:00Z",
           "timestamp": 1620777600000
         },
@@ -620,13 +538,7 @@
       },
       {
         "start": {
-          "date-parts": [
-            [
-              2021,
-              5,
-              12
-            ]
-          ],
+          "date-parts": [[2021, 5, 12]],
           "date-time": "2021-05-12T00:00:00Z",
           "timestamp": 1620777600000
         },
@@ -640,48 +552,29 @@
         "DOI": "10.13039/100008730",
         "name": "Kreftforeningen",
         "doi-asserted-by": "publisher",
-        "award": [
-          "190157-2017"
-        ]
+        "award": ["190157-2017"]
       }
     ],
     "content-domain": {
-      "domain": [
-        "link.springer.com"
-      ],
+      "domain": ["link.springer.com"],
       "crossmark-restriction": false
     },
-    "short-container-title": [
-      "Clin Epigenet"
-    ],
+    "short-container-title": ["Clin Epigenet"],
     "published-print": {
-      "date-parts": [
-        [
-          2021,
-          12
-        ]
-      ]
+      "date-parts": [[2021, 12]]
     },
     "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>Long-term stored serum is considered challenging for epigenomic analyses: as there are no cells, circulating DNA is scarce, and amplification removes epigenetic signals. Additionally, pre-analytical treatments and storage might introduce biases and fragmentation to the DNA. In particular, starting with low-input DNA can result in low-diversity libraries. However, successful whole-genome bisulphite sequencing (WGBS) of such serum samples has the potential to open biobanks for epigenetic analyses and deliver novel prediagnostic biomarkers. Here, we perform WGBS using the Accel-NGS library preparation kit on ultralow amounts of DNA from long-term archived samples with diverse pretreatments from the Janus Serum Bank.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Results</jats:title>\n                <jats:p>Ninety-four of the 96 samples produced satisfactory methylation calls; an average of 578\u00a0M reads per sample generated a mean coverage of 17\u00d7 and mean duplication level of 35%. Failed samples were related to poor bisulphite conversion rather than to sequencing or library preparation. We demonstrate the feasibility of WGBS on ultralow DNA yields from serum samples stored up to 48\u00a0years.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusions</jats:title>\n                <jats:p>Our results show the potential of large serum biobank collections for future epigenomic studies and biomarker discovery.</jats:p>\n              </jats:sec>",
     "DOI": "10.1186/s13148-021-01097-3",
     "type": "journal-article",
     "created": {
-      "date-parts": [
-        [
-          2021,
-          5,
-          12
-        ]
-      ],
+      "date-parts": [[2021, 5, 12]],
       "date-time": "2021-05-12T10:03:06Z",
       "timestamp": 1620813786000
     },
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
-    "title": [
-      "Ultralow amounts of DNA from long-term archived serum samples produce high-quality methylomes"
-    ],
+    "title": ["Ultralow amounts of DNA from long-term archived serum samples produce high-quality methylomes"],
     "prefix": "10.1186",
     "volume": "13",
     "author": [
@@ -746,13 +639,7 @@
     ],
     "member": "297",
     "published-online": {
-      "date-parts": [
-        [
-          2021,
-          5,
-          12
-        ]
-      ]
+      "date-parts": [[2021, 5, 12]]
     },
     "reference": [
       {
@@ -921,9 +808,7 @@
         "journal-title": "Bioinformatics"
       }
     ],
-    "container-title": [
-      "Clinical Epigenetics"
-    ],
+    "container-title": ["Clinical Epigenetics"],
     "original-title": [],
     "language": "en",
     "link": [
@@ -947,13 +832,7 @@
       }
     ],
     "deposited": {
-      "date-parts": [
-        [
-          2021,
-          5,
-          12
-        ]
-      ],
+      "date-parts": [[2021, 5, 12]],
       "date-time": "2021-05-12T10:05:48Z",
       "timestamp": 1620813948000
     },
@@ -966,35 +845,19 @@
     "subtitle": [],
     "short-title": [],
     "issued": {
-      "date-parts": [
-        [
-          2021,
-          5,
-          12
-        ]
-      ]
+      "date-parts": [[2021, 5, 12]]
     },
     "references-count": 17,
     "journal-issue": {
       "issue": "1",
       "published-print": {
-        "date-parts": [
-          [
-            2021,
-            12
-          ]
-        ]
+        "date-parts": [[2021, 12]]
       }
     },
-    "alternative-id": [
-      "1097"
-    ],
+    "alternative-id": ["1097"],
     "URL": "http://dx.doi.org/10.1186/s13148-021-01097-3",
     "relation": {},
-    "ISSN": [
-      "1868-7075",
-      "1868-7083"
-    ],
+    "ISSN": ["1868-7075", "1868-7083"],
     "issn-type": [
       {
         "value": "1868-7075",
@@ -1005,20 +868,9 @@
         "type": "electronic"
       }
     ],
-    "subject": [
-      "Genetics (clinical)",
-      "Developmental Biology",
-      "Genetics",
-      "Molecular Biology"
-    ],
+    "subject": ["Genetics (clinical)", "Developmental Biology", "Genetics", "Molecular Biology"],
     "published": {
-      "date-parts": [
-        [
-          2021,
-          5,
-          12
-        ]
-      ]
+      "date-parts": [[2021, 5, 12]]
     },
     "assertion": [
       {
@@ -1096,24 +948,12 @@
       }
     ],
     "indexed": {
-      "date-parts": [
-        [
-          2023,
-          1,
-          13
-        ]
-      ],
+      "date-parts": [[2023, 1, 13]],
       "date-time": "2023-01-13T15:50:37Z",
       "timestamp": 1673625037509
     },
     "posted": {
-      "date-parts": [
-        [
-          2021,
-          4,
-          22
-        ]
-      ]
+      "date-parts": [[2021, 4, 22]]
     },
     "group-title": "Genomics",
     "reference-count": 75,
@@ -1124,25 +964,13 @@
     },
     "short-container-title": [],
     "accepted": {
-      "date-parts": [
-        [
-          2021,
-          4,
-          22
-        ]
-      ]
+      "date-parts": [[2021, 4, 22]]
     },
     "abstract": "<jats:title>Abstract</jats:title><jats:p>The human genome contains more than 200,000 gene isoforms. However, different isoforms can be highly similar, and with an average length of 1.5kb remain difficult to study with short read sequencing. To systematically evaluate the ability to study the transcriptome at a resolution of individual isoforms we profiled 5 human cell lines with short read cDNA sequencing and Nanopore long read direct RNA, amplification-free direct cDNA, PCR-cDNA sequencing. The long read protocols showed a high level of consistency, with amplification-free RNA and cDNA sequencing being most similar. While short and long reads generated comparable gene expression estimates, they differed substantially for individual isoforms. We find that increased read length improves read-to-transcript assignment, identifies interactions between alternative promoters and splicing, enables the discovery of novel transcripts from repetitive regions, facilitates the quantification of full-length fusion isoforms and enables the simultaneous profiling of m6A RNA modifications when RNA is sequenced directly. Our study demonstrates the advantage of long read RNA sequencing and provides a comprehensive resource that will enable the development and benchmarking of computational methods for profiling complex transcriptional events at isoform-level resolution.</jats:p>",
     "DOI": "10.1101/2021.04.21.440736",
     "type": "posted-content",
     "created": {
-      "date-parts": [
-        [
-          2021,
-          4,
-          22
-        ]
-      ],
+      "date-parts": [[2021, 4, 22]],
       "date-time": "2021-04-22T18:59:25Z",
       "timestamp": 1619117965000
     },
@@ -1892,13 +1720,7 @@
       }
     ],
     "deposited": {
-      "date-parts": [
-        [
-          2021,
-          4,
-          24
-        ]
-      ],
+      "date-parts": [[2021, 4, 24]],
       "date-time": "2021-04-24T11:21:01Z",
       "timestamp": 1619263261000
     },
@@ -1911,37 +1733,19 @@
     "subtitle": [],
     "short-title": [],
     "issued": {
-      "date-parts": [
-        [
-          2021,
-          4,
-          22
-        ]
-      ]
+      "date-parts": [[2021, 4, 22]]
     },
     "references-count": 75,
     "URL": "http://dx.doi.org/10.1101/2021.04.21.440736",
     "relation": {},
     "published": {
-      "date-parts": [
-        [
-          2021,
-          4,
-          22
-        ]
-      ]
+      "date-parts": [[2021, 4, 22]]
     },
     "subtype": "preprint"
   },
   "10.1038/s41591-020-0929-x": {
     "indexed": {
-      "date-parts": [
-        [
-          2022,
-          12,
-          6
-        ]
-      ],
+      "date-parts": [[2022, 12, 6]],
       "date-time": "2022-12-06T05:44:02Z",
       "timestamp": 1670305442455
     },
@@ -1951,13 +1755,7 @@
     "license": [
       {
         "start": {
-          "date-parts": [
-            [
-              2020,
-              6,
-              2
-            ]
-          ],
+          "date-parts": [[2020, 6, 2]],
           "date-time": "2020-06-02T00:00:00Z",
           "timestamp": 1591056000000
         },
@@ -1967,13 +1765,7 @@
       },
       {
         "start": {
-          "date-parts": [
-            [
-              2020,
-              6,
-              2
-            ]
-          ],
+          "date-parts": [[2020, 6, 2]],
           "date-time": "2020-06-02T00:00:00Z",
           "timestamp": 1591056000000
         },
@@ -1983,33 +1775,17 @@
       }
     ],
     "content-domain": {
-      "domain": [
-        "link.springer.com"
-      ],
+      "domain": ["link.springer.com"],
       "crossmark-restriction": false
     },
-    "short-container-title": [
-      "Nat Med"
-    ],
+    "short-container-title": ["Nat Med"],
     "published-print": {
-      "date-parts": [
-        [
-          2020,
-          8,
-          1
-        ]
-      ]
+      "date-parts": [[2020, 8, 1]]
     },
     "DOI": "10.1038/s41591-020-0929-x",
     "type": "journal-article",
     "created": {
-      "date-parts": [
-        [
-          2020,
-          6,
-          2
-        ]
-      ],
+      "date-parts": [[2020, 6, 2]],
       "date-time": "2020-06-02T10:06:02Z",
       "timestamp": 1591092362000
     },
@@ -2017,9 +1793,7 @@
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
     "is-referenced-by-count": 20,
-    "title": [
-      "Building an international consortium for tracking coronavirus health status"
-    ],
+    "title": ["Building an international consortium for tracking coronavirus health status"],
     "prefix": "10.1038",
     "volume": "26",
     "author": [
@@ -2380,13 +2154,7 @@
     ],
     "member": "297",
     "published-online": {
-      "date-parts": [
-        [
-          2020,
-          6,
-          2
-        ]
-      ]
+      "date-parts": [[2020, 6, 2]]
     },
     "reference": [
       {
@@ -2515,9 +2283,7 @@
         "journal-title": "Stat. Sci."
       }
     ],
-    "container-title": [
-      "Nature Medicine"
-    ],
+    "container-title": ["Nature Medicine"],
     "original-title": [],
     "language": "en",
     "link": [
@@ -2541,13 +2307,7 @@
       }
     ],
     "deposited": {
-      "date-parts": [
-        [
-          2021,
-          12,
-          2
-        ]
-      ],
+      "date-parts": [[2021, 12, 2]],
       "date-time": "2021-12-02T13:31:48Z",
       "timestamp": 1638451908000
     },
@@ -2560,36 +2320,19 @@
     "subtitle": [],
     "short-title": [],
     "issued": {
-      "date-parts": [
-        [
-          2020,
-          6,
-          2
-        ]
-      ]
+      "date-parts": [[2020, 6, 2]]
     },
     "references-count": 14,
     "journal-issue": {
       "issue": "8",
       "published-print": {
-        "date-parts": [
-          [
-            2020,
-            8,
-            1
-          ]
-        ]
+        "date-parts": [[2020, 8, 1]]
       }
     },
-    "alternative-id": [
-      "929"
-    ],
+    "alternative-id": ["929"],
     "URL": "http://dx.doi.org/10.1038/s41591-020-0929-x",
     "relation": {},
-    "ISSN": [
-      "1078-8956",
-      "1546-170X"
-    ],
+    "ISSN": ["1078-8956", "1546-170X"],
     "issn-type": [
       {
         "value": "1078-8956",
@@ -2600,18 +2343,9 @@
         "type": "electronic"
       }
     ],
-    "subject": [
-      "General Biochemistry, Genetics and Molecular Biology",
-      "General Medicine"
-    ],
+    "subject": ["General Biochemistry, Genetics and Molecular Biology", "General Medicine"],
     "published": {
-      "date-parts": [
-        [
-          2020,
-          6,
-          2
-        ]
-      ]
+      "date-parts": [[2020, 6, 2]]
     },
     "assertion": [
       {
@@ -2683,13 +2417,7 @@
   },
   "10.1038/s41587-020-0439-x": {
     "indexed": {
-      "date-parts": [
-        [
-          2023,
-          1,
-          16
-        ]
-      ],
+      "date-parts": [[2023, 1, 16]],
       "date-time": "2023-01-16T01:09:42Z",
       "timestamp": 1673831382634
     },
@@ -2699,13 +2427,7 @@
     "license": [
       {
         "start": {
-          "date-parts": [
-            [
-              2020,
-              2,
-              13
-            ]
-          ],
+          "date-parts": [[2020, 2, 13]],
           "date-time": "2020-02-13T00:00:00Z",
           "timestamp": 1581552000000
         },
@@ -2715,13 +2437,7 @@
       },
       {
         "start": {
-          "date-parts": [
-            [
-              2020,
-              2,
-              13
-            ]
-          ],
+          "date-parts": [[2020, 2, 13]],
           "date-time": "2020-02-13T00:00:00Z",
           "timestamp": 1581552000000
         },
@@ -2735,48 +2451,27 @@
         "DOI": "10.13039/100010661",
         "name": "EC | Horizon 2020 Framework Programme",
         "doi-asserted-by": "publisher",
-        "award": [
-          "815668 (BovReg)"
-        ]
+        "award": ["815668 (BovReg)"]
       },
       {
         "DOI": "10.13039/501100001659",
         "name": "Deutsche Forschungsgemeinschaft",
         "doi-asserted-by": "publisher",
-        "award": [
-          "KO-2313/6-2",
-          "398967434\u2013TRR 261",
-          "Liver Cancer SFB/TR 209"
-        ]
+        "award": ["KO-2313/6-2", "398967434\u2013TRR 261", "Liver Cancer SFB/TR 209"]
       }
     ],
     "content-domain": {
-      "domain": [
-        "link.springer.com"
-      ],
+      "domain": ["link.springer.com"],
       "crossmark-restriction": false
     },
-    "short-container-title": [
-      "Nat Biotechnol"
-    ],
+    "short-container-title": ["Nat Biotechnol"],
     "published-print": {
-      "date-parts": [
-        [
-          2020,
-          3
-        ]
-      ]
+      "date-parts": [[2020, 3]]
     },
     "DOI": "10.1038/s41587-020-0439-x",
     "type": "journal-article",
     "created": {
-      "date-parts": [
-        [
-          2020,
-          2,
-          13
-        ]
-      ],
+      "date-parts": [[2020, 2, 13]],
       "date-time": "2020-02-13T17:03:06Z",
       "timestamp": 1581613386000
     },
@@ -2784,9 +2479,7 @@
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
     "is-referenced-by-count": 428,
-    "title": [
-      "The nf-core framework for community-curated bioinformatics pipelines"
-    ],
+    "title": ["The nf-core framework for community-curated bioinformatics pipelines"],
     "prefix": "10.1038",
     "volume": "38",
     "author": [
@@ -2859,13 +2552,7 @@
     ],
     "member": "297",
     "published-online": {
-      "date-parts": [
-        [
-          2020,
-          2,
-          13
-        ]
-      ]
+      "date-parts": [[2020, 2, 13]]
     },
     "reference": [
       {
@@ -3075,9 +2762,7 @@
         "journal-title": "Bioinformatics"
       }
     ],
-    "container-title": [
-      "Nature Biotechnology"
-    ],
+    "container-title": ["Nature Biotechnology"],
     "original-title": [],
     "language": "en",
     "link": [
@@ -3101,13 +2786,7 @@
       }
     ],
     "deposited": {
-      "date-parts": [
-        [
-          2021,
-          12,
-          2
-        ]
-      ],
+      "date-parts": [[2021, 12, 2]],
       "date-time": "2021-12-02T13:58:01Z",
       "timestamp": 1638453481000
     },
@@ -3120,35 +2799,19 @@
     "subtitle": [],
     "short-title": [],
     "issued": {
-      "date-parts": [
-        [
-          2020,
-          2,
-          13
-        ]
-      ]
+      "date-parts": [[2020, 2, 13]]
     },
     "references-count": 20,
     "journal-issue": {
       "issue": "3",
       "published-print": {
-        "date-parts": [
-          [
-            2020,
-            3
-          ]
-        ]
+        "date-parts": [[2020, 3]]
       }
     },
-    "alternative-id": [
-      "439"
-    ],
+    "alternative-id": ["439"],
     "URL": "http://dx.doi.org/10.1038/s41587-020-0439-x",
     "relation": {},
-    "ISSN": [
-      "1087-0156",
-      "1546-1696"
-    ],
+    "ISSN": ["1087-0156", "1546-1696"],
     "issn-type": [
       {
         "value": "1087-0156",
@@ -3167,13 +2830,7 @@
       "Biotechnology"
     ],
     "published": {
-      "date-parts": [
-        [
-          2020,
-          2,
-          13
-        ]
-      ]
+      "date-parts": [[2020, 2, 13]]
     },
     "assertion": [
       {
