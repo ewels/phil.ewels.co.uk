@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 
-const { title, subtitle, location, type, date, event_url, pdf, iconImage, heroImage } = Astro.props.frontmatter;
+const { title, subtitle, location, type, date, tags, keywords, event_url, pdf, iconImage, heroImage } =
+  Astro.props.frontmatter;
 ---
 
 <BaseLayout title={title} description={subtitle} image={heroImage}>
@@ -24,12 +25,12 @@ const { title, subtitle, location, type, date, event_url, pdf, iconImage, heroIm
       </div>
       <h2 class="mt-0 text-xl">{subtitle}</h2>
       <ul>
-        {type && <li class="badge badge-secondary badge-outline">{type}</li>}
-        {date && <li class="badge badge-secondary badge-outline">{date}</li>}
-        {location && <li class="badge badge-secondary badge-outline">{location}</li>}
+        {type && <li class="badge-secondary badge-outline badge">{type}</li>}
+        {date && <li class="badge-secondary badge-outline badge">{date}</li>}
+        {location && <li class="badge-secondary badge-outline badge">{location}</li>}
         {
           event_url && (
-            <li class="badge badge-secondary badge-outline">
+            <li class="badge-secondary badge-outline badge">
               <a href={event_url}>Website</a>
             </li>
           )
