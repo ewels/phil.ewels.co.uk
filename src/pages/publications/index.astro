@@ -37,8 +37,8 @@ function short_authors(authors) {
           {year_heading && <h2 class="my-4 text-2xl font-bold">{year_heading}</h2>}
           <HorizontalCard
             title={post.frontmatter.title}
-            subtitle={post.frontmatter + " (" + pub.published["date-parts"][0][0] + ")"}
-            desc={short_authors(pub.authors)}
+            subtitle={post.frontmatter.journal + " (" + pub.published["date-parts"][0][0] + ")"}
+            desc={short_authors(pub.author)}
             url={post.url}
           />
         </>
