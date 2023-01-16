@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PostLayout.astro"
+layout: "@layouts/PostLayout.astro"
 title: "nf-core"
 description: "A community effort to collect a curated set of analysis pipelines built using Nextflow"
 pubDate: "Sep 12 2022"

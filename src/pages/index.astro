@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PageTitle from "../components/PageTitle.astro";
-import HomepageButton from "../components/HomepageButton.astro";
-import HomepageCard from "../components/HomepageCard.astro";
+import PageTitle from "@components/PageTitle.astro";
+import HomepageButton from "@components/HomepageButton.astro";
+import HomepageCard from "@components/HomepageCard.astro";
 import publications from "./publications/publications.json";
 
 const workplaces = (await Astro.glob("./work/*.{md,mdx}")).sort(

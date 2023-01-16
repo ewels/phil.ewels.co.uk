@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PostLayout.astro"
+layout: "@layouts/PostLayout.astro"
 title: "The Babraham Institute"
 description: "Cambridge, UK"
 startDate: "Sep 1 2008"

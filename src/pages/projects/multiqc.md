@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PostLayout.astro"
+layout: "@layouts/PostLayout.astro"
 title: "MultiQC"
 description: "Aggregate results from bioinformatics analyses across many samples into a single report."
 pubDate: "Sep 11 2022"

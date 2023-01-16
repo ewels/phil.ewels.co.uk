@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PostLayout.astro"
+layout: "@layouts/PostLayout.astro"
 title: "Seqera Labs"
 description: "Stockholm, Sweden (remote)"
 startDate: "May 1 2022"

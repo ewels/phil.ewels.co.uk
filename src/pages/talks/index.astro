@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import PageTitle from "../../components/PageTitle.astro";
-import HorizontalCard from "../../components/HorizontalCard.astro";
+import PageTitle from "@components/PageTitle.astro";
+import HorizontalCard from "@components/HorizontalCard.astro";
 
 const posts = (await Astro.glob("./**/*.{md,mdx}")).sort(
   (a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()

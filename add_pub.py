@@ -95,7 +95,7 @@ def fetch_publication(doi: str):
 
 def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict):
     frontmatter = {
-        "layout": "../../layouts/PublicationLayout.astro",
+        "layout": "@layouts/PublicationLayout.astro",
         "doi": doi,
         "slug": slug,
         "title": pub["title"][0],
