@@ -1,5 +1,5 @@
 ---
-layout: @layouts/EventLayout.astro
+layout: "@layouts/EventLayout.astro"
 title: Genome Web webinar
 subtitle: Experiences with cloud compute in the nf-core open source community
 location: Online
