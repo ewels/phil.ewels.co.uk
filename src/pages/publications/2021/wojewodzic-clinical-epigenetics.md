@@ -7,8 +7,6 @@ journal: Clinical Epigenetics
 pubDate: 2021-5-12
 ---
 
-## Abstract
-
 ## Background
 
 Long-term stored serum is considered challenging for epigenomic analyses: as there are no cells, circulating DNA is scarce, and amplification removes epigenetic signals. Additionally, pre-analytical treatments and storage might introduce biases and fragmentation to the DNA. In particular, starting with low-input DNA can result in low-diversity libraries. However, successful whole-genome bisulphite sequencing (WGBS) of such serum samples has the potential to open biobanks for epigenetic analyses and deliver novel prediagnostic biomarkers. Here, we perform WGBS using the Accel-NGS library preparation kit on ultralow amounts of DNA from long-term archived samples with diverse pretreatments from the Janus Serum Bank.

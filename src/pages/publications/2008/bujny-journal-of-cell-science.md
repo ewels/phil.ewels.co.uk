@@ -2,7 +2,7 @@
 layout: "@layouts/PublicationLayout.astro"
 doi: 10.1242/jcs.018432
 slug: bujny-journal-of-cell-science
-title: Sorting nexin-1 defines an early phase of <i>Salmonella</i>-containing vacuole-remodeling during <i>Salmonella</i> infection
+title: Sorting nexin-1 defines an early phase of Salmonella-containing vacuole-remodeling during Salmonella infection
 journal: Journal of Cell Science
 pubDate: 2008-6-15
 ---
