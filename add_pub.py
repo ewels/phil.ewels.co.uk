@@ -8,6 +8,7 @@ import yaml
 import re
 import json
 from typing import Optional
+from unidecode import unidecode
 
 
 def main(doi: Optional[str] = typer.Argument(None)):
@@ -63,7 +64,7 @@ def fetch_publication(doi: str):
         slug = "{}-{}".format(pub["author"][0]["family"], journal)
     except KeyError:
         slug = "{}-{}".format(journal, pub_year)
-    slug = slug.lower().replace(" ", "-").replace("--", "-").replace(',','')
+    slug = slug.lower().replace(" ", "-").replace("--", "-").replace(",", "")
 
     # Check if we already have are markdown file for this DOI
     def check_pubs_directory(directory, doi):
@@ -89,7 +90,7 @@ def fetch_publication(doi: str):
     md_exists = True
     if md_path is None:
         md_exists = False
-        md_path = root_directory / str(pub_year) / f"{slug}.md"
+        md_path = root_directory / str(pub_year) / f"{unidecode(slug)}.md"
     else:
         print(f"Found DOI '{doi}': [yellow]{md_path}")
 
