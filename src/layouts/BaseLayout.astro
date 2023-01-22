@@ -20,7 +20,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col bg-base-100 dark:bg-stone-900">
           <Header title={SITE_TITLE} />
-          <main class="p-4 text-black dark:text-zinc-200 md:p-10">
+          <main id="swup" class="p-4 text-black dark:text-zinc-200 md:p-10">
             <slot />
           </main>
           <Footer />
@@ -29,5 +29,38 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
       </div>
       <div class="border-bar hidden xl:block"></div>
     </div>
+    <!-- Google tag (gtag.js) -->
+    <script async is:inline src="https://www.googletagmanager.com/gtag/js?id=G-7F0L1P0KS1"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7F0L1P0KS1");
+    </script>
+    <script hoist>
+      import "../swup.js";
+    </script>
+    <style is:inline>
+      #swup {
+        transition: 0.4s;
+        opacity: 1;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      html.is-animating #swup {
+        margin-left: 30px;
+        margin-right: -30px;
+        opacity: 0;
+      }
+
+      .swup-progress-bar {
+        height: 4px;
+        background-color: rgb(13, 109, 253);
+      }
+    </style>
   </body>
 </html>

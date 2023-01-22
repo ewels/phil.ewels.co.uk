@@ -17,11 +17,17 @@ import { Icon } from "astro-icon";
     <span class="mt-8 text-center text-5xl font-thin text-white">Phil Ewels</span>
     <ul class="my-menu-items my-8 mx-5">
       <li><a href="/"><Icon name="bi:house-door" size="16" /> Home</a></li>
-      <li><a href="/work"><Icon name="bi:person-circle" size="16" /> Where I've worked</a></li>
-      <li><a href="/projects"><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a></li>
-      <li><a href="/talks"><Icon name="bi:easel" size="16" /> Talks</a></li>
-      <li><a href="/publications"><Icon name="bi:file-earmark-text" size="16" /> Publications</a></li>
-      <li><a href="/contact"><Icon name="bi:envelope" size="16" /> Contact me</a></li>
+      <li>
+        <a href="/work" data-swup-preload><Icon name="bi:person-circle" size="16" /> Where I've worked</a>
+      </li>
+      <li>
+        <a href="/projects" data-swup-preload><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a>
+      </li>
+      <li><a href="/talks" data-swup-preload><Icon name="bi:easel" size="16" /> Talks</a></li>
+      <li>
+        <a href="/publications" data-swup-preload><Icon name="bi:file-earmark-text" size="16" /> Publications</a>
+      </li>
+      <li><a href="/contact" data-swup-preload><Icon name="bi:envelope" size="16" /> Contact me</a></li>
     </ul>
     <div class="grow"></div>
     <div class="social-icons mt-5 flex justify-between border-t border-slate-700 px-6 py-8">
