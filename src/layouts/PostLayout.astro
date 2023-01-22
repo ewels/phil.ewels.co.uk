@@ -18,7 +18,7 @@ const {
 ---
 
 <BaseLayout title={title} description={description} image={heroImage}>
-  <main class="md:flex md:justify-center">
+  <div class="md:flex md:justify-center">
     <article class="prose-lg prose max-w-[750px] prose-img:mx-auto dark:prose-invert">
       {heroImage && <img src={heroImage} alt={title} class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600" />}
       <div class="flex flex-row items-center">
@@ -47,5 +47,5 @@ const {
       <div class="divider my-2"></div>
       <slot />
     </article>
-  </main>
+  </div>
 </BaseLayout>

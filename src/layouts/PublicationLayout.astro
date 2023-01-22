@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Author from "@components/Author.astro";
+import { Icon } from "astro-icon";
 
 export interface Props {
   content: {
@@ -27,20 +28,36 @@ const pub_year = pub.published["date-parts"][0][0];
 ---
 
 <BaseLayout title={title} description={description}>
-  <h1 class="mb-4 text-xl font-bold md:text-3xl">{title}</h1>
-  <h2 class="mb-2"><span class="mr-2 italic">{journal}</span> ({pub_year})</h2>
-  <h3 class="mb-4"><ul class="authors">{pub.author.map((author) => <Author author={author} />)}</ul></h3>
+  <div class="md:flex md:justify-center">
+    <div class="max-w-[750px]">
+      <h1 class="mb-4 text-xl font-bold md:text-3xl">{title}</h1>
+      <h2 class="mb-2"><span class="mr-2 italic">{journal}</span> ({pub_year})</h2>
+      <h3 class="mb-4"><ul class="authors">{pub.author.map((author) => <Author author={author} />)}</ul></h3>
 
-  <div class="columns-1 py-8 md:columns-2">
-    <div>
-      <span class="__dimensions_badge_embed__" data-doi={doi} data-hide-zero-citations="true" data-legend="always"
-      ></span>
-      <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+      <div class="columns-1 py-8 md:columns-2">
+        <div>
+          <span class="__dimensions_badge_embed__" data-doi={doi} data-legend="always"></span>
+          <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        </div>
+
+        <div class="py-3 md:text-right">
+          <p class="mb-3">
+            <a class="btn" href={pub.URL}
+              >View publication <Icon name="tabler:external-link" size="18px" class="ml-3 -mt-1" />
+            </a>
+          </p>
+          <p>
+            <abbr title="Digital Object Identifier">DOI</abbr>: <span class="badge-outline badge ml-1 p-3 opacity-50"
+              >{doi}</span
+            >
+          </p>
+        </div>
+      </div>
+      <article class="prose-lg prose prose-img:mx-auto dark:prose-invert">
+        <slot />
+      </article>
     </div>
-
-    <div class="py-5 md:text-right"><a class="btn" href={pub.URL}>DOI: {doi}</a></div>
   </div>
-  <slot />
 </BaseLayout>
 
 <style lang="scss" is:global>
