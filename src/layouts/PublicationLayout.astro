@@ -34,13 +34,13 @@ const pub_year = pub.published["date-parts"][0][0];
       <h2 class="mb-2"><span class="mr-2 italic">{journal}</span> ({pub_year})</h2>
       <h3 class="mb-4"><ul class="authors">{pub.author.map((author) => <Author author={author} />)}</ul></h3>
 
-      <div class="columns-1 py-8 md:columns-2">
-        <div>
+      <div class="flex flex-row py-8">
+        <div class="basis-1/2">
           <span class="__dimensions_badge_embed__" data-doi={doi} data-legend="always"></span>
           <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
         </div>
 
-        <div class="py-3 md:text-right">
+        <div class="basis-1/2 py-3 md:text-right">
           <p class="mb-3">
             <a class="btn" href={pub.URL}
               >View publication <Icon name="tabler:external-link" size="18px" class="ml-3 -mt-1" />
