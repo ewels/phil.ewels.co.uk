@@ -2,7 +2,7 @@
 const { title, description, href, items, btn_text } = Astro.props;
 ---
 
-<div class="mt-5 flex flex-col justify-between rounded border shadow dark:border-zinc-700">
+<div class="flex flex-col justify-between rounded border shadow dark:border-zinc-700">
   <h2 class="m-5 text-2xl"><a href={href}>{title}</a></h2>
   <p class="mx-5 mb-5 grow self-stretch">{description}</p>
   <div class="flex justify-around border-t bg-zinc-100 p-5 dark:border-t-zinc-700 dark:bg-zinc-800">

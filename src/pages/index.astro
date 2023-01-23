@@ -15,7 +15,7 @@ const talks = await Astro.glob("./talks/**/*.{md,mdx}");
 ---
 
 <BaseLayout>
-  <div class="pb-3">
+  <div class="mb-5">
     <img src="/phil_ewels.jpg" class="mask mask-circle my-5 mx-auto w-1/2 md:hidden" alt="Philip Ewels" />
     <PageTitle extraClass="text-center md:text-left">Hi there!</PageTitle>
     <p class="mb-3 text-center text-xl md:text-left">I'm a bioinformatician living in Stockholm, Sweden.</p>
@@ -23,7 +23,7 @@ const talks = await Astro.glob("./talks/**/*.{md,mdx}");
       I work with high-throughput genomics data and open-source software.
     </p>
   </div>
-  <div class="mt-2 pb-12 text-center md:text-left">
+  <div class="mb-5 text-center md:text-left">
     <HomepageButton href="https://github.com/ewels/" title="GitHub" icon="mdi:github" />
     <HomepageButton href="http://twitter.com/tallphil" title="Twitter" icon="mdi:twitter" />
     <HomepageButton href="http://uk.linkedin.com/in/philewels" title="LinkedIn" icon="mdi:linkedin" />
@@ -40,7 +40,7 @@ const talks = await Astro.glob("./talks/**/*.{md,mdx}");
     />
   </div>
 
-  <div class="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
     <HomepageCard
       title="Where I've worked"
       description="I'm a molecular biologist, turned bioinformatician, turned research-software engineer."
@@ -63,19 +63,15 @@ const talks = await Astro.glob("./talks/**/*.{md,mdx}");
       title="Publications"
       description="Delve into journal articles that I've written or worked on."
       href="/publications"
-      btn_text={"Read " + publications.length + " publications"}
+      btn_text={"Read " + Object.keys(publications).length + " publications"}
     />
   </div>
-
-  <h2 class="mb-10 text-2xl">Contact me</h2>
-  <p class="mb-4">
-    You can find me on a raft of social media platforms, see links at the top of this page. I also spend a lot of time
-    on the <a href="https://nf-co.re/join" class="link">nf-core</a> and
-    <a href="https://www.nextflow.io/slack-invite.html" class="link">Nextflow Slack channels</a>, so feel free to drop
-    me a message there.
-  </p>
-  <p>
-    If in doubt, you can email me through this website:
-    <a href="/contact" class="btn-outline btn-info btn-sm btn ml-2"> Contact me</a>
-  </p>
+  <div class="my-6">
+    <HomepageCard
+      title="Contact me"
+      description="Feel free to drop me a line via Slack, twitter, email or the website contact form."
+      href="/contact"
+      btn_text="Contact me"
+    />
+  </div>
 </BaseLayout>
