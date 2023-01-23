@@ -22,14 +22,7 @@ const formClasses =
     (logged-in users only).
   </p>
 
-  <form
-    id="contact-form"
-    name="contact"
-    method="POST"
-    data-netlify-recaptcha="true"
-    netlify-honeypot="sweet-and-sticky"
-    data-netlify="true"
-  >
+  <form name="contact" method="POST" netlify-honeypot="sweet-and-sticky" data-netlify="true">
     <label class="mb-8 hidden">
       <span class="block">If you're a real person, do not enter anything in this field</span>
       <input type="text" name="sweet-and-sticky" class={formClasses} />
@@ -46,7 +39,6 @@ const formClasses =
       <span class="block">Your message</span>
       <textarea name="message" rows="5" class={formClasses}></textarea>
     </label>
-    <div data-netlify-recaptcha="true"></div>
     <button id="submit-btn" type="submit" class="btn mt-8">Send email</button>
   </form>
 </BaseLayout>

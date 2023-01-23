@@ -20,7 +20,4 @@ const swup = new Swup({
 // Scroll page to top when we change content
 swup.on("contentReplaced", function () {
   document.querySelector(".drawer-content").scrollTo(0, 0);
-  if (document.getElementById("contact-form")) {
-    grecaptcha.reset();
-  }
 });
