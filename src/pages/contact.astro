@@ -23,6 +23,7 @@ const formClasses =
   </p>
 
   <form
+    id="contact-form"
     name="contact"
     method="POST"
     data-netlify-recaptcha="true"
@@ -46,7 +47,7 @@ const formClasses =
       <textarea name="message" rows="5" class={formClasses}></textarea>
     </label>
     <div data-netlify-recaptcha="true"></div>
-    <button id="submit-btn" type="submit" class="btn">Send email</button>
+    <button id="submit-btn" type="submit" class="btn mt-8">Send email</button>
   </form>
 </BaseLayout>
 
