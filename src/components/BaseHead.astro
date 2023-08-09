@@ -12,6 +12,26 @@ export interface Props {
 const { title, description, image = "/social_img.png" } = Astro.props;
 ---
 
+<script is:inline>
+  // Light / dark mode switch
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+  }
+  window.localStorage.setItem("theme", theme);
+</script>
+
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />

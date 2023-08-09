@@ -121,7 +121,7 @@ Feel free to modify the content included in the pages that the template contains
 
 ### Theming
 
-For change the template theme change the `data-theme` atribute of the `<html>` tag in `BaseLayout.astro` file.
+For change the template theme change the `data-theme` attribute of the `<html>` tag in `BaseLayout.astro` file.
 
 You can chose among 30 themes available or create your custom theme. See themes available [here](https://daisyui.com/docs/themes/).
 

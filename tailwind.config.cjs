@@ -26,28 +26,4 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/aspect-ratio")],
-  /*
-  daisyui: {
-    styled: true,
-    themes: [
-      {
-        light: {
-          ...require("daisyui/src/colors/themes")["[data-theme=emerald]"],
-          primary: "#0d6efd",
-          "base-100": "#f8f9fa",
-        },
-        dark: {
-          ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
-          primary: "#0d6efd",
-        },
-      },
-    ],
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
-    darkTheme: "dark",
-  },
-  */
 };
