@@ -1,0 +1,15 @@
+---
+import { Icon } from "astro-icon";
+
+const { href, icon, label } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  class="tooltip opacity-50 hover:opacity-100 transition-opacity"
+  data-tip={label}
+  aria-label={label}
+>
+  <Icon name={icon} size="24px" />
+</a>

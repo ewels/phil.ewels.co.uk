@@ -1,0 +1,9 @@
+---
+import { Icon } from "astro-icon";
+
+const { href, icon } = Astro.props;
+---
+
+<li class="flex relative flex-col flex-wrap items-stretch">
+  <a class="flex gap-3 items-center" href={href} data-swup-preload><Icon name={icon} size="16" /> <slot /></a>
+</li>

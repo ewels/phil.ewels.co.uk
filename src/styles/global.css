@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Mona-Sans";
-  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
+  src:
+    url("Mona-Sans.woff2") format("woff2 supports variations"),
+    url("Mona-Sans.woff2") format("woff2-variations");
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
@@ -12,14 +14,11 @@
 .time-line-container > div:last-child .education__time > .education__line {
   display: none;
 }
-.drawer-side {
-  width: 350px;
-}
 .border-bar {
   width: 30px;
 }
 .border-bar,
-.drawer-side {
+.sidebar {
   background-image: url(/background.jpg);
   background-size: cover;
 }
@@ -28,7 +27,9 @@
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
   border-radius: 0.25rem;
-  transition: padding-left 0.2s, background-color 0.2s;
+  transition:
+    padding-left 0.2s,
+    background-color 0.2s;
   color: white;
 }
 .my-menu-items li a.active {

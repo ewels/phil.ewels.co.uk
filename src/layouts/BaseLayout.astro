@@ -16,16 +16,20 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
   </head>
   <body>
     <div class="flex flex-row">
-      <div class="drawer-mobile drawer">
-        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col bg-base-100 dark:bg-stone-900">
+      <div class="grid w-full overflow-hidden h-screen">
+        <div class="col-start-2 row-start-1 flex flex-col bg-base-100 dark:bg-stone-900">
           <Header title={SITE_TITLE} />
           <main id="swup" class="p-4 text-black dark:text-zinc-200 md:p-10">
             <slot />
           </main>
           <Footer />
         </div>
-        <SideBar />
+        <div
+          data-theme="dark"
+          class="sidebar w-[350px] grid col-start-1 row-start-1 max-h-screen overflow-x-hidden bg-black/80"
+        >
+          <SideBar />
+        </div>
       </div>
       <div class="border-bar hidden xl:block"></div>
     </div>

@@ -1,78 +1,44 @@
 ---
+import NavItem from "@components/SideBar/NavItem.astro";
+import SocialIcon from "@components/SideBar/SocialIcon.astro";
+
 import { Icon } from "astro-icon";
 ---
 
-<div data-theme="dark" class="drawer-side bg-black/80">
-  <label for="my-drawer" class="drawer-overlay bg-black/80"></label>
-  <div class="menu flex-nowrap overflow-y-auto bg-black/80 pt-10 text-base-content">
-    <div class="flex items-center">
-      <hr class="w-1/5 opacity-25" />
-      <div class="avatar m-auto block w-1/2">
-        <a href="/">
-          <img src="/phil_ewels.jpg" class="mask mask-circle" alt="Philip Ewels" />
-        </a>
-      </div>
-      <hr class="w-1/5 opacity-25" />
-    </div>
-    <span class="mt-8 text-center text-5xl font-thin text-white">Phil Ewels</span>
-    <ul class="my-menu-items my-8 mx-5">
-      <li><a href="/"><Icon name="bi:house-door" size="16" /> Home</a></li>
-      <li>
-        <a href="/work" data-swup-preload><Icon name="bi:person-circle" size="16" /> Where I've worked</a>
-      </li>
-      <li>
-        <a href="/projects" data-swup-preload><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a>
-      </li>
-      <li><a href="/talks" data-swup-preload><Icon name="bi:easel" size="16" /> Talks</a></li>
-      <li>
-        <a href="/publications"><Icon name="bi:file-earmark-text" size="16" /> Publications</a>
-      </li>
-      <li><a href="/contact" data-swup-preload><Icon name="bi:envelope" size="16" /> Contact me</a></li>
-    </ul>
-    <div class="grow"></div>
-    <div class="social-icons mt-5 flex justify-between border-t border-slate-700 px-6 py-8">
-      <a href="https://github.com/ewels/" target="_blank" class="tooltip" data-tip="GitHub" aria-label="GitHub">
-        <Icon name="mdi:github" size="24px" />
-      </a>
-      <a href="http://twitter.com/tallphil" target="_blank" class="tooltip" data-tip="twitter" aria-label="twitter">
-        <Icon name="mdi:twitter" size="24px" />
-      </a>
-      <a
-        href="http://uk.linkedin.com/in/philewels"
-        target="_blank"
-        class="tooltip"
-        data-tip="LinkedIn"
-        aria-label="LinkedIn"
-      >
-        <Icon name="mdi:linkedin" size="24px" />
-      </a>
-      <a
-        href="http://orcid.org/0000-0003-4101-2502"
-        target="_blank"
-        class="tooltip"
-        data-tip="ORCiD"
-        aria-label="ORCiD"
-      >
-        <Icon name="simple-icons:orcid" size="24px" />
-      </a>
-      <a
-        href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
-        target="_blank"
-        class="tooltip"
-        data-tip="Google Scholar"
-        aria-label="Google Scholar"
-      >
-        <Icon name="simple-icons:googlescholar" size="24px" />
-      </a>
-      <a
-        href="http://www.researchgate.net/profile/Philip_Ewels"
-        target="_blank"
-        class="tooltip"
-        data-tip="Research Gate"
-        aria-label="Research Gate"
-      >
-        <Icon name="simple-icons:researchgate" size="24px" />
+<div class="menu flex flex-col flex-nowrap overflow-y-auto bg-black/80 pt-10 text-white">
+  <div class="flex items-center">
+    <hr class="w-1/5 opacity-25" />
+    <div class="avatar m-auto block w-1/2">
+      <a href="/">
+        <img src="/phil_ewels.jpg" class="rounded-full" alt="Philip Ewels" />
       </a>
     </div>
+    <hr class="w-1/5 opacity-25" />
+  </div>
+  <span class="mt-8 block text-center text-5xl font-thin">Phil Ewels</span>
+  <ul class="my-menu-items my-8 mx-5">
+    <NavItem href="/" icon="bi:house-door">Home</NavItem>
+    <NavItem href="/work" icon="bi:person-circle">Where I've worked</NavItem>
+    <NavItem href="/projects" icon="bi:journal-bookmark-fill">Projects</NavItem>
+    <NavItem href="/talks" icon="bi:easel">Talks</NavItem>
+    <NavItem href="/publications" icon="bi:file-earmark-text">Publications</NavItem>
+    <NavItem href="/contact" icon="bi:envelope">Contact me</NavItem>
+  </ul>
+  <div class="flex-grow"></div>
+  <div class="social-icons mt-5 flex justify-between border-t border-slate-700 px-6 py-8">
+    <SocialIcon href="https://github.com/ewels/" icon="mdi:github" label="GitHub" />
+    <SocialIcon href="http://twitter.com/tallphil" icon="mdi:twitter" label="twitter" />
+    <SocialIcon href="http://uk.linkedin.com/in/philewels" icon="mdi:linkedin" label="LinkedIn" />
+    <SocialIcon href="http://orcid.org/0000-0003-4101-2502" icon="simple-icons:orcid" label="ORCiD" />
+    <SocialIcon
+      href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
+      icon="simple-icons:googlescholar"
+      label="Google Scholar"
+    />
+    <SocialIcon
+      href="http://www.researchgate.net/profile/Philip_Ewels"
+      icon="simple-icons:researchgate"
+      label="Research Gate"
+    />
   </div>
 </div>
