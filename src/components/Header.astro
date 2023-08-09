@@ -3,30 +3,19 @@ import { Icon } from "astro-icon";
 ---
 
 <div
-  class="sticky top-0 z-30 flex h-16 w-full items-center bg-base-100 bg-opacity-60 text-base-content shadow-sm backdrop-blur lg:hidden"
+  class="sticky top-0 z-30 flex w-full items-baseline p-5 bg-gray-200/60 dark:bg-gray-800/60 text-black dark:text-white shadow-sm backdrop-blur xl:hidden font-semibold"
 >
-  <div class="navbar">
-    <div class="flex-1">
-      <ul class="menu menu-horizontal p-0">
-        <li>
-          <a>
-            <Icon name="ic:outline-menu" size="24" />
-             Menu
-          </a>
-          <ul class="border bg-base-100 p-2 shadow">
-            <li><a href="/"><Icon name="bi:house-door" size="16" /> Home</a></li>
-            <li><a href="/work"><Icon name="bi:person-circle" size="16" /> Where I've worked</a></li>
-            <li><a href="/projects"><Icon name="bi:journal-bookmark-fill" size="16" /> Projects</a></li>
-            <li><a href="/talks"><Icon name="bi:easel" size="16" /> Talks</a></li>
-            <li><a href="/publications"><Icon name="bi:file-earmark-text" size="16" /> Publications</a></li>
-            <li><a href="/contact"><Icon name="bi:envelope" size="16" /> Contact me</a></li>
-            <li><div class="justify-center border-t opacity-50">ThemeIcon</div></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="flex-none">
-    <a class="btn-ghost no-animation btn mr-4 text-xl normal-case" href="/">Phil Ewels</a>
-  </div>
+  <span onclick="openCloseMenu()" class="text-2xl cursor-pointer opacity-50 hover:opacity-100 transition-opacity mr-3"
+    >&#9776;</span
+  >
+  <a class="text-xl" href="/">Phil Ewels</a>
 </div>
+
+<script is:inline>
+  function openCloseMenu() {
+    document.getElementById("sidebar").classList.toggle("-ml-96");
+    document.getElementById("sidebar").classList.toggle("ml-0");
+    document.getElementById("mainpage").classList.toggle("-mr-96");
+    document.getElementById("mainpage").classList.toggle("mr-0");
+  }
+</script>
