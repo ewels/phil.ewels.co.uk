@@ -4,7 +4,7 @@ import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 
 const workplaces = (await Astro.glob("./*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf()
+  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf(),
 );
 ---
 

@@ -5,7 +5,7 @@ import HorizontalCard from "@components/HorizontalCard.astro";
 
 import publications from "./publications.json";
 const pubs = (await Astro.glob("./**/*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf(),
 );
 var year = null;
 
@@ -16,7 +16,7 @@ function short_authors(authors) {
   }
   return authors
     .map((author) =>
-      author.family ? author.family + " " + (author.given ?? "" ? author.given.substr(0, 1) : "") : author.name
+      author.family ? author.family + " " + (author.given ?? "" ? author.given.substr(0, 1) : "") : author.name,
     )
     .join(", ");
 }

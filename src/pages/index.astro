@@ -6,10 +6,10 @@ import HomepageCard from "@components/HomepageCard.astro";
 import publications from "./publications/publications.json";
 
 const workplaces = (await Astro.glob("./work/*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf()
+  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf(),
 );
 const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf(),
 );
 const talks = await Astro.glob("./talks/**/*.{md,mdx}");
 ---
