@@ -18,7 +18,10 @@
   };
 </script>
 
-<button class="rounded-full border dark:border-transparent bg-gray-100 dark:bg-gray-800 px-2 py-1" title="Toggle between light and dark theme">
+<button
+  class="rounded-full border dark:border-transparent bg-gray-100 dark:bg-gray-800 px-2 py-1"
+  title="Toggle between light and dark theme"
+>
   <button on:click={() => switchLight()}>{@html icon_ph_sun_bold}</button>
   <button on:click={(e) => switchDark(e)}>{@html icon_ph_moon_bold}</button>
 </button>
