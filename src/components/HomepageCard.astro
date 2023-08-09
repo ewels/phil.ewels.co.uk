@@ -5,25 +5,31 @@ const { title, description, href, items, btn_text } = Astro.props;
 <div class="flex flex-col justify-between rounded border shadow dark:border-zinc-700">
   <h2 class="m-5 text-2xl"><a href={href}>{title}</a></h2>
   <p class="mx-5 mb-5 grow self-stretch">{description}</p>
-  <div class="flex justify-around border-t bg-zinc-100 p-5 dark:border-t-zinc-700 dark:bg-zinc-800">
-    {
-      items &&
-        items.map((post) => (
-          <a href={post.url} title={post.frontmatter.title} class="tooltip" data-tip={post.frontmatter.title}>
-            <img
-              src={post.frontmatter.iconImage}
-              alt={post.frontmatter.title}
-              class="w-12 rounded border p-2 shadow dark:bg-zinc-100"
-            />
-          </a>
-        ))
-    }
-    {
-      btn_text && (
-        <a href={href} class="block w-full h-full text-center">
+  {
+    items && (
+      <div class="flex justify-around p-5 border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
+        {items &&
+          items.map((post) => (
+            <a
+              href={post.url}
+              title={post.frontmatter.title}
+              class="w-12 rounded border p-2 shadow dark:border-gray-700"
+              data-tip={post.frontmatter.title}
+            >
+              <img src={post.frontmatter.iconImage} alt={post.frontmatter.title} class="block dark:hidden" />
+              <img src={post.frontmatter.iconImageDark} alt={post.frontmatter.title} class="hidden dark:block" />
+            </a>
+          ))}
+      </div>
+    )
+  }
+  {
+    btn_text && (
+      <div class="border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
+        <a href={href} class="block  p-5 w-full h-full text-center">
           {btn_text}
         </a>
-      )
-    }
-  </div>
+      </div>
+    )
+  }
 </div>

@@ -5,6 +5,7 @@ description: "Cambridge, UK"
 startDate: "Sep 1 2008"
 heroImage: "/images/work/babraham_snow.jpg"
 iconImage: "/images/work/babraham.svg"
+iconImageDark: "/images/work/babraham-dark.svg"
 descImage: "/images/work/flag_uk.svg"
 tags: [2 positions]
 ---
