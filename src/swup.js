@@ -21,3 +21,10 @@ const swup = new Swup({
 swup.on("contentReplaced", function () {
   document.querySelector(".drawer-content").scrollTo(0, 0);
 });
+swup.on("transitionEnd", function () {
+  // set timeout
+  setTimeout(function () {
+    console.log("adding badges");
+    window.__dimensions_embed.addBadges();
+  }, 5000);
+});
