@@ -8,7 +8,7 @@ const { href, icon, label } = Astro.props;
   href={href}
   target="_blank"
   class="tooltip opacity-50 hover:opacity-100 transition-opacity"
-  data-tip={label}
+  title={label}
   aria-label={label}
 >
   <Icon name={icon} size="24px" />

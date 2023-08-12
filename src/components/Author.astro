@@ -13,12 +13,12 @@ if (!author.family && author.name) {
 <li>
   {
     author.ORCID ? (
-      <a href={author.ORCID} title={longname} class="tooltip" data-tip={longname} target="_blank">
+      <a href={author.ORCID} title={longname} class="tooltip" target="_blank">
         <Icon name="simple-icons:orcid" size="16px" class="inline opacity-50" />
         {shortname}
       </a>
     ) : (
-      <span title={longname} class="tooltip" data-tip={longname}>
+      <span title={longname} class="tooltip">
         {shortname}
       </span>
     )
