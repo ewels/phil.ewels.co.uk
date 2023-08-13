@@ -1,10 +1,8 @@
 ---
-layout: "@layouts/PublicationLayout.astro"
 doi: 10.1161/ATVBAHA.108.181388
-slug: arteriosclerosis-thrombosis-and-vascular-biology-2009
 title: Large Scale Association Analysis of Novel Genetic Loci for Coronary Artery Disease
 journal: Arteriosclerosis, Thrombosis, and Vascular Biology
-pubDate: 2009-5-01
+pubDate: 2009-05-01
 ---
 
 ## Background

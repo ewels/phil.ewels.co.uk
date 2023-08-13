@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon";
 
-const { href, classes, icon } = Astro.props;
+const { href, classes, icon, iconAfter } = Astro.props;
 
 var btn_classes = "bg-blue-500 hover:bg-blue-700 transition-colors text-white text-xs font-semibold rounded py-4 ";
 if (Astro.props.icon) {
@@ -18,4 +18,5 @@ const target = Astro.props.href.startsWith("http") ? "_blank" : "_self";
 <a href={href} class={btn_classes} target={target}>
   {icon && <Icon name={icon} size="24px" class="inline-block mr-2" />}
   <slot />
+  {iconAfter && <Icon name={iconAfter} size="18px" class="inline-block ml-2" />}
 </a>

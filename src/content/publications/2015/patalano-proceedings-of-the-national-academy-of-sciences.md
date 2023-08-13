@@ -1,10 +1,8 @@
 ---
-layout: "@layouts/PublicationLayout.astro"
 doi: 10.1073/pnas.1515937112
-slug: patalano-proceedings-of-the-national-academy-of-sciences
 title: Molecular signatures of plastic phenotypes in two eusocial insect species with simple societies
 journal: Proceedings of the National Academy of Sciences
-pubDate: "2015-10-19"
+pubDate: 2015-10-19
 ---
 
 ## Significance

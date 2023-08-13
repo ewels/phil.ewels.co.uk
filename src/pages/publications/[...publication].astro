@@ -1,0 +1,67 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Button from "@components/Button.astro";
+import Author from "@components/Author.astro";
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon";
+
+export async function getStaticPaths() {
+  const projectEntries = await getCollection("publications");
+  return projectEntries.map((entry) => ({
+    params: { publication: entry.slug },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Get data for this publication
+import publications from "../../publications.json";
+const pub = publications[entry.data.doi];
+const pub_year = pub.published["date-parts"][0][0];
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+  <div class="md:flex md:justify-center">
+    <div class="max-w-[750px]">
+      <h1 class="mb-4 text-xl font-bold md:text-3xl">{entry.data.title}</h1>
+      <h2 class="mb-2"><span class="mr-2 italic">{entry.data.journal}</span> ({pub_year})</h2>
+      <h3 class="authors mb-4">{pub.author.map((author) => <Author author={author} />)}</h3>
+
+      <div class="flex flex-row py-8">
+        <div class="basis-1/2">
+          <span class="__dimensions_badge_embed__" data-doi={entry.data.doi} data-legend="always"></span>
+          <script is:inline src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        </div>
+
+        <div class="basis-1/2 py-3 md:text-right">
+          <p class="mb-5">
+            <Button href={pub.URL} iconAfter="heroicons-outline:external-link">View publication</Button>
+          </p>
+          <p>
+            <abbr title="Digital Object Identifier">DOI</abbr>:
+            <span class="ml-1 opacity-50">
+              {entry.data.doi}
+            </span>
+          </p>
+        </div>
+      </div>
+      <article class="prose-lg prose prose-img:mx-auto dark:prose-invert">
+        <Content />
+      </article>
+    </div>
+  </div>
+</BaseLayout>
+
+<style lang="scss" is:global>
+  .authors {
+    span {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+    span:not(span:last-of-type):after {
+      content: ", ";
+      margin-left: -0.1rem;
+    }
+  }
+</style>

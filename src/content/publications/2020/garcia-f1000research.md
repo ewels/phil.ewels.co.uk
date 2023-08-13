@@ -1,10 +1,8 @@
 ---
-layout: "@layouts/PublicationLayout.astro"
 doi: 10.12688/f1000research.16665.1
-slug: garcia-f1000research
 title: "Sarek: A portable workflow for whole-genome sequencing analysis of germline and somatic variants"
 journal: F1000Research
-pubDate: 2020-1-29
+pubDate: 2020-01-29
 ---
 
 <ns4:p>Whole-genome sequencing (WGS) is a fundamental technology for research to advance precision medicine, but the limited availability of portable and user-friendly workflows for WGS analyses poses a major challenge for many research groups and hampers scientific progress. Here we present Sarek, an open-source workflow to detect germline variants and somatic mutations based on sequencing data from WGS, whole-exome sequencing (WES), or gene panels. Sarek features (i) easy installation, (ii) robust portability across different computer environments, (iii) comprehensive documentation, (iv) transparent and easy-to-read code, and (v) extensive quality metrics reporting. Sarek is implemented in the Nextflow workflow language and supports both Docker and Singularity containers as well as Conda environments, making it ideal for easy deployment on any POSIX-compatible computers and cloud compute environments. Sarek follows the GATK best-practice recommendations for read alignment and pre-processing, and includes a wide range of software for the identification and annotation of germline and somatic single-nucleotide variants, insertion and deletion variants, structural variants, tumour sample purity, and variations in ploidy and copy number. Sarek offers easy, efficient, and reproducible WGS analyses, and can readily be used both as a production workflow at sequencing facilities and as a powerful stand-alone tool for individual research groups. The Sarek source code, documentation and installation instructions are freely available at <ns4:ext-link xmlns:ns3="http://www.w3.org/1999/xlink" ext-link-type="uri" ns3:href="https://github.com/nf-core/sarek">https://github.com/nf-core/sarek</ns4:ext-link> and at <ns4:ext-link xmlns:ns3="http://www.w3.org/1999/xlink" ext-link-type="uri" ns3:href="https://nf-co.re/sarek/">https://nf-co.re/sarek/</ns4:ext-link>.</ns4:p>

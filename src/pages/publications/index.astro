@@ -6,7 +6,7 @@ import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 
 import publications from "../../publications.json";
-const pubs = (await getCollection("projects")).sort(
+const pubs = (await getCollection("publications")).sort(
   (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 );
 var year = null;
@@ -24,8 +24,6 @@ function short_authors(authors) {
 }
 ---
 
-{
-  /*
 <BaseLayout title="Publications">
   <PageTitle>Publications</PageTitle>
   {
@@ -42,13 +40,11 @@ function short_authors(authors) {
           <HorizontalCard
             title={post.data.title}
             subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
-            desc={short_authors(pub.author)}
-            url={post.url}
+            description={short_authors(pub.author)}
+            url={"/publications/" + post.slug}
           />
         </>
       );
     })
   }
 </BaseLayout>
- */
-}

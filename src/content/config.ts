@@ -14,7 +14,13 @@ const projectsCollection = defineCollection({
   }),
 });
 const publicationsCollection = defineCollection({
-  /* ... */
+  type: "content",
+  schema: z.object({
+    doi: z.string(),
+    title: z.string(),
+    journal: z.string(),
+    pubDate: z.date(),
+  }),
 });
 const talksCollection = defineCollection({
   type: "content",
