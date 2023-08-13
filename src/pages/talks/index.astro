@@ -26,6 +26,7 @@ var year: number = -1;
           <HorizontalCard
             title={post.data.title}
             img={post.data.iconImage}
+            imgDark={post.data.iconImageDark ?? post.data.iconImage}
             description={post.data.description}
             url={"/talks/" + post.slug}
           />

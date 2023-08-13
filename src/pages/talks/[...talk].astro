@@ -29,7 +29,7 @@ const { Content } = await entry.render();
         )
       }
       <div class="flex flex-row items-center">
-        <h1 class="my-2 grow text-4xl font-bold">
+        <h1 class="mb-2 grow text-4xl font-bold">
           {entry.data.title}
         </h1>
         {
@@ -37,7 +37,16 @@ const { Content } = await entry.render();
             <img
               src={entry.data.iconImage}
               alt={entry.data.title}
-              class="float-right my-0 w-16 dark:w-24 dark:rounded dark:bg-white dark:p-4"
+              class="float-right max-h-20 max-w-[10rem] block dark:hidden"
+            />
+          )
+        }
+        {
+          (entry.data.iconImage || entry.data.iconImageDark) && (
+            <img
+              src={entry.data.iconImageDark ?? entry.data.iconImage}
+              alt={entry.data.title}
+              class="float-right max-h-20 max-w-[10rem] hidden dark:block"
             />
           )
         }

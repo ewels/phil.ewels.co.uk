@@ -1,11 +1,11 @@
 ---
 import type { CollectionEntry } from "astro:content";
 interface Props {
-  title;
-  description;
-  href;
-  btn_text;
-  items;
+  title: string;
+  description: string;
+  href: string;
+  btn_text: string;
+  items: [any];
 }
 
 const { title, description, href, btn_text, items } = Astro.props;
@@ -21,7 +21,7 @@ const { title, description, href, btn_text, items } = Astro.props;
           items.map((item) => (
             <a href={item.url} title={item.title} class="w-12 rounded border p-2 shadow dark:border-gray-700">
               <img src={item.iconImage} alt={item.title} class="block dark:hidden" />
-              <img src={item.iconImageDark} alt={item.title} class="hidden dark:block" />
+              <img src={item.iconImageDark ?? item.iconImage} alt={item.title} class="hidden dark:block" />
             </a>
           ))}
       </div>

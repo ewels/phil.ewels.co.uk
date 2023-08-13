@@ -26,6 +26,7 @@ const workplaces = (await getCollection("workplaces")).sort(
           <HorizontalCard
             title={post.data.title}
             img={post.data.iconImage}
+            imgDark={post.data.iconImageDark ?? post.data.iconImage}
             description={post.data.location}
             countryFlag={post.data.countryFlag}
             tags={[post.data.numPositions + " positions"]}

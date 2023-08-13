@@ -18,6 +18,7 @@ const projects = await getCollection("projects");
           <HorizontalCard
             title={p.data.title}
             img={p.data.iconImage}
+            imgDark={p.data.iconImageDark ?? p.data.iconImage}
             description={p.data.description}
             url={"/projects/" + p.slug}
           />

@@ -5,7 +5,6 @@ URL: https://seqera.io
 startDate: 2022-05-01
 heroImage: "/images/work/seqera_office.jpg"
 iconImage: "/images/work/seqera.svg"
-iconImageDark: "/images/work/seqera.svg"
 countryFlag: "/images/work/flag_se.svg"
 numPositions: 1
 ---
