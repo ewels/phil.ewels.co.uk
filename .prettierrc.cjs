@@ -10,7 +10,6 @@ module.exports = {
     require.resolve("prettier-plugin-organize-imports"),
     require.resolve("prettier-plugin-tailwindcss"), // Must come last
   ],
-  pluginSearchDirs: false,
   overrides: [
     {
       files: "*.astro",
