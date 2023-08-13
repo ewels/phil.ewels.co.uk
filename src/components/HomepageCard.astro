@@ -1,5 +1,14 @@
 ---
-const { title, description, href, items, btn_text } = Astro.props;
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  title;
+  description;
+  href;
+  btn_text;
+  items;
+}
+
+const { title, description, href, btn_text, items } = Astro.props;
 ---
 
 <div class="flex flex-col justify-between rounded border shadow dark:border-zinc-700">
@@ -9,14 +18,10 @@ const { title, description, href, items, btn_text } = Astro.props;
     items && (
       <div class="flex justify-around p-5 border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
         {items &&
-          items.map((post) => (
-            <a
-              href={post.url}
-              title={post.frontmatter.title}
-              class="w-12 rounded border p-2 shadow dark:border-gray-700"
-            >
-              <img src={post.frontmatter.iconImage} alt={post.frontmatter.title} class="block dark:hidden" />
-              <img src={post.frontmatter.iconImageDark} alt={post.frontmatter.title} class="hidden dark:block" />
+          items.map((item) => (
+            <a href={item.url} title={item.title} class="w-12 rounded border p-2 shadow dark:border-gray-700">
+              <img src={item.iconImage} alt={item.title} class="block dark:hidden" />
+              <img src={item.iconImageDark} alt={item.title} class="hidden dark:block" />
             </a>
           ))}
       </div>

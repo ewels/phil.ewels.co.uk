@@ -12,9 +12,8 @@ from unidecode import unidecode
 
 
 def main(doi: Optional[str] = typer.Argument(None)):
-
     # Load publications.json file
-    with open("src/pages/publications/publications.json") as f:
+    with open("src/publications.json") as f:
         publications = json.load(f)
 
     # Only do all DOIs if one wasn't requested
@@ -38,12 +37,11 @@ def main(doi: Optional[str] = typer.Argument(None)):
             create_markdown(md_path, doi, slug, journal, pub)
 
     # Save the publications.json file
-    with open("src/pages/publications/publications.json", "w") as f:
+    with open("src/publications.json", "w") as f:
         json.dump(publications, f, indent=2)
 
 
 def fetch_publication(doi: str):
-
     # Fetch the DOI from the Crossref API
     response = requests.get(f"https://api.crossref.org/works/{doi}")
     if response.status_code == 404:
@@ -85,7 +83,7 @@ def fetch_publication(doi: str):
                 if md_path is not None:
                     return md_path
 
-    root_directory = Path("src/pages/publications/")
+    root_directory = Path("src/content/publications/")
     md_path = check_pubs_directory(root_directory, doi)
     md_exists = True
     if md_path is None:

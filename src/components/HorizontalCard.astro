@@ -1,5 +1,5 @@
 ---
-const { title, subtitle, img, desc, url, badge, descImage, tags, target = "_self" } = Astro.props;
+const { title, subtitle, img, description, url, badge, countryFlag, tags, target = "_self" } = Astro.props;
 import { Icon } from "astro-icon";
 ---
 
@@ -15,8 +15,8 @@ import { Icon } from "astro-icon";
       </h1>
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
       <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300 2xl:ml-4 2xl:inline">
-        {desc}
-        {descImage && <img src={descImage} class="ml-2 hidden w-[18px] md:inline-block" />}
+        {description}
+        {countryFlag && <img src={countryFlag} class="ml-2 hidden w-[18px] md:inline-block" />}
         {
           tags &&
             tags.map((tag) => (

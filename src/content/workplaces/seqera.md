@@ -1,13 +1,13 @@
 ---
-layout: "@layouts/PostLayout.astro"
 title: "Seqera Labs"
-description: "Stockholm, Sweden (remote)"
-startDate: "May 1 2022"
+location: "Stockholm, Sweden (remote)"
+URL: https://seqera.io
+startDate: 2022-05-01
 heroImage: "/images/work/seqera_office.jpg"
 iconImage: "/images/work/seqera.svg"
 iconImageDark: "/images/work/seqera.svg"
-descImage: "/images/work/flag_se.svg"
-tags: [1 position]
+countryFlag: "/images/work/flag_se.svg"
+numPositions: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.

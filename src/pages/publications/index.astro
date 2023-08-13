@@ -1,11 +1,13 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 
-import publications from "./publications.json";
-const pubs = (await Astro.glob("./**/*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf(),
+import publications from "../../publications.json";
+const pubs = (await getCollection("projects")).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 );
 var year = null;
 
@@ -22,11 +24,13 @@ function short_authors(authors) {
 }
 ---
 
+{
+  /*
 <BaseLayout title="Publications">
   <PageTitle>Publications</PageTitle>
   {
     pubs.map((post) => {
-      const pub = publications[post.frontmatter.doi];
+      const pub = publications[post.data.doi];
       var year_heading = null;
       if (year != pub.published["date-parts"][0][0]) {
         year = pub.published["date-parts"][0][0];
@@ -36,8 +40,8 @@ function short_authors(authors) {
         <>
           {year_heading && <h2 class="my-4 text-2xl font-bold">{year_heading}</h2>}
           <HorizontalCard
-            title={post.frontmatter.title}
-            subtitle={post.frontmatter.journal + " (" + pub.published["date-parts"][0][0] + ")"}
+            title={post.data.title}
+            subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
             desc={short_authors(pub.author)}
             url={post.url}
           />
@@ -46,3 +50,5 @@ function short_authors(authors) {
     })
   }
 </BaseLayout>
+ */
+}

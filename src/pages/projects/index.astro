@@ -1,11 +1,11 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 
-const posts = (await Astro.glob("./*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf(),
-);
+const projects = await getCollection("projects");
 ---
 
 <BaseLayout title="Projects">
@@ -13,13 +13,13 @@ const posts = (await Astro.glob("./*.{md,mdx}")).sort(
   <ul>
     <!--List the array of astronaut info-->
     {
-      posts.map((post) => (
+      projects.map((p) => (
         <>
           <HorizontalCard
-            title={post.frontmatter.title}
-            img={post.frontmatter.iconImage}
-            desc={post.frontmatter.description}
-            url={post.url}
+            title={p.data.title}
+            img={p.data.iconImage}
+            description={p.data.description}
+            url={"/projects/" + p.slug}
           />
         </>
       ))

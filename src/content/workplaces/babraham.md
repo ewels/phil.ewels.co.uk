@@ -1,11 +1,13 @@
 ---
-layout: "@layouts/PostLayout.astro"
-title: "nf-core"
-description: "A community effort to collect a curated set of analysis pipelines built using Nextflow"
-pubDate: "Sep 12 2022"
-heroImage: "/post_img.webp"
-iconImage: "/images/projects/nf-core-logo-square.svg"
-iconImageDark: "/images/projects/nf-core-logo-square-dark.svg"
+title: "The Babraham Institute"
+location: "Cambridge, UK"
+URL: https://www.babraham.ac.uk
+startDate: 2008-09-01
+heroImage: "/images/work/babraham_snow.jpg"
+iconImage: "/images/work/babraham.svg"
+iconImageDark: "/images/work/babraham-dark.svg"
+countryFlag: "/images/work/flag_uk.svg"
+numPositions: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.

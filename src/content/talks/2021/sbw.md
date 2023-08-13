@@ -1,15 +1,16 @@
 ---
-layout: "@layouts/EventLayout.astro"
 title: Swedish Bioinformatics Workshop
-subtitle: Reproducible bioinformatics workflows with Nextflow and nf-core
+description: Reproducible bioinformatics workflows with Nextflow and nf-core
 location: Online
 type: Talk
-date: "2021-10-21"
+iconImage: /talks/2021/sbw/SBW2021_logo.png
 tags:
   - invited speaker
-event_url: https://sbw-lund.github.io/
-pdf: /talks/2021/sbw/Phil_Ewels_-_SWB_Lund_-_nf-core.pdf
-iconImage: /talks/2021/sbw/SBW2021_logo.png
+eventURLs:
+  - https://sbw-lund.github.io/
+pdfURLs:
+  - /talks/2021/sbw/Phil_Ewels_-_SWB_Lund_-_nf-core.pdf
+date: 2021-10-21
 ---
 
 Gave an invited talk at the SBW (Swedish Bioinformatics Workshop) meeting.

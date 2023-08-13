@@ -1,10 +1,12 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 
-const workplaces = (await Astro.glob("./*.{md,mdx}")).sort(
-  (a, b) => new Date(b.frontmatter.startDate).valueOf() - new Date(a.frontmatter.startDate).valueOf(),
+const workplaces = (await getCollection("workplaces")).sort(
+  (a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
 );
 ---
 
@@ -22,12 +24,12 @@ const workplaces = (await Astro.glob("./*.{md,mdx}")).sort(
       workplaces.map((post) => (
         <>
           <HorizontalCard
-            title={post.frontmatter.title}
-            img={post.frontmatter.iconImage}
-            desc={post.frontmatter.description}
-            descImage={post.frontmatter.descImage}
-            tags={post.frontmatter.tags}
-            url={post.url}
+            title={post.data.title}
+            img={post.data.iconImage}
+            description={post.data.location}
+            countryFlag={post.data.countryFlag}
+            tags={[post.data.numPositions + " positions"]}
+            url={"/work/" + post.slug}
           />
         </>
       ))
