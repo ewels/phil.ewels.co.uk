@@ -6,22 +6,24 @@
 
   // Set in BaseHead.astro on page load
   $: theme = localStorage.getItem("theme");
-  const switchLight = () => {
-    document.documentElement.classList.remove("dark");
-    localStorage.setItem("theme", "light");
-    theme = "light";
-  };
-  const switchDark = (e: MouseEvent) => {
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
-    theme = "dark";
+  const toggleDarkMode = () => {
+    if (theme == "dark") {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      theme = "light";
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      theme = "dark";
+    }
   };
 </script>
 
 <button
   class="rounded-full border dark:border-transparent bg-gray-100 dark:bg-gray-800 px-2 py-1"
   title="Toggle between light and dark theme"
+  on:click={() => toggleDarkMode()}
 >
-  <button on:click={() => switchLight()}>{@html icon_ph_sun_bold}</button>
-  <button on:click={(e) => switchDark(e)}>{@html icon_ph_moon_bold}</button>
+  {@html icon_ph_sun_bold}
+  {@html icon_ph_moon_bold}
 </button>
