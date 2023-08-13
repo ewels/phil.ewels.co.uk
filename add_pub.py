@@ -97,16 +97,14 @@ def fetch_publication(doi: str):
 
 def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict):
     frontmatter = {
-        "layout": "@layouts/PublicationLayout.astro",
         "doi": doi,
-        "slug": slug,
         "title": pub["title"][0],
         "journal": journal,
     }
     try:
-        frontmatter["pubDate"] = "{}-{}-{}".format(*pub["published"]["date-parts"][0])
+        pubDate = "pubDate: {}-{:02}-{:02}".format(*pub["published"]["date-parts"][0])
     except IndexError:
-        frontmatter["pubDate"] = "{}-{}-01".format(*pub["published"]["date-parts"][0])
+        pubDate = "pubDate: {}-{:02}-01".format(*pub["published"]["date-parts"][0])
 
     # Create the publication markdown file
     print(f"[magenta]Creating [green]'{doi}': [yellow]{md_path}")
@@ -114,6 +112,7 @@ def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict)
     with md_path.open("w") as f:
         f.write("---\n")
         f.write(yaml.dump(frontmatter, sort_keys=False, width=180))
+        f.write(f"{pubDate}\n")  # No quote marks
         f.write("---\n\n")
         abstract_replace = {
             "<jats:title>": "## ",

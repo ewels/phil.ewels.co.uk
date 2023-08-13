@@ -13041,5 +13041,2253 @@
         "label": "Copyright"
       }
     ]
+  },
+  "10.1111/mec.16345": {
+    "indexed": {
+      "date-parts": [[2023, 5, 11]],
+      "date-time": "2023-05-11T09:54:44Z",
+      "timestamp": 1683798884414
+    },
+    "reference-count": 67,
+    "publisher": "Wiley",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2022, 1, 22]],
+          "date-time": "2022-01-22T00:00:00Z",
+          "timestamp": 1642809600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [[2022, 1, 22]],
+          "date-time": "2022-01-22T00:00:00Z",
+          "timestamp": 1642809600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004189",
+        "name": "Max-Planck-Gesellschaft",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "DOI": "10.13039/501100009252",
+        "name": "Science for Life Laboratory",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "DOI": "10.13039/501100004063",
+        "name": "Knut och Alice Wallenbergs Stiftelse",
+        "doi-asserted-by": "publisher"
+      },
+      {
+        "DOI": "10.13039/501100004359",
+        "name": "Vetenskapsr\u00e5det",
+        "doi-asserted-by": "publisher"
+      }
+    ],
+    "content-domain": {
+      "domain": ["onlinelibrary.wiley.com"],
+      "crossmark-restriction": true
+    },
+    "short-container-title": ["Molecular Ecology"],
+    "published-print": {
+      "date-parts": [[2022, 3]]
+    },
+    "DOI": "10.1111/mec.16345",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2022, 1, 7]],
+      "date-time": "2022-01-07T17:44:23Z",
+      "timestamp": 1641577463000
+    },
+    "page": "1504-1514",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": ["Local selection signals in the genome of blue tits emphasize regulatory and neuronal evolution"],
+    "prefix": "10.1111",
+    "volume": "31",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-6676-7595",
+        "authenticated-orcid": false,
+        "given": "Jakob C.",
+        "family": "Mueller",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Ecology and Evolutionary Genetics Max Planck Institute for Ornithology Seewiesen Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4653-7551",
+        "authenticated-orcid": false,
+        "given": "Esteban",
+        "family": "Botero\u2010Delgadillo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Ecology and Evolutionary Genetics Max Planck Institute for Ornithology Seewiesen Germany"
+          }
+        ]
+      },
+      {
+        "given": "Pamela",
+        "family": "Esp\u00edndola\u2010Hern\u00e1ndez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Ecology and Evolutionary Genetics Max Planck Institute for Ornithology Seewiesen Germany"
+          }
+        ]
+      },
+      {
+        "given": "Carol",
+        "family": "Gilsenan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Ecology and Evolutionary Genetics Max Planck Institute for Ornithology Seewiesen Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": false,
+        "given": "Phil",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory (SciLifeLab), Department of Biochemistry and Biophysics Stockholm University Stockholm Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Joel",
+        "family": "Gruselius",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory, Department of Biosciences and Nutrition Karolinska Institutet Stockholm Sweden"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-7505-5458",
+        "authenticated-orcid": false,
+        "given": "Bart",
+        "family": "Kempenaers",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Ecology and Evolutionary Genetics Max Planck Institute for Ornithology Seewiesen Germany"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [[2022, 1, 22]]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_9_2_1",
+        "unstructured": "Aktas. (2020).https://CRAN.R\u2010project.org/package=haplotypes"
+      },
+      {
+        "key": "e_1_2_9_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.191189.115"
+      },
+      {
+        "key": "e_1_2_9_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pgen.1005877"
+      },
+      {
+        "key": "e_1_2_9_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/mec.15553"
+      },
+      {
+        "key": "e_1_2_9_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1558\u20105646.1999.tb04575.x"
+      },
+      {
+        "key": "e_1_2_9_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.2041\u2010210X.2011.00179.x"
+      },
+      {
+        "key": "e_1_2_9_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1365\u20102656.13388"
+      },
+      {
+        "key": "e_1_2_9_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/gigascience/giab008"
+      },
+      {
+        "key": "e_1_2_9_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msw023"
+      },
+      {
+        "key": "e_1_2_9_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467\u2010019\u201013225\u2010y"
+      },
+      {
+        "key": "e_1_2_9_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nrg2146"
+      },
+      {
+        "key": "e_1_2_9_13_1",
+        "unstructured": "Freitag W.(2012).Wald Waldnutzung. In: Historisches Lexikon Bayerns.http://www.historisches\u2010lexikon\u2010bayerns.de/Lexikon/Wald _Waldnutzung"
+      },
+      {
+        "key": "e_1_2_9_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.neuron.2017.06.009"
+      },
+      {
+        "key": "e_1_2_9_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pgen.1005004"
+      },
+      {
+        "key": "e_1_2_9_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1365\u20102656.13160"
+      },
+      {
+        "key": "e_1_2_9_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1098/rstb.2015.0051"
+      },
+      {
+        "key": "e_1_2_9_18_1",
+        "unstructured": "Grote S.(2018).GOfuncR: Gene ontology enrichment using FUNC. R package version 1.2.0."
+      },
+      {
+        "key": "e_1_2_9_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/mec.13339"
+      },
+      {
+        "key": "e_1_2_9_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.387103"
+      },
+      {
+        "key": "e_1_2_9_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/YPG.0b013e3283457bfb"
+      },
+      {
+        "key": "e_1_2_9_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.2015987117"
+      },
+      {
+        "key": "e_1_2_9_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41576\u2010020\u201000304\u2010w"
+      },
+      {
+        "key": "e_1_2_9_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkaa1106s"
+      },
+      {
+        "key": "e_1_2_9_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms6281"
+      },
+      {
+        "key": "e_1_2_9_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature10944"
+      },
+      {
+        "key": "e_1_2_9_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aam8327"
+      },
+      {
+        "key": "e_1_2_9_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btw556"
+      },
+      {
+        "key": "e_1_2_9_29_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1959",
+        "DOI": "10.1534/g3.118.200262",
+        "article-title": "diploS/HIC: An updated approach to classifying selective sweeps",
+        "volume": "8",
+        "author": "Kern A. D.",
+        "year": "2018",
+        "journal-title": "G3: Genes. Genomes, Genetics"
+      },
+      {
+        "key": "e_1_2_9_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fmolb.2020.00021"
+      },
+      {
+        "key": "e_1_2_9_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18637/jss.v082.i13"
+      },
+      {
+        "key": "e_1_2_9_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms10474"
+      },
+      {
+        "key": "e_1_2_9_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.celrep.2017.11.028"
+      },
+      {
+        "key": "e_1_2_9_34_1",
+        "unstructured": "Li H.(2013). Aligning sequence reads clone sequences and assembly contigs with BWA\u2010MEM. arXiv 1\u20133."
+      },
+      {
+        "key": "e_1_2_9_35_1",
+        "unstructured": "Lindenbaum P.(2015).JVarkit: Java\u2010based utilities for bioinformatics. figshare:https://doi.org/10.6084/m9.figshare.1425030"
+      },
+      {
+        "key": "e_1_2_9_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tree.2013.08.003"
+      },
+      {
+        "key": "e_1_2_9_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/mec.15451"
+      },
+      {
+        "key": "e_1_2_9_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/mec.14353"
+      },
+      {
+        "key": "e_1_2_9_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10682\u2010010\u20109377\u20102"
+      },
+      {
+        "key": "e_1_2_9_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1755\u20100998.12450"
+      },
+      {
+        "key": "e_1_2_9_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/mec.12288"
+      },
+      {
+        "key": "e_1_2_9_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1755-0998.2009.02777.x"
+      },
+      {
+        "key": "e_1_2_9_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1365\u2010294X.2011.05177.x"
+      },
+      {
+        "key": "e_1_2_9_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1558\u20105646.2011.01369.x"
+      },
+      {
+        "key": "e_1_2_9_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btp696"
+      },
+      {
+        "key": "e_1_2_9_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1534/genetics.119.303002"
+      },
+      {
+        "key": "e_1_2_9_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/eva.13035"
+      },
+      {
+        "key": "e_1_2_9_48_1",
+        "volume-title": "R: A language and environment for statistical computing",
+        "author": "R Core Team",
+        "year": "2020"
+      },
+      {
+        "key": "e_1_2_9_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tig.2020.03.006"
+      },
+      {
+        "key": "e_1_2_9_50_1",
+        "unstructured": "Sayols S.(2020).rrvgo: A Bioconductor package to reduce and visualize Gene Ontology terms. Reprieved fromhttps://ssayols.github.io/rrvgo"
+      },
+      {
+        "key": "e_1_2_9_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471\u20102105\u20107\u2010302"
+      },
+      {
+        "key": "e_1_2_9_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msx154"
+      },
+      {
+        "key": "e_1_2_9_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7554/eLife.41815"
+      },
+      {
+        "key": "e_1_2_9_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tig.2019.09.008"
+      },
+      {
+        "key": "e_1_2_9_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ceb.2004.04.004"
+      },
+      {
+        "key": "e_1_2_9_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btu861"
+      },
+      {
+        "key": "e_1_2_9_57_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stern D.(2016).Evolution of gene expression. Oxford Bibliographies.https://doi.org/10.1093/obo/9780199941728\u20100085",
+        "DOI": "10.1093/obo/9780199941728-0085"
+      },
+      {
+        "key": "e_1_2_9_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1558\u20105646.2008.00450.x"
+      },
+      {
+        "key": "e_1_2_9_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/cr.2016.39"
+      },
+      {
+        "key": "e_1_2_9_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ng.3748"
+      },
+      {
+        "key": "e_1_2_9_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/0471250953.bi1110s43"
+      },
+      {
+        "key": "e_1_2_9_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12862\u2010015\u20100533\u20108"
+      },
+      {
+        "key": "e_1_2_9_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/hdy.2013.107"
+      },
+      {
+        "key": "e_1_2_9_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.71.7.2843"
+      },
+      {
+        "key": "e_1_2_9_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msg140"
+      },
+      {
+        "key": "e_1_2_9_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.gpb.2020.10.007"
+      },
+      {
+        "key": "e_1_2_9_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3432"
+      },
+      {
+        "key": "e_1_2_9_68_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.anbehav.2014.02.032"
+      }
+    ],
+    "container-title": ["Molecular Ecology"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/mec.16345",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/mec.16345",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/mec.16345",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2022, 6, 17]],
+      "date-time": "2022-06-17T11:55:16Z",
+      "timestamp": 1655466916000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1111/mec.16345"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2022, 1, 22]]
+    },
+    "references-count": 67,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [[2022, 3]]
+      }
+    },
+    "alternative-id": ["10.1111/mec.16345"],
+    "URL": "http://dx.doi.org/10.1111/mec.16345",
+    "archive": ["Portico"],
+    "relation": {},
+    "ISSN": ["0962-1083", "1365-294X"],
+    "issn-type": [
+      {
+        "value": "0962-1083",
+        "type": "print"
+      },
+      {
+        "value": "1365-294X",
+        "type": "electronic"
+      }
+    ],
+    "subject": ["Genetics", "Ecology, Evolution, Behavior and Systematics"],
+    "published": {
+      "date-parts": [[2022, 1, 22]]
+    },
+    "assertion": [
+      {
+        "value": "2021-08-31",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2021-12-15",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-01-22",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  },
+  "10.1371/journal.pcbi.1009823": {
+    "indexed": {
+      "date-parts": [[2023, 8, 6]],
+      "date-time": "2023-08-06T16:50:55Z",
+      "timestamp": 1691340655065
+    },
+    "reference-count": 57,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2022, 3, 24]],
+          "date-time": "2022-03-24T00:00:00Z",
+          "timestamp": 1648080000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100010661",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": ["823827"]
+      },
+      {
+        "DOI": "10.13039/100010661",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": ["823830"]
+      },
+      {
+        "DOI": "10.13039/100010661",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": ["824087"]
+      },
+      {
+        "DOI": "10.13039/100010661",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": ["871118"]
+      },
+      {
+        "DOI": "10.13039/501100007601",
+        "name": "Horizon 2020",
+        "doi-asserted-by": "publisher",
+        "award": ["101046203"]
+      },
+      {
+        "DOI": "10.13039/501100003130",
+        "name": "Research Foundation Flanders",
+        "doi-asserted-by": "crossref",
+        "award": ["I002819N"]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": ["NFDI 7/1 \u2013 42077441"]
+      }
+    ],
+    "content-domain": {
+      "domain": ["www.ploscompbiol.org"],
+      "crossmark-restriction": false
+    },
+    "short-container-title": ["PLoS Comput Biol"],
+    "DOI": "10.1371/journal.pcbi.1009823",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2022, 3, 24]],
+      "date-time": "2022-03-24T21:24:50Z",
+      "timestamp": 1648157090000
+    },
+    "page": "e1009823",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": ["Ten simple rules for making a software tool workflow-ready"],
+    "prefix": "10.1371",
+    "volume": "18",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-5432-2748",
+        "authenticated-orcid": true,
+        "given": "Paul",
+        "family": "Brack",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2222-9418",
+        "authenticated-orcid": true,
+        "given": "Peter",
+        "family": "Crowther",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9842-9718",
+        "authenticated-orcid": true,
+        "given": "Stian",
+        "family": "Soiland-Reyes",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2130-0865",
+        "authenticated-orcid": true,
+        "given": "Stuart",
+        "family": "Owen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1248-3594",
+        "authenticated-orcid": true,
+        "given": "Douglas",
+        "family": "Lowe",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3156-2105",
+        "authenticated-orcid": true,
+        "given": "Alan R.",
+        "family": "Williams",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0596-5376",
+        "authenticated-orcid": true,
+        "given": "Quentin",
+        "family": "Groom",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-3973-1252",
+        "authenticated-orcid": true,
+        "given": "Mathias",
+        "family": "Dillen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6565-5145",
+        "authenticated-orcid": true,
+        "given": "Frederik",
+        "family": "Coppens",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-3079-6586",
+        "authenticated-orcid": true,
+        "given": "Bj\u00f6rn",
+        "family": "Gr\u00fcning",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6190-122X",
+        "authenticated-orcid": true,
+        "given": "Ignacio",
+        "family": "Eguinoa",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": true,
+        "given": "Philip",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1219-2137",
+        "authenticated-orcid": true,
+        "given": "Carole",
+        "family": "Goble",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [[2022, 3, 24]]
+    },
+    "reference": [
+      {
+        "key": "pcbi.1009823.ref001",
+        "doi-asserted-by": "crossref",
+        "first-page": "216",
+        "DOI": "10.1016/j.future.2017.05.041",
+        "article-title": "Scientific workflows: Past, present and future.",
+        "volume": "75",
+        "author": "M Atkinson",
+        "year": "2017",
+        "journal-title": "Future Gener Comput Syst"
+      },
+      {
+        "issue": "7772",
+        "key": "pcbi.1009823.ref002",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1038/d41586-019-02619-z",
+        "article-title": "Workflow systems turn raw data into scientific knowledge",
+        "volume": "573",
+        "author": "JM Perkel",
+        "year": "2019",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "pcbi.1009823.ref003",
+        "volume-title": "2009 ICSE Workshop on Software Engineering for Computational Science and Engineering",
+        "author": "JE Hannay",
+        "year": "2009"
+      },
+      {
+        "issue": "10",
+        "key": "pcbi.1009823.ref004",
+        "doi-asserted-by": "crossref",
+        "first-page": "1219",
+        "DOI": "10.1016/j.infsof.2014.05.006",
+        "article-title": "Testing scientific software: A systematic literature review.",
+        "volume": "56",
+        "author": "U Kanewala",
+        "year": "2014",
+        "journal-title": "Inf Softw Technol."
+      },
+      {
+        "issue": "4",
+        "key": "pcbi.1009823.ref005",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1005412",
+        "DOI": "10.1371/journal.pcbi.1005412",
+        "article-title": "Ten simple rules for making research software more robust.",
+        "volume": "13",
+        "author": "M Taschuk",
+        "year": "2017",
+        "journal-title": "PLOS Comput Biol"
+      },
+      {
+        "issue": "5",
+        "key": "pcbi.1009823.ref006",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/gigascience/giz054",
+        "article-title": "Software engineering for scientific big data analysis.",
+        "volume": "8",
+        "author": "BA Gr\u00fcning",
+        "year": "2019",
+        "journal-title": "GigaScience"
+      },
+      {
+        "issue": "W1",
+        "key": "pcbi.1009823.ref007",
+        "doi-asserted-by": "crossref",
+        "first-page": "W3",
+        "DOI": "10.1093/nar/gkw343",
+        "article-title": "The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2016 update.",
+        "volume": "44",
+        "author": "E Afgan",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "3",
+        "key": "pcbi.1009823.ref008",
+        "first-page": "530",
+        "article-title": "A review of bioinformatic pipeline frameworks",
+        "volume": "18",
+        "author": "J. Leipzig",
+        "year": "2016",
+        "journal-title": "Brief Bioinform"
+      },
+      {
+        "issue": "10",
+        "key": "pcbi.1009823.ref009",
+        "doi-asserted-by": "crossref",
+        "first-page": "1161",
+        "DOI": "10.1038/s41592-021-01254-9",
+        "article-title": "Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers",
+        "volume": "18",
+        "author": "L Wratten",
+        "year": "2021",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "pcbi.1009823.ref010",
+        "doi-asserted-by": "crossref",
+        "first-page": "160018",
+        "DOI": "10.1038/sdata.2016.18",
+        "article-title": "The FAIR Guiding Principles for scientific data management and stewardship.",
+        "volume": "3",
+        "author": "MD Wilkinson",
+        "year": "2016",
+        "journal-title": "Sci Data"
+      },
+      {
+        "key": "pcbi.1009823.ref011",
+        "unstructured": "What is standard input?\u2014a definition by The Linux Information Project (LINFO). [cited 2021 Aug 26]. Available from: http://www.linfo.org/standard_input.html"
+      },
+      {
+        "key": "pcbi.1009823.ref012",
+        "unstructured": "Standard Error Definition. [cited 2021 Aug 26]. Available from: http://www.linfo.org/standard_error.html"
+      },
+      {
+        "key": "pcbi.1009823.ref013",
+        "unstructured": "What is standard output?\u2014definition by The Linux Information Project (LINFO). [cited 2021 Aug 26]. Available from: http://www.linfo.org/standard_output.html"
+      },
+      {
+        "key": "pcbi.1009823.ref014",
+        "unstructured": "o365devx. Considerations for unattended automation of Office in the Microsoft 365 for unattended RPA environment. [cited 2021 Aug 26]. Available from: https://docs.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa"
+      },
+      {
+        "issue": "6134",
+        "key": "pcbi.1009823.ref015",
+        "doi-asserted-by": "crossref",
+        "first-page": "814",
+        "DOI": "10.1126/science.1231535",
+        "article-title": "Troubling Trends in Scientific Software Use",
+        "volume": "340",
+        "author": "LN Joppa",
+        "year": "2013",
+        "journal-title": "Science"
+      },
+      {
+        "key": "pcbi.1009823.ref016",
+        "unstructured": "yum\u2014Trac. [cited 2021 Aug 26]. Available from: http://yum.baseurl.org/"
+      },
+      {
+        "key": "pcbi.1009823.ref017",
+        "unstructured": "Conda\u2014Conda documentation. [cited 2021 Aug 26]. Available from: http://conda.io/"
+      },
+      {
+        "key": "pcbi.1009823.ref018",
+        "unstructured": "pip documentation v21.2.4. [cited 2021 Aug 26]. Available from: https://pip.pypa.io/"
+      },
+      {
+        "key": "pcbi.1009823.ref019",
+        "volume-title": "Linux Annoyances for Geeks: Getting the Most Flexible System in the World Just the Way You Want It",
+        "author": "M. Jang",
+        "year": "2006"
+      },
+      {
+        "key": "pcbi.1009823.ref020",
+        "unstructured": "Open Container Initiative\u2014Open Container Initiative. [cited 2021 Aug 26]. Available from: https://opencontainers.org/"
+      },
+      {
+        "key": "pcbi.1009823.ref021",
+        "unstructured": "Empowering App Development for Developers. [cited 2021 Aug 26]. Available from: https://www.docker.com/"
+      },
+      {
+        "key": "pcbi.1009823.ref022",
+        "year": "2021",
+        "journal-title": "Available from"
+      },
+      {
+        "issue": "12",
+        "key": "pcbi.1009823.ref023",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1006561",
+        "DOI": "10.1371/journal.pcbi.1006561",
+        "article-title": "Ten simple rules for documenting scientific software.",
+        "volume": "14",
+        "author": "BD Lee",
+        "year": "2018",
+        "journal-title": "PLoS Comput Biol"
+      },
+      {
+        "key": "pcbi.1009823.ref024",
+        "unstructured": "Git [cited 2021 Aug 26]. Available from: https://git-scm.com/"
+      },
+      {
+        "key": "pcbi.1009823.ref025",
+        "unstructured": "Apache Subversion [cited 2021 Aug 26]. Available from: https://subversion.apache.org/"
+      },
+      {
+        "key": "pcbi.1009823.ref026",
+        "unstructured": "A successful Git branching model. [cited 2021 Aug 26]. Available from: http://nvie.com/posts/a-successful-git-branching-model/"
+      },
+      {
+        "key": "pcbi.1009823.ref027",
+        "unstructured": "Understanding the GitHub flow. [cited 2021 Aug 26]. Available from: https://guides.github.com/introduction/flow/"
+      },
+      {
+        "key": "pcbi.1009823.ref028",
+        "unstructured": "Where the world builds software. [cited 2021 Aug 26]. Available from: https://github.com/"
+      },
+      {
+        "key": "pcbi.1009823.ref029",
+        "unstructured": "Iterate faster, innovate together. [cited 2021 Aug 26]. Available from: https://about.gitlab.com/"
+      },
+      {
+        "key": "pcbi.1009823.ref030",
+        "unstructured": "Atlassian. Bitbucket [cited 2021 Aug 26]. Available from: https://bitbucket.org/product"
+      },
+      {
+        "key": "pcbi.1009823.ref031",
+        "unstructured": "Preston-Werner T. Semantic Versioning 2.0.0. [cited 2021 Aug 26]. Available from: https://semver.org/"
+      },
+      {
+        "key": "pcbi.1009823.ref032",
+        "unstructured": "Licenses & Standards. [cited 2021 Aug 26]. Available from: https://opensource.org/licenses"
+      },
+      {
+        "key": "pcbi.1009823.ref033",
+        "unstructured": "Apache Software Foundation. Apache License, version 2.0 [cited 2021 Aug 26]. Available from: https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      {
+        "key": "pcbi.1009823.ref034",
+        "unstructured": "The 2-Clause BSD License. [cited 2021 Aug 26]. Available from: https://opensource.org/licenses/BSD-2-Clause"
+      },
+      {
+        "key": "pcbi.1009823.ref035",
+        "unstructured": "The GNU General Public License v3.0\u2014GNU Project\u2014Free Software Foundation. [cited 2021 Aug 26]. Available from: https://www.gnu.org/licenses/gpl-3.0.en.html"
+      },
+      {
+        "key": "pcbi.1009823.ref036",
+        "unstructured": "SPDX License List. [cited 2021 Aug 26]. Available from: https://spdx.org/licenses/"
+      },
+      {
+        "key": "pcbi.1009823.ref037",
+        "volume-title": "The Tao of Programming",
+        "author": "G. James",
+        "year": "1987"
+      },
+      {
+        "key": "pcbi.1009823.ref038",
+        "volume-title": "Principles of Computer System Design: An Introduction.",
+        "author": "JH Saltzer",
+        "year": "2009"
+      },
+      {
+        "key": "pcbi.1009823.ref039",
+        "unstructured": "Exit Codes With Special Meanings. [cited 2021 Aug 26]. Available from: https://tldp.org/LDP/abs/html/exitcodes.html"
+      },
+      {
+        "key": "pcbi.1009823.ref040",
+        "unstructured": "System error codes (0\u2013499). [cited 2021 Dec 20]. Available from: https://docs.microsoft.com/en-us/windows/win32/debug/system-error-codes\u20140-499-"
+      },
+      {
+        "key": "pcbi.1009823.ref041",
+        "unstructured": "Character encodings for beginners. [cited 2021 Aug 26]. Available from: https://www.w3.org/International/questions/qa-what-is-encoding"
+      },
+      {
+        "issue": "1",
+        "key": "pcbi.1009823.ref042",
+        "first-page": "2047",
+        "volume": "2",
+        "author": "T. Seemann",
+        "year": "2013",
+        "journal-title": "Ten recommendations for creating usable bioinformatics command line software GigaScience"
+      },
+      {
+        "key": "pcbi.1009823.ref043",
+        "doi-asserted-by": "crossref",
+        "first-page": "723",
+        "volume-title": "Evolutionary Genomics: Statistical and Computational Methods",
+        "author": "F Strozzi",
+        "year": "2019",
+        "DOI": "10.1007/978-1-4939-9074-0_24"
+      },
+      {
+        "issue": "1",
+        "key": "pcbi.1009823.ref044",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/gigascience/giaa140",
+        "article-title": "Streamlining data-intensive biology with workflow systems",
+        "volume": "10",
+        "author": "T Reiter",
+        "year": "2021",
+        "journal-title": "GigaScience"
+      },
+      {
+        "key": "pcbi.1009823.ref045",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Miranda E. Fermi Questions to Estimate Software Development Projects. In: 2014 Joint Conference of the International Workshop on Software Measurement and the International Conference on Software Process and Product Measurement. 2014. p. 293\u201393. https://doi.org/10.1109/IWSM.Mensura.2014.58",
+        "DOI": "10.1109/IWSM.Mensura.2014.58"
+      },
+      {
+        "key": "pcbi.1009823.ref046",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "volume-title": "Solving Software Challenges for Exascale",
+        "author": "S P\u00e1ll",
+        "year": "2015",
+        "DOI": "10.1007/978-3-319-15976-8_1"
+      },
+      {
+        "key": "pcbi.1009823.ref047",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stockinger H, Pagni M, Cerutti L, Falquet L. Grid Approach to Embarrassingly Parallel CPU-Intensive Bioinformatics Problems. In: 2006 Second IEEE International Conference on e-Science and Grid Computing (e-Science\u201906). 2006. p. 58\u201358. https://doi.org/10.1109/E-SCIENCE.2006.261142",
+        "DOI": "10.1109/E-SCIENCE.2006.261142"
+      },
+      {
+        "issue": "6317",
+        "key": "pcbi.1009823.ref048",
+        "doi-asserted-by": "crossref",
+        "first-page": "1240",
+        "DOI": "10.1126/science.aah6168",
+        "article-title": "Enhancing reproducibility for computational methods",
+        "volume": "354",
+        "author": "V Stodden",
+        "year": "2016",
+        "journal-title": "Science"
+      },
+      {
+        "issue": "10",
+        "key": "pcbi.1009823.ref049",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1003285",
+        "DOI": "10.1371/journal.pcbi.1003285",
+        "article-title": "Ten simple rules for reproducible computational research.",
+        "volume": "9",
+        "author": "GK Sandve",
+        "year": "2013",
+        "journal-title": "PLOS Comput Biol"
+      },
+      {
+        "key": "pcbi.1009823.ref050",
+        "unstructured": "Tanjim M. How to verify checksum in Linux [MD5, SHA256 & more]. [cited 2021 Aug 26]. Available from: https://itsfoss.com/checksum-tools-guide-linux/"
+      },
+      {
+        "key": "pcbi.1009823.ref051",
+        "unstructured": "Key facts on digital object identifier system. [cited 2021 Aug 26]. Available from: https://www.doi.org/factsheets/DOIKeyFacts.html"
+      },
+      {
+        "issue": "8",
+        "key": "pcbi.1009823.ref052",
+        "doi-asserted-by": "crossref",
+        "first-page": "1118",
+        "DOI": "10.1093/bioinformatics/btn082",
+        "article-title": "The Taverna Interaction Service: enabling manual interaction in workflows",
+        "volume": "24",
+        "author": "A Lanz\u00e9n",
+        "year": "2008",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "pcbi.1009823.ref053",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1186/s12898-016-0103-y",
+        "article-title": "BioVeL: a virtual laboratory for data analysis and modelling in biodiversity science and ecology.",
+        "volume": "16",
+        "author": "AR Hardisty",
+        "year": "2016",
+        "journal-title": "BMC Ecol"
+      },
+      {
+        "issue": "1",
+        "key": "pcbi.1009823.ref054",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1177/1094342017704893",
+        "article-title": "The future of scientific workflows.",
+        "volume": "32",
+        "author": "E Deelman",
+        "year": "2018",
+        "journal-title": "Int J High Perform Comput Appl."
+      },
+      {
+        "key": "pcbi.1009823.ref055",
+        "volume-title": "Elements of functional programming",
+        "author": "C. Reade",
+        "year": "1989"
+      },
+      {
+        "key": "pcbi.1009823.ref056",
+        "volume-title": "Agile Software Development: Principles, Patterns, and Practices",
+        "author": "RC Martin",
+        "year": "2003"
+      },
+      {
+        "key": "pcbi.1009823.ref057",
+        "volume-title": "The Art of UNIX Programming",
+        "author": "ES Raymond",
+        "year": "2003"
+      }
+    ],
+    "container-title": ["PLOS Computational Biology"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dx.plos.org/10.1371/journal.pcbi.1009823",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2023, 1, 29]],
+      "date-time": "2023-01-29T23:17:07Z",
+      "timestamp": 1675034227000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pcbi.1009823"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Scott",
+        "family": "Markel",
+        "sequence": "first",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2022, 3, 24]]
+    },
+    "references-count": 57,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [[2022, 3, 24]]
+      }
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1009823",
+    "relation": {},
+    "ISSN": ["1553-7358"],
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Computational Theory and Mathematics",
+      "Cellular and Molecular Neuroscience",
+      "Genetics",
+      "Molecular Biology",
+      "Ecology",
+      "Modeling and Simulation",
+      "Ecology, Evolution, Behavior and Systematics"
+    ],
+    "published": {
+      "date-parts": [[2022, 3, 24]]
+    }
+  },
+  "10.1182/bloodadvances.2021006720": {
+    "indexed": {
+      "date-parts": [[2023, 8, 5]],
+      "date-time": "2023-08-05T18:50:25Z",
+      "timestamp": 1691261425829
+    },
+    "reference-count": 61,
+    "publisher": "American Society of Hematology",
+    "issue": "17",
+    "content-domain": {
+      "domain": ["ashpublications.org"],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [[2022, 9, 13]]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Multiple myeloma (MM) is an incurable and aggressive plasma cell malignancy characterized by a complex karyotype with multiple structural variants (SVs) and copy-number variations (CNVs). Linked-read whole-genome sequencing (lrWGS) allows for refined detection and reconstruction of SVs by providing long-range genetic information from standard short-read sequencing. This makes lrWGS an attractive solution for capturing the full genomic complexity of MM. Here we show that high-quality lrWGS data can be generated from low numbers of cells subjected to fluorescence-activated cell sorting (FACS) without DNA purification. Using this protocol, we analyzed MM cells after FACS from 37 patients with MM using lrWGS. We found high concordance between lrWGS and fluorescence in situ hybridization (FISH) for the detection of recurrent translocations and CNVs. Outside of the regions investigated by FISH, we identified &amp;gt;150 additional SVs and CNVs across the cohort. Analysis of the lrWGS data allowed for resolution of the structure of diverse SVs affecting the MYC and t(11;14) loci, causing the duplication of genes and gene regulatory elements. In addition, we identified private SVs causing the dysregulation of genes recurrently involved in translocations with the IGH locus and show that these can alter the molecular classification of MM. Overall, we conclude that lrWGS allows for the detection of aberrations critical for MM prognostics and provides a feasible route for providing comprehensive genetics. Implementing lrWGS could provide more accurate clinical prognostics, facilitate genomic medicine initiatives, and greatly improve the stratification of patients included in clinical trials.</jats:p>",
+    "DOI": "10.1182/bloodadvances.2021006720",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2022, 6, 8]],
+      "date-time": "2022-06-08T18:52:25Z",
+      "timestamp": 1654714345000
+    },
+    "page": "5009-5023",
+    "update-policy": "http://dx.doi.org/10.1182/blood.2019cm0000",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Linked-read whole-genome sequencing resolves common and private structural variants in multiple myeloma"
+    ],
+    "prefix": "10.1182",
+    "volume": "6",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-5044-7754",
+        "authenticated-orcid": false,
+        "given": "Luc\u00eda",
+        "family": "Pe\u00f1a-P\u00e9rez",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "1Department of Laboratory Medicine,"
+          },
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1834-7638",
+        "authenticated-orcid": false,
+        "given": "Nicolai",
+        "family": "Frengen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "1Department of Laboratory Medicine,"
+          },
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6674-4297",
+        "authenticated-orcid": false,
+        "given": "Julia",
+        "family": "Hauenstein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "1Department of Laboratory Medicine,"
+          },
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          }
+        ]
+      },
+      {
+        "given": "Charlotte",
+        "family": "Gran",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          },
+          {
+            "name": "3Department of Medicine, and"
+          }
+        ]
+      },
+      {
+        "given": "Charlotte",
+        "family": "Gustafsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "1Department of Laboratory Medicine,"
+          },
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          }
+        ]
+      },
+      {
+        "given": "Jesper",
+        "family": "Eisfeldt",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "4Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden;"
+          },
+          {
+            "name": "5Science for Life Laboratory, Karolinska Institutet Science Park, Stockholm, Sweden;"
+          }
+        ]
+      },
+      {
+        "given": "Marcin",
+        "family": "Kierczak",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "6Department of Cell and Molecular Biology, National Bioinformatics Infrastructure Sweden, Science for Life Laboratory, Uppsala University, Uppsala, Sweden;"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7198-5116",
+        "authenticated-orcid": false,
+        "given": "Fanny",
+        "family": "Taborsak-Lines",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "7Division of Gene Technology, Royal Institute of Technology, Stockholm, Sweden;"
+          }
+        ]
+      },
+      {
+        "given": "Remi-Andr\u00e9",
+        "family": "Olsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "8Department of Biochemistry and Biophysics, Science for Life Laboratory, Stockholm University, Stockholm, Sweden; and"
+          }
+        ]
+      },
+      {
+        "given": "Ann",
+        "family": "Wallblom",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          },
+          {
+            "name": "3Department of Medicine, and"
+          }
+        ]
+      },
+      {
+        "given": "Aleksandra",
+        "family": "Krstic",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "9Department of Clinical Pathology and Cytology,"
+          }
+        ]
+      },
+      {
+        "given": "Philip",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "8Department of Biochemistry and Biophysics, Science for Life Laboratory, Stockholm University, Stockholm, Sweden; and"
+          }
+        ]
+      },
+      {
+        "given": "Anna",
+        "family": "Lindstrand",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "4Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden;"
+          },
+          {
+            "name": "10Department of Clinical Genetics, and"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-0738-0328",
+        "authenticated-orcid": false,
+        "given": "Robert",
+        "family": "M\u00e5nsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "1Department of Laboratory Medicine,"
+          },
+          {
+            "name": "2Center for Hematology and Regenerative Medicine,"
+          },
+          {
+            "name": "11Department of Hematology, Karolinska University Hospital, Stockholm, Sweden"
+          }
+        ]
+      }
+    ],
+    "member": "234",
+    "published-online": {
+      "date-parts": [[2022, 8, 30]]
+    },
+    "reference": [
+      {
+        "issue": "11",
+        "key": "2022083015232600000_B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1046",
+        "DOI": "10.1056/NEJMra1011442",
+        "article-title": "Multiple myeloma",
+        "volume": "364",
+        "author": "Palumbo",
+        "year": "2011",
+        "journal-title": "N Engl J Med."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B2",
+        "doi-asserted-by": "crossref",
+        "first-page": "100",
+        "DOI": "10.1038/nrclinonc.2016.122",
+        "article-title": "Genomic complexity of multiple myeloma and its clinical implications",
+        "volume": "14",
+        "author": "Manier",
+        "year": "2017",
+        "journal-title": "Nat Rev Clin Oncol."
+      },
+      {
+        "issue": "5",
+        "key": "2022083015232600000_B3",
+        "doi-asserted-by": "crossref",
+        "first-page": "548",
+        "DOI": "10.1002/ajh.25791",
+        "article-title": "Multiple myeloma: 2020 update on diagnosis, risk-stratification and management",
+        "volume": "95",
+        "author": "Rajkumar",
+        "year": "2020",
+        "journal-title": "Am J Hematol."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "383",
+        "DOI": "10.1038/leu.2017.211",
+        "article-title": "Bortezomib before and after high-dose therapy in myeloma: long-term results from the phase III HOVON-65/GMMG-HD4 trial",
+        "volume": "32",
+        "author": "Goldschmidt",
+        "year": "2018",
+        "journal-title": "Leukemia."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1038/s41375-018-0196-8",
+        "article-title": "A high-risk, double-hit, group of newly diagnosed myeloma identified by genomic analysis",
+        "volume": "33",
+        "author": "Walker",
+        "year": "2019",
+        "journal-title": "Leukemia."
+      },
+      {
+        "issue": "5",
+        "key": "2022083015232600000_B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.1038/nrc3257",
+        "article-title": "The genetic architecture of multiple myeloma",
+        "volume": "12",
+        "author": "Morgan",
+        "year": "2012",
+        "journal-title": "Nat Rev Cancer."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "7059",
+        "DOI": "10.18632/oncotarget.12535",
+        "article-title": "The IgH 3\u2032 regulatory region and c-myc-induced B-cell lymphomagenesis",
+        "volume": "8",
+        "author": "Ghazzaui",
+        "year": "2017",
+        "journal-title": "Oncotarget."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B8",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1016/j.ccr.2013.12.015",
+        "article-title": "Widespread genetic heterogeneity in multiple myeloma: implications for targeted therapy",
+        "volume": "25",
+        "author": "Lohr",
+        "year": "2014",
+        "journal-title": "Cancer Cell."
+      },
+      {
+        "issue": "3",
+        "key": "2022083015232600000_B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "e191",
+        "DOI": "10.1038/bcj.2014.13",
+        "article-title": "Translocations at 8q24 juxtapose MYC with genes that harbor superenhancers resulting in overexpression and poor prognosis in myeloma patients",
+        "volume": "4",
+        "author": "Walker",
+        "year": "2014",
+        "journal-title": "Blood Cancer J."
+      },
+      {
+        "issue": "33",
+        "key": "2022083015232600000_B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "3911",
+        "DOI": "10.1200/JCO.2014.59.1503",
+        "article-title": "Mutational spectrum, copy number changes, and outcome: results of a sequencing study of patients with newly diagnosed myeloma",
+        "volume": "33",
+        "author": "Walker",
+        "year": "2015",
+        "journal-title": "J Clin Oncol."
+      },
+      {
+        "issue": "12",
+        "key": "2022083015232600000_B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "2604",
+        "DOI": "10.1038/s41375-018-0037-9",
+        "article-title": "Analysis of the genomic landscape of multiple myeloma highlights novel prognostic markers and disease subgroups",
+        "volume": "32",
+        "author": "Bolli",
+        "year": "2018",
+        "journal-title": "Leukemia."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "3835",
+        "DOI": "10.1038/s41467-019-11680-1",
+        "article-title": "Genomic landscape and chronological reconstruction of driver events in multiple myeloma",
+        "volume": "10",
+        "author": "Maura",
+        "year": "2019",
+        "journal-title": "Nat Commun."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1911",
+        "DOI": "10.1038/s41467-019-09555-6",
+        "article-title": "Multiple myeloma immunoglobulin lambda translocations portend poor prognosis",
+        "volume": "10",
+        "author": "Barwick",
+        "year": "2019",
+        "journal-title": "Nat Commun."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B14",
+        "doi-asserted-by": "crossref",
+        "first-page": "101153",
+        "DOI": "10.1016/j.beha.2020.101153",
+        "article-title": "Genomic profiling of multiple myeloma: new insights and modern technologies",
+        "volume": "33",
+        "author": "Hultcrantz",
+        "year": "2020",
+        "journal-title": "Best Pract Res Clin Haematol."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B15",
+        "doi-asserted-by": "crossref",
+        "first-page": "1055",
+        "DOI": "10.3324/haematol.2019.217927",
+        "article-title": "Microhomology-mediated end joining drives complex rearrangements and overexpression of MYC and PVT1 in multiple myeloma",
+        "volume": "105",
+        "author": "Mikulasova",
+        "year": "2020",
+        "journal-title": "Haematologica."
+      },
+      {
+        "issue": "3",
+        "key": "2022083015232600000_B16",
+        "doi-asserted-by": "crossref",
+        "first-page": "258",
+        "DOI": "10.1158/2643-3230.BCD-20-0132",
+        "article-title": "Revealing the impact of structural variants in multiple myeloma",
+        "volume": "1",
+        "author": "Rustad",
+        "year": "2020",
+        "journal-title": "Blood Cancer Discov."
+      },
+      {
+        "issue": "17",
+        "key": "2022083015232600000_B17",
+        "doi-asserted-by": "crossref",
+        "first-page": "8189",
+        "DOI": "10.1093/nar/gkw527",
+        "article-title": "Frequent occurrence of large duplications at reciprocal genomic rearrangement breakpoints in multiple myeloma and other tumors",
+        "volume": "44",
+        "author": "Demchenko",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B18",
+        "doi-asserted-by": "crossref",
+        "first-page": "336",
+        "DOI": "10.3390/cells10020336",
+        "article-title": "Genetic abnormalities in multiple myeloma: prognostic and therapeutic implications",
+        "volume": "10",
+        "author": "Cardona-Benavides",
+        "year": "2021",
+        "journal-title": "Cells."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B19",
+        "doi-asserted-by": "crossref",
+        "first-page": "863",
+        "DOI": "10.1038/s41375-018-0362-z",
+        "article-title": "The future of myeloma precision medicine: integrating the compendium of known drug resistance mechanisms with emerging tumor profiling technologies",
+        "volume": "33",
+        "author": "Harding",
+        "year": "2019",
+        "journal-title": "Leukemia."
+      },
+      {
+        "key": "2022083015232600000_B20",
+        "doi-asserted-by": "crossref",
+        "first-page": "802",
+        "DOI": "10.3389/fonc.2020.00802",
+        "article-title": "Actionable strategies to target multiple myeloma plasma cell resistance/resilience to stress: insights from \u201comics\u201d",
+        "volume": "10",
+        "author": "Manni",
+        "year": "2020",
+        "journal-title": "Front Oncol."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B21",
+        "doi-asserted-by": "crossref",
+        "first-page": "635",
+        "DOI": "10.1101/gr.234443.118",
+        "article-title": "Resolving the full spectrum of human genome variation using linked-reads",
+        "volume": "29",
+        "author": "Marks",
+        "year": "2019",
+        "journal-title": "Genome Res."
+      },
+      {
+        "issue": "3",
+        "key": "2022083015232600000_B22",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1038/nbt.3432",
+        "article-title": "Haplotyping germline and cancer genomes with high-throughput linked-read sequencing",
+        "volume": "34",
+        "author": "Zheng",
+        "year": "2016",
+        "journal-title": "Nat Biotechnol."
+      },
+      {
+        "key": "2022083015232600000_B23",
+        "doi-asserted-by": "crossref",
+        "first-page": "898",
+        "DOI": "10.1101/gr.260380.119",
+        "volume": "30",
+        "author": "Chen",
+        "year": "2020",
+        "journal-title": "Genome Res"
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B24",
+        "doi-asserted-by": "crossref",
+        "first-page": "18116",
+        "DOI": "10.1038/s41598-019-54446-x",
+        "article-title": "High throughput barcoding method for genome-scale phasing",
+        "volume": "9",
+        "author": "Redin",
+        "year": "2019",
+        "journal-title": "Sci Rep."
+      },
+      {
+        "issue": "19",
+        "key": "2022083015232600000_B25",
+        "doi-asserted-by": "crossref",
+        "first-page": "e162",
+        "DOI": "10.1093/nar/gkx712",
+        "article-title": "Chromosome-scale mega-haplotypes enable digital karyotyping of cancer aneuploidy",
+        "volume": "45",
+        "author": "Bell",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B26",
+        "doi-asserted-by": "crossref",
+        "first-page": "e19",
+        "DOI": "10.1093/nar/gkx1193",
+        "article-title": "Identification of large rearrangements in cancer genomes with barcode linked reads",
+        "volume": "46",
+        "author": "Xia",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B27",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1007858",
+        "DOI": "10.1371/journal.pgen.1007858",
+        "article-title": "Comprehensive structural variation genome map of individuals carrying complex chromosomal rearrangements",
+        "volume": "15",
+        "author": "Eisfeldt",
+        "year": "2019",
+        "journal-title": "PLoS Genet."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B28",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1186/s13073-017-0447-8",
+        "article-title": "Linked read sequencing resolves complex genomic rearrangements in gastric cancer metastases",
+        "volume": "9",
+        "author": "Greer",
+        "year": "2017",
+        "journal-title": "Genome Med."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B29",
+        "doi-asserted-by": "crossref",
+        "first-page": "433",
+        "DOI": "10.1016/j.cell.2018.05.036",
+        "article-title": "Structural alterations driving castration-resistant prostate cancer revealed by linked-read genome sequencing",
+        "volume": "174",
+        "author": "Viswanathan",
+        "year": "2018",
+        "journal-title": "Cell."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B30",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1186/s13059-017-1158-6",
+        "article-title": "Defining the diverse spectrum of inversions, complex structural variation, and chromothripsis in the morbid human genome",
+        "volume": "18",
+        "author": "Collins",
+        "year": "2017",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "2512",
+        "DOI": "10.1038/s41598-020-59214-w",
+        "article-title": "Refined detection and phasing of structural aberrations in pediatric acute lymphoblastic leukemia by linked-read whole-genome sequencing",
+        "volume": "10",
+        "author": "Nordlund",
+        "year": "2020",
+        "journal-title": "Sci Rep."
+      },
+      {
+        "issue": "9",
+        "key": "2022083015232600000_B32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1336",
+        "DOI": "10.1182/blood-2013-09-529800",
+        "article-title": "Robust isolation of malignant plasma cells in multiple myeloma",
+        "volume": "123",
+        "author": "Frigyesi",
+        "year": "2014",
+        "journal-title": "Blood."
+      },
+      {
+        "issue": "19",
+        "key": "2022083015232600000_B33",
+        "doi-asserted-by": "crossref",
+        "first-page": "2138",
+        "DOI": "10.1182/blood-2017-09-808063",
+        "article-title": "Active enhancer and chromatin accessibility landscapes chart the regulatory network of primary multiple myeloma",
+        "volume": "131",
+        "author": "Jin",
+        "year": "2018",
+        "journal-title": "Blood."
+      },
+      {
+        "issue": "6",
+        "key": "2022083015232600000_B34",
+        "doi-asserted-by": "crossref",
+        "first-page": "588",
+        "DOI": "10.1111/ejh.13325",
+        "article-title": "Translocation (11;14) in newly diagnosed multiple myeloma, time to reclassify this standard risk chromosomal aberration?",
+        "volume": "103",
+        "author": "Gran",
+        "year": "2019",
+        "journal-title": "Eur J Haematol."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B35",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1004873",
+        "DOI": "10.1371/journal.pcbi.1004873",
+        "article-title": "CNVkit: genome-wide copy number detection and visualization from targeted DNA sequencing",
+        "volume": "12",
+        "author": "Talevich",
+        "year": "2016",
+        "journal-title": "PLOS Comput Biol."
+      },
+      {
+        "issue": "39",
+        "key": "2022083015232600000_B36",
+        "doi-asserted-by": "crossref",
+        "first-page": "16910",
+        "DOI": "10.1073/pnas.1009843107",
+        "article-title": "Allele-specific copy number analysis of tumors",
+        "volume": "107",
+        "author": "Van Loo",
+        "year": "2010",
+        "journal-title": "Proc Natl Acad Sci USA."
+      },
+      {
+        "issue": "5",
+        "key": "2022083015232600000_B37",
+        "doi-asserted-by": "crossref",
+        "first-page": "994",
+        "DOI": "10.1016/j.cell.2012.04.023",
+        "article-title": "The life history of 21 breast cancers",
+        "volume": "149",
+        "author": "Nik-Zainal",
+        "year": "2012",
+        "journal-title": "Cell."
+      },
+      {
+        "key": "2022083015232600000_B38",
+        "doi-asserted-by": "crossref",
+        "first-page": "63",
+        "DOI": "10.12688/f1000research.16665.2",
+        "article-title": "Sarek: a portable workflow for whole-genome sequencing analysis of germline and somatic variants",
+        "volume": "9",
+        "author": "Garcia",
+        "year": "2020",
+        "journal-title": "F1000 Res."
+      },
+      {
+        "issue": "8",
+        "key": "2022083015232600000_B39",
+        "doi-asserted-by": "crossref",
+        "first-page": "591",
+        "DOI": "10.1038/s41592-018-0051-x",
+        "article-title": "Strelka2: fast and accurate calling of germline and somatic variants",
+        "volume": "15",
+        "author": "Kim",
+        "year": "2018",
+        "journal-title": "Nat Methods."
+      },
+      {
+        "issue": "3",
+        "key": "2022083015232600000_B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1038/nbt.2514",
+        "article-title": "Sensitive detection of somatic point mutations in impure and heterogeneous cancer samples",
+        "volume": "31",
+        "author": "Cibulskis",
+        "year": "2013",
+        "journal-title": "Nat Biotechnol."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B41",
+        "doi-asserted-by": "crossref",
+        "first-page": "122",
+        "DOI": "10.1186/s13059-016-0974-4",
+        "article-title": "The ensembl variant effect predictor",
+        "volume": "17",
+        "author": "McLaren",
+        "year": "2016",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B42",
+        "doi-asserted-by": "crossref",
+        "first-page": "80",
+        "DOI": "10.4161/fly.19695",
+        "article-title": "A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3",
+        "volume": "6",
+        "author": "Cingolani",
+        "year": "2012",
+        "journal-title": "Fly (Austin)."
+      },
+      {
+        "issue": "9",
+        "key": "2022083015232600000_B43",
+        "doi-asserted-by": "crossref",
+        "first-page": "915",
+        "DOI": "10.1038/nmeth.4366",
+        "article-title": "Genome-wide reconstruction of complex structural variants using read clouds",
+        "volume": "14",
+        "author": "Spies",
+        "year": "2017",
+        "journal-title": "Nat Methods."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B44",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1038/nbt.1754",
+        "article-title": "Integrative genomics viewer",
+        "volume": "29",
+        "author": "Robinson",
+        "year": "2011",
+        "journal-title": "Nat Biotechnol."
+      },
+      {
+        "issue": "9",
+        "key": "2022083015232600000_B45",
+        "doi-asserted-by": "crossref",
+        "first-page": "2005",
+        "DOI": "10.1016/j.immuni.2021.08.017",
+        "article-title": "Limited access to antigen drives generation of early B cell memory while restraining the plasmablast response",
+        "volume": "54",
+        "author": "Glaros",
+        "year": "2021",
+        "journal-title": "Immunity."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B46",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1093/bioinformatics/bts635",
+        "article-title": "STAR: ultrafast universal RNA-seq aligner",
+        "volume": "29",
+        "author": "Dobin",
+        "year": "2013",
+        "journal-title": "Bioinformatics."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B47",
+        "doi-asserted-by": "crossref",
+        "first-page": "576",
+        "DOI": "10.1016/j.molcel.2010.05.004",
+        "article-title": "Simple combinations of lineage-determining transcription factors prime cis-regulatory elements required for macrophage and B cell identities",
+        "volume": "38",
+        "author": "Heinz",
+        "year": "2010",
+        "journal-title": "Mol Cell."
+      },
+      {
+        "issue": "1",
+        "key": "2022083015232600000_B48",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1186/s12864-018-5299-0",
+        "article-title": "High-throughput ChIPmentation: freely scalable, single day ChIPseq data generation from very low cell-numbers",
+        "volume": "20",
+        "author": "Gustafsson",
+        "year": "2019",
+        "journal-title": "BMC Genomics."
+      },
+      {
+        "issue": "12",
+        "key": "2022083015232600000_B49",
+        "doi-asserted-by": "crossref",
+        "first-page": "550",
+        "DOI": "10.1186/s13059-014-0550-8",
+        "article-title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+        "volume": "15",
+        "author": "Love",
+        "year": "2014",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "key": "2022083015232600000_B50",
+        "doi-asserted-by": "crossref",
+        "first-page": "160025",
+        "DOI": "10.1038/sdata.2016.25",
+        "article-title": "Extensive sequencing of seven human genomes to characterize benchmark reference materials",
+        "volume": "3",
+        "author": "Zook",
+        "year": "2016",
+        "journal-title": "Sci Data."
+      },
+      {
+        "key": "2022083015232600000_B51",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/j.cancergen.2020.01.001",
+        "article-title": "The combination of WGS and RNA-Seq is superior to conventional diagnostic tests in multiple myeloma: ready for prime time?",
+        "volume": "242",
+        "author": "H\u00f6llein",
+        "year": "2020",
+        "journal-title": "Cancer Genet."
+      },
+      {
+        "issue": "3",
+        "key": "2022083015232600000_B52",
+        "doi-asserted-by": "crossref",
+        "first-page": "412",
+        "DOI": "10.1111/bjh.15406",
+        "article-title": "Clinical-grade validation of whole genome sequencing reveals robust detection of low-frequency variants and copy number alterations in CLL",
+        "volume": "182",
+        "author": "Klintman",
+        "year": "2018",
+        "journal-title": "Br J Haematol."
+      },
+      {
+        "issue": "19",
+        "key": "2022083015232600000_B53",
+        "doi-asserted-by": "crossref",
+        "first-page": "5430",
+        "DOI": "10.1158/1078-0432.CCR-21-0005",
+        "article-title": "The prognostic role of MYC structural variants identified by NGS and FISH in multiple myeloma",
+        "volume": "27",
+        "author": "Sharma",
+        "year": "2021",
+        "journal-title": "Clin Cancer Res."
+      },
+      {
+        "issue": "6",
+        "key": "2022083015232600000_B54",
+        "doi-asserted-by": "crossref",
+        "first-page": "1398",
+        "DOI": "10.1016/j.cell.2018.03.068",
+        "article-title": "Promoter of lncRNA gene PVT1 is a tumor-suppressor DNA boundary element",
+        "volume": "173",
+        "author": "Cho",
+        "year": "2018",
+        "journal-title": "Cell."
+      },
+      {
+        "issue": "4",
+        "key": "2022083015232600000_B55",
+        "doi-asserted-by": "crossref",
+        "first-page": "571",
+        "DOI": "10.1016/j.beha.2007.08.004",
+        "article-title": "Genetic events in the pathogenesis of multiple myeloma",
+        "volume": "20",
+        "author": "Chng",
+        "year": "2007",
+        "journal-title": "Best Pract Res Clin Haematol."
+      },
+      {
+        "issue": "2",
+        "key": "2022083015232600000_B56",
+        "doi-asserted-by": "crossref",
+        "first-page": "207",
+        "DOI": "10.1517/14728222.2011.548861",
+        "article-title": "The kinase NIK as a therapeutic target in multiple myeloma",
+        "volume": "15",
+        "author": "Gardam",
+        "year": "2011",
+        "journal-title": "Expert Opin Ther Targets."
+      },
+      {
+        "issue": "8",
+        "key": "2022083015232600000_B57",
+        "doi-asserted-by": "crossref",
+        "first-page": "1423",
+        "DOI": "10.1016/j.ajhg.2021.06.001",
+        "article-title": "Next-generation cytogenetics: comprehensive assessment of 52 hematological malignancy genomes by optical genome mapping",
+        "volume": "108",
+        "author": "Neveling",
+        "year": "2021",
+        "journal-title": "Am J Hum Genet."
+      },
+      {
+        "key": "2022083015232600000_B58",
+        "article-title": "A national multicenter evaluation of the clinical utility of optical genome mapping for assessment of genomic aberrations in acute myeloid leukemia",
+        "author": "Levy",
+        "journal-title": "medRxiv."
+      },
+      {
+        "issue": "25",
+        "key": "2022083015232600000_B59",
+        "doi-asserted-by": "crossref",
+        "first-page": "2919",
+        "DOI": "10.1182/blood-2016-03-706077",
+        "article-title": "MAF protein mediates innate resistance to proteasome inhibition therapy in multiple myeloma",
+        "volume": "128",
+        "author": "Qiang",
+        "year": "2016",
+        "journal-title": "Blood."
+      },
+      {
+        "issue": "5",
+        "key": "2022083015232600000_B60",
+        "doi-asserted-by": "crossref",
+        "first-page": "798",
+        "DOI": "10.1101/gr.245126.118",
+        "article-title": "Efficient and unique cobarcoding of second-generation sequencing reads from long DNA molecules enabling cost-effective and accurate sequencing, haplotyping, and de novo assembly",
+        "volume": "29",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "Genome Res."
+      },
+      {
+        "issue": "6",
+        "key": "2022083015232600000_B61",
+        "doi-asserted-by": "crossref",
+        "first-page": "898",
+        "DOI": "10.1101/gr.260380.119",
+        "article-title": "Ultralow-input single-tube linked-read library method enables short-read second-generation sequencing systems to routinely generate highly accurate and economical long-range sequencing information",
+        "volume": "30",
+        "author": "Chen",
+        "year": "2020",
+        "journal-title": "Genome Res."
+      }
+    ],
+    "container-title": ["Blood Advances"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://ashpublications.org/bloodadvances/article-pdf/6/17/5009/1917282/advancesadv2021006720.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://ashpublications.org/bloodadvances/article-pdf/6/17/5009/1917282/advancesadv2021006720.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2022, 8, 30]],
+      "date-time": "2022-08-30T15:50:01Z",
+      "timestamp": 1661874601000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ashpublications.org/bloodadvances/article/6/17/5009/485485/Linked-read-whole-genome-sequencing-resolves"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2022, 8, 30]]
+    },
+    "references-count": 61,
+    "journal-issue": {
+      "issue": "17",
+      "published-print": {
+        "date-parts": [[2022, 9, 13]]
+      }
+    },
+    "URL": "http://dx.doi.org/10.1182/bloodadvances.2021006720",
+    "relation": {},
+    "ISSN": ["2473-9529", "2473-9537"],
+    "issn-type": [
+      {
+        "value": "2473-9529",
+        "type": "print"
+      },
+      {
+        "value": "2473-9537",
+        "type": "electronic"
+      }
+    ],
+    "subject": ["Hematology"],
+    "published": {
+      "date-parts": [[2022, 8, 30]]
+    }
   }
 }
