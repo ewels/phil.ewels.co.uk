@@ -29,7 +29,7 @@ const workplaces = (await getCollection("workplaces")).sort(
             imgDark={post.data.iconImageDark ?? post.data.iconImage}
             description={post.data.location}
             countryFlag={post.data.countryFlag}
-            tags={[post.data.numPositions + " positions"]}
+            tags={[post.data.numPositions + " position" + (post.data.numPositions > 1 ? "s" : "")]}
             url={"/work/" + post.slug}
           />
         </>

@@ -19,7 +19,11 @@ const { title, description, href, btn_text, items } = Astro.props;
       <div class="flex justify-around p-5 border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
         {items &&
           items.map((item) => (
-            <a href={item.url} title={item.title} class="w-12 rounded border p-2 shadow dark:border-gray-700">
+            <a
+              href={item.url}
+              title={item.title}
+              class="w-12 rounded border p-2 shadow hover:border-gray-400 dark:border-gray-700 hover:dark:border-gray-500 transition-colors"
+            >
               <img src={item.iconImage} alt={item.title} class="block dark:hidden" />
               <img src={item.iconImageDark ?? item.iconImage} alt={item.title} class="hidden dark:block" />
             </a>
@@ -29,11 +33,9 @@ const { title, description, href, btn_text, items } = Astro.props;
   }
   {
     btn_text && (
-      <div class="border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
-        <a href={href} class="block  p-5 w-full h-full text-center">
-          {btn_text}
-        </a>
-      </div>
+      <a href={href} class="block  p-5 w-full text-center border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
+        {btn_text}
+      </a>
     )
   }
 </div>
