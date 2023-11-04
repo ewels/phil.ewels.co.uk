@@ -70,13 +70,15 @@ const talks = await getCollection("talks");
       title="Talks"
       description="Find recordings and slides from presentations I've given."
       href="/talks"
-      btn_text={"Explore " + talks.length + " talks"}
+      btn_text="Explore talks"
+      btn_badge={talks.length}
     />
     <HomepageCard
       title="Publications"
       description="Delve into journal articles that I've written or worked on."
       href="/publications"
-      btn_text={"Read " + Object.keys(publications).length + " publications"}
+      btn_text="Read publications"
+      btn_badge={Object.keys(publications).length}
     />
   </div>
   <div class="my-6">

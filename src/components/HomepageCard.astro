@@ -8,7 +8,7 @@ interface Props {
   items: [any];
 }
 
-const { title, description, href, btn_text, items } = Astro.props;
+const { title, description, href, btn_text, btn_badge, items } = Astro.props;
 ---
 
 <div class="flex flex-col justify-between rounded border shadow dark:border-zinc-700">
@@ -35,6 +35,11 @@ const { title, description, href, btn_text, items } = Astro.props;
     btn_text && (
       <a href={href} class="block  p-5 w-full text-center border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
         {btn_text}
+        {btn_badge && (
+          <span class="inline-block ml-2 px-2 py-1 text-xs font-bold leading-none text-black/40 dark:text-white/70 bg-sky-800/20 dark:bg-sky-800 rounded-full">
+            {btn_badge}
+          </span>
+        )}
       </a>
     )
   }
