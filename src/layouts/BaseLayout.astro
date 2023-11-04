@@ -14,13 +14,13 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
-  <body class="bg-white dark:bg-stone-900">
+  <body>
     <div class="flex flex-row">
-      <div
-        class="grid grid-flow-col w-full overflow-hidden max-h-screen duration-500"
-        style="grid-auto-columns: max-content auto;"
-      >
-        <div class="col-start-2 overflow-y-auto grow row-start-1 mr-0 flex flex-col min-h-screen" id="mainpage">
+      <div class="grid grid-flow-col w-full overflow-hidden max-h-screen" style="grid-auto-columns: max-content auto;">
+        <div
+          class="col-start-2 overflow-y-auto grow row-start-1 mr-0 flex flex-col min-h-screen bg-white/90 dark:bg-black/80 backdrop-blur-xl xl:mr-10"
+          id="mainpage"
+        >
           <Header title={SITE_TITLE} />
           <main id="swup" class="grow p-4 text-black dark:text-zinc-200 md:p-10">
             <slot />
@@ -34,7 +34,6 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
           <SideBar />
         </div>
       </div>
-      <div class="border-bar hidden xl:block"></div>
     </div>
     <!-- Google tag (gtag.js) -->
     <script async is:inline src="https://www.googletagmanager.com/gtag/js?id=G-7F0L1P0KS1"></script>

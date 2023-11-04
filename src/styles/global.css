@@ -7,20 +7,16 @@
   font-stretch: 75% 125%;
 }
 
+body {
+  background-image: url(/bg.jpg);
+  background-size: cover;
+}
 .btn {
   text-transform: inherit;
 }
 
 .time-line-container > div:last-child .education__time > .education__line {
   display: none;
-}
-.border-bar {
-  width: 30px;
-}
-.border-bar,
-.sidebar {
-  background-image: url(/background.jpg);
-  background-size: cover;
 }
 .my-menu-items li a {
   background: 0;

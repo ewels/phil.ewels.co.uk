@@ -3,14 +3,14 @@ import NavItem from "@components/SideBar/NavItem.astro";
 import SocialIcon from "@components/SideBar/SocialIcon.astro";
 ---
 
-<div class="menu flex flex-col flex-nowrap overflow-y-auto bg-black/80 pt-10 text-white">
+<div class="menu flex flex-col flex-nowrap overflow-y-auto bg-black/20 backdrop-blur-sm pt-10 text-white">
   <span
     onclick="openCloseMenu()"
     class="text-2xl mx-5 md:hidden cursor-pointer opacity-50 hover:opacity-100 transition-opacity mr-3">&#10005;</span
   >
   <div class="flex items-center">
     <hr class="w-1/5 opacity-25" />
-    <div class="avatar m-auto block w-1/4 lg:w-1/2">
+    <div class="avatar m-auto w-1/4 lg:w-1/2">
       <a href="/">
         <img src="/phil_ewels.jpg" class="rounded-full" alt="Philip Ewels" />
       </a>
