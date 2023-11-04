@@ -9,26 +9,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="dark">
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
   <body>
     <div class="flex flex-row">
-      <div class="grid grid-flow-col w-full overflow-hidden max-h-screen" style="grid-auto-columns: max-content auto;">
+      <div class="grid max-h-screen w-full grid-flow-col overflow-hidden" style="grid-auto-columns: max-content auto;">
         <div
-          class="col-start-2 overflow-y-auto grow row-start-1 mr-0 flex flex-col min-h-screen bg-white/90 dark:bg-black/80 backdrop-blur-xl xl:mr-10"
+          class="col-start-2 row-start-1 mr-0 flex min-h-screen grow flex-col overflow-y-auto bg-white/90 backdrop-blur-xl dark:bg-black/80 xl:mr-10"
           id="mainpage"
         >
           <Header title={SITE_TITLE} />
-          <main id="swup" class="grow p-4 text-black dark:text-zinc-200 md:p-10">
+          <main class="grow p-4 text-black dark:text-zinc-200 md:p-10">
             <slot />
           </main>
           <Footer />
         </div>
         <div
-          class="dark sidebar w-96 -ml-96 xl:ml-0 grid col-start-1 row-start-1 h-screen overflow-x-hidden bg-black/80 duration-500"
+          class="sidebar dark col-start-1 row-start-1 -ml-96 grid h-screen w-96 overflow-x-hidden bg-black/80 duration-500 xl:ml-0"
           id="sidebar"
         >
           <SideBar />
@@ -46,28 +46,5 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
 
       gtag("config", "G-7F0L1P0KS1");
     </script>
-
-    <!-- Swup page transitions -->
-    <script>
-      import "../swup.js";
-    </script>
-    <style is:inline>
-      #swup {
-        opacity: 1;
-        margin-left: 0;
-        margin-right: 0;
-      }
-
-      html.is-animating #swup {
-        margin-left: 30px;
-        margin-right: -30px;
-        opacity: 1;
-      }
-
-      .swup-progress-bar {
-        height: 4px;
-        background-color: rgb(13, 109, 253);
-      }
-    </style>
   </body>
 </html>
