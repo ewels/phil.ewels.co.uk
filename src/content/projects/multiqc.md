@@ -3,8 +3,7 @@ title: "MultiQC"
 description: "Aggregate results from bioinformatics analyses across many samples into a single report."
 projectURL: https://multiqc.info
 heroImage: "/post_img.webp"
-iconImage: "/images/projects/MultiQC-logo-circle.svg"
-iconImageDark: "/images/projects/MultiQC-logo-circle-dark.svg"
+iconImage: "/images/projects/multiqc.svg"
 pubDate: 2022-09-11
 ---
 
