@@ -4,6 +4,7 @@
 import "../styles/global.css";
 
 import { Tooltips } from "astro-tooltips";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -61,3 +62,5 @@ const { title, description, image = "/social_img.png" } = Astro.props;
 
 <!-- Tooltips -->
 <Tooltips placement="top" delay={[0, 100]} />
+
+<ViewTransitions />
