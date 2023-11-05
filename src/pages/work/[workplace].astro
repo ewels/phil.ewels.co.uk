@@ -34,15 +34,6 @@ const { Content } = await entry.render();
         }
       </div>
       <p class="text-xl">{entry.data.description}</p>
-      {entry.data.pubDate && <time>{entry.data.pubDate}</time>}
-      {
-        entry.data.updatedDate && (
-          <div>
-            {" "}
-            Last updated on <time>{entry.data.updatedDate}</time>{" "}
-          </div>
-        )
-      }
       {
         entry.data.heroImage && (
           <img
@@ -52,9 +43,21 @@ const { Content } = await entry.render();
           />
         )
       }
-
-      <div class="divider my-2"></div>
       <Content />
+      {
+        entry.data.pubDate && (
+          <p class="my-12 text-xs font-light">
+            Published <time>{entry.data.pubDate}</time>
+          </p>
+        )
+      }
+      {
+        entry.data.updatedDate && (
+          <p class="my-12 text-xs font-light">
+            Last updated: <time>{entry.data.updatedDate}</time>
+          </p>
+        )
+      }
     </article>
   </div>
 </BaseLayout>

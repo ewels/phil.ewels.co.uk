@@ -37,7 +37,7 @@ const { Content } = await entry.render();
             <img
               src={entry.data.iconImage}
               alt={entry.data.title}
-              class="float-right max-h-20 max-w-[10rem] block dark:hidden"
+              class="float-right block max-h-20 max-w-[10rem] dark:hidden"
             />
           )
         }
@@ -46,7 +46,7 @@ const { Content } = await entry.render();
             <img
               src={entry.data.iconImageDark ?? entry.data.iconImage}
               alt={entry.data.title}
-              class="float-right max-h-20 max-w-[10rem] hidden dark:block"
+              class="float-right hidden max-h-20 max-w-[10rem] dark:block"
             />
           )
         }
@@ -57,8 +57,7 @@ const { Content } = await entry.render();
         <Label class="badge-secondary badge-outline badge">{entry.data.date.toISOString().split("T")[0]}</Label>
         <Label class="badge-secondary badge-outline badge">{entry.data.location}</Label>
       </div>
-      <div class="divider my-2"></div>
-      <article class="prose-lg prose prose-img:mx-auto dark:prose-invert">
+      <article class="prose prose-lg dark:prose-invert prose-img:mx-auto">
         <Content />
       </article>
       <div class="my-8">
@@ -73,12 +72,12 @@ const { Content } = await entry.render();
         {
           entry.data.youtubeURLs &&
             entry.data.youtubeURLs.map((youtubeURL) => (
-              <div class="relative h-0 overflow-hidden max-w-full w-full">
+              <div class="relative h-0 w-full max-w-full overflow-hidden">
                 <iframe
                   src={"https://www.youtube.com/embed/" + youtubeURL}
                   frameborder="0"
                   allowfullscreen
-                  class="absolute top-0 left-0 w-full h-full"
+                  class="absolute left-0 top-0 h-full w-full"
                 />
               </div>
             ))
@@ -90,7 +89,7 @@ const { Content } = await entry.render();
                 <Button href={pdf} icon="mdi:download">
                   Download slides (PDF)
                 </Button>
-                <div class="aspect-w-16 aspect-h-9 mt-8">
+                <div class="aspect-h-9 aspect-w-16 mt-8">
                   <iframe
                     src={pdf}
                     frameborder="0"
