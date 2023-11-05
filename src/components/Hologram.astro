@@ -1,0 +1,47 @@
+---
+// https://robbowen.digital/wrote-about/css-blend-mode-shaders/
+const { image, image_spec, altText = "" } = Astro.props;
+const imageUrl = 'url("' + image_spec + '")';
+---
+
+<div class="shader">
+  <img src={image} alt={altText} />
+  <div class="shader__layer specular">
+    <div class="shader__layer mask" style={{ backgroundImage: imageUrl }}></div>
+  </div>
+</div>
+
+<style>
+  .shader {
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden; /* to force GPU performance */
+  }
+
+  .shader__layer {
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .specular {
+    mix-blend-mode: color-dodge;
+    background-attachment: fixed;
+    background-position: top center;
+    z-index: 0;
+    background-image: linear-gradient(125deg, #f09 30%, #fc8b00, #ff0, #00ff8a, #00cfff, #cc4cfa 70%);
+  }
+
+  .mask {
+    mix-blend-mode: multiply;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+  }
+</style>
