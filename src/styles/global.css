@@ -11,13 +11,7 @@ body {
   background-image: url(/bg.jpg);
   background-size: cover;
 }
-.btn {
-  text-transform: inherit;
-}
 
-.time-line-container > div:last-child .education__time > .education__line {
-  display: none;
-}
 .my-menu-items li a {
   background: 0;
   padding: 0.5rem 1rem;

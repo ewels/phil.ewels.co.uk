@@ -4,14 +4,20 @@ const { title, subtitle, desc } = Astro.props;
 
 <div class="flex">
   <div class="education__time">
-    <span class="mt-2 block h-4 w-4 rounded-full bg-primary"></span>
-    <span class="education__line block h-full w-[2px] translate-x-[7px] bg-primary"></span>
+    <span class="mt-2 block h-4 w-4 rounded-full bg-gray-400 dark:bg-gray-600"></span>
+    <span class="education__line block h-full w-[2px] translate-x-[7px] bg-gray-400 dark:bg-gray-600"></span>
   </div>
-  <div class="experience__data bd-grid px-5">
+  <div class="bd-grid px-5">
     <div class="mb-1 font-semibold">{title}</div>
     <div class="text-sm font-light">{subtitle}</div>
-    <p class="my-2 text-justify text-sm text-slate-600">
+    <p class="my-2 text-justify text-sm text-gray-600 dark:text-gray-400">
       {desc}
     </p>
   </div>
 </div>
+
+<style>
+  div:last-child .education__time > .education__line {
+    display: none;
+  }
+</style>
