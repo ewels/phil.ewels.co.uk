@@ -5,10 +5,10 @@ module.exports = {
 
   // pnpm support, for VSCode?
   plugins: [
-    require.resolve("prettier-plugin-astro"),
-    require.resolve("prettier-plugin-svelte"),
-    require.resolve("prettier-plugin-organize-imports"),
-    require.resolve("prettier-plugin-tailwindcss"), // Must come last
+    import("prettier-plugin-astro"),
+    import("prettier-plugin-svelte"),
+    import("prettier-plugin-organize-imports"),
+    import("prettier-plugin-tailwindcss"), // Must come last
   ],
   overrides: [
     {

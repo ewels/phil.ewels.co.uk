@@ -1,9 +1,9 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const { href, icon, label } = Astro.props;
 ---
 
-<a href={href} target="_blank" class="opacity-50 hover:opacity-100 transition-opacity" title={label} aria-label={label}>
+<a href={href} target="_blank" class="opacity-50 transition-opacity hover:opacity-100" title={label} aria-label={label}>
   <Icon name={icon} size="24px" />
 </a>

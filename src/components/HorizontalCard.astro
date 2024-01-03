@@ -1,19 +1,19 @@
 ---
 const { title, subtitle, img, imgDark, description, url, badge, countryFlag, tags, target = "_self" } = Astro.props;
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="-mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin] ease-in-out last:border-b hover:-mr-6 hover:border-l-8 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20 md:-mx-10 md:px-10 md:hover:-mr-12"
+  class="-mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin] ease-in-out last:border-b hover:-mr-6 hover:border-l-8 md:-mx-10 md:px-10 md:hover:-mr-12 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20"
 >
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4">
-    {img && <img src={img} alt={title} class="w-12 rounded border p-2 shadow block dark:hidden" />}
+    {img && <img src={img} alt={title} class="block w-12 rounded border p-2 shadow dark:hidden" />}
     {
       (img || imgDark) && (
         <img
           src={imgDark ?? img}
           alt={title}
-          class="w-12 rounded border p-2 shadow border-gray-700 hidden dark:block"
+          class="hidden w-12 rounded border border-gray-700 p-2 shadow dark:block"
         />
       )
     }
@@ -23,13 +23,13 @@ import { Icon } from "astro-icon";
         {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
       </h1>
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
-      <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300 2xl:ml-4 2xl:inline">
+      <p class="text-1xl block py-1 font-light text-gray-500 2xl:ml-4 2xl:inline dark:text-gray-300">
         {description}
         {countryFlag && <img src={countryFlag} class="ml-2 hidden w-[18px] md:inline-block" />}
         {
           tags &&
             tags.map((tag) => (
-              <span class="ml-2 hidden whitespace-nowrap rounded border border-gray-400 bg-gray-50 dark:bg-gray-800 px-1 text-xs text-slate-800 dark:text-slate-200 opacity-50 md:inline-block">
+              <span class="ml-2 hidden whitespace-nowrap rounded border border-gray-400 bg-gray-50 px-1 text-xs text-slate-800 opacity-50 md:inline-block dark:bg-gray-800 dark:text-slate-200">
                 {tag}
               </span>
             ))

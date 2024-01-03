@@ -1,11 +1,11 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="sticky top-0 z-30 flex w-full items-baseline p-5 bg-gray-200/60 dark:bg-gray-900/90 text-black dark:text-white shadow-sm backdrop-blur-xl xl:hidden font-semibold"
+  class="sticky top-0 z-30 flex w-full items-baseline bg-gray-200/60 p-5 font-semibold text-black shadow-sm backdrop-blur-xl xl:hidden dark:bg-gray-900/90 dark:text-white"
 >
-  <span onclick="openCloseMenu()" class="text-2xl cursor-pointer opacity-50 hover:opacity-100 transition-opacity mr-3"
+  <span onclick="openCloseMenu()" class="mr-3 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100"
     >&#9776;</span
   >
   <a class="text-xl" href="/">Phil Ewels</a>

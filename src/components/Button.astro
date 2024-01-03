@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const { href, classes, icon, iconAfter } = Astro.props;
 
@@ -16,7 +16,7 @@ const target = Astro.props.href.startsWith("http") ? "_blank" : "_self";
 ---
 
 <a href={href} class={btn_classes} target={target}>
-  {icon && <Icon name={icon} size="24px" class="inline-block mr-2" />}
+  {icon && <Icon name={icon} size="24px" class="mr-2 inline-block" />}
   <slot />
-  {iconAfter && <Icon name={iconAfter} size="18px" class="inline-block ml-2" />}
+  {iconAfter && <Icon name={iconAfter} size="18px" class="ml-2 inline-block" />}
 </a>
