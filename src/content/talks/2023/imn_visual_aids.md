@@ -6,8 +6,8 @@ type: Workshop
 pdfURLs:
   - /talks/2023/imn_visual_aids/PEwels_Presentation_skills.pdf
 date: 2023-06-16
-youtubeURLs:
-  - https://www.youtube.com/watch?v=UnHBdUhbgkU
+youtubeIDs:
+  - UnHBdUhbgkU
 ---
 
 Training talk from IMN Presentation Skills workshop, June 2023.

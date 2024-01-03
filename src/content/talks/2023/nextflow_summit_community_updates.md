@@ -1,18 +1,16 @@
 ---
-title: "Seqera Webinar: Nextflow best practices"
+title: "Nextflow Summit 2023 Barcelona: Community Updates"
 description: Leveraging nf-core tooling and standards within your organization.
 location: Online
 type: Talk
-iconImage: /images/work/seqera_logo.svg
-# eventURLs:
-#  - xxx
+logoImage: /talks/2023/nextflow_summit_community_updates/nextflow_summit_2023_darkbg.svg
+eventURLs:
+  - https://summit.nextflow.io/barcelona/agenda/summit/oct-18-community-updates/
 pdfURLs:
-  - /talks/2022/nextflow_summit_community_updates/Phil_Ewels-Community_Updates.pdf
-youtubeURLs:
-  - https://www.youtube.com/watch?v=50f55qIqES8
+  - /talks/2023/nextflow_summit_community_updates/Phil_Ewels-Community_Updates.pdf
+youtubeIDs:
+  - kTP-yCjVGq0
 date: 2023-06-21
 ---
 
-A Seqera Webinar together with Harshil Patel about developing Nextflow pipelines using nf-core components.
-
-Included a pretty awesome live-demo from Harshil, where he built a fully functioning pipeline from scratch using the nf-core template and modules, then ran it on Nextflow Tower.
+The Nextflow and nf-core communities continue to thrive and are growing at a phenomenal rate. As we approach the milestone of ten thousand users on our Slack organisations, Phil will review some of the major projects and initiatives to have taken place over the past 12 months.

@@ -23,13 +23,7 @@ var year: number = -1;
       return (
         <>
           {year_heading && <h2 class="my-4 text-2xl font-bold">{year_heading}</h2>}
-          <HorizontalCard
-            title={post.data.title}
-            img={post.data.iconImage}
-            imgDark={post.data.iconImageDark ?? post.data.iconImage}
-            description={post.data.description}
-            url={"/talks/" + post.slug}
-          />
+          <HorizontalCard title={post.data.title} description={post.data.description} url={"/talks/" + post.slug} />
         </>
       );
     })

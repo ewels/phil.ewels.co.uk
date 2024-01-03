@@ -32,10 +32,10 @@ const talksCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     eventURLs: z.array(z.string().url()).optional(),
     pdfURLs: z.array(z.string()).optional(),
-    youtubeURLs: z.array(z.string().url()).optional(),
+    youtubeIDs: z.array(z.string().length(11)).optional(),
     heroImage: z.string().optional(),
-    iconImage: z.string().optional(),
-    iconImageDark: z.string().optional(),
+    logoImage: z.string().optional(),
+    logoImageDark: z.string().optional(),
     date: z.date(),
   }),
 });

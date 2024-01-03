@@ -3,13 +3,14 @@ title: "Seqera Webinar: Nextflow best practices"
 description: Leveraging nf-core tooling and standards within your organization.
 location: Online
 type: Talk
-iconImage: /images/work/seqera_logo.svg
+logoImage: /images/work/seqera_logo.svg
+logoImageDark: /images/work/seqera_logo_dark.svg
 # eventURLs:
 #  - xxx
 pdfURLs:
-  - /talks/2022/seqera_nf-core_webinar/Webinar_nf-core_standards.pdf
-youtubeURLs:
-  - https://www.youtube.com/watch?v=50f55qIqES8
+  - /talks/2023/seqera_nf-core_webinar/Webinar_nf-core_standards.pdf
+youtubeIDs:
+  - 50f55qIqES8
 date: 2023-06-21
 ---
 

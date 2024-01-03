@@ -33,18 +33,18 @@ const { Content } = await entry.render();
           {entry.data.title}
         </h1>
         {
-          entry.data.iconImage && (
+          entry.data.logoImage && (
             <img
-              src={entry.data.iconImage}
+              src={entry.data.logoImage}
               alt={entry.data.title}
               class="float-right block max-h-20 max-w-[10rem] dark:hidden"
             />
           )
         }
         {
-          (entry.data.iconImage || entry.data.iconImageDark) && (
+          (entry.data.logoImage || entry.data.logoImageDark) && (
             <img
-              src={entry.data.iconImageDark ?? entry.data.iconImage}
+              src={entry.data.logoImageDark ?? entry.data.logoImage}
               alt={entry.data.title}
               class="float-right hidden max-h-20 max-w-[10rem] dark:block"
             />
@@ -70,11 +70,29 @@ const { Content } = await entry.render();
             ))
         }
         {
-          entry.data.youtubeURLs &&
-            entry.data.youtubeURLs.map((youtubeURL) => (
-              <div class="relative h-0 w-full max-w-full overflow-hidden">
+          entry.data.youtubeIDs &&
+            entry.data.youtubeIDs.map((youtubeID) => (
+              <Button href={"https://youtube.com/video/" + youtubeID} icon="mdi:youtube" classes="mr-3">
+                Watch on YouTube
+              </Button>
+            ))
+        }
+        {
+          entry.data.pdfURLs &&
+            entry.data.pdfURLs.map((pdf) => (
+              <Button href={pdf} icon="mdi:download" classes="mr-3">
+                Download slides (PDF)
+              </Button>
+            ))
+        }
+      </div>
+      <div class="my-8">
+        {
+          entry.data.youtubeIDs &&
+            entry.data.youtubeIDs.map((youtubeID) => (
+              <div class="aspect-h-9 aspect-w-16">
                 <iframe
-                  src={"https://www.youtube.com/embed/" + youtubeURL}
+                  src={"https://www.youtube.com/embed/" + youtubeID}
                   frameborder="0"
                   allowfullscreen
                   class="absolute left-0 top-0 h-full w-full"
@@ -85,19 +103,14 @@ const { Content } = await entry.render();
         {
           entry.data.pdfURLs &&
             entry.data.pdfURLs.map((pdf) => (
-              <>
-                <Button href={pdf} icon="mdi:download">
-                  Download slides (PDF)
-                </Button>
-                <div class="aspect-h-9 aspect-w-16 mt-8">
-                  <iframe
-                    src={pdf}
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  />
-                </div>
-              </>
+              <div class="aspect-h-9 aspect-w-16 mt-8">
+                <iframe
+                  src={pdf}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                />
+              </div>
             ))
         }
       </div>

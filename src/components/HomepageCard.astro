@@ -16,13 +16,13 @@ const { title, description, href, btn_text, btn_badge, items } = Astro.props;
   <p class="mx-5 mb-5 grow self-stretch">{description}</p>
   {
     items && (
-      <div class="flex justify-around p-5 border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
+      <div class="flex justify-around border-t bg-zinc-100 p-5 dark:border-t-zinc-700 dark:bg-zinc-800">
         {items &&
           items.map((item) => (
             <a
               href={item.url}
               title={item.title}
-              class="w-12 rounded border p-2 shadow hover:border-gray-400 dark:border-gray-700 hover:dark:border-gray-500 transition-colors"
+              class="w-12 rounded border p-2 shadow transition-colors hover:border-gray-400 hover:bg-zinc-50 dark:border-gray-700 hover:dark:border-gray-500 dark:hover:bg-zinc-700"
             >
               <img src={item.iconImage} alt={item.title} class="block dark:hidden" />
               <img src={item.iconImageDark ?? item.iconImage} alt={item.title} class="hidden dark:block" />
@@ -33,10 +33,13 @@ const { title, description, href, btn_text, btn_badge, items } = Astro.props;
   }
   {
     btn_text && (
-      <a href={href} class="block  p-5 w-full text-center border-t bg-zinc-100 dark:border-t-zinc-700 dark:bg-zinc-800">
+      <a
+        href={href}
+        class="block  w-full border-t bg-zinc-100 p-5 text-center transition-colors hover:bg-zinc-50 dark:border-t-zinc-700 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+      >
         {btn_text}
         {btn_badge && (
-          <span class="inline-block ml-2 px-2 py-1 text-xs font-bold leading-none text-black/40 dark:text-white/70 bg-sky-800/20 dark:bg-sky-800 rounded-full">
+          <span class="ml-2 inline-block rounded-full bg-sky-800/20 px-2 py-1 text-xs font-bold leading-none text-black/40 dark:bg-sky-800 dark:text-white/70">
             {btn_badge}
           </span>
         )}
