@@ -92,8 +92,8 @@ const { Content } = await entry.render();
             entry.data.youtubeIDs.map((youtubeID) => (
               <div class="aspect-h-9 aspect-w-16">
                 <iframe
+                  class="border border-zinc-700"
                   src={"https://www.youtube.com/embed/" + youtubeID}
-                  frameborder="0"
                   allowfullscreen
                   class="absolute left-0 top-0 h-full w-full"
                 />
@@ -105,8 +105,8 @@ const { Content } = await entry.render();
             entry.data.pdfURLs.map((pdf) => (
               <div class="aspect-h-9 aspect-w-16 mt-8">
                 <iframe
+                  class="border border-zinc-700"
                   src={pdf}
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 />

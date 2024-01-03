@@ -1,5 +1,18 @@
 ---
-const { title, subtitle, img, imgDark, description, url, badge, countryFlag, tags, target = "_self" } = Astro.props;
+const {
+  title,
+  subtitle,
+  img,
+  imgDark,
+  description,
+  url,
+  badge,
+  countryFlag,
+  tags,
+  target,
+  hasYouTube,
+  hasDownload = "_self",
+} = Astro.props;
 import { Icon } from "astro-icon/components";
 ---
 
@@ -34,6 +47,8 @@ import { Icon } from "astro-icon/components";
               </span>
             ))
         }
+        {hasDownload && <Icon name="bi:file-earmark-pdf" class="ml-2 hidden w-[18px] md:inline-block" />}
+        {hasYouTube && <Icon name="mdi:youtube" class="ml-2 hidden w-[18px] md:inline-block" />}
       </p>
     </div>
     <div class="hidden md:block">
