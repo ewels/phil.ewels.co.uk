@@ -1,9 +1,9 @@
 {
   "10.1021/acs.jproteome.1c00123": {
     "indexed": {
-      "date-parts": [[2023, 1, 16]],
-      "date-time": "2023-01-16T19:51:32Z",
-      "timestamp": 1673898692999
+      "date-parts": [[2023, 12, 22]],
+      "date-time": "2023-12-22T14:33:00Z",
+      "timestamp": 1703255580808
     },
     "reference-count": 52,
     "publisher": "American Chemical Society (ACS)",
@@ -59,7 +59,7 @@
     },
     "page": "3758-3766",
     "source": "Crossref",
-    "is-referenced-by-count": 10,
+    "is-referenced-by-count": 15,
     "title": [
       "DIAproteomics: A Multifunctional Data Analysis Pipeline for Data-Independent Acquisition Proteomics and Peptidomics"
     ],
@@ -475,9 +475,9 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2021, 8, 27]],
-      "date-time": "2021-08-27T14:09:22Z",
-      "timestamp": 1630073362000
+      "date-parts": [[2023, 4, 27]],
+      "date-time": "2023-04-27T15:32:43Z",
+      "timestamp": 1682609563000
     },
     "score": 1,
     "resource": {
@@ -948,9 +948,9 @@
       }
     ],
     "indexed": {
-      "date-parts": [[2023, 1, 13]],
-      "date-time": "2023-01-13T15:50:37Z",
-      "timestamp": 1673625037509
+      "date-parts": [[2023, 12, 11]],
+      "date-time": "2023-12-11T05:28:12Z",
+      "timestamp": 1702272492180
     },
     "posted": {
       "date-parts": [[2021, 4, 22]]
@@ -975,7 +975,7 @@
       "timestamp": 1619117965000
     },
     "source": "Crossref",
-    "is-referenced-by-count": 26,
+    "is-referenced-by-count": 42,
     "title": [
       "A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines"
     ],
@@ -1745,9 +1745,9 @@
   },
   "10.1038/s41591-020-0929-x": {
     "indexed": {
-      "date-parts": [[2022, 12, 6]],
-      "date-time": "2022-12-06T05:44:02Z",
-      "timestamp": 1670305442455
+      "date-parts": [[2023, 8, 11]],
+      "date-time": "2023-08-11T07:51:03Z",
+      "timestamp": 1691740263860
     },
     "reference-count": 14,
     "publisher": "Springer Science and Business Media LLC",
@@ -2307,14 +2307,14 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2021, 12, 2]],
-      "date-time": "2021-12-02T13:31:48Z",
-      "timestamp": 1638451908000
+      "date-parts": [[2023, 5, 20]],
+      "date-time": "2023-05-20T22:03:24Z",
+      "timestamp": 1684620204000
     },
     "score": 1,
     "resource": {
       "primary": {
-        "URL": "http://www.nature.com/articles/s41591-020-0929-x"
+        "URL": "https://www.nature.com/articles/s41591-020-0929-x"
       }
     },
     "subtitle": [],
@@ -2331,7 +2331,15 @@
     },
     "alternative-id": ["929"],
     "URL": "http://dx.doi.org/10.1038/s41591-020-0929-x",
-    "relation": {},
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/2020.04.02.20051284",
+          "asserted-by": "object"
+        }
+      ]
+    },
     "ISSN": ["1078-8956", "1546-170X"],
     "issn-type": [
       {
@@ -2417,9 +2425,9 @@
   },
   "10.1038/s41587-020-0439-x": {
     "indexed": {
-      "date-parts": [[2023, 1, 16]],
-      "date-time": "2023-01-16T01:09:42Z",
-      "timestamp": 1673831382634
+      "date-parts": [[2024, 1, 4]],
+      "date-time": "2024-01-04T16:01:20Z",
+      "timestamp": 1704384080133
     },
     "reference-count": 20,
     "publisher": "Springer Science and Business Media LLC",
@@ -2478,7 +2486,7 @@
     "page": "276-278",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 428,
+    "is-referenced-by-count": 817,
     "title": ["The nf-core framework for community-curated bioinformatics pipelines"],
     "prefix": "10.1038",
     "volume": "38",
@@ -2786,14 +2794,14 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2021, 12, 2]],
-      "date-time": "2021-12-02T13:58:01Z",
-      "timestamp": 1638453481000
+      "date-parts": [[2023, 5, 20]],
+      "date-time": "2023-05-20T22:15:16Z",
+      "timestamp": 1684620916000
     },
     "score": 1,
     "resource": {
       "primary": {
-        "URL": "http://www.nature.com/articles/s41587-020-0439-x"
+        "URL": "https://www.nature.com/articles/s41587-020-0439-x"
       }
     },
     "subtitle": [],
@@ -2847,9 +2855,9 @@
   },
   "10.1038/ng.145": {
     "indexed": {
-      "date-parts": [[2023, 1, 16]],
-      "date-time": "2023-01-16T09:32:39Z",
-      "timestamp": 1673861559350
+      "date-parts": [[2024, 1, 3]],
+      "date-time": "2024-01-03T13:34:23Z",
+      "timestamp": 1704288863849
     },
     "reference-count": 15,
     "publisher": "Springer Science and Business Media LLC",
@@ -2883,7 +2891,7 @@
     },
     "page": "710-712",
     "source": "Crossref",
-    "is-referenced-by-count": 319,
+    "is-referenced-by-count": 329,
     "title": [
       "Genetic determinants of ulcerative colitis include the ECM1 locus and five loci implicated in Crohn's disease"
     ],
@@ -3301,14 +3309,14 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2021, 12, 2]],
-      "date-time": "2021-12-02T11:18:04Z",
-      "timestamp": 1638443884000
+      "date-parts": [[2023, 5, 18]],
+      "date-time": "2023-05-18T20:44:44Z",
+      "timestamp": 1684442684000
     },
     "score": 1,
     "resource": {
       "primary": {
-        "URL": "http://www.nature.com/articles/ng.145"
+        "URL": "https://www.nature.com/articles/ng.145"
       }
     },
     "subtitle": [],
@@ -3325,7 +3333,15 @@
     },
     "alternative-id": ["BFng145"],
     "URL": "http://dx.doi.org/10.1038/ng.145",
-    "relation": {},
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.1115358.571379",
+          "asserted-by": "object"
+        }
+      ]
+    },
     "ISSN": ["1061-4036", "1546-1718"],
     "issn-type": [
       {
@@ -3344,9 +3360,9 @@
   },
   "10.1128/JCM.02249-07": {
     "indexed": {
-      "date-parts": [[2023, 1, 5]],
-      "date-time": "2023-01-05T21:35:13Z",
-      "timestamp": 1672954513309
+      "date-parts": [[2023, 9, 29]],
+      "date-time": "2023-09-29T20:08:34Z",
+      "timestamp": 1696018114438
     },
     "reference-count": 36,
     "publisher": "American Society for Microbiology",
@@ -3382,7 +3398,7 @@
     "page": "1741-1746",
     "update-policy": "http://dx.doi.org/10.1128/asmj-crossmark-policy-page",
     "source": "Crossref",
-    "is-referenced-by-count": 56,
+    "is-referenced-by-count": 61,
     "title": [
       "High-Throughput Genotyping of\n            <i>Salmonella enterica</i>\n            Serovar Typhi Allowing Geographical Assignment of Haplotypes and Pathotypes within an Urban District of Jakarta, Indonesia"
     ],
@@ -3835,9 +3851,9 @@
   },
   "10.1242/jcs.018432": {
     "indexed": {
-      "date-parts": [[2022, 12, 22]],
-      "date-time": "2022-12-22T19:27:23Z",
-      "timestamp": 1671737243628
+      "date-parts": [[2024, 1, 3]],
+      "date-time": "2024-01-03T21:00:29Z",
+      "timestamp": 1704315629982
     },
     "reference-count": 48,
     "publisher": "The Company of Biologists",
@@ -3860,7 +3876,7 @@
     },
     "page": "2027-2036",
     "source": "Crossref",
-    "is-referenced-by-count": 76,
+    "is-referenced-by-count": 83,
     "title": [
       "Sorting nexin-1 defines an early phase of <i>Salmonella</i>-containing vacuole-remodeling during <i>Salmonella</i> infection"
     ],
@@ -4287,9 +4303,9 @@
   },
   "10.1161/ATVBAHA.108.181388": {
     "indexed": {
-      "date-parts": [[2023, 1, 16]],
-      "date-time": "2023-01-16T05:33:36Z",
-      "timestamp": 1673847216292
+      "date-parts": [[2023, 12, 27]],
+      "date-time": "2023-12-27T19:35:43Z",
+      "timestamp": 1703705743508
     },
     "reference-count": 23,
     "publisher": "Ovid Technologies (Wolters Kluwer Health)",
@@ -4312,7 +4328,7 @@
     },
     "page": "774-780",
     "source": "Crossref",
-    "is-referenced-by-count": 114,
+    "is-referenced-by-count": 119,
     "title": ["Large Scale Association Analysis of Novel Genetic Loci for Coronary Artery Disease"],
     "prefix": "10.1161",
     "volume": "29",
@@ -4501,9 +4517,9 @@
   },
   "10.1093/bfgp/elq034": {
     "indexed": {
-      "date-parts": [[2022, 6, 11]],
-      "date-time": "2022-06-11T10:52:33Z",
-      "timestamp": 1654944753376
+      "date-parts": [[2023, 10, 16]],
+      "date-time": "2023-10-16T13:58:52Z",
+      "timestamp": 1697464732873
     },
     "reference-count": 45,
     "publisher": "Oxford University Press (OUP)",
@@ -5186,9 +5202,9 @@
   },
   "10.1038/ncomms5640": {
     "indexed": {
-      "date-parts": [[2023, 1, 7]],
-      "date-time": "2023-01-07T05:46:48Z",
-      "timestamp": 1673070408196
+      "date-parts": [[2023, 12, 27]],
+      "date-time": "2023-12-27T07:35:30Z",
+      "timestamp": 1703662530854
     },
     "reference-count": 31,
     "publisher": "Springer Science and Business Media LLC",
@@ -5230,7 +5246,7 @@
     },
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 63,
+    "is-referenced-by-count": 74,
     "title": ["Understanding functional miRNA\u2013target interactions in vivo by site-specific genome engineering"],
     "prefix": "10.1038",
     "volume": "5",
@@ -5759,9 +5775,9 @@
   },
   "10.1038/ng.3286": {
     "indexed": {
-      "date-parts": [[2023, 1, 16]],
-      "date-time": "2023-01-16T11:31:32Z",
-      "timestamp": 1673868692105
+      "date-parts": [[2024, 1, 2]],
+      "date-time": "2024-01-02T09:59:43Z",
+      "timestamp": 1704189583859
     },
     "reference-count": 38,
     "publisher": "Springer Science and Business Media LLC",
@@ -5796,7 +5812,7 @@
     "page": "598-606",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 740,
+    "is-referenced-by-count": 800,
     "title": ["Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C"],
     "prefix": "10.1038",
     "volume": "47",
@@ -6355,14 +6371,14 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2021, 12, 2]],
-      "date-time": "2021-12-02T11:25:58Z",
-      "timestamp": 1638444358000
+      "date-parts": [[2023, 5, 18]],
+      "date-time": "2023-05-18T21:06:49Z",
+      "timestamp": 1684444009000
     },
     "score": 1,
     "resource": {
       "primary": {
-        "URL": "http://www.nature.com/articles/ng.3286"
+        "URL": "https://www.nature.com/articles/ng.3286"
       }
     },
     "subtitle": [],
@@ -6379,7 +6395,15 @@
     },
     "alternative-id": ["BFng3286"],
     "URL": "http://dx.doi.org/10.1038/ng.3286",
-    "relation": {},
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.725465128.793507219",
+          "asserted-by": "object"
+        }
+      ]
+    },
     "ISSN": ["1061-4036", "1546-1718"],
     "issn-type": [
       {
@@ -6439,9 +6463,9 @@
   },
   "10.1073/pnas.1515937112": {
     "indexed": {
-      "date-parts": [[2023, 1, 11]],
-      "date-time": "2023-01-11T02:55:25Z",
-      "timestamp": 1673405725919
+      "date-parts": [[2023, 12, 29]],
+      "date-time": "2023-12-29T05:25:48Z",
+      "timestamp": 1703827548264
     },
     "reference-count": 81,
     "publisher": "Proceedings of the National Academy of Sciences",
@@ -6486,7 +6510,7 @@
     "published-print": {
       "date-parts": [[2015, 11, 10]]
     },
-    "abstract": "<jats:title>Significance</jats:title>\n          <jats:p>In eusocial insect societies, such as ants and some bees and wasps, phenotypes are highly plastic, generating alternative phenotypes (queens and workers) from the same genome. The greatest plasticity is found in simple insect societies, in which individuals can switch between phenotypes as adults. The genomic, transcriptional, and epigenetic underpinnings of such plasticity are largely unknown. In contrast to the complex societies of the honeybee, we find that simple insect societies lack distinct transcriptional differentiation between phenotypes and coherently patterned DNA methylomes. Instead, alternative phenotypes are largely defined by subtle transcriptional network organization. These traits may facilitate genomic plasticity. These insights and resources will stimulate new approaches and hypotheses that will help to unravel the genomic processes that create phenotypic plasticity.</jats:p>",
+    "abstract": "<jats:title>Significance</jats:title><jats:p>In eusocial insect societies, such as ants and some bees and wasps, phenotypes are highly plastic, generating alternative phenotypes (queens and workers) from the same genome. The greatest plasticity is found in simple insect societies, in which individuals can switch between phenotypes as adults. The genomic, transcriptional, and epigenetic underpinnings of such plasticity are largely unknown. In contrast to the complex societies of the honeybee, we find that simple insect societies lack distinct transcriptional differentiation between phenotypes and coherently patterned DNA methylomes. Instead, alternative phenotypes are largely defined by subtle transcriptional network organization. These traits may facilitate genomic plasticity. These insights and resources will stimulate new approaches and hypotheses that will help to unravel the genomic processes that create phenotypic plasticity.</jats:p>",
     "DOI": "10.1073/pnas.1515937112",
     "type": "journal-article",
     "created": {
@@ -6497,7 +6521,7 @@
     "page": "13970-13975",
     "update-policy": "http://dx.doi.org/10.1073/pnas.cm10313",
     "source": "Crossref",
-    "is-referenced-by-count": 153,
+    "is-referenced-by-count": 169,
     "title": ["Molecular signatures of plastic phenotypes in two eusocial insect species with simple societies"],
     "prefix": "10.1073",
     "volume": "112",
@@ -7771,7 +7795,9 @@
       },
       {
         "key": "e_1_3_4_80_2",
+        "doi-asserted-by": "crossref",
         "first-page": "3",
+        "DOI": "10.3897/asp.68.e31707",
         "article-title": "Simultaneous analysis and the origin of eusociality in the Vespidae (Insecta: Hymenoptera)",
         "volume": "68",
         "author": "Kurt M",
@@ -7810,9 +7836,9 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2022, 6, 7]],
-      "date-time": "2022-06-07T13:30:25Z",
-      "timestamp": 1654608625000
+      "date-parts": [[2023, 8, 15]],
+      "date-time": "2023-08-15T14:32:16Z",
+      "timestamp": 1692109936000
     },
     "score": 1,
     "resource": {
@@ -7865,9 +7891,9 @@
   },
   "10.1016/j.celrep.2014.12.055": {
     "indexed": {
-      "date-parts": [[2023, 1, 11]],
-      "date-time": "2023-01-11T17:50:56Z",
-      "timestamp": 1673459456728
+      "date-parts": [[2023, 12, 24]],
+      "date-time": "2023-12-24T16:13:28Z",
+      "timestamp": 1703434408528
     },
     "reference-count": 65,
     "publisher": "Elsevier BV",
@@ -7912,7 +7938,7 @@
     "page": "471-483",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 218,
+    "is-referenced-by-count": 251,
     "title": ["Global Reorganization of the Nuclear Landscape in Senescent Cells"],
     "prefix": "10.1016",
     "volume": "10",
@@ -8782,9 +8808,9 @@
   },
   "10.12688/f1000research.7334.1": {
     "indexed": {
-      "date-parts": [[2023, 1, 14]],
-      "date-time": "2023-01-14T19:52:01Z",
-      "timestamp": 1673725921557
+      "date-parts": [[2023, 12, 31]],
+      "date-time": "2023-12-31T07:29:39Z",
+      "timestamp": 1704007779981
     },
     "reference-count": 22,
     "publisher": "F1000 Research Ltd",
@@ -8816,7 +8842,7 @@
     "page": "1310",
     "update-policy": "http://dx.doi.org/10.12688/f1000research.crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 374,
+    "is-referenced-by-count": 451,
     "title": ["HiCUP: pipeline for mapping and processing Hi-C data"],
     "prefix": "10.12688",
     "volume": "4",
@@ -9249,9 +9275,9 @@
   },
   "10.1017/S1431927616000179": {
     "indexed": {
-      "date-parts": [[2023, 1, 14]],
-      "date-time": "2023-01-14T12:07:02Z",
-      "timestamp": 1673698022229
+      "date-parts": [[2023, 12, 30]],
+      "date-time": "2023-12-30T16:26:14Z",
+      "timestamp": 1703953574338
     },
     "reference-count": 45,
     "publisher": "Oxford University Press (OUP)",
@@ -9286,7 +9312,7 @@
     },
     "page": "717-724",
     "source": "Crossref",
-    "is-referenced-by-count": 73,
+    "is-referenced-by-count": 81,
     "title": [
       "A Complete Overhaul of the Electron Energy-Loss Spectroscopy and X-Ray Absorption Spectroscopy Database: eelsdb.eu"
     ],
@@ -9569,14 +9595,14 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2023, 1, 3]],
-      "date-time": "2023-01-03T17:53:20Z",
-      "timestamp": 1672768400000
+      "date-parts": [[2023, 2, 14]],
+      "date-time": "2023-02-14T21:05:42Z",
+      "timestamp": 1676408742000
     },
     "score": 1,
     "resource": {
       "primary": {
-        "URL": "https://www.cambridge.org/core/product/identifier/S1431927616000179/type/journal_article"
+        "URL": "https://academic.oup.com/mam/article/22/3/717/6897221"
       }
     },
     "subtitle": [],
@@ -10006,9 +10032,9 @@
   },
   "10.1007/s00204-016-1879-4": {
     "indexed": {
-      "date-parts": [[2022, 12, 23]],
-      "date-time": "2022-12-23T08:16:02Z",
-      "timestamp": 1671783362803
+      "date-parts": [[2023, 9, 14]],
+      "date-time": "2023-09-14T17:05:13Z",
+      "timestamp": 1694711113078
     },
     "reference-count": 53,
     "publisher": "Springer Science and Business Media LLC",
@@ -10061,7 +10087,7 @@
     "page": "2067-2078",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 20,
+    "is-referenced-by-count": 23,
     "title": ["Transcriptomics and methylomics of CD4-positive T cells in arsenic-exposed women"],
     "prefix": "10.1007",
     "volume": "91",
@@ -10266,7 +10292,9 @@
       },
       {
         "key": "1879_CR13",
+        "doi-asserted-by": "crossref",
         "first-page": "7294",
+        "DOI": "10.4049/jimmunol.162.12.7294",
         "volume": "162",
         "author": "S Chuvpilo",
         "year": "1999",
@@ -10735,9 +10763,9 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2022, 7, 13]],
-      "date-time": "2022-07-13T05:39:59Z",
-      "timestamp": 1657690799000
+      "date-parts": [[2023, 8, 20]],
+      "date-time": "2023-08-20T22:02:23Z",
+      "timestamp": 1692568943000
     },
     "score": 1,
     "resource": {
@@ -10778,9 +10806,9 @@
   },
   "10.12688/f1000research.10335.2": {
     "indexed": {
-      "date-parts": [[2022, 4, 1]],
-      "date-time": "2022-04-01T16:11:32Z",
-      "timestamp": 1648829492210
+      "date-parts": [[2023, 4, 12]],
+      "date-time": "2023-04-12T15:29:02Z",
+      "timestamp": 1681313342044
     },
     "update-to": [
       {
@@ -10844,7 +10872,7 @@
     "page": "2824",
     "update-policy": "http://dx.doi.org/10.12688/f1000research.crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 3,
+    "is-referenced-by-count": 5,
     "title": ["Cluster Flow: A user-friendly bioinformatics workflow tool"],
     "prefix": "10.12688",
     "volume": "5",
@@ -11077,31 +11105,44 @@
   },
   "10.1093/bioinformatics/btw354": {
     "indexed": {
-      "date-parts": [[2023, 1, 16]],
-      "date-time": "2023-01-16T20:09:16Z",
-      "timestamp": 1673899756812
+      "date-parts": [[2024, 1, 4]],
+      "date-time": "2024-01-04T20:59:07Z",
+      "timestamp": 1704401947520
     },
     "reference-count": 6,
     "publisher": "Oxford University Press (OUP)",
     "issue": "19",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2016, 10, 26]],
+          "date-time": "2016-10-26T00:00:00Z",
+          "timestamp": 1477440000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 132,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
     "content-domain": {
       "domain": [],
       "crossmark-restriction": false
     },
-    "short-container-title": ["Bioinformatics"],
+    "short-container-title": [],
     "published-print": {
       "date-parts": [[2016, 10, 1]]
     },
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Motivation: Fast and accurate quality control is essential for studies involving next-generation sequencing data. Whilst numerous tools exist to quantify QC metrics, there is no common approach to flexibly integrate these across tools and large sample sets. Assessing analysis results across an entire project can be time consuming and error prone; batch effects and outlier samples can easily be missed in the early stages of analysis.</jats:p>\n               <jats:p>Results: We present MultiQC, a tool to create a single report visualising output from multiple tools across many samples, enabling global trends and biases to be quickly identified. MultiQC can plot data from many common bioinformatics tools and is built to allow easy extension and customization.</jats:p>\n               <jats:p>Availability and implementation: MultiQC is available with an GNU GPLv3 license on GitHub, the Python Package Index and Bioconda. Documentation and example reports are available at http://multiqc.info</jats:p>\n               <jats:p>Contact: \u00a0phil.ewels@scilifelab.se</jats:p>",
     "DOI": "10.1093/bioinformatics/btw354",
     "type": "journal-article",
     "created": {
-      "date-parts": [[2016, 6, 16]],
-      "date-time": "2016-06-16T21:28:17Z",
-      "timestamp": 1466112497000
+      "date-parts": [[2016, 6, 17]],
+      "date-time": "2016-06-17T01:28:17Z",
+      "timestamp": 1466126897000
     },
     "page": "3047-3048",
     "source": "Crossref",
-    "is-referenced-by-count": 2811,
+    "is-referenced-by-count": 4051,
     "title": ["MultiQC: summarize analysis results for multiple tools and samples in a single report"],
     "prefix": "10.1093",
     "volume": "32",
@@ -11110,25 +11151,41 @@
         "given": "Philip",
         "family": "Ewels",
         "sequence": "first",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "1 Department of Biochemistry and Biophysics, Science for Life Laboratory, Stockholm University, Stockholm 106 91, Sweden,"
+          }
+        ]
       },
       {
         "given": "M\u00e5ns",
         "family": "Magnusson",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "2 Department of Molecular Medicine and Surgery, Science for Life Laboratory, Center for Molecular Medicine, Karolinska Institutet, Stockholm, Sweden"
+          }
+        ]
       },
       {
         "given": "Sverker",
         "family": "Lundin",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "3 Science for Life Laboratory, School of Biotechnology, Division of Gene Technology, Royal Institute of Technology, Stockholm, Sweden"
+          }
+        ]
       },
       {
         "given": "Max",
         "family": "K\u00e4ller",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "3 Science for Life Laboratory, School of Biotechnology, Division of Gene Technology, Royal Institute of Technology, Stockholm, Sweden"
+          }
+        ]
       }
     ],
     "member": "286",
@@ -11137,7 +11194,7 @@
     },
     "reference": [
       {
-        "key": "2016092800172357000_32.19.3047.1",
+        "key": "2023020113463488400_btw354-B1",
         "doi-asserted-by": "crossref",
         "first-page": "9095",
         "DOI": "10.1109/MCSE.2007.55",
@@ -11148,7 +11205,7 @@
         "journal-title": "Comput. Sci. Eng"
       },
       {
-        "key": "2016092800172357000_32.19.3047.2",
+        "key": "2023020113463488400_btw354-B2",
         "doi-asserted-by": "crossref",
         "first-page": "733739",
         "DOI": "10.1038/nrg2825",
@@ -11159,7 +11216,7 @@
         "journal-title": "Nat. Rev. Genet"
       },
       {
-        "key": "2016092800172357000_32.19.3047.3",
+        "key": "2023020113463488400_btw354-B3",
         "doi-asserted-by": "crossref",
         "first-page": "709721",
         "DOI": "10.1038/nrg3788",
@@ -11170,8 +11227,10 @@
         "journal-title": "Nat. Rev. Genet"
       },
       {
-        "key": "2016092800172357000_32.19.3047.4",
+        "key": "2023020113463488400_btw354-B4",
+        "doi-asserted-by": "crossref",
         "first-page": "292",
+        "DOI": "10.1093/bioinformatics/btv566",
         "article-title": "Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data",
         "volume": "32",
         "author": "Okonechnikov",
@@ -11179,12 +11238,18 @@
         "journal-title": "Bioinformatics"
       },
       {
-        "key": "2016092800172357000_32.19.3047.5",
-        "doi-asserted-by": "publisher",
-        "DOI": "10.1186/gm208"
+        "key": "2023020113463488400_btw354-B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "87",
+        "DOI": "10.1186/gm208",
+        "article-title": "Overcoming bias and systematic errors in next generation sequencing data",
+        "volume": "2",
+        "author": "Taub",
+        "year": "2010",
+        "journal-title": "Genome Med"
       },
       {
-        "key": "2016092800172357000_32.19.3047.6",
+        "key": "2023020113463488400_btw354-B6",
         "doi-asserted-by": "crossref",
         "first-page": "21845",
         "DOI": "10.1093/bioinformatics/bts356",
@@ -11200,21 +11265,27 @@
     "language": "en",
     "link": [
       {
-        "URL": "http://academic.oup.com/bioinformatics/article-pdf/32/19/3047/6688786/btw354.pdf",
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/32/19/3047/49021359/bioinformatics_32_19_3047.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/32/19/3047/49021359/bioinformatics_32_19_3047.pdf",
         "content-type": "unspecified",
         "content-version": "vor",
         "intended-application": "similarity-checking"
       }
     ],
     "deposited": {
-      "date-parts": [[2017, 8, 24]],
-      "date-time": "2017-08-24T04:55:22Z",
-      "timestamp": 1503550522000
+      "date-parts": [[2023, 2, 1]],
+      "date-time": "2023-02-01T23:50:10Z",
+      "timestamp": 1675295410000
     },
     "score": 1,
     "resource": {
       "primary": {
-        "URL": "https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btw354"
+        "URL": "https://academic.oup.com/bioinformatics/article/32/19/3047/2196507"
       }
     },
     "subtitle": [],
@@ -11225,25 +11296,21 @@
     "references-count": 6,
     "journal-issue": {
       "issue": "19",
-      "published-online": {
-        "date-parts": [[2016, 9, 27]]
-      },
       "published-print": {
         "date-parts": [[2016, 10, 1]]
       }
     },
-    "alternative-id": ["10.1093/bioinformatics/btw354"],
     "URL": "http://dx.doi.org/10.1093/bioinformatics/btw354",
     "relation": {},
-    "ISSN": ["1367-4803", "1460-2059"],
+    "ISSN": ["1367-4811", "1367-4803"],
     "issn-type": [
+      {
+        "value": "1367-4811",
+        "type": "electronic"
+      },
       {
         "value": "1367-4803",
         "type": "print"
-      },
-      {
-        "value": "1460-2059",
-        "type": "electronic"
       }
     ],
     "subject": [
@@ -11254,15 +11321,18 @@
       "Biochemistry",
       "Statistics and Probability"
     ],
+    "published-other": {
+      "date-parts": [[2016, 10, 1]]
+    },
     "published": {
       "date-parts": [[2016, 6, 16]]
     }
   },
   "10.1016/j.ympev.2019.106568": {
     "indexed": {
-      "date-parts": [[2023, 1, 12]],
-      "date-time": "2023-01-12T18:29:27Z",
-      "timestamp": 1673548167917
+      "date-parts": [[2023, 9, 3]],
+      "date-time": "2023-09-03T10:10:28Z",
+      "timestamp": 1693735828888
     },
     "reference-count": 31,
     "publisher": "Elsevier BV",
@@ -11324,7 +11394,7 @@
     "page": "106568",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 6,
     "title": [
       "Genome-wide evidence supports mitochondrial relationships and pervasive parallel phenotypic evolution in open-habitat chats"
     ],
@@ -11800,9 +11870,9 @@
   },
   "10.1111/1755-0998.13192": {
     "indexed": {
-      "date-parts": [[2023, 1, 12]],
-      "date-time": "2023-01-12T18:32:07Z",
-      "timestamp": 1673548327893
+      "date-parts": [[2023, 12, 12]],
+      "date-time": "2023-12-12T01:56:19Z",
+      "timestamp": 1702346179774
     },
     "reference-count": 71,
     "publisher": "Wiley",
@@ -11817,16 +11887,6 @@
         "content-version": "vor",
         "delay-in-days": 0,
         "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
-      },
-      {
-        "start": {
-          "date-parts": [[2020, 6, 29]],
-          "date-time": "2020-06-29T00:00:00Z",
-          "timestamp": 1593388800000
-        },
-        "content-version": "tdm",
-        "delay-in-days": 0,
-        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
       }
     ],
     "funder": [
@@ -11841,10 +11901,11 @@
       "domain": ["onlinelibrary.wiley.com"],
       "crossmark-restriction": true
     },
-    "short-container-title": ["Mol Ecol Resour"],
+    "short-container-title": ["Molecular Ecology Resources"],
     "published-print": {
       "date-parts": [[2020, 9]]
     },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The feasibility to sequence entire genomes of virtually any organism provides unprecedented insights into the evolutionary history of populations and species. Nevertheless, many population genomic inferences \u2013 including the quantification and dating of admixture, introgression and demographic events, and inference of selective sweeps \u2013 are still limited by the lack of high\u2010quality haplotype information. The newest generation of sequencing technology now promises significant progress. To establish the feasibility of haplotype\u2010resolved genome resequencing at population scale, we investigated properties of linked\u2010read sequencing data of songbirds of the genus <jats:italic>Oenanthe</jats:italic> across a range of sequencing depths. Our results based on the comparison of downsampled (25\u00d7, 20\u00d7, 15\u00d7, 10\u00d7, 7\u00d7, and 5\u00d7) with high\u2010coverage data (46\u201368\u00d7) of seven bird genomes mapped to a reference suggest that phasing contiguities and accuracies adequate for most population genomic analyses can be reached already with moderate sequencing effort. At 15\u00d7 coverage, phased haplotypes span about 90% of the genome assembly, with 50% and 90% of phased sequences located in phase blocks longer than 1.25\u20134.6\u00a0Mb (N50) and 0.27\u20130.72\u00a0Mb (N90). Phasing accuracy reaches beyond 99% starting from 15\u00d7 coverage. Higher coverages yielded higher contiguities (up to about 7\u00a0Mb/1\u00a0Mb [N50/N90] at 25\u00d7 coverage), but only marginally improved phasing accuracy. Phase block contiguity improved with input DNA molecule length; thus, higher\u2010quality DNA may help keeping sequencing costs at bay. In conclusion, even for organisms with gigabase\u2010sized genomes like birds, linked\u2010read sequencing at moderate depth opens an affordable avenue towards haplotype\u2010resolved genome resequencing at population scale.</jats:p>",
     "DOI": "10.1111/1755-0998.13192",
     "type": "journal-article",
     "created": {
@@ -11855,7 +11916,7 @@
     "page": "1311-1322",
     "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 13,
+    "is-referenced-by-count": 15,
     "title": ["Linked\u2010read sequencing enables haplotype\u2010resolved resequencing at population scale"],
     "prefix": "10.1111",
     "volume": "20",
@@ -12395,9 +12456,9 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2020, 12, 22]],
-      "date-time": "2020-12-22T13:48:33Z",
-      "timestamp": 1608644913000
+      "date-parts": [[2023, 9, 3]],
+      "date-time": "2023-09-03T09:14:39Z",
+      "timestamp": 1693732479000
     },
     "score": 1,
     "resource": {
@@ -12420,15 +12481,7 @@
     "alternative-id": ["10.1111/1755-0998.13192"],
     "URL": "http://dx.doi.org/10.1111/1755-0998.13192",
     "archive": ["Portico"],
-    "relation": {
-      "has-preprint": [
-        {
-          "id-type": "doi",
-          "id": "10.1101/2020.01.15.907261",
-          "asserted-by": "object"
-        }
-      ]
-    },
+    "relation": {},
     "ISSN": ["1755-098X", "1755-0998"],
     "issn-type": [
       {
@@ -12479,9 +12532,9 @@
   },
   "10.12688/f1000research.16665.1": {
     "indexed": {
-      "date-parts": [[2022, 7, 24]],
-      "date-time": "2022-07-24T16:28:50Z",
-      "timestamp": 1658680130533
+      "date-parts": [[2023, 5, 23]],
+      "date-time": "2023-05-23T10:33:29Z",
+      "timestamp": 1684838009495
     },
     "reference-count": 24,
     "publisher": "F1000 Research Ltd",
@@ -12533,7 +12586,7 @@
     "page": "63",
     "update-policy": "http://dx.doi.org/10.12688/f1000research.crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 4,
     "title": ["Sarek: A portable workflow for whole-genome sequencing analysis of germline and somatic variants"],
     "prefix": "10.12688",
     "volume": "9",
@@ -13044,9 +13097,9 @@
   },
   "10.1111/mec.16345": {
     "indexed": {
-      "date-parts": [[2023, 5, 11]],
-      "date-time": "2023-05-11T09:54:44Z",
-      "timestamp": 1683798884414
+      "date-parts": [[2023, 8, 25]],
+      "date-time": "2023-08-25T04:47:37Z",
+      "timestamp": 1692938857831
     },
     "reference-count": 67,
     "publisher": "Wiley",
@@ -13061,16 +13114,6 @@
         "content-version": "vor",
         "delay-in-days": 0,
         "URL": "http://creativecommons.org/licenses/by/4.0/"
-      },
-      {
-        "start": {
-          "date-parts": [[2022, 1, 22]],
-          "date-time": "2022-01-22T00:00:00Z",
-          "timestamp": 1642809600000
-        },
-        "content-version": "tdm",
-        "delay-in-days": 0,
-        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
       }
     ],
     "funder": [
@@ -13103,6 +13146,7 @@
     "published-print": {
       "date-parts": [[2022, 3]]
     },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Understanding the genomic landscape of adaptation is central to understanding microevolution in wild populations. Genomic targets of selection and the underlying genomic mechanisms of adaptation can be elucidated by genome\u2010wide scans for past selective sweeps or by scans for direct fitness associations. We sequenced and assembled 150\u00a0haplotypes of 75 blue tits (<jats:italic>Cyanistes caeruleus</jats:italic>) of a single Central European population by a linked\u2010read technology. We used these genome data in combination with coalescent simulations (i) to estimate an historical effective population size of ~250,000, which recently declined to ~10,000, and (ii) to identify genome\u2010wide distributed selective sweeps of beneficial variants probably originating from standing genetic variation (soft sweeps). The genes linked to these soft sweeps, but also those linked to hard sweeps based on new beneficial mutants, showed a significant enrichment for functions associated with gene expression and transcription regulation. This emphasizes the importance of regulatory evolution in the population\u2019s adaptive history. Soft sweeps were further enriched for genes related to axon and synapse development, indicating the significance of neuronal connectivity changes in the brain potentially linked to behavioural adaptations. A previous scan of heterozygosity\u2013fitness correlations revealed a consistent negative effect on arrival date at the breeding site for a single microsatellite in the <jats:italic>MDGA2</jats:italic>\u00a0gene. Here, we used the haplotype structure around this microsatellite to explain the effect as a local and direct outbreeding effect of a gene involved in synapse development.</jats:p>",
     "DOI": "10.1111/mec.16345",
     "type": "journal-article",
     "created": {
@@ -13564,9 +13608,9 @@
       }
     ],
     "deposited": {
-      "date-parts": [[2022, 6, 17]],
-      "date-time": "2022-06-17T11:55:16Z",
-      "timestamp": 1655466916000
+      "date-parts": [[2023, 8, 24]],
+      "date-time": "2023-08-24T04:46:55Z",
+      "timestamp": 1692852415000
     },
     "score": 1,
     "resource": {
@@ -13640,9 +13684,9 @@
   },
   "10.1371/journal.pcbi.1009823": {
     "indexed": {
-      "date-parts": [[2023, 8, 6]],
-      "date-time": "2023-08-06T16:50:55Z",
-      "timestamp": 1691340655065
+      "date-parts": [[2023, 12, 27]],
+      "date-time": "2023-12-27T19:36:16Z",
+      "timestamp": 1703705776940
     },
     "reference-count": 57,
     "publisher": "Public Library of Science (PLoS)",
@@ -13718,7 +13762,7 @@
     "page": "e1009823",
     "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 7,
     "title": ["Ten simple rules for making a software tool workflow-ready"],
     "prefix": "10.1371",
     "volume": "18",
@@ -15288,6 +15332,719 @@
     "subject": ["Hematology"],
     "published": {
       "date-parts": [[2022, 8, 30]]
+    }
+  },
+  "10.1093/g3journal/jkad266": {
+    "indexed": {
+      "date-parts": [[2023, 12, 14]],
+      "date-time": "2023-12-14T05:22:00Z",
+      "timestamp": 1702531320879
+    },
+    "reference-count": 42,
+    "publisher": "Oxford University Press (OUP)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2023, 12, 13]],
+          "date-time": "2023-12-13T00:00:00Z",
+          "timestamp": 1702425600000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000781",
+        "name": "European Research council",
+        "doi-asserted-by": "publisher",
+        "award": ["AdG-294333"]
+      },
+      {
+        "DOI": "10.13039/501100004359",
+        "name": "Swedish Research Council",
+        "doi-asserted-by": "publisher",
+        "award": ["621-2014-4523", "2019-03611", "2016-05139"]
+      },
+      {
+        "DOI": "10.13039/501100001862",
+        "name": "FORMAS",
+        "doi-asserted-by": "publisher",
+        "award": ["2018-00705", "2017-01597"]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Callosobruchus maculatus is a major agricultural pest of legume crops worldwide and an established model system in ecology and evolution. Yet, current molecular biological resources for this species are limited. Here, we employ Hi-C sequencing to generate a greatly improved genome assembly and we annotate its repetitive elements in a dedicated in-depth effort where we manually curate and classify the most abundant unclassified repeat subfamilies. We present a scaffolded chromosome-level assembly, which is 1.01\u2005Gb in total length with 86% being contained within the 9 autosomes and the X chromosome. Repetitive sequences accounted for 70% of the total assembly. DNA transposons covered 18% of the genome, with the most abundant superfamily being Tc1-Mariner (9.75% of the genome). This new chromosome-level genome assembly of C. maculatus will enable future genetic and evolutionary studies not only of this important species but of beetles more generally.</jats:p>",
+    "DOI": "10.1093/g3journal/jkad266",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2023, 12, 14]],
+      "date-time": "2023-12-14T00:37:58Z",
+      "timestamp": 1702514278000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "A chromosome-level assembly of the seed beetle <i>Callosobruchus maculatus</i> genome with annotation of its repetitive elements"
+    ],
+    "prefix": "10.1093",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-3501-3376",
+        "authenticated-orcid": false,
+        "given": "G\u00f6ran",
+        "family": "Arnqvist",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Animal Ecology, Department of Ecology and Genetics, Uppsala University , Uppsala SE75236 , Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Ivar",
+        "family": "Westerberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Systematic Biology, Department of Organismal Biology, Uppsala University , Uppsala SE75236 , Sweden"
+          },
+          {
+            "name": "Department of Ecology, Environment and Plant Sciences, Stockholm University , Stockholm SE10691 , Sweden"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Galbraith",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Biological Sciences, University of Adelaide , Adelaide 5005 , Australia"
+          },
+          {
+            "name": "Faculty of Environment, Science and Economy, University of Exeter , Cornwall TR10 9FE , UK"
+          }
+        ]
+      },
+      {
+        "given": "Ahmed",
+        "family": "Sayadi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rheumatology, Department of Medical Sciences, Uppsala University , Uppsala SE75236 , Sweden"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5235-6461",
+        "authenticated-orcid": false,
+        "given": "Douglas G",
+        "family": "Scofield",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolutionary Biology, Department of Ecology and Genetics, Uppsala University , Uppsala SE75236 , Sweden"
+          },
+          {
+            "name": "Uppsala Multidisciplinary Center for Advanced Computational Science, Uppsala University , Uppsala SE75236 , Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Remi-Andr\u00e9",
+        "family": "Olsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University , Stockholm SE10691 , Sweden"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1121-6950",
+        "authenticated-orcid": false,
+        "given": "Elina",
+        "family": "Immonen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolutionary Biology, Department of Ecology and Genetics, Uppsala University , Uppsala SE75236 , Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Franziska",
+        "family": "Bonath",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory, Department of Molecular Biosciences, The Wenner-Gren Institute, Stockholm University , Stockholm SE10691 , Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Philip",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Seqera Labs , Barcelona 08005 , Spain"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Suh",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Systematic Biology, Department of Organismal Biology, Uppsala University , Uppsala SE75236 , Sweden"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [[2023, 12, 13]]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "2023121400125548000_jkad266-B1",
+        "doi-asserted-by": "publisher",
+        "first-page": "403",
+        "DOI": "10.1016/S0022-2836(05)80360-2",
+        "article-title": "Basic local alignment search tool",
+        "volume": "215",
+        "author": "Altschul",
+        "year": "1990",
+        "journal-title": "J Mol Biol"
+      },
+      {
+        "issue": "2",
+        "key": "2023121400125548000_jkad266-B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "76",
+        "DOI": "10.1016/j.jspr.2010.10.003",
+        "article-title": "Karyotype differences among four species of Callosobruchus Pic (Coleoptera: Bruchidae)",
+        "volume": "47",
+        "author": "Angus",
+        "year": "2011",
+        "journal-title": "J Stored Prod Res"
+      },
+      {
+        "issue": "1815",
+        "key": "2023121400125548000_jkad266-B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "20151421",
+        "DOI": "10.1098/rspb.2015.1421",
+        "article-title": "Genome size correlates with reproductive fitness in seed beetles",
+        "volume": "282",
+        "author": "Arnqvist",
+        "year": "2015",
+        "journal-title": "Proc R Soc B"
+      },
+      {
+        "issue": "33",
+        "key": "2023121400125548000_jkad266-B4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.2205564119",
+        "article-title": "Concerted evolution of metabolic rate, economics of mating, ecology, and pace of life across seed beetles",
+        "volume": "119",
+        "author": "Arnqvist",
+        "year": "2022",
+        "journal-title": "Proc Natl Acad Sci U S A"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1186/s13100-015-0041-9",
+        "article-title": "Repbase Update, a database of repetitive elements in eukaryotic genomes",
+        "volume": "6",
+        "author": "Bao",
+        "year": "2015",
+        "journal-title": "Mob DNA."
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B6",
+        "doi-asserted-by": "publisher",
+        "first-page": "20220450",
+        "DOI": "10.1098/rsbl.2022.0450",
+        "article-title": "Larger genomes show improved buffering of adult fitness against environmental stress in seed beetles",
+        "volume": "19",
+        "author": "Boman",
+        "year": "2023",
+        "journal-title": "Biol Lett"
+      },
+      {
+        "issue": "7",
+        "key": "2023121400125548000_jkad266-B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1167",
+        "DOI": "10.1093/gbe/evaa102",
+        "article-title": "Genome assembly of the ragweed leaf beetle: a step forward to better predict rapid evolution of a weed biocontrol agent to environmental novelties",
+        "volume": "12",
+        "author": "Bouchemousse",
+        "year": "2020",
+        "journal-title": "Genome Biol Evol"
+      },
+      {
+        "issue": "12",
+        "key": "2023121400125548000_jkad266-B8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1119",
+        "DOI": "10.1038/nbt.2727",
+        "article-title": "Chromosome-scale scaffolding of de novo genome assemblies based on chromatin interactions",
+        "volume": "31",
+        "author": "Burton",
+        "year": "2013",
+        "journal-title": "Nature Biotech"
+      },
+      {
+        "issue": "4",
+        "key": "2023121400125548000_jkad266-B9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1318",
+        "DOI": "10.1111/1755-0998.13342",
+        "article-title": "A chromosome-level assembly of the harlequin ladybird Harmonia axyridis as a genomic resource to study beetle and invasion biology",
+        "volume": "21",
+        "author": "Chen",
+        "year": "2021",
+        "journal-title": "Mol Ecol Res"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B10",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12864-022-08990-y",
+        "article-title": "A draft Diabrotica virgifera virgifera genome: insights into control and host plant adaption by a major maize pest insect",
+        "volume": "24",
+        "author": "Coates",
+        "year": "2023",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B11",
+        "doi-asserted-by": "publisher",
+        "first-page": "237",
+        "DOI": "10.1111/mec.15703",
+        "article-title": "Elevated rates of positive selection drive the evolution of pestiferousness in the Colorado potato beetle (Leptinotarsa decemlineata, Say)",
+        "volume": "30",
+        "author": "Cohen",
+        "year": "2021",
+        "journal-title": "Mol Ecol"
+      },
+      {
+        "issue": "6333",
+        "key": "2023121400125548000_jkad266-B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "92",
+        "DOI": "10.1126/science.aal3327",
+        "article-title": "De novo assembly of the Aedes aegypti genome using HiC yields chromosome-length scaffolds",
+        "volume": "356",
+        "author": "Dudchenko",
+        "year": "2017",
+        "journal-title": "Science"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "95",
+        "DOI": "10.1016/j.cels.2016.07.002",
+        "article-title": "Juicer provides a one-click system for analyzing loop-resolution HiC experiments",
+        "volume": "3",
+        "author": "Durand",
+        "year": "2016",
+        "journal-title": "Cell Syst"
+      },
+      {
+        "issue": "6913",
+        "key": "2023121400125548000_jkad266-B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "316",
+        "DOI": "10.1038/nature01183",
+        "article-title": "Sequence and analysis of rice chromosome 4",
+        "volume": "420",
+        "author": "Feng",
+        "year": "2002",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "5",
+        "key": "2023121400125548000_jkad266-B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "329",
+        "DOI": "10.1038/nrg793",
+        "article-title": "Plant transposable elements: where genetics meets genomics",
+        "volume": "3",
+        "author": "Feschotte",
+        "year": "2002",
+        "journal-title": "Nature Rev Genet"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "331",
+        "DOI": "10.1146/annurev.genet.40.110405.090448",
+        "article-title": "DNA transposons and the evolution of eukaryotic genomes",
+        "volume": "41",
+        "author": "Feschotte",
+        "year": "2007",
+        "journal-title": "Ann Rev Genet"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B17",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12864-019-6394-6",
+        "article-title": "Enhanced genome assembly and a new official gene set for Tribolium castaneum",
+        "volume": "21",
+        "author": "Herndon",
+        "year": "2020",
+        "journal-title": "BMC Genom"
+      },
+      {
+        "issue": "12",
+        "key": "2023121400125548000_jkad266-B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "1701",
+        "DOI": "10.1111/2041-210X.13481",
+        "article-title": "Enhancing the usefulness of artificial seeds in seed beetle model systems research",
+        "volume": "11",
+        "author": "Holmes",
+        "year": "2020",
+        "journal-title": "Methods Ecol Evol"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "evac177",
+        "DOI": "10.1093/gbe/evac177",
+        "article-title": "Experimental life history evolution results in sex-specific evolution of gene expression in seed beetles",
+        "volume": "15",
+        "author": "Immonen",
+        "year": "2023",
+        "journal-title": "Genome Biol Evol"
+      },
+      {
+        "issue": "14",
+        "key": "2023121400125548000_jkad266-B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "3059",
+        "DOI": "10.1093/nar/gkf436",
+        "article-title": "MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform",
+        "volume": "30",
+        "author": "Katoh",
+        "year": "2002",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "3",
+        "key": "2023121400125548000_jkad266-B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "1149",
+        "DOI": "10.1111/1755-0998.13528",
+        "article-title": "Chromosome-level genome assembly reveals genomic architecture of northern range expansion in the mountain pine beetle, Dendroctonus ponderosae Hopkins (Coleoptera: Curculionidae)",
+        "volume": "22",
+        "author": "Keeling",
+        "year": "2022",
+        "journal-title": "Mol Ecol Res"
+      },
+      {
+        "issue": "3",
+        "key": "2023121400125548000_jkad266-B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "487",
+        "DOI": "10.1101/gr.113985.110",
+        "article-title": "Adaptive seeds tame genomic sequence comparison",
+        "volume": "21",
+        "author": "Kie\u0142basa",
+        "year": "2011",
+        "journal-title": "Genome Res"
+      },
+      {
+        "key": "2023121400125548000_jkad266-B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "105339",
+        "DOI": "10.1016/j.pestbp.2023.105339",
+        "article-title": "The complete genome assemblies of 19 insect pests of worldwide importance to agriculture",
+        "volume": "191",
+        "author": "King",
+        "year": "2023",
+        "journal-title": "Pestic Biochem Phys"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "474",
+        "DOI": "10.1186/1471-2105-7-474",
+        "article-title": "Annotation, submission and screening of repetitive elements in Repbase: RepbaseSubmitter and Censor",
+        "volume": "7",
+        "author": "Kohany",
+        "year": "2006",
+        "journal-title": "BMC Bioinf"
+      },
+      {
+        "key": "2023121400125548000_jkad266-B25",
+        "author": "Li",
+        "year": "2013"
+      },
+      {
+        "issue": "7",
+        "key": "2023121400125548000_jkad266-B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "evab134",
+        "DOI": "10.1093/gbe/evab134",
+        "article-title": "Genome assembly of the cold-tolerant leaf beetle Gonioctena quinquepunctata, an important resource for studying its evolution and reproductive barriers between species",
+        "volume": "13",
+        "author": "Lukicheva",
+        "year": "2021",
+        "journal-title": "Genome Biol Evol"
+      },
+      {
+        "issue": "D1",
+        "key": "2023121400125548000_jkad266-B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "D200",
+        "DOI": "10.1093/nar/gkw1129",
+        "article-title": "CDD/SPARCLE: functional classification of proteins via subfamily domain architectures",
+        "volume": "45",
+        "author": "Marchler-Bauer",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B28",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12915-021-01158-2",
+        "article-title": "The transposable element-rich genome of the cereal pest Sitophilus oryzae",
+        "volume": "19",
+        "author": "Parisot",
+        "year": "2021",
+        "journal-title": "BMC Biol"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "263",
+        "DOI": "10.1111/1755-0998.13252",
+        "article-title": "Identifying the causes and consequences of assembly gaps using a multiplatform genome assembly of a bird-of-paradise",
+        "volume": "21",
+        "author": "Peona",
+        "year": "2021",
+        "journal-title": "Mol Ecol Res"
+      },
+      {
+        "key": "2023121400125548000_jkad266-B30",
+        "volume-title": "Insect Damage: Damage on Post-Harvest",
+        "author": "Sallam",
+        "year": "2013"
+      },
+      {
+        "issue": "10",
+        "key": "2023121400125548000_jkad266-B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "2697",
+        "DOI": "10.1093/gbe/evx205",
+        "article-title": "The evolution of dark matter in the mitogenome of seed beetles",
+        "volume": "9",
+        "author": "Sayadi",
+        "year": "2017",
+        "journal-title": "Genome Biol Evol"
+      },
+      {
+        "issue": "12",
+        "key": "2023121400125548000_jkad266-B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "1725",
+        "DOI": "10.1038/s41559-019-1041-9",
+        "article-title": "The genomic footprint of sexual conflict",
+        "volume": "3",
+        "author": "Sayadi",
+        "year": "2019",
+        "journal-title": "Nature Ecol Evol"
+      },
+      {
+        "issue": "6",
+        "key": "2023121400125548000_jkad266-B33",
+        "doi-asserted-by": "publisher",
+        "first-page": "329",
+        "DOI": "10.1038/s41576-018-0003-4",
+        "article-title": "Piercing the dark matter: bioinformatics of long-range sequencing and mapping",
+        "volume": "19",
+        "author": "Sedlazeck",
+        "year": "2018",
+        "journal-title": "Nat Rev Genet"
+      },
+      {
+        "issue": "12",
+        "key": "2023121400125548000_jkad266-B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "1639",
+        "DOI": "10.1093/bioinformatics/btaa1016",
+        "article-title": "Liftoff: accurate mapping of gene annotations",
+        "volume": "37",
+        "author": "Shumate",
+        "year": "2021",
+        "journal-title": "Bioinf"
+      },
+      {
+        "key": "2023121400125548000_jkad266-B35",
+        "author": "Smit",
+        "year": "2010"
+      },
+      {
+        "key": "2023121400125548000_jkad266-B36",
+        "author": "Smit",
+        "year": "2010"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B37",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1111/mec.14439",
+        "article-title": "Abundant recent activity of retrovirus-like retrotransposons within and among flycatcher species implies a rich source of structural variation in songbird genomes",
+        "volume": "27",
+        "author": "Suh",
+        "year": "2018",
+        "journal-title": "Mol Ecol"
+      },
+      {
+        "issue": "12",
+        "key": "2023121400125548000_jkad266-B38",
+        "doi-asserted-by": "publisher",
+        "first-page": "973",
+        "DOI": "10.1038/nrg2165",
+        "article-title": "A unified classification system for eukaryotic transposable elements",
+        "volume": "8",
+        "author": "Wicker",
+        "year": "2007",
+        "journal-title": "Nature Rev Genet"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B39",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12864-021-07558-6",
+        "article-title": "The draft genome of the specialist flea beetle Altica viridicyanea (Coleoptera: Chrysomelidae)",
+        "volume": "22",
+        "author": "Xue",
+        "year": "2021",
+        "journal-title": "BMC Genom"
+      },
+      {
+        "issue": "8",
+        "key": "2023121400125548000_jkad266-B40",
+        "doi-asserted-by": "publisher",
+        "first-page": "jkab214",
+        "DOI": "10.1093/g3journal/jkab214",
+        "article-title": "Genome assemblies of three closely related leaf beetle species (Galerucella spp.)",
+        "volume": "11",
+        "author": "Yang",
+        "year": "2021",
+        "journal-title": "G3 (Bethesda) Genes|Genomes|Genetics"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B41",
+        "doi-asserted-by": "publisher",
+        "first-page": "19688",
+        "DOI": "10.1038/srep19688",
+        "article-title": "detectMITE: a novel approach to detect miniature inverted repeat transposable elements in genomes",
+        "volume": "6",
+        "author": "Ye",
+        "year": "2016",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "1",
+        "key": "2023121400125548000_jkad266-B42",
+        "doi-asserted-by": "publisher",
+        "first-page": "292",
+        "DOI": "10.1111/1755-0998.13100",
+        "article-title": "Chromosome-level genome assembly of the predator Propylea japonica to understand its tolerance to insecticides and high temperatures",
+        "volume": "20",
+        "author": "Zhang",
+        "year": "2020",
+        "journal-title": "Mol Ecol Res"
+      }
+    ],
+    "container-title": ["G3: Genes, Genomes, Genetics"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://academic.oup.com/g3journal/advance-article-pdf/doi/10.1093/g3journal/jkad266/54406819/jkad266.pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/g3journal/advance-article-pdf/doi/10.1093/g3journal/jkad266/54406819/jkad266.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2023, 12, 14]],
+      "date-time": "2023-12-14T00:38:02Z",
+      "timestamp": 1702514282000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/g3journal/advance-article/doi/10.1093/g3journal/jkad266/7471854"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "N",
+        "family": "Whiteman",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2023, 12, 13]]
+    },
+    "references-count": 42,
+    "URL": "http://dx.doi.org/10.1093/g3journal/jkad266",
+    "relation": {},
+    "ISSN": ["2160-1836"],
+    "issn-type": [
+      {
+        "value": "2160-1836",
+        "type": "electronic"
+      }
+    ],
+    "subject": ["Genetics (clinical)", "Genetics", "Molecular Biology"],
+    "published": {
+      "date-parts": [[2023, 12, 13]]
     }
   }
 }
