@@ -26,6 +26,10 @@ function short_authors(authors) {
 
 <BaseLayout title="Publications">
   <PageTitle>Publications</PageTitle>
+  <p class="mb-3 text-xl">The cornerstone of the scientific method.</p>
+  <p class="mb-5 text-base font-light opacity-80">
+    I've been lucky to work with some amazing people on some amazing projects. Here are some of the results.
+  </p>
   {
     pubs.map((post) => {
       const pub = publications[post.data.doi];
@@ -35,15 +39,15 @@ function short_authors(authors) {
         year_heading = year;
       }
       return (
-        <>
-          {year_heading && <h2 class="my-4 text-2xl font-bold">{year_heading}</h2>}
+        <section>
+          {year_heading && <h2 class="mb-4 mt-20 text-2xl font-bold">{year_heading}</h2>}
           <HorizontalCard
             title={post.data.title}
             subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
             description={short_authors(pub.author)}
             url={"/publications/" + post.slug}
           />
-        </>
+        </section>
       );
     })
   }

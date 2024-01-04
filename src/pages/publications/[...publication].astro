@@ -22,35 +22,31 @@ const pub_year = pub.published["date-parts"][0][0];
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-  <div class="md:flex md:justify-center">
-    <div class="max-w-[750px]">
-      <h1 class="mb-4 text-xl font-bold md:text-3xl">{entry.data.title}</h1>
-      <h2 class="mb-2"><span class="mr-2 italic">{entry.data.journal}</span> ({pub_year})</h2>
-      <h3 class="authors mb-4">{pub.author.map((author) => <Author author={author} />)}</h3>
+  <h1 class="mb-4 text-xl font-bold md:text-3xl">{entry.data.title}</h1>
+  <h2 class="mb-2"><span class="mr-2 italic">{entry.data.journal}</span> ({pub_year})</h2>
+  <h3 class="authors mb-4">{pub.author.map((author) => <Author author={author} />)}</h3>
 
-      <div class="flex flex-row py-8">
-        <div class="basis-1/2">
-          <span class="__dimensions_badge_embed__" data-doi={entry.data.doi} data-legend="always"></span>
-          <script is:inline src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-        </div>
+  <div class="flex flex-row py-8">
+    <div class="basis-1/2">
+      <span class="__dimensions_badge_embed__" data-doi={entry.data.doi} data-legend="always"></span>
+      <script is:inline src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+    </div>
 
-        <div class="basis-1/2 py-3 md:text-right">
-          <p class="mb-5">
-            <Button href={pub.URL} iconAfter="heroicons-outline:external-link">View publication</Button>
-          </p>
-          <p>
-            <abbr title="Digital Object Identifier">DOI</abbr>:
-            <span class="ml-1 opacity-50">
-              {entry.data.doi}
-            </span>
-          </p>
-        </div>
-      </div>
-      <article class="prose prose-lg dark:prose-invert prose-img:mx-auto">
-        <Content />
-      </article>
+    <div class="basis-1/2 py-3 md:text-right">
+      <p class="mb-5">
+        <Button href={pub.URL} iconAfter="mdi:open-in-new">View publication</Button>
+      </p>
+      <p>
+        <abbr title="Digital Object Identifier">DOI</abbr>:
+        <span class="ml-1 opacity-50">
+          {entry.data.doi}
+        </span>
+      </p>
     </div>
   </div>
+  <article class="prose prose-lg max-w-none dark:prose-invert prose-img:mx-auto md:text-justify">
+    <Content />
+  </article>
 </BaseLayout>
 
 <style lang="scss" is:global>

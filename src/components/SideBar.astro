@@ -3,22 +3,23 @@ import NavItem from "@components/SideBar/NavItem.astro";
 import SocialIcon from "@components/SideBar/SocialIcon.astro";
 ---
 
-<div class="menu flex flex-col flex-nowrap overflow-y-auto bg-black/20 backdrop-blur-sm pt-10 text-white">
+<div class="menu flex flex-col flex-nowrap overflow-y-auto bg-black/20 pt-10 text-white backdrop-blur-sm">
   <span
     onclick="openCloseMenu()"
-    class="text-2xl mx-5 md:hidden cursor-pointer opacity-50 hover:opacity-100 transition-opacity mr-3">&#10005;</span
+    class="mx-5 mr-3 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden">&#10005;</span
   >
   <div class="flex items-center">
     <hr class="w-1/5 opacity-25" />
     <div class="avatar m-auto w-1/4 lg:w-1/2">
       <a href="/">
         <img src="/phil_ewels.jpg" class="rounded-full" alt="Philip Ewels" />
+        <span class="sr-only">Photo: Phil Ewels</span>
       </a>
     </div>
     <hr class="w-1/5 opacity-25" />
   </div>
   <span class="mt-8 block text-center text-5xl font-thin">Phil Ewels</span>
-  <ul class="my-menu-items my-8 mx-5">
+  <ul class="my-menu-items mx-5 my-8">
     <NavItem href="/" icon="bi:house-door">Home</NavItem>
     <NavItem href="/work" icon="bi:person-circle">Where I've worked</NavItem>
     <NavItem href="/projects" icon="bi:journal-bookmark-fill">Projects</NavItem>

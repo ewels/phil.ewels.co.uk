@@ -6,18 +6,36 @@ const {
   imgDark,
   description,
   url,
+  postDate,
   badge,
   countryFlag,
   tags,
-  target,
+  target = "_self",
   hasYouTube,
-  hasDownload = "_self",
+  hasDownload,
 } = Astro.props;
 import { Icon } from "astro-icon/components";
+
+const nth = (d) => {
+  if (d > 3 && d < 21) return "th";
+  switch (d % 10) {
+    case 1:
+      return "st";
+    case 2:
+      return "nd";
+    case 3:
+      return "rd";
+    default:
+      return "th";
+  }
+};
+const dateString = (d) => {
+  return d.toLocaleString("default", { month: "long" }) + " " + d.getDay() + "<sup>" + nth(d.getDay()) + "</sup>";
+};
 ---
 
 <div
-  class="-mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin] ease-in-out last:border-b hover:-mr-6 hover:border-l-8 md:-mx-10 md:px-10 md:hover:-mr-12 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20"
+  class="-mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin] ease-in-out last-of-type:border-b hover:-mr-6 hover:border-l-8 md:-mx-10 md:px-10 md:hover:-mr-12 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20"
 >
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4">
     {img && <img src={img} alt={title} class="block w-12 rounded border p-2 shadow dark:hidden" />}
@@ -31,12 +49,14 @@ import { Icon } from "astro-icon/components";
       )
     }
     <div class="w-full grow">
-      <h1 class={"block font-medium 2xl:ml-4 2xl:inline " + (subtitle ? "text-lg" : "text-xl")}>
+      <h1 class={"block font-medium " + (subtitle ? "text-lg" : "text-xl")}>
         {title}
         {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
       </h1>
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
-      <p class="text-1xl block py-1 font-light text-gray-500 2xl:ml-4 2xl:inline dark:text-gray-300">
+      <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300">
+        {postDate && <Fragment set:html={dateString(postDate)} />}
+        {postDate && description && <span class="mx-2">&bull;</span>}
         {description}
         {countryFlag && <img src={countryFlag} class="ml-2 hidden w-[18px] md:inline-block" />}
         {
@@ -47,8 +67,16 @@ import { Icon } from "astro-icon/components";
               </span>
             ))
         }
-        {hasDownload && <Icon name="bi:file-earmark-pdf" class="ml-2 hidden w-[18px] md:inline-block" />}
-        {hasYouTube && <Icon name="mdi:youtube" class="ml-2 hidden w-[18px] md:inline-block" />}
+        {
+          hasDownload && (
+            <Icon name="bi:file-earmark-pdf" class="ml-2 hidden w-[18px] md:inline-block" title="Slides available" />
+          )
+        }
+        {
+          hasYouTube && (
+            <Icon name="mdi:youtube" class="ml-2 hidden w-[18px] md:inline-block" title="Recording available" />
+          )
+        }
       </p>
     </div>
     <div class="hidden md:block">

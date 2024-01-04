@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Hologram from "@components/Hologram.astro";
 
 export async function getStaticPaths() {
   const workEntries = await getCollection("workplaces");
@@ -17,47 +16,31 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
-  <div class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] dark:prose-invert prose-img:mx-auto">
-      <div class="mb-12 flex flex-row items-center">
-        <h1 class="title my-2 grow text-4xl font-bold">
-          {entry.data.title}
-        </h1>
-        {
-          entry.data.logoImage && (
-            <img
-              src={entry.data.logoImage}
-              alt={entry.data.title}
-              class="max-w-60 dark:max-w-64 float-right my-0 max-h-16 dark:max-h-24 dark:rounded dark:bg-white dark:p-4"
-            />
-          )
-        }
-      </div>
-      <p class="text-xl">{entry.data.description}</p>
+  <article class="prose prose-lg max-w-none dark:prose-invert prose-img:mx-auto md:justify-center">
+    <div class="mb-12 flex flex-row items-center">
+      <h1 class="title my-2 grow text-4xl font-bold">
+        {entry.data.title}
+      </h1>
       {
-        entry.data.heroImage && (
+        entry.data.logoImage && (
           <img
-            src={entry.data.heroImage}
+            src={entry.data.logoImage}
             alt={entry.data.title}
-            class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600"
+            class="float-right my-0 max-h-16 max-w-60 dark:max-h-24 dark:max-w-64 dark:rounded dark:bg-white dark:p-4"
           />
         )
       }
-      <Content />
-      {
-        entry.data.pubDate && (
-          <p class="my-12 text-xs font-light">
-            Published <time>{entry.data.pubDate}</time>
-          </p>
-        )
-      }
-      {
-        entry.data.updatedDate && (
-          <p class="my-12 text-xs font-light">
-            Last updated: <time>{entry.data.updatedDate}</time>
-          </p>
-        )
-      }
-    </article>
-  </div>
+    </div>
+    <p class="text-xl">{entry.data.description}</p>
+    {
+      entry.data.heroImage && (
+        <img
+          src={entry.data.heroImage}
+          alt={entry.data.title}
+          class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600"
+        />
+      )
+    }
+    <Content />
+  </article>
 </BaseLayout>

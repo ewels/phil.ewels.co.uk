@@ -5,5 +5,5 @@ const { href, icon, label } = Astro.props;
 ---
 
 <a href={href} target="_blank" class="opacity-50 transition-opacity hover:opacity-100" title={label} aria-label={label}>
-  <Icon name={icon} size="24px" />
+  <Icon name={icon} size="24px" /><span class="sr-only">label</span>
 </a>

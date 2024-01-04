@@ -10,19 +10,22 @@ const projects = await getCollection("projects");
 
 <BaseLayout title="Projects">
   <PageTitle>Projects</PageTitle>
+  <p class="mb-3 text-xl">
+    Open source software has been at the heart of everything I have done for most of my career.
+  </p>
+  <p class="mb-5 text-base font-light opacity-80">
+    Below are some of the key projects that I've authored or contributed to.
+  </p>
   <ul>
-    <!--List the array of astronaut info-->
     {
       projects.map((p) => (
-        <>
-          <HorizontalCard
-            title={p.data.title}
-            img={p.data.iconImage}
-            imgDark={p.data.iconImageDark ?? p.data.iconImage}
-            description={p.data.description}
-            url={"/projects/" + p.slug}
-          />
-        </>
+        <HorizontalCard
+          title={p.data.title}
+          img={p.data.iconImage}
+          imgDark={p.data.iconImageDark ?? p.data.iconImage}
+          description={p.data.description}
+          url={"/projects/" + p.slug}
+        />
       ))
     }
   </ul>

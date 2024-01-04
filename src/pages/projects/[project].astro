@@ -15,46 +15,32 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
-  <div class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] dark:prose-invert prose-img:mx-auto">
-      <div class="flex flex-row items-center">
-        <h1 class="title my-2 grow text-4xl font-bold">
-          {entry.data.title}
-        </h1>
-        {
-          entry.data.iconImage && (
-            <img
-              src={entry.data.iconImage}
-              alt={entry.data.title}
-              class="float-right my-0 w-16 dark:w-24 dark:rounded dark:bg-white dark:p-4"
-            />
-          )
-        }
-      </div>
+  <article class="prose prose-lg max-w-none dark:prose-invert prose-img:mx-auto">
+    <div class="flex flex-row items-center">
+      <h1 class="title my-2 grow text-4xl font-bold">
+        {entry.data.title}
+      </h1>
       {
-        entry.data.heroImage && (
+        entry.data.iconImage && (
           <img
-            src={entry.data.heroImage}
+            src={entry.data.iconImage}
             alt={entry.data.title}
-            class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600"
+            class="float-right my-0 w-16 dark:w-24 dark:rounded dark:bg-white dark:p-4"
           />
         )
       }
+    </div>
+    {
+      entry.data.heroImage && (
+        <img
+          src={entry.data.heroImage}
+          alt={entry.data.title}
+          class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600"
+        />
+      )
+    }
+    <div class="text-justify">
       <Content />
-      {
-        entry.data.pubDate && (
-          <p class="my-12 text-xs font-light">
-            Published <time>{entry.data.pubDate}</time>
-          </p>
-        )
-      }
-      {
-        entry.data.updatedDate && (
-          <p class="my-12 text-xs font-light">
-            Last updated: <time>{entry.data.updatedDate}</time>
-          </p>
-        )
-      }
-    </article>
-  </div>
+    </div>
+  </article>
 </BaseLayout>
