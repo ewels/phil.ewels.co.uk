@@ -47,6 +47,7 @@ const workplaceCollection = defineCollection({
     location: z.string(),
     URL: z.string().url(),
     logoImage: z.string().optional(),
+    logoImageDark: z.string().optional(),
     iconImage: z.string(),
     iconImageDark: z.string().optional(),
     countryFlag: z.string(),
