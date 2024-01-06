@@ -51,8 +51,25 @@ const workplaceCollection = defineCollection({
     iconImage: z.string(),
     iconImageDark: z.string().optional(),
     countryFlag: z.string(),
-    heroImage: z.string(),
+    heroImage: z.string().optional(),
     numPositions: z.number(),
+    startDate: z.date(),
+  }),
+});
+const educationCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+    description: z.string(),
+    location: z.string(),
+    URL: z.string().url(),
+    logoImage: z.string().optional(),
+    logoImageDark: z.string().optional(),
+    iconImage: z.string(),
+    iconImageDark: z.string().optional(),
+    countryFlag: z.string(),
+    heroImage: z.string().optional(),
     startDate: z.date(),
   }),
 });
@@ -62,4 +79,5 @@ export const collections = {
   publications: publicationsCollection,
   talks: talksCollection,
   workplaces: workplaceCollection,
+  education: educationCollection,
 };

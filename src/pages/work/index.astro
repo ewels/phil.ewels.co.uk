@@ -8,6 +8,9 @@ import HorizontalCard from "@components/HorizontalCard.astro";
 const workplaces = (await getCollection("workplaces")).sort(
   (a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
 );
+const education = (await getCollection("education")).sort(
+  (a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
+);
 ---
 
 <BaseLayout title="Where I've worked">
@@ -31,6 +34,26 @@ const workplaces = (await getCollection("workplaces")).sort(
             countryFlag={post.data.countryFlag}
             tags={[post.data.numPositions + " position" + (post.data.numPositions > 1 ? "s" : "")]}
             url={"/work/" + post.slug}
+          />
+        </>
+      ))
+    }
+  </ul>
+
+  <h2 class="mb-8 mt-12 text-3xl font-bold">Education</h2>
+  <ul>
+    <!--List the array of astronaut info-->
+    {
+      education.map((post) => (
+        <>
+          <HorizontalCard
+            title={post.data.title}
+            subtitle={post.data.subtitle}
+            img={post.data.iconImage}
+            imgDark={post.data.iconImageDark ?? post.data.iconImage}
+            description={post.data.location}
+            countryFlag={post.data.countryFlag}
+            url={"/education/" + post.slug}
           />
         </>
       ))
