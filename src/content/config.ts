@@ -54,6 +54,7 @@ const workplaceCollection = defineCollection({
     heroImage: z.string().optional(),
     numPositions: z.number(),
     startDate: z.date(),
+    hideOnHomepage: z.boolean().optional(),
   }),
 });
 const educationCollection = defineCollection({

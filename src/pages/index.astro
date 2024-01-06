@@ -9,6 +9,7 @@ import publications from "../publications.json";
 
 const workplaces = (await getCollection("workplaces"))
   .sort((a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf())
+  .filter((item) => item.data.hideOnHomepage !== true)
   .map((item) => ({
     url: "/work/" + item.slug,
     title: item.data.title,
@@ -29,7 +30,7 @@ const talks = await getCollection("talks");
 
 <BaseLayout>
   <div class="mb-5">
-    <img src="/phil_ewels.jpg" class="mask mask-circle my-5 mx-auto w-1/2 md:hidden" alt="Philip Ewels" />
+    <img src="/phil_ewels.jpg" class="mask mask-circle mx-auto my-5 w-1/2 md:hidden" alt="Philip Ewels" />
     <PageTitle extraClass="text-center md:text-left">Hi there!</PageTitle>
     <p class="mb-3 text-center text-xl md:text-left">I'm a bioinformatician living in Stockholm, Sweden.</p>
     <p class="text-center text-base font-light opacity-80 md:text-left">
