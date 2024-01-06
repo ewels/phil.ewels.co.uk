@@ -1,22 +1,35 @@
 ---
 import { Icon } from "astro-icon/components";
 
-const { href, classes, icon, iconAfter } = Astro.props;
+const { id = "", type = false, href = "", classes = false, icon = false, iconAfter = false } = Astro.props;
 
 var btn_classes = "bg-blue-500 hover:bg-blue-700 transition-colors text-white text-xs font-semibold rounded py-4 ";
-if (Astro.props.icon) {
+if (icon) {
   btn_classes += "pl-3 pr-5 ";
 } else {
   btn_classes += "px-5 ";
 }
-if (Astro.props.classes) {
-  btn_classes += Astro.props.classes;
+if (classes) {
+  btn_classes += classes;
 }
-const target = Astro.props.href.startsWith("http") ? "_blank" : "_self";
+const target = href.startsWith("http") ? "_blank" : "_self";
 ---
 
-<a href={href} class={btn_classes} target={target}>
-  {icon && <Icon name={icon} size="24px" class="mr-2 inline-block" />}
-  <slot />
-  {iconAfter && <Icon name={iconAfter} size="18px" class="ml-2 inline-block" />}
-</a>
+{
+  type && (
+    <button type={type} class={btn_classes} id={id}>
+      {icon && <Icon name={icon} size={24} class="mr-2 inline-block" />}
+      <slot />
+      {iconAfter && <Icon name={iconAfter} size={18} class="ml-2 inline-block" />}
+    </button>
+  )
+}
+{
+  !type && (
+    <a href={href} class={btn_classes} target={target}>
+      {icon && <Icon name={icon} size={24} class="mr-2 inline-block" />}
+      <slot />
+      {iconAfter && <Icon name={iconAfter} size={18} class="ml-2 inline-block" />}
+    </a>
+  )
+}
