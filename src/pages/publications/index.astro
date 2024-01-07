@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
+import HomepageButton from "@components/HomepageButton.astro";
 
 import publications from "../../publications.json";
 const pubs = (await getCollection("publications")).sort(
@@ -26,10 +27,23 @@ function short_authors(authors) {
 
 <BaseLayout title="Publications">
   <PageTitle>Publications</PageTitle>
-  <p class="mb-3 text-xl">The cornerstone of the scientific method.</p>
+  <p class="mb-3 text-xl">
+    The cornerstone of the scientific method, peer reviewed journals are an important track record for any scientist.
+  </p>
   <p class="mb-5 text-base font-light opacity-80">
     I've been lucky to work with some amazing people on some amazing projects. Here are some of the results.
   </p>
+  <HomepageButton href="http://orcid.org/0000-0003-4101-2502" title="ORCiD" icon="simple-icons:orcid" />
+  <HomepageButton
+    href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
+    title="Google Scholar"
+    icon="simple-icons:googlescholar"
+  />
+  <HomepageButton
+    href="http://www.researchgate.net/profile/Philip_Ewels"
+    title="Research Gate"
+    icon="simple-icons:researchgate"
+  />
   {
     pubs.map((post) => {
       const pub = publications[post.data.doi];

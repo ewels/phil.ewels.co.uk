@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
+import HomepageButton from "@components/HomepageButton.astro";
 
 const workplaces = (await getCollection("workplaces")).sort(
   (a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
@@ -16,10 +17,19 @@ const education = (await getCollection("education")).sort(
 <BaseLayout title="Where I've worked">
   <PageTitle>Where I've worked</PageTitle>
   <p class="mb-3 text-xl">I'm a molecular biologist, turned bioinformatician, turned research-software engineer.</p>
-  <p class="mb-5 text-base font-light opacity-80">
+  <p class="mb-3 text-base font-light opacity-80">
     I began my career in the lab, working with research in epigenetics. I later started working with infrastructure and
     development of open-source bioinformatics tools, which finally led me to working with open souce communities and
     project management.
+  </p>
+  <p class="mb-5 text-base font-light opacity-80">
+    This page is not comprehensive. See LinkedIn for a more complete list:
+    <HomepageButton
+      href="http://uk.linkedin.com/in/philewels"
+      title="LinkedIn"
+      icon="mdi:linkedin"
+      classes="ml-3 translate-y-1"
+    />
   </p>
   <ul>
     <!--List the array of astronaut info-->

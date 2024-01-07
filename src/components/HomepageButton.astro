@@ -1,14 +1,15 @@
 ---
-const { href, target = "_blank", title, icon } = Astro.props;
+const { href, classes, target = "_blank", title, icon } = Astro.props;
 import { Icon } from "astro-icon/components";
 ---
 
-<a
-  href={href}
-  target={target}
-  class="mb-2 mr-1 inline-flex h-8 cursor-pointer flex-wrap items-center justify-center gap-2 rounded-lg border border-gray-500 bg-transparent px-3 text-center text-xs opacity-70 transition transition-colors duration-75 hover:bg-slate-500/20 hover:opacity-100"
-  aria-label={title}
->
+<a href={href} target={target} class={classes} aria-label={title}>
   <Icon name={icon} size="18px" />
   {title}
 </a>
+
+<style>
+  a {
+    @apply mb-2 mr-1 inline-flex h-8 cursor-pointer flex-wrap items-center justify-center gap-2 rounded-lg border border-gray-500 bg-transparent px-3 text-center text-xs opacity-70 transition-colors duration-75 hover:bg-slate-500/20 hover:opacity-100;
+  }
+</style>
