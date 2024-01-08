@@ -17,6 +17,7 @@ const workplaces = (await getCollection("workplaces"))
     iconImageDark: item.data.iconImageDark,
   }));
 const projects = (await getCollection("projects"))
+  .filter((p) => p.data.personal != true && p.data.archived != true)
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
   .map((item) => ({
     url: "/projects/" + item.slug,
