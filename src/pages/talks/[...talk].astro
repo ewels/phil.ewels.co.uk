@@ -51,9 +51,9 @@ const { Content } = await entry.render();
   </div>
   <h2 class="mt-0 text-xl">{entry.data.description}</h2>
   <div class="my-3">
-    <Label class="badge-secondary badge-outline badge">{entry.data.type}</Label>
-    <Label class="badge-secondary badge-outline badge">{entry.data.date.toISOString().split("T")[0]}</Label>
-    <Label class="badge-secondary badge-outline badge">{entry.data.location}</Label>
+    <Label>{entry.data.type}</Label>
+    <Label>{entry.data.date.toISOString().split("T")[0]}</Label>
+    <Label>{entry.data.location}</Label>
   </div>
   <article class="prose prose-lg mb-12 mt-8 max-w-none text-justify dark:prose-invert prose-img:mx-auto">
     <Content />

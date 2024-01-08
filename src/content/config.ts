@@ -6,11 +6,16 @@ const projectsCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     projectURL: z.string().url(),
+    github: z
+      .string()
+      .regex(/^[a-zA-Z0-9._-]+(\/[a-zA-Z0-9._-]+)?$/)
+      .optional(),
     iconImage: z.string(),
     iconImageDark: z.string().optional(),
+    noIconPadding: z.boolean().optional(),
     heroImage: z.string(),
-    pubDate: z.date(),
-    updatedDate: z.date().optional(),
+    personal: z.boolean().optional(),
+    archived: z.boolean().optional(),
   }),
 });
 const publicationsCollection = defineCollection({

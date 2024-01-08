@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components";
 
 const { id = "", type = false, href = "", classes = false, icon = false, iconAfter = false } = Astro.props;
 
-var btn_classes = icon ? "icon " : "" + (classes ? classes : "");
+var btn_classes = "not-prose " + (icon ? "icon " : "") + (classes ? classes : "");
 const target = href.startsWith("http") ? "_blank" : "_self";
 ---
 

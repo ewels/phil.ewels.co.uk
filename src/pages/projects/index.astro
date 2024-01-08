@@ -13,20 +13,58 @@ const projects = await getCollection("projects");
   <p class="mb-3 text-xl">
     Open source software has been at the heart of everything I have done for most of my career.
   </p>
+  <p class="mb-5 text-base font-light opacity-80">Below are some of the key projects that I've been involved with.</p>
+  <ul>
+    {
+      projects
+        .filter((p) => p.data.personal != true && p.data.archived != true)
+        .map((p) => (
+          <HorizontalCard
+            title={p.data.title}
+            img={p.data.iconImage}
+            imgDark={p.data.iconImageDark ?? p.data.iconImage}
+            noIconPadding={p.data.noIconPadding}
+            description={p.data.description}
+            url={"/projects/" + p.slug}
+          />
+        ))
+    }
+    {
+      projects
+        .filter((p) => p.data.personal != true && p.data.archived == true)
+        .map((p) => (
+          <HorizontalCard
+            title={p.data.title}
+            img={p.data.iconImage}
+            imgDark={p.data.iconImageDark ?? p.data.iconImage}
+            noIconPadding={p.data.noIconPadding}
+            description={p.data.description}
+            url={"/projects/" + p.slug}
+            badge="Archived"
+          />
+        ))
+    }
+  </ul>
+
+  <h2 class="mb-2 mt-12 text-3xl font-bold" id="personal-projects">Personal projects</h2>
   <p class="mb-5 text-base font-light opacity-80">
-    Below are some of the key projects that I've authored or contributed to.
+    Hobby projects are one of the ways that I experiment and learn new things. I generally only build what I need, and
+    sometimes something useful comes out.
   </p>
   <ul>
     {
-      projects.map((p) => (
-        <HorizontalCard
-          title={p.data.title}
-          img={p.data.iconImage}
-          imgDark={p.data.iconImageDark ?? p.data.iconImage}
-          description={p.data.description}
-          url={"/projects/" + p.slug}
-        />
-      ))
+      projects
+        .filter((p) => p.data.personal == true)
+        .map((p) => (
+          <HorizontalCard
+            title={p.data.title}
+            img={p.data.iconImage}
+            imgDark={p.data.iconImageDark ?? p.data.iconImage}
+            noIconPadding={p.data.noIconPadding}
+            description={p.data.description}
+            url={"/projects/" + p.slug}
+          />
+        ))
     }
   </ul>
 </BaseLayout>

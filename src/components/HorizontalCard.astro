@@ -4,6 +4,7 @@ const {
   subtitle,
   img,
   imgDark,
+  noIconPadding,
   description,
   url,
   postDate,
@@ -34,24 +35,22 @@ const dateString = (d) => {
 };
 ---
 
-<div
-  class="-mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin,padding] ease-in-out last-of-type:border-b hover:-mr-8 hover:border-l-8 md:-mx-10 md:px-10 md:hover:-mr-10 md:hover:pr-8 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20"
->
+<div class="horizontal-card-container">
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4">
-    {img && <img src={img} alt={title} class="block w-12 rounded border p-2 shadow dark:hidden" />}
+    {img && <img src={img} alt={title} class={"block dark:hidden" + (noIconPadding ? "" : " p-2")} />}
     {
       (img || imgDark) && (
         <img
           src={imgDark ?? img}
           alt={title}
-          class="hidden w-12 rounded border border-gray-700 p-2 shadow dark:block"
+          class={"hidden dark:block dark:border-gray-700" + (noIconPadding ? "" : " p-2")}
         />
       )
     }
     <div class="w-full grow">
-      <h1 class={"block font-medium " + (subtitle ? "text-lg" : "text-xl")}>
+      <h1 class={subtitle ? "text-lg" : "text-xl"}>
         {title}
-        {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+        {badge && <div class="badge">{badge}</div>}
       </h1>
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
       <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300">
@@ -59,24 +58,9 @@ const dateString = (d) => {
         {postDate && description && <span class="mx-2">&bull;</span>}
         {description}
         {countryFlag && <img src={countryFlag} class="ml-2 hidden w-[18px] md:inline-block" />}
-        {
-          tags &&
-            tags.map((tag) => (
-              <span class="ml-2 hidden whitespace-nowrap rounded border border-gray-400 bg-gray-50 px-1 text-xs text-slate-800 opacity-50 md:inline-block dark:bg-gray-800 dark:text-slate-200">
-                {tag}
-              </span>
-            ))
-        }
-        {
-          hasDownload && (
-            <Icon name="bi:file-earmark-pdf" class="ml-2 hidden w-[18px] md:inline-block" title="Slides available" />
-          )
-        }
-        {
-          hasYouTube && (
-            <Icon name="mdi:youtube" class="ml-2 hidden w-[18px] md:inline-block" title="Recording available" />
-          )
-        }
+        {tags && tags.map((tag) => <span class="tag">{tag}</span>)}
+        {hasDownload && <Icon name="bi:file-earmark-pdf" class="icon" title="Slides available" />}
+        {hasYouTube && <Icon name="mdi:youtube" class="icon" title="Recording available" />}
       </p>
     </div>
     <div class="hidden md:block">
@@ -84,3 +68,25 @@ const dateString = (d) => {
     </div>
   </a>
 </div>
+
+<style>
+  .horizontal-card-container {
+    @apply -mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin,padding] ease-in-out last-of-type:border-b hover:-mr-8 hover:border-l-8 md:-mx-10 md:px-10 md:hover:-mr-10 md:hover:pr-8 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20;
+
+    a img {
+      @apply w-12 rounded border  shadow;
+    }
+    h1 {
+      @apply block font-medium;
+    }
+    .tag {
+      @apply ml-2 hidden whitespace-nowrap rounded border border-gray-400 bg-gray-50 px-1 text-xs text-slate-800 opacity-50 md:inline-block dark:bg-gray-800 dark:text-slate-200;
+    }
+    .icon {
+      @apply ml-2 hidden w-[18px] md:inline-block;
+    }
+  }
+  .badge {
+    @apply mx-2 ml-2 inline-block -translate-y-0.5 rounded-full bg-sky-800/20 px-2 py-1 text-xs font-bold leading-none text-black/40 dark:bg-sky-800 dark:text-white/70;
+  }
+</style>

@@ -3,7 +3,6 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import Button from "@components/Button.astro";
 import Author from "@components/Author.astro";
 import { getCollection } from "astro:content";
-import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
   const projectEntries = await getCollection("publications");
