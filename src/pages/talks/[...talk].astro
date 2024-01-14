@@ -54,12 +54,18 @@ const { Content } = await entry.render();
   <div class="my-3">
     <Label>{entry.data.type}</Label>
     <Label>{entry.data.date.toISOString().split("T")[0]}</Label>
-    <Label>{entry.data.online ? "Online" : "In person"}</Label>
+    {
+      entry.data.online && (
+        <Label>
+          Online <Icon name="bi:globe" class="ml-2 inline" />
+        </Label>
+      )
+    }
     {
       entry.data.location && (
         <Label>
           {entry.data.location}
-          {entry.data.flag && <Icon name={"twemoji:flag-" + entry.data.flag} class="ml-2 inline" />}
+          {entry.data.countryFlag && <Icon name={"flag:" + entry.data.countryFlag + "-4x3"} class="ml-2 inline" />}
         </Label>
       )
     }

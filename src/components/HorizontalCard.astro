@@ -17,6 +17,8 @@ const {
 } = Astro.props;
 import { Icon } from "astro-icon/components";
 
+const countryFlagIcon = countryFlag ? (countryFlag == "online" ? "bi:globe" : "flag:" + countryFlag + "-4x3") : false;
+
 const nth = (d) => {
   if (d > 3 && d < 21) return "th";
   switch (d % 10) {
@@ -54,10 +56,10 @@ const dateString = (d) => {
       </h1>
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
       <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300">
+        {countryFlagIcon && <Icon name={countryFlagIcon} class="mr-2 hidden w-[18px] md:inline-block" />}
         {postDate && <Fragment set:html={dateString(postDate)} />}
         {postDate && description && <span class="mx-2">&bull;</span>}
         {description}
-        {countryFlag && <img src={countryFlag} class="ml-2 hidden w-[18px] md:inline-block" />}
         {tags && tags.map((tag) => <span class="tag">{tag}</span>)}
         {hasDownload && <Icon name="bi:file-earmark-pdf" class="icon" title="Slides available" />}
         {hasYouTube && <Icon name="mdi:youtube" class="icon" title="Recording available" />}

@@ -3,7 +3,7 @@ title: Oslo Bioinformatics Workshop Week 2023
 description: Nextflow and nf-core one day training event
 online: false
 location: Oslo
-flag: norway
+countryFlag: "no"
 type: Workshop
 eventURLs:
   - https://www.mn.uio.no/sbi/english/events/oslo-bioinformatics-workshop-week-2023/index.html#16
