@@ -110,10 +110,10 @@ const { Content } = await entry.render();
     {
       entry.data.pdfURLs &&
         entry.data.pdfURLs.map((pdf) => (
-          <div class="aspect-h-9 aspect-w-16 mt-8">
+          <div class="aspect-h-10 aspect-w-16 mt-8">
             <iframe
               class="border border-zinc-700"
-              src={pdf}
+              src={pdf + "#view=fit"}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             />
