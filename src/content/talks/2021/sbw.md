@@ -1,7 +1,7 @@
 ---
 title: Swedish Bioinformatics Workshop
 description: Reproducible bioinformatics workflows with Nextflow and nf-core
-location: Online
+online: true
 type: Talk
 logoImage: /talks/2021/sbw/SBW2021_logo.png
 logoImageDark: /talks/2021/sbw/SBW2021_logo_dark.png

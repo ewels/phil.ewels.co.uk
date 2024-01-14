@@ -1,7 +1,7 @@
 ---
 title: IMN Presentation Skills Workshop
 description: Talk about "Visual Aids" at a training workshop for PhD students and early stage researchers
-location: Online
+online: true
 type: Workshop
 pdfURLs:
   - /talks/2023/imn_visual_aids/PEwels_Presentation_skills.pdf

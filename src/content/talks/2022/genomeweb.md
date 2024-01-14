@@ -1,7 +1,7 @@
 ---
 title: Genome Web webinar
 description: Experiences with cloud compute in the nf-core open source community
-location: Online
+online: true
 type: Talk
 logoImage: /talks/2022/genomeweb/genomeweb_webinars_logo.png
 eventURLs:

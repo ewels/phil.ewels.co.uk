@@ -1,7 +1,7 @@
 ---
 title: BIOMEDAS Retreat 2023
 description: Keynote speaker at the BIOMEDAS PhD retreat symposium.
-location: Online
+online: true
 type: Talk
 tags:
   - keynote

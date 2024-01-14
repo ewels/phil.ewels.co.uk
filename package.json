@@ -28,6 +28,7 @@
     "@iconify-json/bi": "^1.1.22",
     "@iconify-json/mdi": "^1.1.64",
     "@iconify-json/simple-icons": "^1.1.86",
+    "@iconify-json/twemoji": "^1.1.15",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
     "astro": "^4.0.9",

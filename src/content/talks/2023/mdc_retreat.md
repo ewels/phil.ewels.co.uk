@@ -1,7 +1,7 @@
 ---
 title: MDC/FMP Retreat 2023
 description: Sponsor and speaker at the 2023 MDC/FMP PhD retreat
-location: Online
+online: true
 type: Talk
 tags:
   - sponsor

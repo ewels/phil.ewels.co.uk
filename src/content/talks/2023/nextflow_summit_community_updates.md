@@ -1,7 +1,9 @@
 ---
 title: Nextflow Summit 2023 Barcelona
 description: Nextflow & nf-core community updates
-location: Online
+online: false
+location: Barcelona
+flag: spain
 type: Talk
 logoImage: /talks/2023/nextflow_summit_community_updates/nextflow_summit_2023_darkbg.svg
 eventURLs:

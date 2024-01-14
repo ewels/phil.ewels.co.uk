@@ -32,7 +32,9 @@ const talksCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    location: z.enum(["Online", "In person"]),
+    online: z.boolean(),
+    location: z.string().optional(),
+    flag: z.string().optional(),
     type: z.enum(["Talk", "Invited speaker", "Conference talk", "Workshop"]),
     tags: z.array(z.string()).optional(),
     eventURLs: z.array(z.string().url()).optional(),

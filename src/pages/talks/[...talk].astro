@@ -3,6 +3,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import Button from "@components/Button.astro";
 import Label from "@components/Label.astro";
 import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
   const talkEntries = await getCollection("talks");
@@ -53,7 +54,15 @@ const { Content } = await entry.render();
   <div class="my-3">
     <Label>{entry.data.type}</Label>
     <Label>{entry.data.date.toISOString().split("T")[0]}</Label>
-    <Label>{entry.data.location}</Label>
+    <Label>{entry.data.online ? "Online" : "In person"}</Label>
+    {
+      entry.data.location && (
+        <Label>
+          {entry.data.location}
+          {entry.data.flag && <Icon name={"twemoji:flag-" + entry.data.flag} class="ml-2 inline" />}
+        </Label>
+      )
+    }
   </div>
   <article class="prose prose-lg mb-12 mt-8 max-w-none text-justify dark:prose-invert prose-img:mx-auto">
     <Content />
