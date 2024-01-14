@@ -5,7 +5,8 @@ online: false
 location: Boston
 countryFlag: us
 type: Talk
-logoImage: /talks/2023/11/29/nextflow_summit_community_updates/nextflow_summit_2023_darkbg.svg
+logoImage: /talks/2023/11/29/nextflow_summit_boston_community_updates/nextflow_summit_2023.svg
+logoImageDark: /talks/2023/11/29/nextflow_summit_boston_community_updates/nextflow_summit_2023_darkbg.svg
 eventURLs:
   - https://summit.nextflow.io/boston/agenda/summit/oct-18-community-updates/
 pdfURLs:
