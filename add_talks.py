@@ -6,7 +6,7 @@ import os
 import questionary
 import shutil
 import yaml
-import sys
+import re
 
 # Questionary prompt for base directory of talks
 base_dir = os.path.expanduser(
@@ -25,26 +25,32 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
     # Loop through each directory (talk) in year directory
     for talk in sorted(os.listdir(os.path.join(base_dir, year)), reverse=True):
-        # Confirm with questionary if we want to process this directory
-        if not questionary.confirm(f"Process talk folder {talk}?").unsafe_ask():
-            continue
-
         # Parse date and talk name from directory name
         # Format: YYYY-MM-DD - Talk Name
         talk_date = talk[:10]
         raw_name = talk[11:].strip().strip("-").strip()
+
+        # Check if talk_date is in format YYYY-MM-DD
+        if not re.match(r"\d{4}-\d{2}-\d{2}", talk_date):
+            continue
 
         # Check if we have a date directory already
         date_directory = os.path.join(
             "src", "content", "talks", talk_date.replace("-", "/")
         )
         if os.path.exists(date_directory):
+            continue
+            # NOTE: Add config to choose whether to confirm or not
             # Confirm with questionary if we want to process this directory
             md_files = "\n - ".join(glob(os.path.join(date_directory, "*.md")))
             print(f"[white bold]Directory '{date_directory}' already exists:")
             print(f"[cyan] - {md_files}")
             if not questionary.confirm("Continue?").unsafe_ask():
                 continue
+
+        # Confirm with questionary if we want to process this directory
+        if not questionary.confirm(f"Process talk folder {talk}?").unsafe_ask():
+            continue
 
         name = questionary.text("Name:", raw_name).unsafe_ask()
 
@@ -99,6 +105,11 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         frontmatter["title"] = questionary.text("Title:", name).unsafe_ask()
         frontmatter["description"] = questionary.text("Description:").unsafe_ask()
         frontmatter["online"] = questionary.confirm("Online?").unsafe_ask()
+        if not frontmatter["online"]:
+            frontmatter["location"] = questionary.text("Location:").unsafe_ask()
+            frontmatter["countryFlag"] = (
+                questionary.text("Country flag 2-letter code:").unsafe_ask().lower()
+            )
         frontmatter["type"] = questionary.select(
             "Type:",
             choices=["Talk", "Invited speaker", "Conference talk", "Workshop"],
@@ -108,16 +119,27 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         frontmatter["eventURLs"] = []
         while url := questionary.text("Event URL:").unsafe_ask():
             frontmatter["eventURLs"].append(url)
-        frontmatter["pdfURLs"] = copied_pdfs
+        frontmatter["pdfURLs"] = [pdf.replace("public/", "") for pdf in copied_pdfs]
         frontmatter["youtubeIDs"] = []
-        while url := questionary.text("YouTube URL:").unsafe_ask():
+        while url := questionary.text(
+            "YouTube URL ID:",
+            validate=lambda text: True
+            if (len(text) == 0 or len(text) == 11)
+            else "Please enter a 11 character YouTube ID",
+        ).unsafe_ask():
             frontmatter["youtubeIDs"].append(url)
         frontmatter["date"] = talk_date
 
         # Write frontmatter to markdown file
         frontmatter_string = "---\n" + yaml.dump(frontmatter, sort_keys=False) + "---\n"
+        # Use regex to remove quotes around date string
+        frontmatter_string = re.sub(r"date: '(.*)'", r"date: \1", frontmatter_string)
         os.makedirs(os.path.dirname(talk_md), exist_ok=True)
         with open(talk_md, "w") as f:
             f.write(frontmatter_string)
 
         print(f"[magenta bold]Talk created: [orange bold]{talk_md}\n\n\n")
+
+        # Ask if we want to exit the script
+        if not questionary.confirm("Continue to next talk?").unsafe_ask():
+            exit()
