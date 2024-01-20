@@ -114,8 +114,10 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             "Type:",
             choices=["Talk", "Invited speaker", "Conference talk", "Workshop"],
         ).unsafe_ask()
-        frontmatter["logoImage"] = questionary.path("Logo image:").unsafe_ask()
-        frontmatter["logoImageDark"] = questionary.path("Logo image dark:").unsafe_ask()
+        if logoImage := questionary.path("Logo image:").unsafe_ask():
+            frontmatter["logoImage"] = logoImage
+        if logoImageDark := questionary.path("Logo image dark:").unsafe_ask():
+            frontmatter["logoImageDark"] = logoImageDark
         frontmatter["eventURLs"] = []
         while url := questionary.text("Event URL:").unsafe_ask():
             frontmatter["eventURLs"].append(url)
