@@ -37,3 +37,7 @@ body {
   justify-content: center;
   gap: 1rem;
 }
+
+.prose-lg :where(li):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  margin: 0;
+}

@@ -121,7 +121,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         frontmatter["eventURLs"] = []
         while url := questionary.text("Event URL:").unsafe_ask():
             frontmatter["eventURLs"].append(url)
-        frontmatter["pdfURLs"] = [pdf.replace("public/", "") for pdf in copied_pdfs]
+        frontmatter["pdfURLs"] = [re.sub("^public", "", pdf) for pdf in copied_pdfs]
         frontmatter["youtubeIDs"] = []
         while url := questionary.text(
             "YouTube URL ID:",

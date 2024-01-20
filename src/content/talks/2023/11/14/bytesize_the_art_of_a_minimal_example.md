@@ -3,8 +3,8 @@ title: "Bytesize: The Art of a Minimal Example"
 description: Part of the nf-core/bytesize series
 online: true
 type: Talk
-logoImage: ""
-logoImageDark: ""
+logoImage: /images/projects/nf-core-logo-square.svg
+logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:
   - https://nf-co.re/events/2023/bytesize_minimal_example
 pdfURLs:

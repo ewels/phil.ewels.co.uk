@@ -1,6 +1,6 @@
 ---
 title: IMN Presentation Skills Workshop
-description: Talk about "Visual Aids" at a training workshop for PhD students and early stage researchers
+description: '"Visual Aids" training for PhD students and early stage researchers'
 online: true
 type: Workshop
 pdfURLs:
@@ -15,7 +15,7 @@ Training talk from IMN Presentation Skills workshop, June 2023.
 Quick links to the tools mentioned:
 
 - Fonts - [Google Fonts](https://fonts.google.com)
-- Colours - [Coolors](https://coolors.co))
+- Colours - [Coolors](https://coolors.co)
 - Icons - [Iconify](https://iconify.design)
 - Icons - [Flaticon](https://www.flaticon.com)
 - Images - [Unsplash](https://unsplash.com)
