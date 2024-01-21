@@ -52,7 +52,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if not questionary.confirm(f"Process talk folder {talk}?").unsafe_ask():
             continue
 
-        name = questionary.text("Name:", raw_name).unsafe_ask()
+        name = questionary.text("Name (for file paths):", raw_name).unsafe_ask()
 
         # Prepare filename for assets and markdown
         talk_assets_dir = os.path.join(
@@ -114,10 +114,29 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             "Type:",
             choices=["Talk", "Invited speaker", "Conference talk", "Workshop"],
         ).unsafe_ask()
+        if questionary.confirm("Keynote speaker?").unsafe_ask():
+            frontmatter["keynote"] = True
+
         if logoImage := questionary.path("Logo image:").unsafe_ask():
+            # If logoImage is a URL, download it and save it to the assets folder
+            if not logoImage.startswith(talk_assets_dir):
+                logoImageFilename = questionary.text("Logo image filename:", os.path.basename(logoImage)).unsafe_ask()
+                # Copy to talk_assets_dir with filename logoImageFilename using shutil
+                shutil.copy(logoImage.strip(), os.path.join(talk_assets_dir, logoImageFilename))
+                logoImage = os.path.join(talk_assets_dir, logoImageFilename)
+                logoImage = re.sub("^public", "", logoImage)
             frontmatter["logoImage"] = logoImage
+
         if logoImageDark := questionary.path("Logo image dark:").unsafe_ask():
+            # If logoImage is a URL, download it and save it to the assets folder
+            if logoImageDark.startswith("http"):
+                logoImageDarkFilename = questionary.text("Logo image filename:", os.path.basename(logoImageDark)).unsafe_ask()
+                # Copy to talk_assets_dir with filename logoImageDarkFilename using shutil
+                shutil.copy(logoImageDark.strip(), os.path.join(talk_assets_dir, logoImageDarkFilename))
+                logoImageDark = os.path.join(talk_assets_dir, logoImageDarkFilename)
+                logoImageDark = re.sub("^public", "", logoImageDark)
             frontmatter["logoImageDark"] = logoImageDark
+
         frontmatter["eventURLs"] = []
         while url := questionary.text("Event URL:").unsafe_ask():
             frontmatter["eventURLs"].append(url)
