@@ -38,6 +38,7 @@ var year: number = -1;
             postDate={post.data.date}
             hasYouTube={post.data.youtubeIDs}
             hasDownload={post.data.pdfURLs}
+            badge={post.data.keynote ? "Keynote" : null}
           />
         </section>
       );

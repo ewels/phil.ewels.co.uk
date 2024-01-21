@@ -53,6 +53,7 @@ const { Content } = await entry.render();
   <h2 class="mt-0 text-xl">{entry.data.description}</h2>
   <div class="my-3">
     <Label>{entry.data.type}</Label>
+    {entry.data.keynote && <Label>Keynote Speaker</Label>}
     <Label>{entry.data.date.toISOString().split("T")[0]}</Label>
     {
       entry.data.online && (

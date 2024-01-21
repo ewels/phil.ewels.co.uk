@@ -37,7 +37,6 @@ const talksCollection = defineCollection({
     countryFlag: z.string().optional(),
     type: z.enum(["Talk", "Invited speaker", "Conference talk", "Workshop"]),
     keynote: z.boolean().optional(),
-    tags: z.array(z.string()).optional(),
     eventURLs: z.array(z.string().url()).optional(),
     pdfURLs: z.array(z.string()).optional(),
     youtubeIDs: z.array(z.string().length(11)).optional(),

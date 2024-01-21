@@ -3,8 +3,6 @@ title: MDC/FMP Retreat 2023
 description: Sponsor and speaker at the 2023 MDC/FMP PhD retreat
 online: true
 type: Talk
-tags:
-  - sponsor
 eventURLs:
   - https://www.mdc-berlin.de/news/events/mdcfmp-phd-retreat-2023
 pdfURLs:
