@@ -8,6 +8,19 @@ import shutil
 import yaml
 import re
 
+def copy_local_file(src, dest_dir):
+    """
+    Given a file path for a talk asset, prompt for a new filename
+    and copy to the talk assets directory.
+    """
+    src = src.strip()
+    dest_dir = dest_dir.strip()
+    dest_filename = questionary.text("Logo image filename:", os.path.basename(src)).unsafe_ask()
+    dest_path = os.path.join(dest_dir, dest_filename)
+    shutil.copy(src, dest_path)
+    dest_path = re.sub("^public", "", dest_path)
+    return dest_path
+
 # Questionary prompt for base directory of talks
 base_dir = os.path.expanduser(
     questionary.path("Base directory for talks:").unsafe_ask().strip()
@@ -143,6 +156,11 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             frontmatter["youtubeIDs"].append(url)
         frontmatter["date"] = talk_date
 
+        if len(frontmatter["eventURLs"]) == 0:
+            frontmatter.pop("eventURLs")
+        if len(frontmatter["youtubeIDs"]) == 0:
+            frontmatter.pop("youtubeIDs")
+
         # Write frontmatter to markdown file
         frontmatter_string = "---\n" + yaml.dump(frontmatter, sort_keys=False) + "---\n"
         # Use regex to remove quotes around date string
@@ -158,11 +176,3 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             exit()
 
 
-def copy_local_file(src, dest_dir):
-    src = src.strip()
-    dest_dir = dest_dir.strip()
-    dest_filename = questionary.text("Logo image filename:", os.path.basename(src)).unsafe_ask()
-    dest_path = os.path.join(dest_dir, dest_filename)
-    shutil.copy(src, dest_path)
-    dest_path = re.sub("^public", "", dest_path)
-    return dest_path

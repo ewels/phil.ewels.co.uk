@@ -33,7 +33,7 @@ const nth = (d) => {
   }
 };
 const dateString = (d) => {
-  return d.toLocaleString("default", { month: "long" }) + " " + d.getDay() + "<sup>" + nth(d.getDay()) + "</sup>";
+  return d.toLocaleString("default", { month: "long" }) + " " + d.getDate() + "<sup>" + nth(d.getDate()) + "</sup>";
 };
 ---
 
