@@ -1,5 +1,5 @@
 ---
-title: Nextflow Summit 2023 Boston
+title: Nextflow Summit Boston
 description: Nextflow & nf-core community updates
 online: false
 location: Boston

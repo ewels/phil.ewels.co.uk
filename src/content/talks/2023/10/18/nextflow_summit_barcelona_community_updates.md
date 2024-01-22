@@ -1,5 +1,5 @@
 ---
-title: Nextflow Summit 2023 Barcelona
+title: Nextflow Summit Barcelona - Community Updates
 description: Nextflow & nf-core community updates
 online: false
 location: Barcelona

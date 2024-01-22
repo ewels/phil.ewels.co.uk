@@ -1,5 +1,5 @@
 ---
-title: Nextflow Summit 2023 Barcelona
+title: Nextflow Summit Barcelona - MultiQC
 description: Bringing MultiQC into a new era
 online: false
 location: Barcelona
