@@ -10,7 +10,7 @@ import re
 
 # Questionary prompt for base directory of talks
 base_dir = os.path.expanduser(
-    questionary.path("Base directory for talks:").unsafe_ask()
+    questionary.path("Base directory for talks:").unsafe_ask().strip()
 )
 
 # Loop through each directory (year) in base directory
@@ -52,7 +52,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if not questionary.confirm(f"Process talk folder {talk}?").unsafe_ask():
             continue
 
-        name = questionary.text("Name (for file paths):", raw_name).unsafe_ask()
+        name = questionary.text("Name (for file paths):", raw_name).unsafe_ask().strip()
 
         # Prepare filename for assets and markdown
         talk_assets_dir = os.path.join(
@@ -102,13 +102,13 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
         # Create markdown file for talk in src/content/talks/YYYY/MM/DD/{name}.md
         frontmatter = {}
-        frontmatter["title"] = questionary.text("Title:", name).unsafe_ask()
-        frontmatter["description"] = questionary.text("Description:").unsafe_ask()
+        frontmatter["title"] = questionary.text("Title:", name).unsafe_ask().strip()
+        frontmatter["description"] = questionary.text("Description:").unsafe_ask().strip()
         frontmatter["online"] = questionary.confirm("Online?").unsafe_ask()
         if not frontmatter["online"]:
-            frontmatter["location"] = questionary.text("Location:").unsafe_ask()
+            frontmatter["location"] = questionary.text("Location:").unsafe_ask().strip()
             frontmatter["countryFlag"] = (
-                questionary.text("Country flag 2-letter code:").unsafe_ask().lower()
+                questionary.text("Country flag 2-letter code:").unsafe_ask().lower().strip()
             )
         frontmatter["type"] = questionary.select(
             "Type:",
@@ -117,28 +117,20 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if questionary.confirm("Keynote speaker?").unsafe_ask():
             frontmatter["keynote"] = True
 
-        if logoImage := questionary.path("Logo image:").unsafe_ask():
-            # If logoImage is a URL, download it and save it to the assets folder
+        if logoImage := questionary.path("Logo image:").unsafe_ask().strip():
+            # Copy to assets folder if needed
             if not logoImage.startswith(talk_assets_dir):
-                logoImageFilename = questionary.text("Logo image filename:", os.path.basename(logoImage)).unsafe_ask()
-                # Copy to talk_assets_dir with filename logoImageFilename using shutil
-                shutil.copy(logoImage.strip(), os.path.join(talk_assets_dir, logoImageFilename))
-                logoImage = os.path.join(talk_assets_dir, logoImageFilename)
-                logoImage = re.sub("^public", "", logoImage)
+                logoImage = copy_local_file(logoImage, talk_assets_dir)
             frontmatter["logoImage"] = logoImage
 
-        if logoImageDark := questionary.path("Logo image dark:").unsafe_ask():
-            # If logoImage is a URL, download it and save it to the assets folder
-            if logoImageDark.startswith("http"):
-                logoImageDarkFilename = questionary.text("Logo image filename:", os.path.basename(logoImageDark)).unsafe_ask()
-                # Copy to talk_assets_dir with filename logoImageDarkFilename using shutil
-                shutil.copy(logoImageDark.strip(), os.path.join(talk_assets_dir, logoImageDarkFilename))
-                logoImageDark = os.path.join(talk_assets_dir, logoImageDarkFilename)
-                logoImageDark = re.sub("^public", "", logoImageDark)
+        if logoImageDark := questionary.path("Logo image dark:").unsafe_ask().strip():
+            # Copy to assets folder if needed
+            if not logoImageDark.startswith(talk_assets_dir):
+                logoImageDark = copy_local_file(logoImageDark, talk_assets_dir)
             frontmatter["logoImageDark"] = logoImageDark
 
         frontmatter["eventURLs"] = []
-        while url := questionary.text("Event URL:").unsafe_ask():
+        while url := questionary.text("Event URL:").unsafe_ask().strip():
             frontmatter["eventURLs"].append(url)
         frontmatter["pdfURLs"] = [re.sub("^public", "", pdf) for pdf in copied_pdfs]
         frontmatter["youtubeIDs"] = []
@@ -147,7 +139,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             validate=lambda text: True
             if (len(text) == 0 or len(text) == 11)
             else "Please enter a 11 character YouTube ID",
-        ).unsafe_ask():
+        ).unsafe_ask().strip():
             frontmatter["youtubeIDs"].append(url)
         frontmatter["date"] = talk_date
 
@@ -164,3 +156,13 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         # Ask if we want to exit the script
         if not questionary.confirm("Continue to next talk?").unsafe_ask():
             exit()
+
+
+def copy_local_file(src, dest_dir):
+    src = src.strip()
+    dest_dir = dest_dir.strip()
+    dest_filename = questionary.text("Logo image filename:", os.path.basename(src)).unsafe_ask()
+    dest_path = os.path.join(dest_dir, dest_filename)
+    shutil.copy(src, dest_path)
+    dest_path = re.sub("^public", "", dest_path)
+    return dest_path
