@@ -14,6 +14,12 @@ def copy_local_file(src, dest_dir):
     and copy to the talk assets directory.
     """
     src = src.strip()
+    while not os.path.isfile(src):
+        print("[red]File not found. Please try again. Leave empty to skip question.")
+        src = questionary.text("Filename:", src).unsafe_ask().strip()
+        if src == "":
+            return False
+
     dest_dir = dest_dir.strip()
     dest_filename = questionary.text("Logo image filename:", os.path.basename(src)).unsafe_ask()
     dest_path = os.path.join(dest_dir, dest_filename)
@@ -84,9 +90,20 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
         # Check if either talk_assets_dir or talk_md already exist
         if os.path.exists(talk_assets_dir) or os.path.exists(talk_md):
-            # If so, skip this talk
-            print("Talk already exists, skipping: " + name)
-            continue
+            # Overwrite if wanted
+            print("[red]Warning: files / folders for talk already exist!")
+            if os.path.exists(talk_assets_dir):
+                print(f"[red] - {talk_assets_dir}")
+            if os.path.exists(talk_md):
+                print(f"[red] - {talk_md}")
+            if questionary.confirm("Overwrite?").unsafe_ask():
+                shutil.rmtree(talk_assets_dir, ignore_errors=True)
+                shutil.rmtree(talk_md, ignore_errors=True)
+                print("[orange]Files deleted. Continuing.")
+            else:
+                # Ok, skip this talk
+                print("[orange]Talk already exists, skipping: " + name)
+                continue
 
         # Glob any PDFs in talk directory
         all_pdfs = glob(os.path.join(base_dir, year, talk, "*.pdf"))
@@ -115,7 +132,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
         # Create markdown file for talk in src/content/talks/YYYY/MM/DD/{name}.md
         frontmatter = {}
-        frontmatter["title"] = questionary.text("Title:", name).unsafe_ask().strip()
+        frontmatter["title"] = questionary.text("Title:", raw_name).unsafe_ask().strip()
         frontmatter["description"] = questionary.text("Description:").unsafe_ask().strip()
         frontmatter["online"] = questionary.confirm("Online?").unsafe_ask()
         if not frontmatter["online"]:
@@ -134,13 +151,15 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             # Copy to assets folder if needed
             if not logoImage.startswith(talk_assets_dir):
                 logoImage = copy_local_file(logoImage, talk_assets_dir)
-            frontmatter["logoImage"] = logoImage
+            if logoImage:
+                frontmatter["logoImage"] = logoImage
 
         if logoImageDark := questionary.path("Logo image dark:").unsafe_ask().strip():
             # Copy to assets folder if needed
             if not logoImageDark.startswith(talk_assets_dir):
                 logoImageDark = copy_local_file(logoImageDark, talk_assets_dir)
-            frontmatter["logoImageDark"] = logoImageDark
+            if logoImageDark:
+                frontmatter["logoImageDark"] = logoImageDark
 
         frontmatter["eventURLs"] = []
         while url := questionary.text("Event URL:").unsafe_ask().strip():
