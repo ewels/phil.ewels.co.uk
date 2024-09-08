@@ -21,22 +21,26 @@ const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : S
 
 <script is:inline>
   // Light / dark mode switch
-  const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
-
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
     document.documentElement.classList.add("dark");
+    window.localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+    window.localStorage.setItem("theme", "light");
   }
-  window.localStorage.setItem("theme", theme);
+
+  // Listen to page load event
+  ["after-swap", "page-load"].forEach(function (e) {
+    document.addEventListener(`astro:${e}`, function () {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.toggle("dark", true);
+      }
+    });
+  });
 </script>
 
 <!-- Global Metadata -->

@@ -5,7 +5,7 @@
   const icon_ph_moon_bold = `<svg viewBox="0 0 256 256" class="inline h-4 w-4 text-gray-300 dark:text-gray-300" astro-icon="ph:moon-bold"><path fill="currentColor" d="M228.1 149.1a12 12 0 0 0-11.6-8.5 11.4 11.4 0 0 0-3.3.6 80 80 0 0 1-98.3-98.4 13.5 13.5 0 0 0 .4-2.8 12 12 0 0 0-7.5-11.8 12.6 12.6 0 0 0-7.9-.4A104 104 0 1 0 228.2 156a12.5 12.5 0 0 0-.1-6.9zM128 208A80 80 0 0 1 88.1 58.6a104.2 104.2 0 0 0 109.3 109.3A80.4 80.4 0 0 1 128 208z"></path></svg>`;
 
   // Set in BaseHead.astro on page load
-  $: theme = localStorage.getItem("theme");
+  let theme = localStorage.getItem("theme");
   const toggleDarkMode = () => {
     if (theme == "dark") {
       document.documentElement.classList.remove("dark");
