@@ -41,13 +41,26 @@ const { Content } = await entry.render();
     </h1>
 
     <p class="text-xl">{entry.data.description}</p>
-    {
-      entry.data.URL && (
-        <Button href={entry.data.URL} icon="bi:link-45deg" classes="mr-3">
-          {entry.data.URL}
-        </Button>
-      )
-    }
+    <div class="flex items-center">
+      {
+        entry.data.URL && (
+          <Button href={entry.data.URL} icon="bi:link-45deg" classes="mr-3">
+            {entry.data.URL}
+          </Button>
+        )
+      }
+      {
+        entry.data.startDate && (
+          <p class="ml-3 text-sm">
+            {entry.data.startDate.toLocaleString("default", { month: "long" })}
+            {entry.data.startDate.getFullYear()} -
+            {entry.data.endDate
+              ? entry.data.endDate.toLocaleString("default", { month: "long" }) + " " + entry.data.endDate.getFullYear()
+              : "Present"}
+          </p>
+        )
+      }
+    </div>
     {
       entry.data.heroImage && (
         <img

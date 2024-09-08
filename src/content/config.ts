@@ -61,6 +61,7 @@ const workplaceCollection = defineCollection({
     heroImage: z.string().optional(),
     numPositions: z.number(),
     startDate: z.date(),
+    endDate: z.date().optional(),
     hideOnHomepage: z.boolean().optional(),
   }),
 });
