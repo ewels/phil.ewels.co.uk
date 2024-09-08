@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
+import Button from "@components/Button.astro";
 
 export async function getStaticPaths() {
   const workEntries = await getCollection("workplaces");
@@ -40,6 +41,13 @@ const { Content } = await entry.render();
     </h1>
 
     <p class="text-xl">{entry.data.description}</p>
+    {
+      entry.data.URL && (
+        <Button href={entry.data.URL} icon="bi:link-45deg" classes="mr-3">
+          {entry.data.URL}
+        </Button>
+      )
+    }
     {
       entry.data.heroImage && (
         <img

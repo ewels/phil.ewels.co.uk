@@ -3,7 +3,9 @@ import NavItem from "@components/SideBar/NavItem.astro";
 import SocialIcon from "@components/SideBar/SocialIcon.astro";
 ---
 
-<div class="menu flex flex-col flex-nowrap overflow-y-auto bg-black/20 pt-10 text-white backdrop-blur-sm">
+<div
+  class="menu flex flex-col flex-nowrap overflow-y-auto border-r border-black/10 pt-10 text-black backdrop-blur-sm dark:border-white/10 dark:text-white"
+>
   <span
     onclick="openCloseMenu()"
     class="mx-5 mr-3 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden">&#10005;</span

@@ -18,7 +18,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
     <div class="flex flex-row">
       <div class="grid max-h-screen w-full grid-flow-col overflow-hidden" style="grid-auto-columns: max-content auto;">
         <div
-          class="col-start-2 row-start-1 mr-0 flex min-h-screen grow flex-col overflow-y-auto bg-white/90 backdrop-blur-xl duration-500 xl:mr-10 dark:bg-black/80"
+          class="col-start-2 row-start-1 mr-0 flex min-h-screen grow flex-col overflow-y-auto bg-white/95 backdrop-blur-xl duration-500 xl:mr-10 dark:bg-black/80"
           id="mainpage"
         >
           <Header title={SITE_TITLE} />
@@ -28,7 +28,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
           <Footer />
         </div>
         <div
-          class="sidebar dark col-start-1 row-start-1 -ml-96 grid h-screen w-screen max-w-96 overflow-x-hidden bg-black/80 duration-500 xl:ml-0"
+          class="sidebar col-start-1 row-start-1 -ml-96 grid h-screen w-screen max-w-96 overflow-x-hidden bg-white/90 duration-500 xl:ml-0 dark:bg-black/80"
           id="sidebar"
         >
           <SideBar />
