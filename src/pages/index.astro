@@ -16,6 +16,15 @@ const workplaces = (await getCollection("workplaces"))
     iconImage: item.data.iconImage,
     iconImageDark: item.data.iconImageDark,
   }));
+const education = (await getCollection("education"))
+  .sort((a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf())
+  .filter((item) => item.data.hideOnHomepage !== true)
+  .map((item) => ({
+    url: "/education/" + item.slug,
+    title: item.data.title,
+    iconImage: item.data.iconImage,
+    iconImageDark: item.data.iconImageDark,
+  }));
 const projects = (await getCollection("projects"))
   .filter((p) => p.data.personal != true && p.data.archived != true)
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
@@ -62,7 +71,7 @@ const talks = await getCollection("talks");
       title="Where I've worked"
       description="I'm a molecular biologist, turned bioinformatician, turned research-software engineer."
       href="/work"
-      items={workplaces}
+      items={workplaces.concat(education)}
     />
     <HomepageCard
       title="Projects"

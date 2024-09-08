@@ -80,6 +80,7 @@ const educationCollection = defineCollection({
     countryFlag: z.string(),
     heroImage: z.string().optional(),
     startDate: z.date(),
+    hideOnHomepage: z.boolean().optional(),
   }),
 });
 
