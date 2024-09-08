@@ -1,6 +1,7 @@
 ---
 import NavItem from "@components/SideBar/NavItem.astro";
 import SocialIcon from "@components/SideBar/SocialIcon.astro";
+import DarkModeToggle from "@components/DarkModeToggle.svelte";
 ---
 
 <div
@@ -30,7 +31,10 @@ import SocialIcon from "@components/SideBar/SocialIcon.astro";
     <NavItem href="/contact" icon="bi:envelope">Contact me</NavItem>
   </ul>
   <div class="flex-grow"></div>
-  <div class="social-icons mt-5 flex justify-between border-t border-zinc-700 px-6 py-8">
+  <div class="p-2 text-center">
+    <DarkModeToggle client:only="svelte" />
+  </div>
+  <div class="social-icons flex justify-between border-t border-zinc-700 px-6 py-8">
     <SocialIcon href="https://github.com/ewels/" icon="mdi:github" label="GitHub" />
     <SocialIcon href="http://twitter.com/tallphil" icon="bi:twitter-x" label="X (twitter)" />
     <SocialIcon href="http://uk.linkedin.com/in/philewels" icon="mdi:linkedin" label="LinkedIn" />
