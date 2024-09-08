@@ -25,6 +25,9 @@ const education = (await getCollection("education"))
     iconImage: item.data.iconImage,
     iconImageDark: item.data.iconImageDark,
   }));
+const workplaces_edu = workplaces.concat(education);
+const workplaces_edu_count = (await getCollection("workplaces")).length + (await getCollection("education")).length;
+
 const projects = (await getCollection("projects"))
   .filter((p) => p.data.personal != true && p.data.archived != true)
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
@@ -34,6 +37,7 @@ const projects = (await getCollection("projects"))
     iconImage: item.data.iconImage,
     iconImageDark: item.data.iconImageDark,
   }));
+const projects_count = (await getCollection("projects")).length;
 
 const talks = await getCollection("talks");
 ---
@@ -42,7 +46,9 @@ const talks = await getCollection("talks");
   <div class="mb-5">
     <img src="/phil_ewels.jpg" class="mask mask-circle mx-auto my-5 w-1/2 md:hidden" alt="Philip Ewels" />
     <PageTitle extraClass="text-center md:text-left">Hi there!</PageTitle>
-    <p class="mb-3 text-center text-xl md:text-left">I'm a bioinformatician living in Stockholm, Sweden.</p>
+    <p class="mb-3 text-center text-xl md:text-left">
+      I'm a software developer bioinformatician living in Stockholm, Sweden.
+    </p>
     <p class="text-center text-base font-light opacity-80 md:text-left">
       I work with high-throughput genomics data and open-source software.
     </p>
@@ -71,13 +77,15 @@ const talks = await getCollection("talks");
       title="Where I've worked"
       description="I'm a molecular biologist, turned bioinformatician, turned research-software engineer."
       href="/work"
-      items={workplaces.concat(education)}
+      items={workplaces_edu}
+      plus={workplaces_edu_count - workplaces_edu.length}
     />
     <HomepageCard
       title="Projects"
       description="Explore some of the projects I've worked on."
       href="/projects"
       items={projects}
+      plus={projects_count - projects.length}
     />
     <HomepageCard
       title="Talks"
