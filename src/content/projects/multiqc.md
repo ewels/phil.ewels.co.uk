@@ -5,4 +5,6 @@ projectURL: https://multiqc.info
 github: MultiQC/MultiQC
 heroImage: /post_img.webp
 iconImage: /images/projects/multiqc.svg
+logoImage: /images/projects/multiqc_logo.svg
+logoImageDark: /images/projects/multiqc_logo_dark.svg
 ---

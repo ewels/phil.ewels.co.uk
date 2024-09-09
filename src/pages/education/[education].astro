@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-import BaseLayout from "@layouts/BaseLayout.astro";
+import ContentLayout from "@layouts/ContentLayout.astro";
 
 export async function getStaticPaths() {
   const educationEntries = await getCollection("education");
@@ -15,40 +15,4 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
-  <article class="prose prose-lg max-w-none dark:prose-invert prose-img:mx-auto md:justify-center">
-    {
-      entry.data.logoImage && (
-        <img
-          src={entry.data.logoImage}
-          alt={entry.data.title}
-          class="not-prose float-right mb-6 ml-8 mt-2 block max-h-28 max-w-60 dark:hidden"
-        />
-      )
-    }
-    {
-      (entry.data.logoImage || entry.data.logoImageDark) && (
-        <img
-          src={entry.data.logoImageDark ?? entry.data.logoImage}
-          alt={entry.data.title}
-          class="not-prose float-right mb-6 ml-8 mt-2 hidden max-h-28 max-w-60 dark:block"
-        />
-      )
-    }
-    <h1 class="title my-2 grow text-4xl font-bold">
-      {entry.data.title}
-    </h1>
-
-    <p class="text-xl">{entry.data.description}</p>
-    {
-      entry.data.heroImage && (
-        <img
-          src={entry.data.heroImage}
-          alt={entry.data.title}
-          class="mb-6 w-full border drop-shadow-lg dark:border-zinc-600"
-        />
-      )
-    }
-    <Content />
-  </article>
-</BaseLayout>
+<ContentLayout entry={entry} Content={Content} />

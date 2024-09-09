@@ -10,6 +10,8 @@ const projectsCollection = defineCollection({
       .string()
       .regex(/^[a-zA-Z0-9._-]+(\/[a-zA-Z0-9._-]+)?$/)
       .optional(),
+    logoImage: z.string().optional(),
+    logoImageDark: z.string().optional(),
     iconImage: z.string(),
     iconImageDark: z.string().optional(),
     noIconPadding: z.boolean().optional(),
@@ -80,6 +82,7 @@ const educationCollection = defineCollection({
     countryFlag: z.string(),
     heroImage: z.string().optional(),
     startDate: z.date(),
+
     hideOnHomepage: z.boolean().optional(),
   }),
 });

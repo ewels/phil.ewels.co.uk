@@ -6,4 +6,6 @@ github: nf-core
 heroImage: /post_img.webp
 iconImage: /images/projects/nf-core-logo-square.svg
 iconImageDark: /images/projects/nf-core-logo-square-dark.svg
+logoImage: /images/projects/nf-core-logo.svg
+logoImageDark: /images/projects/nf-core-logo-darkbg.svg
 ---
