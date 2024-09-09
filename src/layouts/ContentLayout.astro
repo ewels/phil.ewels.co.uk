@@ -35,7 +35,7 @@ const { entry, Content } = Astro.props;
             <img
               src={entry.data.logoImage}
               alt={entry.data.title}
-              class="not-prose block max-h-28 w-full max-w-60 dark:hidden"
+              class="not-prose block max-h-28 w-full max-w-80 lg:max-w-60 dark:hidden"
             />
           )
         }
@@ -44,7 +44,7 @@ const { entry, Content } = Astro.props;
             <img
               src={entry.data.logoImageDark ?? entry.data.logoImage}
               alt={entry.data.title}
-              class="not-prose hidden max-h-28 w-full max-w-60 dark:block"
+              class="not-prose hidden max-h-28 w-full max-w-80 lg:max-w-60 dark:block"
             />
           )
         }
