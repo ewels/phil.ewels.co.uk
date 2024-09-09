@@ -52,31 +52,31 @@ const { entry, Content } = Astro.props;
     </div>
 
     <p class="text-xl">{entry.data.description}</p>
-    <div class="flex items-center">
+    <div class="flex flex-wrap items-center">
       {
         entry.data.projectURL && (
-          <Button href={entry.data.projectURL} icon="mdi:link" classes="mr-4">
+          <Button href={entry.data.projectURL} icon="mdi:link" classes="mr-4 mt-3">
             {entry.data.projectURL}
           </Button>
         )
       }
       {
         entry.data.github && (
-          <Button href={"https://github.com/" + entry.data.github} icon="mdi:github">
+          <Button href={"https://github.com/" + entry.data.github} icon="mdi:github" classes="mt-3">
             {entry.data.github}
           </Button>
         )
       }
       {
         entry.data.URL && (
-          <Button href={entry.data.URL} icon="bi:link-45deg" classes="mr-3">
+          <Button href={entry.data.URL} icon="bi:link-45deg" classes="mr-3 mt-3">
             {entry.data.URL}
           </Button>
         )
       }
       {
         entry.data.startDate && (
-          <p class="ml-3 text-sm">
+          <p class="mt-3text-sm ml-3">
             {entry.data.startDate.toLocaleString("default", { month: "long" })}
             {entry.data.startDate.getFullYear()} -
             {entry.data.endDate
