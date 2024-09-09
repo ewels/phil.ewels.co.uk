@@ -14,7 +14,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
-  <body>
+  <body class="dark:bg-black">
     <div class="flex flex-row">
       <div id="page_container" class="grid max-h-dvh w-full grid-flow-col" style="grid-auto-columns: max-content auto;">
         <div
