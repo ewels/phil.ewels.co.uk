@@ -5,47 +5,56 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
 ---
 
 <div
-  class="menu flex flex-col flex-nowrap overflow-y-auto border-r border-black/10 pt-10 text-black backdrop-blur-sm dark:border-white/10 dark:text-white"
+  class="sidebar col-start-1 row-start-1 -ml-96 grid h-dvh w-screen max-w-96 overflow-x-hidden bg-white/90 duration-500 xl:ml-0 dark:bg-black/80"
+  id="sidebar"
 >
-  <span
-    onclick="openCloseMenu()"
-    class="mx-5 mr-3 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden">&#10005;</span
+  <div
+    class="menu flex flex-col flex-nowrap overflow-y-auto border-r border-black/10 pt-10 text-black backdrop-blur-sm dark:border-white/10 dark:text-white"
   >
-  <div class="flex items-center">
-    <hr class="w-1/6 opacity-25 lg:w-1/5" />
-    <a href="/" class="m-auto flex grow items-center justify-center">
-      <img src="/phil_ewels.jpg" class="mr-4 inline-block w-[3rem] rounded-full lg:w-1/2" alt="Photo of Philip Ewels" />
-      <span class="text-2xl font-thin lg:hidden">Phil Ewels</span>
-    </a>
-    <hr class="w-1/6 opacity-25 lg:w-1/5" />
-  </div>
-  <span class="mt-8 hidden text-center text-5xl font-thin lg:block">Phil Ewels</span>
-  <ul class="my-menu-items mx-5 my-8">
-    <NavItem href="/" icon="bi:house-door">Home</NavItem>
-    <NavItem href="/work" icon="bi:person-circle">Where I've worked</NavItem>
-    <NavItem href="/projects" icon="bi:journal-bookmark-fill">Projects</NavItem>
-    <NavItem href="/talks" icon="bi:easel">Talks</NavItem>
-    <NavItem href="/publications" icon="bi:file-earmark-text">Publications</NavItem>
-    <NavItem href="/contact" icon="bi:envelope">Contact me</NavItem>
-  </ul>
-  <div class="flex-grow"></div>
-  <div class="p-2 text-center">
-    <DarkModeToggle client:only="svelte" />
-  </div>
-  <div class="social-icons flex justify-between border-t border-zinc-700 px-6 py-8">
-    <SocialIcon href="https://github.com/ewels/" icon="mdi:github" label="GitHub" />
-    <SocialIcon href="http://twitter.com/tallphil" icon="bi:twitter-x" label="X (twitter)" />
-    <SocialIcon href="http://uk.linkedin.com/in/philewels" icon="mdi:linkedin" label="LinkedIn" />
-    <SocialIcon href="http://orcid.org/0000-0003-4101-2502" icon="simple-icons:orcid" label="ORCiD" />
-    <SocialIcon
-      href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
-      icon="simple-icons:googlescholar"
-      label="Google Scholar"
-    />
-    <SocialIcon
-      href="http://www.researchgate.net/profile/Philip_Ewels"
-      icon="simple-icons:researchgate"
-      label="Research Gate"
-    />
+    <span
+      onclick="openCloseMenu()"
+      class="mx-5 mr-3 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden">&#10005;</span
+    >
+    <div class="flex items-center">
+      <hr class="w-1/6 opacity-25 lg:w-1/5" />
+      <a href="/" class="m-auto flex grow items-center justify-center">
+        <img
+          src="/phil_ewels.jpg"
+          class="mr-4 inline-block w-[3rem] rounded-full lg:w-1/2"
+          alt="Photo of Philip Ewels"
+        />
+        <span class="text-2xl font-thin lg:hidden">Phil Ewels</span>
+      </a>
+      <hr class="w-1/6 opacity-25 lg:w-1/5" />
+    </div>
+    <span class="mt-8 hidden text-center text-5xl font-thin lg:block">Phil Ewels</span>
+    <ul class="my-menu-items mx-5 my-8">
+      <NavItem href="/" icon="bi:house-door">Home</NavItem>
+      <NavItem href="/work" icon="bi:person-circle">Where I've worked</NavItem>
+      <NavItem href="/projects" icon="bi:journal-bookmark-fill">Projects</NavItem>
+      <NavItem href="/talks" icon="bi:easel">Talks</NavItem>
+      <NavItem href="/publications" icon="bi:file-earmark-text">Publications</NavItem>
+      <NavItem href="/contact" icon="bi:envelope">Contact me</NavItem>
+    </ul>
+    <div class="flex-grow"></div>
+    <div class="p-2 text-center">
+      <DarkModeToggle client:only="svelte" />
+    </div>
+    <div class="social-icons flex justify-between border-t border-zinc-700 px-6 py-8">
+      <SocialIcon href="https://github.com/ewels/" icon="mdi:github" label="GitHub" />
+      <SocialIcon href="http://twitter.com/tallphil" icon="bi:twitter-x" label="X (twitter)" />
+      <SocialIcon href="http://uk.linkedin.com/in/philewels" icon="mdi:linkedin" label="LinkedIn" />
+      <SocialIcon href="http://orcid.org/0000-0003-4101-2502" icon="simple-icons:orcid" label="ORCiD" />
+      <SocialIcon
+        href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
+        icon="simple-icons:googlescholar"
+        label="Google Scholar"
+      />
+      <SocialIcon
+        href="http://www.researchgate.net/profile/Philip_Ewels"
+        icon="simple-icons:researchgate"
+        label="Research Gate"
+      />
+    </div>
   </div>
 </div>
