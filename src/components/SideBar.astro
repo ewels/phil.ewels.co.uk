@@ -16,7 +16,7 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
       class="ml-5 mr-3 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden">&#10005;</span
     >
     <div class="mt-2 flex items-center">
-      <hr class="w-1/6 opacity-25 lg:w-1/5" />
+      <hr class="w-1/6 border-zinc-400/60 lg:w-1/5 dark:border-zinc-600" />
       <a href="/" class="m-auto flex grow items-center justify-center">
         <img
           src="/phil_ewels.jpg"
@@ -25,7 +25,7 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
         />
         <span class="text-2xl font-thin lg:hidden">Phil Ewels</span>
       </a>
-      <hr class="w-1/6 opacity-25 lg:w-1/5" />
+      <hr class="w-1/6 border-zinc-400/60 lg:w-1/5 dark:border-zinc-600" />
     </div>
     <span class="mt-8 hidden text-center text-5xl font-thin lg:block">Phil Ewels</span>
     <ul class="my-menu-items mx-5 my-8">
@@ -40,7 +40,7 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
     <div class="p-2 text-center">
       <DarkModeToggle client:only="svelte" />
     </div>
-    <div class="social-icons mt-3 flex justify-between border-t border-zinc-700 px-6 py-8">
+    <div class="social-icons mt-3 flex justify-between border-t border-zinc-300 px-6 py-8 dark:border-zinc-700">
       <SocialIcon href="https://github.com/ewels/" icon="mdi:github" label="GitHub" />
       <SocialIcon href="http://twitter.com/tallphil" icon="bi:twitter-x" label="X (twitter)" />
       <SocialIcon href="http://uk.linkedin.com/in/philewels" icon="mdi:linkedin" label="LinkedIn" />
