@@ -16046,5 +16046,675 @@
     "published": {
       "date-parts": [[2023, 12, 13]]
     }
+  },
+  "10.1101/2024.05.10.592912": {
+    "institution": [
+      {
+        "name": "bioRxiv"
+      }
+    ],
+    "indexed": {
+      "date-parts": [[2024, 8, 16]],
+      "date-time": "2024-08-16T21:08:38Z",
+      "timestamp": 1723842518972
+    },
+    "posted": {
+      "date-parts": [[2024, 5, 14]]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 36,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [[2024, 5, 14]]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Standardised analysis pipelines are an important part of FAIR bioinformatics research. Over the last decade, there has been a notable shift from point-and-click pipeline solutions such as Galaxy towards command-line solutions such as Nextflow and Snakemake. We report on recent developments in the nf-core and Nextflow frameworks that have led to widespread adoption across many scientific communities. We describe how adopting nf-core standards enables faster development, improved interoperability, and collaboration with the &gt;8,000 members of the nf-core community. The recent development of Nextflow Domain-Specific Language 2 (DSL2) allows pipeline components to be shared and combined across projects. The nf-core community has harnessed this with a library of modules and subworkflows that can be integrated into any Nextflow pipeline, enabling research communities to progressively transition to nf-core best practices. We present a case study of nf-core adoption by six European research consortia, grouped under the EuroFAANG umbrella and dedicated to farmed animal genomics. We believe that the process outlined in this report can inspire many large consortia to seek harmonisation of their data analysis procedures.</jats:p>",
+    "DOI": "10.1101/2024.05.10.592912",
+    "type": "posted-content",
+    "created": {
+      "date-parts": [[2024, 5, 14]],
+      "date-time": "2024-05-14T11:10:29Z",
+      "timestamp": 1715685029000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": ["Empowering bioinformatics communities with Nextflow and nf-core"],
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-9655-3480",
+        "authenticated-orcid": false,
+        "given": "Bj\u00f6rn E.",
+        "family": "Langer",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-0958-5570",
+        "authenticated-orcid": false,
+        "given": "Andreia",
+        "family": "Amaral",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2018-1657",
+        "authenticated-orcid": false,
+        "given": "Marie-Odile",
+        "family": "Baudement",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1270-1504",
+        "authenticated-orcid": false,
+        "given": "Franziska",
+        "family": "Bonath",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6491-1928",
+        "authenticated-orcid": false,
+        "given": "Mathieu",
+        "family": "Charles",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2047-0208",
+        "authenticated-orcid": false,
+        "given": "Praveen Krishna",
+        "family": "Chitneedi",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-9550-7407",
+        "authenticated-orcid": false,
+        "given": "Emily L.",
+        "family": "Clark",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3220-0253",
+        "authenticated-orcid": false,
+        "given": "Paolo",
+        "family": "Di Tommaso",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0599-1267",
+        "authenticated-orcid": false,
+        "given": "Sarah",
+        "family": "Djebali",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": false,
+        "given": "Philip A.",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-8609-5869",
+        "authenticated-orcid": false,
+        "given": "Sonia",
+        "family": "Eynard",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5585-6277",
+        "authenticated-orcid": false,
+        "given": "James A. Fellows",
+        "family": "Yates",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-7513-683X",
+        "authenticated-orcid": false,
+        "given": "Daniel",
+        "family": "Fischer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-5431-190X",
+        "authenticated-orcid": false,
+        "given": "Evan W.",
+        "family": "Floden",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2631-5356",
+        "authenticated-orcid": false,
+        "given": "Sylvain",
+        "family": "Foissac",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7049-9474",
+        "authenticated-orcid": false,
+        "given": "Gisela",
+        "family": "Gabernet",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2827-9261",
+        "authenticated-orcid": false,
+        "given": "Maxime U.",
+        "family": "Garcia",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9533-3227",
+        "authenticated-orcid": false,
+        "given": "Gareth",
+        "family": "Gillard",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4328-2178",
+        "authenticated-orcid": false,
+        "given": "Manu Kumar",
+        "family": "Gundappa",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2707-2541",
+        "authenticated-orcid": false,
+        "given": "Cervin",
+        "family": "Guyomar",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5007-2684",
+        "authenticated-orcid": false,
+        "given": "Christopher",
+        "family": "Hakkaart",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0009-0001-9875-5262",
+        "authenticated-orcid": false,
+        "given": "Friederike",
+        "family": "Hanssen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4007-2899",
+        "authenticated-orcid": false,
+        "given": "Peter W.",
+        "family": "Harrison",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-5599-5565",
+        "authenticated-orcid": false,
+        "given": "Matthias",
+        "family": "H\u00f6rtenhuber",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Cyril",
+        "family": "Kurylo",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0216-424X",
+        "authenticated-orcid": false,
+        "given": "Christa",
+        "family": "K\u00fchn",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4887-7245",
+        "authenticated-orcid": false,
+        "given": "Sandrine",
+        "family": "Lagarrigue",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1609-0827",
+        "authenticated-orcid": false,
+        "given": "Delphine",
+        "family": "Lallias",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8050-7722",
+        "authenticated-orcid": false,
+        "given": "Daniel J.",
+        "family": "Macqueen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2398-0334",
+        "authenticated-orcid": false,
+        "given": "Edmund",
+        "family": "Miller",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6104-9260",
+        "authenticated-orcid": false,
+        "given": "J\u00falia",
+        "family": "Mir-Pedrol",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3139-1027",
+        "authenticated-orcid": false,
+        "given": "Gabriel Costa Monteiro",
+        "family": "Moreira",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4375-0691",
+        "authenticated-orcid": false,
+        "given": "Sven",
+        "family": "Nahnsen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2707-7940",
+        "authenticated-orcid": false,
+        "given": "Harshil",
+        "family": "Patel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6503-2180",
+        "authenticated-orcid": false,
+        "given": "Alexander",
+        "family": "Peltzer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1477-7633",
+        "authenticated-orcid": false,
+        "given": "Frederique",
+        "family": "Pitel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-8142-0159",
+        "authenticated-orcid": false,
+        "given": "Yuliaxis",
+        "family": "Ramayo-Caldas",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5751-8386",
+        "authenticated-orcid": false,
+        "given": "Marcel",
+        "family": "da C\u00e2mara Ribeiro-Dantas",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4998-9641",
+        "authenticated-orcid": false,
+        "given": "Dominique",
+        "family": "Rocha",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-7349-2451",
+        "authenticated-orcid": false,
+        "given": "Mazdak",
+        "family": "Salavati",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-3387-0649",
+        "authenticated-orcid": false,
+        "given": "Alexey",
+        "family": "Sokolov",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1541-042X",
+        "authenticated-orcid": false,
+        "given": "Jose",
+        "family": "Espinosa-Carrasco",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1461-0988",
+        "authenticated-orcid": false,
+        "given": "Cedric",
+        "family": "Notredame",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "name": "the nf-core community.",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "reference": [
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aaz1776"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature11247"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.3",
+        "doi-asserted-by": "crossref",
+        "first-page": "170113",
+        "DOI": "10.1038/sdata.2017.113",
+        "article-title": "The FANTOM5 collection, a data series underpinning mammalian transcriptome atlases in diverse cell types",
+        "volume": "4",
+        "year": "2017",
+        "journal-title": "Sci. Data"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.4",
+        "doi-asserted-by": "crossref",
+        "first-page": "631",
+        "DOI": "10.1016/j.cels.2018.03.014",
+        "article-title": "Practical Computational Reproducibility in the Life Sciences",
+        "volume": "6",
+        "year": "2018",
+        "journal-title": "Cell Syst"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.5",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1177/1094342017704893",
+        "article-title": "The future of scientific workflows",
+        "volume": "32",
+        "year": "2018",
+        "journal-title": "Int. J. High Perform. Comput. Appl"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkac247"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M\u00f6lder, F. et al. Sustainable data analysis with Snakemake [version 2; peer review: 2 approved]. F1000Research 10, (2021).",
+        "DOI": "10.12688/f1000research.29032.1"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.3820"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1161",
+        "DOI": "10.1038/s41592-021-01254-9",
+        "article-title": "Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers",
+        "volume": "18",
+        "year": "2021",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3589806.3600037"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41587-020-0439-x"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.12",
+        "unstructured": "seqeralabs/wave. Seqera (2024). https://github.com/seqeralabs/wave"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.13",
+        "unstructured": "askimed/nf-test. Askimed (2024). https://github.com/askimed/nf-test"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.14",
+        "unstructured": "nextflow-io/nf-validation. nextflow-io (2024). https://github.com/nextflow-io/nf-validation"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.15",
+        "unstructured": "nextflow-io/nf-co2footprint. nextflow-io (2024). https://github.com/nextflow-io/nf-co2footprint"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.16",
+        "unstructured": "nextflow-io/nf-prov. nextflow-io (2024). https://github.com/nextflow-io/nf-prof"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.17",
+        "doi-asserted-by": "crossref",
+        "first-page": "100724",
+        "DOI": "10.1016/j.ascom.2023.100724",
+        "article-title": "CELEBI: The CRAFT Effortless Localisation and Enhanced Burst Inspection pipeline",
+        "volume": "44",
+        "year": "2023",
+        "journal-title": "Astron. Comput"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.18",
+        "unstructured": "Lehmann, F. , Frantz, D. , Becker, S. , Leser, U. & Hostert, P. FORCE on Nextflow: Scalable Analysis of Earth Observation Data on Commodity Clusters. in Proceedings of the CIKM 2021 Workshops (eds. Cong, G. & Ramanath, M. ) vol. 3052 (CEUR-WS.org, Gold Coast, Queensland, Australia, 2021)."
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.19",
+        "doi-asserted-by": "crossref",
+        "first-page": "705",
+        "DOI": "10.1016/j.procs.2023.01.342",
+        "article-title": "Predicting prices of Airbnb listings via Graph Neural Networks and Document Embeddings: The case of the island of Santorini",
+        "volume": "219",
+        "year": "2023",
+        "journal-title": "Procedia Comput. Sci"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.20",
+        "doi-asserted-by": "crossref",
+        "first-page": "475",
+        "DOI": "10.1038/s41592-018-0046-7",
+        "article-title": "Bioconda: sustainable and comprehensive software distribution for the life sciences",
+        "volume": "15",
+        "year": "2018",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btx192"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btw354"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Harrison, P. W. et al. The FAANG Data Portal: Global, Open-Access, \u201cFAIR\u201d, and Richly Validated Genotype to Phenotype Data for High-Quality Functional Annotation of Animal Genomes. Front. Genet. 12, (2021).",
+        "DOI": "10.3389/fgene.2021.639238"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-015-0622-4"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.25",
+        "doi-asserted-by": "crossref",
+        "first-page": "160018",
+        "DOI": "10.1038/sdata.2016.18",
+        "article-title": "The FAIR Guiding Principles for scientific data management and stewardship",
+        "volume": "3",
+        "year": "2016",
+        "journal-title": "Sci. Data"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.26",
+        "doi-asserted-by": "crossref",
+        "first-page": "622",
+        "DOI": "10.1038/s41597-022-01710-x",
+        "article-title": "Introducing the FAIR Principles for research software",
+        "volume": "9",
+        "year": "2022",
+        "journal-title": "Sci. Data"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3030/101094718"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.28",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1186/s13059-020-02197-8",
+        "article-title": "From FAANG to fork: application of highly annotated genomes to improve farmed animal production",
+        "volume": "21",
+        "year": "2020",
+        "journal-title": "Genome Biol"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.aquaculture.2024.740589"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1438",
+        "DOI": "10.1038/s41588-022-01153-5",
+        "article-title": "A multi-tissue atlas of regulatory variants in cattle",
+        "volume": "54",
+        "year": "2022",
+        "journal-title": "Nat. Genet"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41588-023-01585-7"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2023.06.27.546670"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.33",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1525/hsns.2022.52.3.277",
+        "article-title": "The Sequences and the Sequencers: What Can a Mixed-Methods Approach Reveal about the History of Genomics?",
+        "volume": "52",
+        "year": "2022",
+        "journal-title": "Hist. Stud. Nat. Sci"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.34",
+        "doi-asserted-by": "crossref",
+        "first-page": "btad150",
+        "DOI": "10.1093/bioinformatics/btad150",
+        "article-title": "nf-core/isoseq: simple gene and isoform annotation with PacBio Iso-Seq long-read sequencing",
+        "volume": "39",
+        "year": "2023",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.35",
+        "doi-asserted-by": "crossref",
+        "first-page": "nqad089",
+        "DOI": "10.1093/nargab/lqad089",
+        "article-title": "TAGADA: a scalable pipeline to improve genome annotations with RNA-seq data",
+        "volume": "5",
+        "year": "2023",
+        "journal-title": "NAR Genomics Bioinforma"
+      },
+      {
+        "key": "2024051611452237000_2024.05.10.592912v1.36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5281/zenodo.6855541"
+      }
+    ],
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/2024.05.10.592912",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2024, 5, 16]],
+      "date-time": "2024-05-16T18:45:40Z",
+      "timestamp": 1715885140000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://biorxiv.org/lookup/doi/10.1101/2024.05.10.592912"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2024, 5, 14]]
+    },
+    "references-count": 36,
+    "URL": "http://dx.doi.org/10.1101/2024.05.10.592912",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [[2024, 5, 14]]
+    },
+    "subtype": "preprint"
   }
 }
