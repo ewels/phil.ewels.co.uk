@@ -8,6 +8,7 @@ import shutil
 import yaml
 import re
 
+
 def copy_local_file(src, dest_dir):
     """
     Given a file path for a talk asset, prompt for a new filename
@@ -26,6 +27,7 @@ def copy_local_file(src, dest_dir):
     shutil.copy(src, dest_path)
     dest_path = re.sub("^public", "", dest_path)
     return dest_path
+
 
 # Questionary prompt for base directory of talks
 base_dir = os.path.expanduser(
@@ -193,5 +195,3 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         # Ask if we want to exit the script
         if not questionary.confirm("Continue to next talk?").unsafe_ask():
             exit()
-
-

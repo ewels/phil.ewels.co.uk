@@ -18,23 +18,23 @@ def main(doi: Optional[str] = typer.Argument(None)):
 
     # Only do all DOIs if one wasn't requested
     if doi is None:
-        print(f"[green]Updating all publications")
+        print("[green]Updating all publications")
         dois = publications.keys()
     else:
         print(f"[green]Adding publication: '{doi}'")
         dois = [doi]
 
     # Go through requested DOIs
-    for doi in dois:
+    for this_doi in dois:
         # Get info from crossref
-        fetch_pub = fetch_publication(doi)
+        fetch_pub = fetch_publication(this_doi)
         if not fetch_pub:
             exit(1)
         pub, slug, journal, md_path, md_exists = fetch_pub
-        publications[doi] = pub
+        publications[this_doi] = pub
         # Create the markdown file if it doesn't exist
         if not md_exists:
-            create_markdown(md_path, doi, slug, journal, pub)
+            create_markdown(md_path, this_doi, slug, journal, pub)
 
     # Save the publications.json file
     with open("src/publications.json", "w") as f:
@@ -130,7 +130,7 @@ def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict)
             abstract = pub["abstract"]
             for k, v in abstract_replace.items():
                 abstract = abstract.replace(k, v)
-            abstract = "\n".join([l.strip() for l in abstract.splitlines()])
+            abstract = "\n".join([line.strip() for line in abstract.splitlines()])
             abstract = re.sub(r"\n\n+", r"\n\n", abstract)
             f.write(abstract + "\n")
 
