@@ -22,24 +22,27 @@ const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : S
 <script is:inline>
   // Light / dark mode switch
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    document.documentElement.classList.add("dark");
-    window.localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-    window.localStorage.setItem("theme", "light");
+  function set_theme() {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }
+  set_theme();
 
   // Listen to page load event
   ["after-swap", "page-load"].forEach(function (e) {
     document.addEventListener(`astro:${e}`, function () {
-      if (localStorage.getItem("theme") === "dark") {
-        document.documentElement.classList.toggle("dark", true);
-      }
+      set_theme();
     });
+  });
+  // Listen to system theme change, because why not
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
+    set_theme();
   });
 </script>
 
