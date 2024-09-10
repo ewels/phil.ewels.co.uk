@@ -15,7 +15,7 @@ const projectsCollection = defineCollection({
     iconImage: z.string(),
     iconImageDark: z.string().optional(),
     noIconPadding: z.boolean().optional(),
-    heroImage: z.string(),
+    heroImage: z.string().optional(),
     personal: z.boolean().optional(),
     archived: z.boolean().optional(),
   }),
