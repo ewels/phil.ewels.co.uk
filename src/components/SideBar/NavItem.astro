@@ -7,7 +7,7 @@ const { href, icon } = Astro.props;
 <li class="relative flex flex-col flex-wrap items-stretch">
   <a
     class={"/" + Astro.url.pathname.split("/")[1] === href
-      ? "bg-gradient-to-r from-white to-zinc-100 shadow dark:shadow-black/50 dark:from-black dark:to-zinc-900 dark:!border-opacity-100 "
+      ? "bg-gradient-to-r from-white to-zinc-100 shadow  dark:from-black dark:to-black "
       : ""}
     href={href}
   >
@@ -18,6 +18,6 @@ const { href, icon } = Astro.props;
 
 <style>
   a {
-    @apply mb-2 flex items-center gap-3 rounded px-4 py-2 text-black transition-all hover:bg-gradient-to-r hover:from-white hover:to-zinc-100 hover:pl-5 hover:shadow dark:border dark:border-zinc-700 dark:border-opacity-0 dark:text-white dark:hover:border-opacity-100 hover:dark:from-black hover:dark:to-zinc-900 hover:dark:shadow-black/50;
+    @apply mb-2 flex items-center gap-3 rounded px-4 py-2 text-black transition-all hover:bg-gradient-to-r hover:from-white hover:to-zinc-100 hover:pl-5 hover:shadow dark:text-white hover:dark:from-black hover:dark:to-black;
   }
 </style>
