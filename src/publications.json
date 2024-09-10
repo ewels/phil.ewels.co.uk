@@ -16716,5 +16716,340 @@
       "date-parts": [[2024, 5, 14]]
     },
     "subtype": "preprint"
+  },
+  "10.1101/2024.08.30.610474": {
+    "institution": [
+      {
+        "name": "bioRxiv"
+      }
+    ],
+    "indexed": {
+      "date-parts": [[2024, 9, 3]],
+      "date-time": "2024-09-03T00:03:41Z",
+      "timestamp": 1725321821227
+    },
+    "posted": {
+      "date-parts": [[2024, 9, 1]]
+    },
+    "group-title": "Evolutionary Biology",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2024, 9, 1]],
+          "date-time": "2024-09-01T00:00:00Z",
+          "timestamp": 1725148800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [[2024, 9, 1]]
+    },
+    "abstract": "<jats:p>Although high-sugar diets are associated with metabolic diseases in humans, several bird lineages have independently evolved to primarily subsist on simple sugars from flower nectar or fruits. In this study, we address a key question of the repeatability of molecular evolution by investigating the convergent and lineage-specific molecular mechanisms underlying dietary adaptations in four major sugar-consuming bird lineages: hummingbirds, parrots, honeyeaters, and sunbirds. We assembled nine new genomes for sugar-consuming species and their closely related non-sugar feeding outgroup species and generated 90 tissue-specific transcriptomes for six key species. We identified signatures of positive selection in both protein-coding and non-coding regulatory sequences, and found positive selection targets the same genes more frequently in sugar-feeders compared to non-sugar feeding controls, suggesting that adapting to a high-sugar diet requires changes in a limited number of genetic elements. At the functional level, pathways associated with energy homeostasis, carbohydrate metabolism, heart function, and hormonal regulation showed convergent selection signals in both protein-coding and regulatory evolution, while lipid and amino acid metabolism demonstrated mostly regulatory evolution. Notably, we observed striking evidence for convergent adaptation in MLXIPL, a transcription factor regulating sugar and lipid homeostasis, manifesting in both sequence and regulatory changes across all sugar-feeders. With functional assays, we demonstrated that hummingbird MLXIPL enhances sugar-induced transcriptional activity in HEK239 cells, suggesting its central role in the evolution of adaptations to high-sugar diets. Our findings elucidate the main genomic targets in the evolution of sugar-feeding at both molecular and pathway levels.</jats:p>",
+    "DOI": "10.1101/2024.08.30.610474",
+    "type": "posted-content",
+    "created": {
+      "date-parts": [[2024, 9, 2]],
+      "date-time": "2024-09-02T07:50:11Z",
+      "timestamp": 1725263411000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": ["Convergent and lineage-specific genomic changes contribute to adaptations in sugar-consuming birds"],
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-6769-7223",
+        "authenticated-orcid": false,
+        "given": "Ekaterina",
+        "family": "Osipova",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-2234-9380",
+        "authenticated-orcid": false,
+        "given": "Meng-Ching",
+        "family": "Ko",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-3352-093X",
+        "authenticated-orcid": false,
+        "given": "Konstantin M.",
+        "family": "Petricek",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2484-2897",
+        "authenticated-orcid": false,
+        "given": "Simon",
+        "family": "Yung Wa Sin",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8293-4816",
+        "authenticated-orcid": false,
+        "given": "Thomas",
+        "family": "Brown",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0915-3316",
+        "authenticated-orcid": false,
+        "given": "Sylke",
+        "family": "Winkler",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-8134-5929",
+        "authenticated-orcid": false,
+        "given": "Martin",
+        "family": "PIppel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Julia",
+        "family": "Jarrells",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Susanne",
+        "family": "Weiche",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mai-Britt",
+        "family": "Mosbech",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7198-5116",
+        "authenticated-orcid": false,
+        "given": "Fanny",
+        "family": "Taborsak-Lines",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4048-6637",
+        "authenticated-orcid": false,
+        "given": "Chuan",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Orlando",
+        "family": "Contreras-Lopez",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0009-0002-8357-5186",
+        "authenticated-orcid": false,
+        "given": "Remi-Andre",
+        "family": "Olsen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Phil",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9668-941X",
+        "authenticated-orcid": false,
+        "given": "Daniel",
+        "family": "Mendez Aranda",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Andrea",
+        "family": "Gaede",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6554-8091",
+        "authenticated-orcid": false,
+        "given": "Keren",
+        "family": "Sadanandan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Gabriel",
+        "family": "Weijie Low",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Amanda",
+        "family": "Monte",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Ninon",
+        "family": "Ballerstaedt",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-5043-0389",
+        "authenticated-orcid": false,
+        "given": "Nicolas M.",
+        "family": "Adreani",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4090-2570",
+        "authenticated-orcid": false,
+        "given": "Lucia",
+        "family": "Mentesana",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Auguste",
+        "family": "von Bayern",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Alejandro",
+        "family": "Rico-Guevara",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Scott",
+        "family": "Edwards",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1364-3617",
+        "authenticated-orcid": false,
+        "given": "Douglas",
+        "family": "Altshuler",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "William A.",
+        "family": "Buttemer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Carolina",
+        "family": "Frankl-Vilches",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Heiner",
+        "family": "Kuhl",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Antje",
+        "family": "Bakker",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Manfred",
+        "family": "Gahr",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3720-1052",
+        "authenticated-orcid": false,
+        "given": "Michael",
+        "family": "Schupp",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Maude W.",
+        "family": "Baldwin",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Michael",
+        "family": "Hiller",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy B.",
+        "family": "Sackton",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/2024.08.30.610474",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2024, 9, 2]],
+      "date-time": "2024-09-02T07:50:11Z",
+      "timestamp": 1725263411000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://biorxiv.org/lookup/doi/10.1101/2024.08.30.610474"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2024, 9, 1]]
+    },
+    "references-count": 0,
+    "URL": "http://dx.doi.org/10.1101/2024.08.30.610474",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [[2024, 9, 1]]
+    },
+    "subtype": "preprint"
   }
 }
