@@ -29,8 +29,8 @@ const workplaces_edu = workplaces.concat(education);
 const workplaces_edu_count = (await getCollection("workplaces")).length + (await getCollection("education")).length;
 
 const projects = (await getCollection("projects"))
+  .sort((a, b) => a.data.order - b.data.order)
   .filter((p) => p.data.personal != true && p.data.archived != true)
-  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
   .map((item) => ({
     url: "/projects/" + item.slug,
     title: item.data.title,
@@ -55,21 +55,25 @@ const talks = await getCollection("talks");
   </div>
   <div class="mb-5 text-center md:text-left">
     <HomepageButton href="https://github.com/ewels/" title="GitHub" icon="mdi:github" />
-    <HomepageButton href="http://twitter.com/tallphil" title="X (Twitter)" icon="bi:twitter-x" />
-    <HomepageButton href="https://genomic.social/@ewels" title="Mastodon" icon="mdi:mastodon" />
     <HomepageButton href="https://bsky.app/profile/ewels.bsky.social" title="Bluesky" icon="simple-icons:bluesky" />
     <HomepageButton href="http://uk.linkedin.com/in/philewels" title="LinkedIn" icon="mdi:linkedin" />
+    <HomepageButton href="http://twitter.com/tallphil" title="X (Twitter)" icon="bi:twitter-x" />
+    <HomepageButton href="https://genomic.social/@ewels" title="Mastodon" icon="mdi:mastodon" />
     <HomepageButton href="http://orcid.org/0000-0003-4101-2502" title="ORCiD" icon="simple-icons:orcid" />
     <HomepageButton
       href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
       title="Google Scholar"
       icon="simple-icons:googlescholar"
     />
+    {
+      /*
     <HomepageButton
       href="http://www.researchgate.net/profile/Philip_Ewels"
       title="Research Gate"
       icon="simple-icons:researchgate"
     />
+    */
+    }
   </div>
 
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
