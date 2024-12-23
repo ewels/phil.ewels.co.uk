@@ -6,6 +6,8 @@ const {
   imgDark,
   noIconPadding,
   description,
+  startDate,
+  endDate = false,
   url,
   postDate,
   badge,
@@ -35,6 +37,12 @@ const nth = (d) => {
 const dateString = (d) => {
   return d.toLocaleString("default", { month: "long" }) + " " + d.getDate() + "<sup>" + nth(d.getDate()) + "</sup>";
 };
+
+function yearRange(startDate: Date, endDate: Date) {
+  const startYear = startDate.getFullYear();
+  const endYear = endDate ? endDate.getFullYear() : "present";
+  return startYear + " - " + endYear;
+}
 ---
 
 <div class="horizontal-card-container">
@@ -60,6 +68,7 @@ const dateString = (d) => {
         {postDate && <Fragment set:html={dateString(postDate)} />}
         {postDate && description && <span class="mx-2">&bull;</span>}
         {description}
+        {startDate && <span class="ml-2 opacity-50">{yearRange(startDate, endDate)}</span>}
         {tags && tags.map((tag) => <span class="tag">{tag}</span>)}
         {hasDownload && <Icon name="bi:file-earmark-pdf" class="icon" title="Slides available" />}
         {hasYouTube && <Icon name="mdi:youtube" class="icon" title="Recording available" />}

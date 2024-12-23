@@ -41,6 +41,8 @@ const education = (await getCollection("education")).sort(
             img={post.data.iconImage}
             imgDark={post.data.iconImageDark ?? post.data.iconImage}
             description={post.data.location}
+            startDate={post.data.startDate}
+            endDate={post.data.endDate}
             countryFlag={post.data.countryFlag}
             tags={[post.data.numPositions + " position" + (post.data.numPositions > 1 ? "s" : "")]}
             url={"/work/" + post.slug}
@@ -62,6 +64,8 @@ const education = (await getCollection("education")).sort(
             img={post.data.iconImage}
             imgDark={post.data.iconImageDark ?? post.data.iconImage}
             description={post.data.location}
+            startDate={post.data.startDate}
+            endDate={post.data.endDate}
             countryFlag={post.data.countryFlag}
             url={"/education/" + post.slug}
           />
