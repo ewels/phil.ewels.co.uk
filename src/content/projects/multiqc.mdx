@@ -1,0 +1,45 @@
+---
+title: MultiQC
+description: Aggregate results from bioinformatics analyses across many samples into a single report
+projectURL: https://seqera.io/multiqc/
+github: MultiQC/MultiQC
+# heroImage: /post_img.webp
+iconImage: /images/projects/multiqc.svg
+logoImage: /images/projects/multiqc_logo.svg
+logoImageDark: /images/projects/multiqc_logo_dark.svg
+---
+
+import TimeLineElement from "@components/TimeLine.astro";
+
+MultiQC is a reporting tool designed to aggregate output from bioinformatics analyses into a single comprehensive report. It works by scanning results from multiple analysis tools and combining them into a single, user-friendly HTML report.
+
+MultiQC is particularly useful in large-scale projects, where manual inspection of individual tool outputs would be tedious and error-prone. It standardises reporting, ensuring consistency and reproducibility across datasets.
+
+I began writing MultiQC at SciLifeLab, as we needed a better QC reporting tool for the large projects that we were running.
+While it is not a particularly complex tool, it has been a great case of "right place at the right time".
+It unwittingly has become the _de-facto_ reporting tool for much of bioinformatics (certainly genomics) and now supports hundreds of bioinformatics tools with many if not most modules written by the community.
+When I joined Seqera in 2022, MultiQC also became part of the Seqera family.
+
+MultiQC is open-source and available on GitHub at [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC). The tool has been widely adopted in the bioinformatics community and is used across a range of fields, from genomics to transcriptomics, making it an essential part of modern data processing pipelines.
+
+<div class="time-line-container clear-both mb-10 grid gap-4">
+  <TimeLineElement title="Passes 5k citations" subtitle="July 2024" desc="MultiQC publication gets 5,000th citation" />
+  <TimeLineElement
+    title="Vlad hired as dedicated developer"
+    subtitle="October 2023"
+    desc="Vlad Savelyev joins Seqera to work full time on MultiQC"
+  />
+  <TimeLineElement title="Joins Seqera" subtitle="March 2022" desc="Becomes part of the Seqera family" />
+  <TimeLineElement title="Published in 'Bioinformatics'" subtitle="October 2016">
+    DOI:{" "}
+    <a href="https://doi.org/10.1093/bioinformatics/btw354" class="font-normal text-gray-600 dark:text-gray-400">
+      10.1093/bioinformatics/btw354
+    </a>
+  </TimeLineElement>
+  <TimeLineElement title="First commit" subtitle="August 4th 2015">
+    Started project whilst{" "}
+    <a href="/work/scilifelab" class="font-normal text-gray-600 dark:text-gray-400">
+      working at SciLifeLab
+    </a>
+  </TimeLineElement>
+</div>

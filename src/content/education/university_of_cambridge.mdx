@@ -11,6 +11,21 @@ logoImageDark: "/images/education/university_of_cambridge_logo_darkbg.svg"
 iconImage: "/images/education/university_of_cambridge_icon.svg"
 countryFlag: gb
 description: |
-  I did my PhD at the University of Cambridge, placed at the Babraham Institue.
+  I did my PhD and postdoc at the University of Cambridge, placed at the Babraham Institue.
   I was a member of Trinity Hall, one of the oldest colleges in Cambridge.
 ---
+
+import TimeLineElement from "@components/TimeLine.astro";
+
+<div class="time-line-container clear-both mb-10 grid gap-4">
+  <TimeLineElement
+    title="Postdoctoral Research Assistant"
+    subtitle="Oct 2012 - April 2014"
+    desc="Postdoctoral Research Assistant (PDRA), working at the Babraham Institute"
+  />
+  <TimeLineElement
+    title="PhD Student"
+    subtitle="Sept 2008 - Sept 2012"
+    desc="PhD student in Molecular Biology, working at the Babraham Institute"
+  />
+</div>
