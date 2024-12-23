@@ -18,6 +18,7 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
+  <a href="/talks/" class="text-xs opacity-30">&laquo; Back to talks</a>
   {
     entry.data.heroImage && (
       <img

@@ -21,6 +21,7 @@ const pub_year = pub.published["date-parts"][0][0];
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
+  <a href="/publications/" class="text-xs opacity-30">&laquo; Back to publications</a>
   <h1 class="mb-4 text-xl font-bold md:text-3xl">{entry.data.title}</h1>
   <h2 class="mb-2"><span class="mr-2 italic">{entry.data.journal}</span> ({pub_year})</h2>
   <h3 class="authors mb-4">{pub.author.map((author) => <Author author={author} />)}</h3>

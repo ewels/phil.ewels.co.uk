@@ -2,10 +2,17 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Button from "@components/Button.astro";
 
-const { entry, Content } = Astro.props;
+const { entry, Content, back_to_text = false, back_to_link = false } = Astro.props;
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
+  {
+    back_to_text && back_to_link && (
+      <a href={back_to_link} class="text-xs opacity-30">
+        &laquo; Back to {back_to_text}
+      </a>
+    )
+  }
   <article class="prose prose-lg max-w-none dark:prose-invert prose-img:mx-auto md:justify-center">
     <div class="mb-6 flex flex-row lg:items-center lg:justify-between">
       <h1 class={"title my-2 text-4xl font-bold " + (entry.data.logoImage ? "hidden lg:inline" : "")}>
