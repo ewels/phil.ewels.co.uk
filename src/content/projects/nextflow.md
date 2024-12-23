@@ -7,6 +7,7 @@ github: nextflow-io/nextflow
 iconImage: /images/projects/nextflow.svg
 logoImage: /images/projects/nextflow_logo.svg
 logoImageDark: /images/projects/nextflow_logo_dark.svg
+order: 30
 ---
 
 [Nextflow](https://www.nextflow.io) is a powerful and flexible workflow orchestration tool designed to simplify and scale the execution of complex data analysis pipelines. Originally created for bioinformatics, it has grown to be widely used across multiple scientific disciplines and industries. Nextflow allows researchers and engineers to automate computational workflows with ease, handling everything from local execution on a laptop to scaling across cloud platforms or high-performance computing clusters.

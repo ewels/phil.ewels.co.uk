@@ -18,6 +18,7 @@ const projectsCollection = defineCollection({
     heroImage: z.string().optional(),
     personal: z.boolean().optional(),
     archived: z.boolean().optional(),
+    order: z.number().optional(),
   }),
 });
 const publicationsCollection = defineCollection({

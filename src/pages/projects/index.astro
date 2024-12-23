@@ -17,6 +17,7 @@ const projects = await getCollection("projects");
   <ul>
     {
       projects
+        .sort((a, b) => a.data.order - b.data.order)
         .filter((p) => p.data.personal != true && p.data.archived != true)
         .map((p) => (
           <HorizontalCard
@@ -31,6 +32,7 @@ const projects = await getCollection("projects");
     }
     {
       projects
+        .sort((a, b) => a.data.order - b.data.order)
         .filter((p) => p.data.personal != true && p.data.archived == true)
         .map((p) => (
           <HorizontalCard

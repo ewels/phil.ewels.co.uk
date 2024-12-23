@@ -6,6 +6,7 @@ github: ewels/clusterflow
 # heroImage: /post_img.webp
 iconImage: /images/projects/clusterflow-icon.png
 archived: true
+order: 50
 ---
 
 > Please note that Cluster Flow has now been archived.

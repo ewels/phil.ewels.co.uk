@@ -5,6 +5,7 @@ projectURL: https://sra-explorer.info
 github: ewels/sra-explorer
 heroImage: /images/projects/sra_explorer-hero.png
 iconImage: /images/projects/sra_explorer-icon.png
+order: 40
 ---
 
 [SRA-explorer](https://sra-explorer.info) is a web-based tool designed to simplify searching and downloading data from the NCBI Sequence Read Archive (SRA). It allows researchers to quickly identify datasets of interest and retrieve download links for further analysis.

@@ -6,6 +6,7 @@ github: ewels/labrador
 heroImage: /images/projects/Labrador_screenshot_800px.png
 iconImage: /images/projects/Labrador_logo.png
 archived: true
+order: 60
 ---
 
 Labrador is a web based tool to manage projects and automate the processing of publicly available datasets.
