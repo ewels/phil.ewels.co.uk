@@ -9,8 +9,13 @@ archived: true
 order: 50
 ---
 
-> Please note that Cluster Flow has now been archived.
-> For anyone looking to build scalable, reproducible bioinformatics workflows, I recommend using Nextflow and nf-core, which offer more advanced features, community support, and a wide range of pre-built pipelines.
+<div class="border-indigo-500 border rounded-lg my-10 px-8">
+
+**Cluster Flow is archived.**
+
+For anyone looking to build scalable, reproducible bioinformatics workflows, I recommend using Nextflow and nf-core, which offer more advanced features, community support, and a wide range of pre-built pipelines.
+
+</div>
 
 I wrote Cluster Flow whilst working at the Babraham institute, as the amount of genomics data that we were needing to process started to scale rapidly.
 There weren't a lot of existing options available at the time, so after a fair bit of research I decided to roll my own.

@@ -9,20 +9,19 @@ archived: true
 order: 60
 ---
 
-Labrador is a web based tool to manage projects and automate the processing of publicly available datasets.
+Labrador is a web based tool to manage project metadata and data, and also help automate the processing of publicly available datasets.
 
-Researchers can use Labrador to:
+I wrote Labrador as my first software project when I joined the Babraham Bioinformatics group in 2012.
+We ran it as a central service for researchers to find public datasets that we had already downloaded and processed.
+It ended up growing substantially with deep integration into public APIs, and even simple precursors to the bioinformatics workflow software that would later dominate my career (simple bash script generators with pre-filled filenames and URLs).
+
+Labrador is a web project written mostly in PHP with a MySQL database back end.
+It was used for:
 
 - Browse and search previously processed datasets
 - View processing and analysis reports in their web browser
 - Download data through their web browser
 - Request new datasets, with required information automatically retrieved from accession numbers
 
-Bioinformaticians can use Labrador to:
-
-- Speed up retrieval of project information from repositories
-- Catalogue processing and analysis
-- Create automated analysis bash scripts
-- Customise templates for analysis script generation
-
-Project metadata is stored within a mysql database. Code is provided with some example analysis script pipelines which can be easily modified to work with existing workflows. This analysis script generation can help to standardise in-house processing and streamline pipelines.
+Despite its age, Labrador ended up a surprisingly powerful tool.
+Many of the design concepts and user experience priorities that went into Labrador have reappeared in later projects that I have worked in.

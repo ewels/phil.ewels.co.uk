@@ -10,6 +10,7 @@ order: 40
 
 [SRA-explorer](https://sra-explorer.info) is a web-based tool designed to simplify searching and downloading data from the NCBI Sequence Read Archive (SRA).
 It allows researchers to quickly identify datasets of interest and retrieve download links for further analysis.
+
 SRA-explorer has an interface that's a bit like an online shop. You search and find datasets, add them to your cart and then check-out to get the metadata and download details.
 SRA-explorer also integrates with the ENA to get direct FastQ downloads, where available.
 
@@ -18,6 +19,8 @@ SRA-explorer also integrates with the ENA to get direct FastQ downloads, where a
 - Get direct download links for data in both FastQ and SRA formats, avoiding the need to manually generate them.
 - Automatically generate download commands, including `fastq-dump`, which can be copy-pasted into the command line to retrieve data with ease.
 
-SRA-explorer has helped researchers access sequencing data from across the globe for reuse and analysis. It's particularly useful for those looking to avoid the clunky interface of the NCBI SRA and directly obtain data in formats ready for analysis.
+I wrote SRA-explorer as a quick hobby project one weekend when I was playing with new web technologies (AngularJS, which dates it). It's a single HTML file that runs entirely in your web browser using APIs from the NCBI SRA and and EBI ENA, with no back-end of it's own.
+
+Despite it's humble beginnings, SRA-explorer has ended up becoming quite popular and helped researchers access sequencing data from across the globe for reuse and analysis.
 
 The source code for SRA-explorer is open-source and available on GitHub at [ewels/sra-explorer](https://github.com/ewels/sra-explorer).

@@ -2,7 +2,7 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Button from "@components/Button.astro";
 
-const { entry, Content, back_to_text = false, back_to_link = false } = Astro.props;
+const { entry, Content, back_to_text = false, back_to_link = false, is_archived = false } = Astro.props;
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
@@ -17,6 +17,13 @@ const { entry, Content, back_to_text = false, back_to_link = false } = Astro.pro
     <div class="mb-6 flex flex-row lg:items-center lg:justify-between">
       <h1 class={"title my-2 text-4xl font-bold " + (entry.data.logoImage ? "hidden lg:inline" : "")}>
         {entry.data.title}
+        {
+          is_archived && (
+            <span class="ml-2 rounded-full bg-indigo-500/10 px-2 py-1.5 align-middle text-sm font-medium text-indigo-500">
+              Archived
+            </span>
+          )
+        }
       </h1>
       <div class="mt-4 flex-shrink-0 lg:ml-8 lg:mt-0">
         {
