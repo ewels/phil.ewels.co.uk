@@ -230,7 +230,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         os.makedirs(os.path.dirname(talk_md), exist_ok=True)
         with open(talk_md, "w") as f:
             f.write(frontmatter_string)
-            f.write(page_text)
+            f.write("\n" + page_text)
 
         print(f"[magenta bold]Talk created: [orange bold]{talk_md}\n\n\n")
 
