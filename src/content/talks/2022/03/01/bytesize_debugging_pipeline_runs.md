@@ -3,7 +3,7 @@ title: "Bytesize: Troubleshooting a failed pipeline"
 description: A popular nf-core/bytesize talk about how to debug a failed Nextflow
   run
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

@@ -2,7 +2,7 @@
 title: "Bytesize: Explaining Wave containers"
 description: Build, upload, and manage container images using Wave
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

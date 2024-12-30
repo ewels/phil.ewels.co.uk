@@ -11,6 +11,8 @@ const {
   url,
   postDate,
   badge,
+  talk_online = false,
+  talk_type,
   countryFlag,
   tags,
   target = "_self",
@@ -19,7 +21,21 @@ const {
 } = Astro.props;
 import { Icon } from "astro-icon/components";
 
-const countryFlagIcon = countryFlag ? (countryFlag == "online" ? "bi:globe" : "flag:" + countryFlag + "-4x3") : false;
+let countryFlagIcon;
+let countryFlagIconDark;
+if (talk_type == "Bytesize") {
+  countryFlagIcon = "nfcore";
+  countryFlagIconDark = "nfcoredark";
+} else if (talk_type == "Webinar") {
+  countryFlagIcon = "seqera";
+  countryFlagIconDark = "seqeradark";
+} else if (talk_online) {
+  countryFlagIcon = "bi:globe";
+  countryFlagIconDark = "bi:globe";
+} else if (countryFlag != "online") {
+  countryFlagIcon = "flag:" + countryFlag + "-4x3";
+  countryFlagIconDark = "flag:" + countryFlag + "-4x3";
+}
 
 const nth = (d) => {
   if (d > 3 && d < 21) return "th";
@@ -64,7 +80,12 @@ function yearRange(startDate: Date, endDate: Date) {
       </h1>
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
       <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300">
-        {countryFlagIcon && <Icon name={countryFlagIcon} class="mr-2 hidden w-[18px] md:inline-block" />}
+        {countryFlagIcon && <Icon name={countryFlagIcon} class="mr-2 hidden w-[18px] md:inline-block dark:md:hidden" />}
+        {
+          countryFlagIconDark && (
+            <Icon name={countryFlagIconDark} class="mr-2 hidden w-[18px] md:hidden dark:md:inline-block" />
+          )
+        }
         {postDate && <Fragment set:html={dateString(postDate)} />}
         {postDate && description && <span class="mx-2">&bull;</span>}
         {description}

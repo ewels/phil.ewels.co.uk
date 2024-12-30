@@ -2,7 +2,7 @@
 title: "Bytesize: Customising MultiQC Reports"
 description: nf-core/bytesize talk about lesser known MultiQC configuration options
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

@@ -2,7 +2,7 @@
 title: "Bytesize: Contributing to Nextflow"
 description: Walkthrough of how to contribute code to Nextflow.
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

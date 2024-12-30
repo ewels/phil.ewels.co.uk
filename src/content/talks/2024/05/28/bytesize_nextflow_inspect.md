@@ -2,7 +2,7 @@
 title: 'Bytesize: Get your containers with "Nextflow inspect"'
 description: Fetch all container URIs from a pipeline in one command
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

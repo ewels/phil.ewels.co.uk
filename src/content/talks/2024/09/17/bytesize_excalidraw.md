@@ -2,7 +2,7 @@
 title: "Bytesize: Excalidraw"
 description: "Intro to Excalidraw — a nifty tool for drawing diagrams."
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

@@ -33,7 +33,9 @@ var year: number = -1;
           <HorizontalCard
             title={post.data.title}
             description={post.data.description}
-            countryFlag={post.data.online ? "online" : post.data.countryFlag}
+            talk_online={post.data.online}
+            talk_type={post.data.type}
+            countryFlag={post.data.countryFlag}
             url={"/talks/" + post.slug}
             postDate={post.data.date}
             hasYouTube={post.data.youtubeIDs}

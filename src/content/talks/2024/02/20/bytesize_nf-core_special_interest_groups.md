@@ -2,7 +2,7 @@
 title: "Bytesize: nf-core Special Interest Groups"
 description: "Introducing a brand new nf-core initiative: Special Interest Groups."
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

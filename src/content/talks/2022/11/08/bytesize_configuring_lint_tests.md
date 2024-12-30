@@ -2,7 +2,7 @@
 title: "Bytesize: Configuring lint tests"
 description: nf-core/bytesize talk about the nf-core lint tests
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

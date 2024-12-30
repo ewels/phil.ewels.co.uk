@@ -2,7 +2,7 @@
 title: "Bytesize: GitHub via VSCode and CLI"
 description: nf-core/bytesize talk showing how to work with GitHub using VSCode and Github CLI
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

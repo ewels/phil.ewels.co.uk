@@ -2,7 +2,7 @@
 title: "Bytesize: Community updates "
 description: nf-core community updates recap after the core team retreat
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

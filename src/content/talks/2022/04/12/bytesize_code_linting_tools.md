@@ -2,7 +2,7 @@
 title: "Bytesize: Code linting tools"
 description: Short talk about the different linting tools used in nf-core
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:

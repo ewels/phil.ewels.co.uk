@@ -2,7 +2,7 @@
 title: "Bytesize: 2022 Community Survey Results"
 description: Summary of results from the Nextflow and nf-core 2022 community survey
 online: true
-type: Talk
+type: Bytesize
 logoImage: /images/projects/nf-core-logo-square.svg
 logoImageDark: /images/projects/nf-core-logo-square-dark.svg
 eventURLs:
