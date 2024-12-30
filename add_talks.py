@@ -164,6 +164,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
             choices=[
                 "Talk",
                 "Webinar",
+                "Bytesize",
                 "Invited speaker",
                 "Conference talk",
                 "Workshop",
@@ -172,23 +173,33 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if questionary.confirm("Keynote speaker?").unsafe_ask():
             frontmatter["keynote"] = True
 
-        if logoImage := questionary.path("Logo image:").unsafe_ask().strip():
-            # Copy to assets folder if needed
-            if not logoImage.startswith(talk_assets_dir):
-                # Create directory for talk assets in public/talks/YYYY/MM/DD/name
-                os.makedirs(talk_assets_dir, exist_ok=True)
-                logoImage = copy_local_file(logoImage, talk_assets_dir)
-            if logoImage:
-                frontmatter["logoImage"] = logoImage
+        if frontmatter["type"] == "Bytesize":
+            frontmatter["logoImage"] = "/images/projects/nf-core-logo-square.svg"
+            frontmatter["logoImageDark"] = (
+                "/images/projects/nf-core-logo-square-dark.svg"
+            )
+        else:
+            if logoImage := questionary.path("Logo image:").unsafe_ask().strip():
+                # Copy to assets folder if needed
+                if not logoImage.startswith(talk_assets_dir):
+                    # Create directory for talk assets in public/talks/YYYY/MM/DD/name
+                    os.makedirs(talk_assets_dir, exist_ok=True)
+                    logoImage = copy_local_file(logoImage, talk_assets_dir)
+                if logoImage:
+                    frontmatter["logoImage"] = logoImage
 
-        if logoImageDark := questionary.path("Logo image dark:").unsafe_ask().strip():
-            # Copy to assets folder if needed
-            if not logoImageDark.startswith(talk_assets_dir):
-                # Create directory for talk assets in public/talks/YYYY/MM/DD/name
-                os.makedirs(talk_assets_dir, exist_ok=True)
-                logoImageDark = copy_local_file(logoImageDark, talk_assets_dir)
-            if logoImageDark:
-                frontmatter["logoImageDark"] = logoImageDark
+            if (
+                logoImageDark := questionary.path("Logo image dark:")
+                .unsafe_ask()
+                .strip()
+            ):
+                # Copy to assets folder if needed
+                if not logoImageDark.startswith(talk_assets_dir):
+                    # Create directory for talk assets in public/talks/YYYY/MM/DD/name
+                    os.makedirs(talk_assets_dir, exist_ok=True)
+                    logoImageDark = copy_local_file(logoImageDark, talk_assets_dir)
+                if logoImageDark:
+                    frontmatter["logoImageDark"] = logoImageDark
 
         frontmatter["eventURLs"] = []
         event_url_idx = 1
