@@ -2,7 +2,7 @@
 title: "Seqera Webinar: Nextflow best practices"
 description: Leveraging nf-core tooling and standards within your organization.
 online: true
-type: Talk
+type: Webinar
 logoImage: /images/work/seqera_logo.svg
 logoImageDark: /images/work/seqera_logo_dark.svg
 # eventURLs:

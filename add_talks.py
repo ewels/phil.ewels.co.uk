@@ -22,7 +22,9 @@ def copy_local_file(src, dest_dir):
             return False
 
     dest_dir = dest_dir.strip()
-    dest_filename = questionary.text("Logo image filename:", os.path.basename(src)).unsafe_ask()
+    dest_filename = questionary.text(
+        "Destination filename:", os.path.basename(src)
+    ).unsafe_ask()
     dest_path = os.path.join(dest_dir, dest_filename)
     shutil.copy(src, dest_path)
     dest_path = re.sub("^public", "", dest_path)
@@ -30,9 +32,11 @@ def copy_local_file(src, dest_dir):
 
 
 # Questionary prompt for base directory of talks
-base_dir = os.path.expanduser(
-    questionary.path("Base directory for talks:").unsafe_ask().strip()
-)
+base_dir = "/Users/ewels/Library/CloudStorage/Dropbox/Phil/Work/Presentations"
+if not questionary.confirm(f"Use default base directory? ({base_dir})").unsafe_ask():
+    base_dir = os.path.expanduser(
+        questionary.path("Base directory for talks:").unsafe_ask().strip()
+    )
 
 # Loop through each directory (year) in base directory
 for year in sorted(os.listdir(base_dir), reverse=True):
@@ -73,7 +77,16 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if not questionary.confirm(f"Process talk folder {talk}?").unsafe_ask():
             continue
 
-        name = questionary.text("Name (for file paths):", raw_name).unsafe_ask().strip()
+        title = questionary.text("Title:", raw_name).unsafe_ask().strip()
+
+        name = (
+            questionary.text(
+                "Name (for file paths):",
+                title.replace(" ", "_").replace(":", "").lower(),
+            )
+            .unsafe_ask()
+            .strip()
+        )
 
         # Prepare filename for assets and markdown
         talk_assets_dir = os.path.join(
@@ -107,13 +120,16 @@ for year in sorted(os.listdir(base_dir), reverse=True):
                 print("[orange]Talk already exists, skipping: " + name)
                 continue
 
+        # Create directory for talk assets in public/talks/YYYY/MM/DD/name
+        os.makedirs(talk_assets_dir, exist_ok=True)
+
         # Glob any PDFs in talk directory
         all_pdfs = glob(os.path.join(base_dir, year, talk, "*.pdf"))
 
         # Use questionary multiple select to choose PDFs
         if len(all_pdfs):
             pdfs = questionary.checkbox(
-                "Choose PDFs:",
+                "Choose PDFs: (use space to select, enter to submit)",
                 choices=all_pdfs,
             ).unsafe_ask()
         else:
@@ -121,9 +137,6 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
         copied_pdfs = []
         if len(pdfs):
-            # Create directory for talk assets in public/talks/YYYY/MM/DD/name
-            os.makedirs(talk_assets_dir, exist_ok=True)
-
             # Copy PDFs to talk directory, replacing spaces with underscores, use shutil
             for pdf in pdfs:
                 new_pdf_path = os.path.join(
@@ -134,17 +147,28 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
         # Create markdown file for talk in src/content/talks/YYYY/MM/DD/{name}.md
         frontmatter = {}
-        frontmatter["title"] = questionary.text("Title:", raw_name).unsafe_ask().strip()
-        frontmatter["description"] = questionary.text("Description:").unsafe_ask().strip()
+        frontmatter["title"] = title
+        frontmatter["description"] = (
+            questionary.text("Description:").unsafe_ask().strip()
+        )
         frontmatter["online"] = questionary.confirm("Online?").unsafe_ask()
         if not frontmatter["online"]:
             frontmatter["location"] = questionary.text("Location:").unsafe_ask().strip()
             frontmatter["countryFlag"] = (
-                questionary.text("Country flag 2-letter code:").unsafe_ask().lower().strip()
+                questionary.text("Country flag 2-letter code:")
+                .unsafe_ask()
+                .lower()
+                .strip()
             )
         frontmatter["type"] = questionary.select(
             "Type:",
-            choices=["Talk", "Invited speaker", "Conference talk", "Workshop"],
+            choices=[
+                "Talk",
+                "Webinar",
+                "Invited speaker",
+                "Conference talk",
+                "Workshop",
+            ],
         ).unsafe_ask()
         if questionary.confirm("Keynote speaker?").unsafe_ask():
             frontmatter["keynote"] = True
@@ -164,23 +188,37 @@ for year in sorted(os.listdir(base_dir), reverse=True):
                 frontmatter["logoImageDark"] = logoImageDark
 
         frontmatter["eventURLs"] = []
-        while url := questionary.text("Event URL:").unsafe_ask().strip():
+        event_url_idx = 1
+        while (
+            url := questionary.text(f"Event URL ({event_url_idx}):")
+            .unsafe_ask()
+            .strip()
+        ):
             frontmatter["eventURLs"].append(url)
+            event_url_idx += 1
         frontmatter["pdfURLs"] = [re.sub("^public", "", pdf) for pdf in copied_pdfs]
         frontmatter["youtubeIDs"] = []
-        while url := questionary.text(
-            "YouTube URL ID:",
-            validate=lambda text: True
-            if (len(text) == 0 or len(text) == 11)
-            else "Please enter a 11 character YouTube ID",
-        ).unsafe_ask().strip():
+        youtube_idx = 1
+        while (
+            url := questionary.text(
+                f"YouTube URL ID ({youtube_idx}):",
+                validate=lambda text: True
+                if (len(text) == 0 or len(text) == 11)
+                else "Please enter a 11 character YouTube ID",
+            )
+            .unsafe_ask()
+            .strip()
+        ):
             frontmatter["youtubeIDs"].append(url)
+            youtube_idx += 1
         frontmatter["date"] = talk_date
 
         if len(frontmatter["eventURLs"]) == 0:
             frontmatter.pop("eventURLs")
         if len(frontmatter["youtubeIDs"]) == 0:
             frontmatter.pop("youtubeIDs")
+
+        page_text = questionary.text("Page text:", multiline=True).unsafe_ask().strip()
 
         # Write frontmatter to markdown file
         frontmatter_string = "---\n" + yaml.dump(frontmatter, sort_keys=False) + "---\n"
@@ -189,6 +227,7 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         os.makedirs(os.path.dirname(talk_md), exist_ok=True)
         with open(talk_md, "w") as f:
             f.write(frontmatter_string)
+            f.write(page_text)
 
         print(f"[magenta bold]Talk created: [orange bold]{talk_md}\n\n\n")
 

@@ -72,9 +72,6 @@ const { Content } = await entry.render();
       )
     }
   </div>
-  <article class="prose prose-lg mb-12 mt-8 max-w-none text-justify dark:prose-invert prose-img:mx-auto">
-    <Content />
-  </article>
   <div class="my-8">
     {
       entry.data.eventURLs &&
@@ -101,6 +98,9 @@ const { Content } = await entry.render();
         ))
     }
   </div>
+  <article class="prose prose-lg mb-12 mt-8 max-w-none text-justify dark:prose-invert prose-img:mx-auto">
+    <Content />
+  </article>
   <div class="my-8">
     {
       entry.data.youtubeIDs &&
