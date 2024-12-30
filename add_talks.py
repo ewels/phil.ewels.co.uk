@@ -120,9 +120,6 @@ for year in sorted(os.listdir(base_dir), reverse=True):
                 print("[orange]Talk already exists, skipping: " + name)
                 continue
 
-        # Create directory for talk assets in public/talks/YYYY/MM/DD/name
-        os.makedirs(talk_assets_dir, exist_ok=True)
-
         # Glob any PDFs in talk directory
         all_pdfs = glob(os.path.join(base_dir, year, talk, "*.pdf"))
 
@@ -137,6 +134,8 @@ for year in sorted(os.listdir(base_dir), reverse=True):
 
         copied_pdfs = []
         if len(pdfs):
+            # Create directory for talk assets in public/talks/YYYY/MM/DD/name
+            os.makedirs(talk_assets_dir, exist_ok=True)
             # Copy PDFs to talk directory, replacing spaces with underscores, use shutil
             for pdf in pdfs:
                 new_pdf_path = os.path.join(
@@ -176,6 +175,8 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if logoImage := questionary.path("Logo image:").unsafe_ask().strip():
             # Copy to assets folder if needed
             if not logoImage.startswith(talk_assets_dir):
+                # Create directory for talk assets in public/talks/YYYY/MM/DD/name
+                os.makedirs(talk_assets_dir, exist_ok=True)
                 logoImage = copy_local_file(logoImage, talk_assets_dir)
             if logoImage:
                 frontmatter["logoImage"] = logoImage
@@ -183,6 +184,8 @@ for year in sorted(os.listdir(base_dir), reverse=True):
         if logoImageDark := questionary.path("Logo image dark:").unsafe_ask().strip():
             # Copy to assets folder if needed
             if not logoImageDark.startswith(talk_assets_dir):
+                # Create directory for talk assets in public/talks/YYYY/MM/DD/name
+                os.makedirs(talk_assets_dir, exist_ok=True)
                 logoImageDark = copy_local_file(logoImageDark, talk_assets_dir)
             if logoImageDark:
                 frontmatter["logoImageDark"] = logoImageDark
