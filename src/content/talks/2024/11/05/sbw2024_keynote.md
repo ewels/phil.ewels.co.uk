@@ -1,5 +1,5 @@
 ---
-title: "Swedish Bioinformatics Workshop: Keynote"
+title: "Swedish Bioinformatics Workshop 2024"
 description: "From Bench to Big Data: What's new with MultiQC and Nextflow"
 online: false
 location: Uppsala
