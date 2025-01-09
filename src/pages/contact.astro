@@ -24,14 +24,10 @@ import Button from "@components/Button.astro";
     <HomepageButton href="https://bsky.app/profile/ewels.bsky.social" title="Bluesky" icon="simple-icons:bluesky" />
   </div>
 
-  <form name="contact" method="POST" netlify-honeypot="sweet-and-sticky" data-netlify="true">
+  <form id="contact-form" action="https://formspree.io/f/xvggdgpb" method="POST">
     <label class="mb-8 hidden">
       <span class="block">If you're a real person, do not enter anything in this field</span>
       <input type="text" name="sweet-and-sticky" />
-    </label>
-    <label class="mb-8 block">
-      <span class="block">Name</span>
-      <input type="text" name="name" />
     </label>
     <label class="mb-8 block">
       <span class="block">Your e-mail address</span>
@@ -39,21 +35,23 @@ import Button from "@components/Button.astro";
     </label>
     <label class="mb-8 block">
       <span class="block">Your message</span>
-      <textarea name="message" rows="8" clas></textarea>
+      <textarea name="message" rows="8"></textarea>
     </label>
     <Button id="submit-btn" type="submit" icon="mdi:email">Send email</Button>
   </form>
 </BaseLayout>
 
 <script>
-  const handleSubmit = (event) => {
+  import { attachCookiesToResponse } from "node_modules/astro/dist/core/cookies";
+
+  async function handleSubmit(event) {
+    // Don't let the browser submit
     event.preventDefault();
 
+    // Check that all fields are filled in
     const myForm = event.target;
     const formData = new FormData(myForm);
-
-    // Check that all fields are filled in
-    const requiredFields = ["name", "email", "message"];
+    const requiredFields = ["email", "message"];
     // Add 'required' attribute to field
     for (const field of requiredFields) {
       myForm.querySelector(`[name="${field}"]`).setAttribute("required", true);
@@ -65,19 +63,32 @@ import Button from "@components/Button.astro";
       }
     }
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: myForm.method,
+      body: data,
+      headers: { Accept: "application/json" },
     })
-      .then(() => {
-        document.getElementById("submit-btn").innerHTML = "Message sent!";
-        document.getElementById("submit-btn").disabled = true;
+      .then((response) => {
+        if (response.ok) {
+          document.getElementById("submit-btn").innerHTML = "Message sent!";
+          document.getElementById("submit-btn").disabled = true;
+        } else {
+          response.json().then((data) => {
+            if (Object.hasOwn(data, "errors")) {
+              alert(data["errors"].map((error) => error["message"]).join(", "));
+            } else {
+              alert("Oops! There was a problem submitting your form");
+            }
+          });
+        }
       })
-      .catch((error) => alert(error));
-  };
-
-  document.querySelector("form").addEventListener("submit", handleSubmit);
+      .catch((error) => {
+        alert("Oops! There was some kind of problem submitting your form");
+      });
+  }
+  document.getElementById("contact-form").addEventListener("submit", handleSubmit);
 </script>
 
 <style>
