@@ -13,28 +13,28 @@
     "add_pub": "python add_pub.py"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.0.2",
-    "astro-icon": "^1.1.4",
+    "@astrojs/svelte": "^7.0.3",
+    "astro-icon": "^1.1.5",
     "astro-tooltips": "^0.6.2",
-    "svelte": "^5.15.0"
+    "svelte": "^5.17.3"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^4.0.3",
+    "@astrojs/mdx": "^4.0.4",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
     "@iconify-json/bi": "^1.2.2",
     "@iconify-json/flag": "^1.2.3",
     "@iconify-json/mdi": "^1.2.2",
-    "@iconify-json/simple-icons": "^1.2.16",
+    "@iconify-json/simple-icons": "^1.2.19",
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.15",
-    "astro": "^5.1.1",
-    "astro-icon": "^1.1.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "astro": "^5.1.4",
+    "astro-icon": "^1.1.5",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-svelte": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
-    "sass": "^1.83.0"
+    "sass": "^1.83.1"
   }
 }
