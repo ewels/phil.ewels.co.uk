@@ -29,7 +29,7 @@ const target = href.startsWith("http") ? "_blank" : "_self";
 <style>
   a,
   button {
-    @apply inline-flex rounded bg-blue-500 px-5 py-4 text-xs font-semibold text-white transition-colors hover:bg-blue-700;
+    @apply inline-flex rounded bg-blue-500 px-5 py-4 text-xs font-semibold text-white transition-colors enabled:hover:bg-blue-700 disabled:cursor-default disabled:opacity-50;
     .icon {
       @apply pl-3 pr-5;
     }
