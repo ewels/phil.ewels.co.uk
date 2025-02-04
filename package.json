@@ -13,22 +13,22 @@
     "add_pub": "python add_pub.py"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.0.3",
+    "@astrojs/svelte": "^7.0.4",
     "astro-icon": "^1.1.5",
     "astro-tooltips": "^0.6.2",
     "svelte": "^5.17.3"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^4.0.4",
+    "@astrojs/mdx": "^4.0.8",
     "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/tailwind": "^5.1.4",
+    "@astrojs/tailwind": "^6.0.0",
     "@iconify-json/bi": "^1.2.2",
     "@iconify-json/flag": "^1.2.3",
     "@iconify-json/mdi": "^1.2.2",
     "@iconify-json/simple-icons": "^1.2.19",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.16",
-    "astro": "^5.1.4",
+    "astro": "^5.2.4",
     "astro-icon": "^1.1.5",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
