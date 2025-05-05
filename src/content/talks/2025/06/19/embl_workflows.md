@@ -3,7 +3,8 @@ title: EMBL Scientific Workflow Club
 description: Invited talk about how Nextflow integrates with the wider community
 online: true
 type: Invited speaker
-# logoImage:
+logoImage: /talks/2025/06/19/embl_workflows/EMBL_logo.svg
+logoImageDark: /talks/2025/06/19/embl_workflows/EMBL_logo_white.svg
 # eventURLs:
 #   -
 # pdfURLs:

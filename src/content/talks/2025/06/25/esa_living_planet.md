@@ -5,7 +5,8 @@ online: false
 location: Vienna
 countryFlag: at
 type: Invited speaker
-# logoImage:
+logoImage: /talks/2025/06/25/esa_living_planet/ESA_logo.svg
+logoImageDark: /talks/2025/06/25/esa_living_planet/ESA_logo_white.svg
 eventURLs:
   - https://lps25.esa.int/
 # pdfURLs:
