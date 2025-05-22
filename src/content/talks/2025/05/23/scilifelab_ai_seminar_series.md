@@ -6,6 +6,7 @@ type: Invited speaker
 logoImage: /images/work/scilifelab_logo.svg
 logoImageDark: /images/work/scilifelab_logo_dark.svg
 eventURLs:
+  - https://www.scilifelab.se/event/seqera-ai-how-were-using-llms-and-agents-with-nextflow-code/
   - https://scilifelab.atlassian.net/wiki/spaces/IJC/pages/3361275938/Meeting+67+2025-05-23
 # pdfURLs:
 #   -
