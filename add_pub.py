@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from rich import print
+from rich.prompt import Confirm
 import requests
 import typer
 import yaml
@@ -18,8 +19,13 @@ def main(doi: Optional[str] = typer.Argument(None)):
 
     # Only do all DOIs if one wasn't requested
     if doi is None:
-        print("[green]Updating all publications")
-        dois = publications.keys()
+        if Confirm.ask("Updaet all publications?"):
+            print("[green]Updating all publications")
+            dois = publications.keys()
+        else:
+            print("[red]Either provide a DOI as a CLI argument or update all.")
+            print("Nothing to do. Exiting..")
+            return
     else:
         print(f"[green]Adding publication: '{doi}'")
         dois = [doi]
