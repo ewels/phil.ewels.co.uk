@@ -18937,5 +18937,1189 @@
         }
       }
     ]
+  },
+  "10.1186/s13059-025-03673-9": {
+    "indexed": {
+      "date-parts": [[2025, 8, 2]],
+      "date-time": "2025-08-02T19:10:23Z",
+      "timestamp": 1754161823459,
+      "version": "3.41.2"
+    },
+    "reference-count": 71,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2025, 7, 29]],
+          "date-time": "2025-07-29T00:00:00Z",
+          "timestamp": 1753747200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [[2025, 7, 29]],
+          "date-time": "2025-07-29T00:00:00Z",
+          "timestamp": 1753747200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Horizon 2020 research and innovation programme, European Union",
+        "award": [
+          "815668 (BovReg)",
+          "815668 (BovReg)",
+          "817923 (AQUA-FAANG)",
+          "815668 (BovReg)",
+          "815668 (BovReg)",
+          "815668 (BovReg)",
+          "817998 (GENE-SWitCH)",
+          "101000236 (GEroNIMO)",
+          "815668 (BovReg)",
+          "817998 (GENE-SWitCH)",
+          "817923 (AQUA-FAANG)",
+          "817923 (AQUA-FAANG)",
+          "817998 (GENE-SWitCH)",
+          "815668 (BovReg)",
+          "817998 (GENE-SWitCH)",
+          "815668 (BovReg)",
+          "817998 (GENE-SWitCH)",
+          "817923 (AQUA-FAANG)",
+          "817923 (AQUA-FAANG)",
+          "815668 (BovReg)",
+          "101000236 (GEroNIMO)",
+          "101000213 (HoloRuminant)",
+          "815668 (BovReg)",
+          "815668 (BovReg)",
+          "815668 (BovReg)",
+          "815668 (BovReg)",
+          "815668 (BovReg)"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004837",
+        "name": "Spanish Ministry of Science and Innovation",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100004837",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100002809",
+        "name": "Generalitat de Catalunya",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100002809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100016964",
+        "name": "Werner Siemens-Stiftung",
+        "doi-asserted-by": "publisher",
+        "award": ["Palaeobiotechnology"],
+        "id": [
+          {
+            "id": "10.13039/100016964",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Horizon Europe programme, European Union",
+        "award": ["101094718 (EuroFAANG Research Infrastructure)", "101094718 (EuroFAANG Research Infrastructure)"]
+      },
+      {
+        "DOI": "10.13039/100007569",
+        "name": "Carl-Zeiss-Stiftung",
+        "doi-asserted-by": "publisher",
+        "award": ["Certification and Foundations of Safe Machine Learning Systems in Healthcare"],
+        "id": [
+          {
+            "id": "10.13039/100007569",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": ["EXC 2180 - 390900677 (iFIT)"],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": ["link.springer.com"],
+      "crossmark-restriction": false
+    },
+    "short-container-title": ["Genome Biol"],
+    "DOI": "10.1186/s13059-025-03673-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2025, 7, 29]],
+      "date-time": "2025-07-29T11:14:55Z",
+      "timestamp": 1753787695000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": ["Empowering bioinformatics communities with Nextflow and nf-core"],
+    "prefix": "10.1186",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Bj\u00f6rn E.",
+        "family": "Langer",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Andreia",
+        "family": "Amaral",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Marie-Odile",
+        "family": "Baudement",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Franziska",
+        "family": "Bonath",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mathieu",
+        "family": "Charles",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Praveen Krishna",
+        "family": "Chitneedi",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Emily L.",
+        "family": "Clark",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Paolo",
+        "family": "Di Tommaso",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sarah",
+        "family": "Djebali",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Philip A.",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sonia",
+        "family": "Eynard",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "James A.",
+        "family": "Fellows Yates",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel",
+        "family": "Fischer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Evan W.",
+        "family": "Floden",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sylvain",
+        "family": "Foissac",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Gisela",
+        "family": "Gabernet",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Maxime U.",
+        "family": "Garcia",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Gareth",
+        "family": "Gillard",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Manu Kumar",
+        "family": "Gundappa",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Cervin",
+        "family": "Guyomar",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher",
+        "family": "Hakkaart",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Friederike",
+        "family": "Hanssen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Peter W.",
+        "family": "Harrison",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Matthias",
+        "family": "H\u00f6rtenhuber",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Cyril",
+        "family": "Kurylo",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Christa",
+        "family": "K\u00fchn",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sandrine",
+        "family": "Lagarrigue",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Delphine",
+        "family": "Lallias",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel J.",
+        "family": "Macqueen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Edmund",
+        "family": "Miller",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "J\u00falia",
+        "family": "Mir-Pedrol",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Gabriel Costa Monteiro",
+        "family": "Moreira",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Sven",
+        "family": "Nahnsen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Harshil",
+        "family": "Patel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Alexander",
+        "family": "Peltzer",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Frederique",
+        "family": "Pitel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Yuliaxis",
+        "family": "Ramayo-Caldas",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Marcel da C\u00e2mara",
+        "family": "Ribeiro-Dantas",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Dominique",
+        "family": "Rocha",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mazdak",
+        "family": "Salavati",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Alexey",
+        "family": "Sokolov",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jose",
+        "family": "Espinosa-Carrasco",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Cedric",
+        "family": "Notredame",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "the nf-core",
+        "family": "community",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [[2025, 7, 29]]
+    },
+    "reference": [
+      {
+        "issue": "6509",
+        "key": "3673_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1318",
+        "DOI": "10.1126/science.aaz1776",
+        "volume": "369",
+        "author": "THE Gtex CONSORTIUM",
+        "year": "2020",
+        "unstructured": "THE Gtex CONSORTIUM. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369(6509):1318\u201330.",
+        "journal-title": "Science"
+      },
+      {
+        "issue": "7414",
+        "key": "3673_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1038/nature11247",
+        "volume": "489",
+        "author": "ENCODE Project Consortium",
+        "year": "2012",
+        "unstructured": "ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. Nature. 2012;489(7414):57\u201374.",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "170113",
+        "DOI": "10.1038/sdata.2017.113",
+        "volume": "4",
+        "author": "H Kawaji",
+        "year": "2017",
+        "unstructured": "Kawaji H, Kasukawa T, Forrest A, Carninci P, Hayashizaki Y. The FANTOM5 collection, a data series underpinning mammalian transcriptome atlases in diverse cell types. Sci Data. 2017;4(1):170113.",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "6",
+        "key": "3673_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "631",
+        "DOI": "10.1016/j.cels.2018.03.014",
+        "volume": "6",
+        "author": "B Gr\u00fcning",
+        "year": "2018",
+        "unstructured": "Gr\u00fcning B, Chilton J, K\u00f6ster J, Dale R, Soranzo N, Van Den Beek M, et al. Practical computational reproducibility in the life sciences. Cell Syst. 2018;6(6):631\u20135.",
+        "journal-title": "Cell Syst"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1177/1094342017704893",
+        "volume": "32",
+        "author": "E Deelman",
+        "year": "2018",
+        "unstructured": "Deelman E, Peterka T, Altintas I, Carothers CD, Van Dam KK, Moreland K, et al. The future of scientific workflows. Int J High Perform Comput Appl. 2018;32(1):159\u201375.",
+        "journal-title": "Int J High Perform Comput Appl"
+      },
+      {
+        "issue": "W1",
+        "key": "3673_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "W83",
+        "DOI": "10.1093/nar/gkae410",
+        "volume": "52",
+        "author": "The Galaxy Community",
+        "year": "2024",
+        "unstructured": "The Galaxy Community. The Galaxy platform for accessible, reproducible, and collaborative data analyses: 2024 update. Nucleic Acids Res. 2024;52(W1):W83-94.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "key": "3673_CR7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M\u00f6lder F, Jablonski KP, Letcher B, Hall MB, Tomkins-Tinch CH, Sochat V, et al. Sustainable data analysis with Snakemake [version 2; peer review: 2 approved]. F1000Research. 2021 Apr 19;10(33). Available from: https://f1000research.com/articles/10-33. Cited 2024 Jan 24.",
+        "DOI": "10.12688/f1000research.29032.2"
+      },
+      {
+        "issue": "4",
+        "key": "3673_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "316",
+        "DOI": "10.1038/nbt.3820",
+        "volume": "35",
+        "author": "P Di Tommaso",
+        "year": "2017",
+        "unstructured": "Di Tommaso P, Chatzou M, Floden EW, Barja PP, Palumbo E, Notredame C. Nextflow enables reproducible computational workflows. Nat Biotechnol. 2017;35(4):316\u20139.",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "issue": "10",
+        "key": "3673_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1161",
+        "DOI": "10.1038/s41592-021-01254-9",
+        "volume": "18",
+        "author": "L Wratten",
+        "year": "2021",
+        "unstructured": "Wratten L, Wilm A, G\u00f6ke J. Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers. Nat Methods. 2021;18(10):1161\u20138.",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "3673_CR10",
+        "unstructured": "About GitHub. GitHub. 2025. Available from: https://github.com/about. Cited 2025 Feb 27."
+      },
+      {
+        "key": "3673_CR11",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Gustafsson OJR, Wilkinson SR, Bacall F, Soiland-Reyes S, Leo S, Pireddu L, et al. WorkflowHub: a registry for computational workflows. Sci Data. 2025;12(1):837. https://doi.org/10.1038/s41597-025-04786-3.",
+        "DOI": "10.1038/s41597-025-04786-3"
+      },
+      {
+        "issue": "5",
+        "key": "3673_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "241",
+        "DOI": "10.1016/j.tibtech.2012.02.002",
+        "volume": "30",
+        "author": "LC Crosswell",
+        "year": "2012",
+        "unstructured": "Crosswell LC, Thornton JM. ELIXIR: a distributed infrastructure for European biological data. Trends Biotechnol. 2012;30(5):241\u20132.",
+        "journal-title": "Trends Biotechnol"
+      },
+      {
+        "key": "3673_CR13",
+        "unstructured": "Galaxy | Tool Shed. Available from: https://toolshed.g2.bx.psu.edu/. Cited 2025 Feb 27."
+      },
+      {
+        "key": "3673_CR14",
+        "unstructured": "Snakemake workflow catalog. 2024. Available from: https://snakemake.github.io/snakemake-workflow-catalog/. Cited 2024 Jun 6."
+      },
+      {
+        "key": "3673_CR15",
+        "unstructured": "Snakemake-Workflows. 2024. Available from: https://github.com/snakemake-workflows. Cited 2024 Feb 20."
+      },
+      {
+        "key": "3673_CR16",
+        "unstructured": "nf-core. 2024. Available from: https://nf-co.re/. Cited 2024 Jun 6."
+      },
+      {
+        "key": "3673_CR17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Grayson S, Marinov D, Katz DS, Milewicz R. Automatic Reproduction of Workflows in the Snakemake Workflow Catalog and nf-core Registries. In: Proceedings of the 2023 ACM Conference on Reproducibility and Replicability. Santa Cruz CA USA: ACM; 2023. p. 74\u201384. Available from: https://dl.acm.org/doi/10.1145/3589806.3600037. Cited 2023 Jul 5.",
+        "DOI": "10.1145/3589806.3600037"
+      },
+      {
+        "issue": "3",
+        "key": "3673_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "276",
+        "DOI": "10.1038/s41587-020-0439-x",
+        "volume": "38",
+        "author": "PA Ewels",
+        "year": "2020",
+        "unstructured": "Ewels PA, Peltzer A, Fillinger S, Patel H, Alneberg J, Wilm A, et al. The nf-core framework for community-curated bioinformatics pipelines. Nat Biotechnol. 2020;38(3):276\u20138.",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "issue": "44",
+        "key": "3673_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "100724",
+        "DOI": "10.1016/j.ascom.2023.100724",
+        "volume": "1",
+        "author": "DR Scott",
+        "year": "2023",
+        "unstructured": "Scott DR, Cho H, Day CK, Deller AT, Glowacki M, Gourdji K, et al. CELEBI: the CRAFT effortless localisation and enhanced burst inspection pipeline. Astron Comput. 2023;1(44):100724.",
+        "journal-title": "Astron Comput"
+      },
+      {
+        "key": "3673_CR20",
+        "unstructured": "Lehmann F, Frantz D, Becker S, Leser U, Hostert P. FORCE on Nextflow: Scalable Analysis of Earth Observation Data on Commodity Clusters. In: Cong G, Ramanath M, editors. Proceedings of the CIKM 2021 Workshops. Gold Coast, Queensland, Australia: CEUR-WS.org; 2021. (CEUR Workshop Proceedings; vol. 3052). Available from: http://ceur-ws.org/Vol-3052/short12.pdf."
+      },
+      {
+        "issue": "219",
+        "key": "3673_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "705",
+        "DOI": "10.1016/j.procs.2023.01.342",
+        "volume": "1",
+        "author": "N Kanakaris",
+        "year": "2023",
+        "unstructured": "Kanakaris N, Karacapilidis N. Predicting prices of Airbnb listings via graph neural networks and document embeddings: the case of the island of Santorini. Procedia Comput Sci. 2023;1(219):705\u201312.",
+        "journal-title": "Procedia Comput Sci"
+      },
+      {
+        "key": "3673_CR22",
+        "unstructured": "Seqeralabs/wave. Seqera; 2024. Available from: https://github.com/seqeralabs/wave. Cited 2024 Feb 20."
+      },
+      {
+        "key": "3673_CR23",
+        "unstructured": "Askimed/nf-test. Askimed; 2024. Available from: https://github.com/askimed/nf-test. Cited 2024 Feb 20."
+      },
+      {
+        "key": "3673_CR24",
+        "unstructured": "Nextflow-io/nf-validation. nextflow-io; 2024. Available from: https://github.com/nextflow-io/nf-validation. Cited 2024 Feb 20."
+      },
+      {
+        "key": "3673_CR25",
+        "unstructured": "Nextflow-io/nf-co2footprint. nextflow-io; 2024. Available from: https://github.com/nextflow-io/nf-co2footprint. Cited 2024 Feb 20."
+      },
+      {
+        "key": "3673_CR26",
+        "unstructured": "Nextflow-io/nf-prov. nextflow-io; 2024. Available from: https://github.com/nextflow-io/nf-prov. Cited 2024 Feb 20."
+      },
+      {
+        "issue": "7",
+        "key": "3673_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "475",
+        "DOI": "10.1038/s41592-018-0046-7",
+        "volume": "15",
+        "author": "B Gr\u00fcning",
+        "year": "2018",
+        "unstructured": "Gr\u00fcning B, Dale R, Sj\u00f6din A, Chapman BA, Rowe J, Tomkins-Tinch CH, et al. Bioconda: sustainable and comprehensive software distribution for the life sciences. Nat Methods. 2018;15(7):475\u20136.",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "issue": "16",
+        "key": "3673_CR28",
+        "doi-asserted-by": "crossref",
+        "first-page": "2580",
+        "DOI": "10.1093/bioinformatics/btx192",
+        "volume": "33",
+        "author": "LF da Veiga",
+        "year": "2017",
+        "unstructured": "da Veiga LF, Gr\u00fcning BA, Alves Aflitos S, R\u00f6st HL, Uszkoreit J, Barsnes H, et al. BioContainers: an open-source and community-driven framework for software standardization. Bioinformatics. 2017;33(16):2580\u20132.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "160018",
+        "DOI": "10.1038/sdata.2016.18",
+        "volume": "3",
+        "author": "MD Wilkinson",
+        "year": "2016",
+        "unstructured": "Wilkinson MD, Dumontier M, Aalbersberg IJJ, Appleton G, Axton M, Baak A, et al. The FAIR guiding principles for scientific data management and stewardship. Sci Data. 2016;3(1):160018.",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "622",
+        "DOI": "10.1038/s41597-022-01710-x",
+        "volume": "9",
+        "author": "M Barker",
+        "year": "2022",
+        "unstructured": "Barker M, Chue Hong NP, Katz DS, Lamprecht AL, Martinez-Ortiz C, Psomopoulos F, et al. Introducing the FAIR principles for research software. Sci Data. 2022;9(1):622.",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "19",
+        "key": "3673_CR31",
+        "doi-asserted-by": "crossref",
+        "first-page": "3047",
+        "DOI": "10.1093/bioinformatics/btw354",
+        "volume": "32",
+        "author": "P Ewels",
+        "year": "2016",
+        "unstructured": "Ewels P, Magnusson M, Lundin S, K\u00e4ller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016;32(19):3047\u20138.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "3673_CR32",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Harrison PW, Sokolov A, Nayak A, Fan J, Zerbino D, Cochrane G, et al. The FAANG Data Portal: Global, Open-Access, \u201cFAIR\u201d, and richly validated genotype to phenotype data for high-quality functional annotation of animal genomes. Front Genet. 2021;12. Available from: https://doi.org/10.3389/fgene.2021.639238. Cited 2024 Jan 24.",
+        "DOI": "10.3389/fgene.2021.639238"
+      },
+      {
+        "key": "3673_CR33",
+        "unstructured": "Release v19 (31/10/2024) - Genomics England Research Environment User Guide. Available from: https://re-docs.genomicsengland.co.uk/release19/. Cited 2025 Feb 27."
+      },
+      {
+        "key": "3673_CR34",
+        "unstructured": "Genomics England Case Study. WEKA. 2020. Available from: https://www.weka.io/resources/case-study/genomics-england-case-study/. Cited 2025 Feb 27."
+      },
+      {
+        "issue": "4",
+        "key": "3673_CR35",
+        "doi-asserted-by": "crossref",
+        "first-page": "e2115642118",
+        "DOI": "10.1073/pnas.2115642118",
+        "volume": "119",
+        "author": "The Darwin Tree of Life Project Consortium",
+        "year": "2022",
+        "unstructured": "The Darwin Tree of Life Project Consortium. Sequence locally, think globally: the Darwin Tree of Life Project. Proc Natl Acad Sci. 2022;119(4):e2115642118.",
+        "journal-title": "Proc Natl Acad Sci"
+      },
+      {
+        "issue": "4",
+        "key": "3673_CR36",
+        "doi-asserted-by": "crossref",
+        "first-page": "e2115635118",
+        "DOI": "10.1073/pnas.2115635118",
+        "volume": "119",
+        "author": "HA Lewin",
+        "year": "2022",
+        "unstructured": "Lewin HA, Richards S, Lieberman Aiden E, Allende ML, Archibald JM, B\u00e1lint M, et al. The Earth BioGenome project 2020: starting the clock. Proc Natl Acad Sci. 2022;119(4):e2115635118.",
+        "journal-title": "Proc Natl Acad Sci"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR37",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1186/s13059-016-1103-0",
+        "volume": "17",
+        "author": "M Jain",
+        "year": "2016",
+        "unstructured": "Jain M, Olsen HE, Paten B, Akeson M. The Oxford Nanopore MinION: delivery of nanopore sequencing to the genomics community. Genome Biol. 2016;17(1):239.",
+        "journal-title": "Genome Biol"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR38",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1186/s13059-015-0622-4",
+        "volume": "16",
+        "author": "L Andersson",
+        "year": "2015",
+        "unstructured": "Andersson L, Archibald AL, Bottema CD, Brauning R, Burgess SC, Burt DW, et al. Coordinated international action to accelerate genome-to-phenome with FAANG, the functional annotation of animal genomes project. Genome Biol. 2015;16(1):57.",
+        "journal-title": "Genome Biol"
+      },
+      {
+        "key": "3673_CR39",
+        "unstructured": "A European infrastructure for farmed animal genotype to phenotype research. 2022. Available from: https://cordis.europa.eu/project/id/101094718. Cited 2024 Jan 24."
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR40",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1186/s13059-020-02197-8",
+        "volume": "21",
+        "author": "EL Clark",
+        "year": "2020",
+        "unstructured": "Clark EL, Archibald AL, Daetwyler HD, Groenen MAM, Harrison PW, Houston RD, et al. From FAANG to fork: application of highly annotated genomes to improve farmed animal production. Genome Biol. 2020;21(1):285.",
+        "journal-title": "Genome Biol"
+      },
+      {
+        "issue": "583",
+        "key": "3673_CR41",
+        "doi-asserted-by": "crossref",
+        "first-page": "740589",
+        "DOI": "10.1016/j.aquaculture.2024.740589",
+        "volume": "30",
+        "author": "IA Johnston",
+        "year": "2024",
+        "unstructured": "Johnston IA, Kent MP, Boudinot P, Looseley M, Bargelloni L, Faggion S, et al. Advancing fish breeding in aquaculture through genome functional annotation. Aquaculture. 2024;30(583):740589.",
+        "journal-title": "Aquaculture"
+      },
+      {
+        "issue": "9",
+        "key": "3673_CR42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1438",
+        "DOI": "10.1038/s41588-022-01153-5",
+        "volume": "54",
+        "author": "S Liu",
+        "year": "2022",
+        "unstructured": "Liu S, Gao Y, Canela-Xandri O, Wang S, Yu Y, Cai W, et al. A multi-tissue atlas of regulatory variants in cattle. Nat Genet. 2022;54(9):1438\u201347.",
+        "journal-title": "Nat Genet"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR43",
+        "doi-asserted-by": "crossref",
+        "first-page": "112",
+        "DOI": "10.1038/s41588-023-01585-7",
+        "volume": "56",
+        "author": "J Teng",
+        "year": "2024",
+        "unstructured": "Teng J, Gao Y, Yin H, Bai Z, Liu S, Zeng H, et al. A compendium of genetic regulatory effects across pig tissues. Nat Genet. 2024;56(1):112\u201323.",
+        "journal-title": "Nat Genet"
+      },
+      {
+        "key": "3673_CR44",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Guan D, Bai Z, Zhu X, Zhong C, Hou Y, Zhu D, et al. Genetic regulation of gene expression across multiple tissues in chickens. Nat Genet. 2025;57(5):1298\u2013308. https://doi.org/10.1038/s41588-025-02155-9.",
+        "DOI": "10.1038/s41588-025-02155-9"
+      },
+      {
+        "issue": "3",
+        "key": "3673_CR45",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1525/hsns.2022.52.3.277",
+        "volume": "52",
+        "author": "R Leng",
+        "year": "2022",
+        "unstructured": "Leng R, Viry G, Garc\u00eda-Sancho M, Lowe J, Wong M, Vermeulen N. The sequences and the sequencers: what can a mixed-methods approach reveal about the history of genomics? Hist Stud Nat Sci. 2022;52(3):277\u2013319.",
+        "journal-title": "Hist Stud Nat Sci"
+      },
+      {
+        "key": "3673_CR46",
+        "unstructured": "Watson M, Law A, Archibald A, Kuo R, Harrison P, Martin F, et al. Deliverable D2.1 Reproducible, scale-able workflows for FAANG data analysis; Available from: https://www.gene-switch.eu/uploads/1/2/6/6/126678735/deliverable_d2.1.pdf. Cited 2025 Feb 27."
+      },
+      {
+        "issue": "5",
+        "key": "3673_CR47",
+        "doi-asserted-by": "crossref",
+        "first-page": "btad150",
+        "DOI": "10.1093/bioinformatics/btad150",
+        "volume": "39",
+        "author": "S Guizard",
+        "year": "2023",
+        "unstructured": "Guizard S, Miedzinska K, Smith J, Smith J, Kuo RI, Davey M, et al. nf-core/isoseq: simple gene and isoform annotation with PacBio Iso-Seq long-read sequencing. Bioinformatics. 2023;39(5):btad150.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "4",
+        "key": "3673_CR48",
+        "doi-asserted-by": "crossref",
+        "first-page": "lqad089",
+        "DOI": "10.1093/nargab/lqad089",
+        "volume": "5",
+        "author": "C Kurylo",
+        "year": "2023",
+        "unstructured": "Kurylo C, Guyomar C, Foissac S, Djebali S. TAGADA: a scalable pipeline to improve genome annotations with RNA-seq data. NAR Genomics Bioinform. 2023;5(4):lqad089.",
+        "journal-title": "NAR Genomics Bioinform"
+      },
+      {
+        "key": "3673_CR49",
+        "unstructured": "Salavati M, Espinosa-Carrasco J. MazdaX/nf-cage: nf-cage. Zenodo; 2022. Available from: https://zenodo.org/records/6855541. Cited 2024 Jan 25."
+      },
+      {
+        "key": "3673_CR50",
+        "unstructured": "Nextflow and nf-core. Chan Zuckerberg Initiative. Available from: https://chanzuckerberg.com/eoss/proposals/nextflow-and-nf-core/. Cited 2025 Feb 10."
+      },
+      {
+        "key": "3673_CR51",
+        "unstructured": "Nextflow and nf-core: Reproducible Workflows for the Scientific Community - CZI. Chan Zuckerberg Initiative. Available from: https://chanzuckerberg.com/eoss/proposals/nextflow-and-nf-core-reproducible-workflows-for-the-scientific-community/. Cited 2025 Feb 27."
+      },
+      {
+        "issue": "W1",
+        "key": "3673_CR52",
+        "doi-asserted-by": "crossref",
+        "first-page": "W345",
+        "DOI": "10.1093/nar/gkac247",
+        "volume": "50",
+        "author": "The Galaxy Community",
+        "year": "2022",
+        "unstructured": "The Galaxy Community. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2022 update. Nucleic Acids Res. 2022J 5;50(W1):W345\u201351.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "key": "3673_CR53",
+        "doi-asserted-by": "crossref",
+        "unstructured": "The Galaxy Community. Correction to \u2018The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2022 update\u2019. Nucleic Acids Res. 2022;50(15):8999\u20138999.",
+        "DOI": "10.1093/nar/gkac610"
+      },
+      {
+        "issue": "W1",
+        "key": "3673_CR54",
+        "doi-asserted-by": "crossref",
+        "first-page": "W395",
+        "DOI": "10.1093/nar/gkaa434",
+        "volume": "48",
+        "author": "V Jalili",
+        "year": "2020",
+        "unstructured": "Jalili V, Afgan E, Gu Q, Clements D, Blankenberg D, Goecks J, et al. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2020 update. Nucleic Acids Res. 2020;48(W1):W395-402.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "14",
+        "key": "3673_CR55",
+        "doi-asserted-by": "crossref",
+        "first-page": "8205",
+        "DOI": "10.1093/nar/gkaa554",
+        "volume": "48",
+        "author": "V Jalili",
+        "year": "2020",
+        "unstructured": "Jalili V, Afgan E, Gu Q, Clements D, Blankenberg D, Goecks J, et al. Corrigendum: The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2020 update. Nucleic Acids Res. 2020;48(14):8205\u20137.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "W1",
+        "key": "3673_CR56",
+        "doi-asserted-by": "crossref",
+        "first-page": "W537",
+        "DOI": "10.1093/nar/gky379",
+        "volume": "46",
+        "author": "E Afgan",
+        "year": "2018",
+        "unstructured": "Afgan E, Baker D, Batut B, van den Beek M, Bouvier D, \u010cech M, et al. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic Acids Res. 2018;46(W1):W537\u201344.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "W1",
+        "key": "3673_CR57",
+        "doi-asserted-by": "crossref",
+        "first-page": "W3",
+        "DOI": "10.1093/nar/gkw343",
+        "volume": "44",
+        "author": "E Afgan",
+        "year": "2016",
+        "unstructured": "Afgan E, Baker D, van den Beek M, Blankenberg D, Bouvier D, \u010cech M, et al. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2016 update. Nucleic Acids Res. 2016;44(W1):W3-10.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "8",
+        "key": "3673_CR58",
+        "doi-asserted-by": "crossref",
+        "first-page": "R86",
+        "DOI": "10.1186/gb-2010-11-8-r86",
+        "volume": "11",
+        "author": "J Goecks",
+        "year": "2010",
+        "unstructured": "Goecks J, Nekrutenko A, Taylor J. The Galaxy Team. Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences. Genome Biol. 2010;11(8):R86.",
+        "journal-title": "Genome Biol"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR59",
+        "doi-asserted-by": "crossref",
+        "first-page": "19.10.1",
+        "DOI": "10.1002/0471142727.mb1910s89",
+        "volume": "89",
+        "author": "D Blankenberg",
+        "year": "2010",
+        "unstructured": "Blankenberg D, Kuster GV, Coraor N, Ananda G, Lazarus R, Mangan M, et al. Galaxy: a web-based genome analysis tool for experimentalists. Curr Protoc Mol Biol. 2010;89(1):19.10.1-19.10.21.",
+        "journal-title": "Curr Protoc Mol Biol"
+      },
+      {
+        "issue": "10",
+        "key": "3673_CR60",
+        "doi-asserted-by": "crossref",
+        "first-page": "1451",
+        "DOI": "10.1101/gr.4086505",
+        "volume": "15",
+        "author": "B Giardine",
+        "year": "2005",
+        "unstructured": "Giardine B, Riemer C, Hardison RC, Burhans R, Elnitski L, Shah P, et al. Galaxy: a platform for interactive large-scale genome analysis. Genome Res. 2005;15(10):1451\u20135.",
+        "journal-title": "Genome Res"
+      },
+      {
+        "issue": "261",
+        "key": "3673_CR61",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1016/j.jbiotec.2017.07.028",
+        "volume": "10",
+        "author": "A Fillbrunn",
+        "year": "2017",
+        "unstructured": "Fillbrunn A, Dietz C, Pfeuffer J, Rahn R, Landrum GA, Berthold MR. KNIME for reproducible cross-domain analysis of life science data. J Biotechnol. 2017;10(261):149\u201356.",
+        "journal-title": "J Biotechnol"
+      },
+      {
+        "issue": "1",
+        "key": "3673_CR62",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1145/1656274.1656280",
+        "volume": "11",
+        "author": "MR Berthold",
+        "year": "2009",
+        "unstructured": "Berthold MR, Cebron N, Dill F, Gabriel TR, K\u00f6tter T, Meinl T, et al. KNIME - the Konstanz information miner: version 2.0 and beyond. ACM SIGKDD Explor Newsl. 2009;11(1):26\u201331.",
+        "journal-title": "ACM SIGKDD Explor Newsl"
+      },
+      {
+        "key": "3673_CR63",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Berthold MR, Cebron N, Dill F, Gabriel TR, K\u00f6tter T, Meinl T, et al. Data analysis, machine learning and applications. In 2008. p. 319\u201326.",
+        "DOI": "10.1007/978-3-540-78246-9_38"
+      },
+      {
+        "issue": "20",
+        "key": "3673_CR64",
+        "doi-asserted-by": "crossref",
+        "first-page": "3600",
+        "DOI": "10.1093/bioinformatics/bty350",
+        "volume": "34",
+        "author": "J K\u00f6ster",
+        "year": "2018",
+        "unstructured": "K\u00f6ster J, Rahmann S. Snakemake\u2014a scalable bioinformatics workflow engine. Bioinformatics. 2018;34(20):3600\u20133600.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "19",
+        "key": "3673_CR65",
+        "doi-asserted-by": "crossref",
+        "first-page": "2520",
+        "DOI": "10.1093/bioinformatics/bts480",
+        "volume": "28",
+        "author": "J K\u00f6ster",
+        "year": "2012",
+        "unstructured": "K\u00f6ster J, Rahmann S. Snakemake\u2014a scalable bioinformatics workflow engine. Bioinformatics. 2012;28(19):2520\u20132.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "11",
+        "key": "3673_CR66",
+        "doi-asserted-by": "crossref",
+        "first-page": "1525",
+        "DOI": "10.1093/bioinformatics/bts167",
+        "volume": "28",
+        "author": "SP Sadedin",
+        "year": "2012",
+        "unstructured": "Sadedin SP, Pope B, Oshlack A. Bpipe: a tool for running and managing bioinformatics pipelines. Bioinformatics. 2012;28(11):1525\u20136.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "5",
+        "key": "3673_CR67",
+        "doi-asserted-by": "crossref",
+        "first-page": "839",
+        "DOI": "10.1093/bioinformatics/bty699",
+        "volume": "35",
+        "author": "JA Novella",
+        "year": "2019",
+        "unstructured": "Novella JA, Emami Khoonsari P, Herman S, Whitenack D, Capuccini M, Burman J, et al. Container-based bioinformatics with Pachyderm. Bioinformatics. 2019;35(5):839\u201346.",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "5",
+        "key": "3673_CR68",
+        "doi-asserted-by": "crossref",
+        "first-page": "giz044",
+        "DOI": "10.1093/gigascience/giz044",
+        "volume": "8",
+        "author": "S Lampa",
+        "year": "2019",
+        "unstructured": "Lampa S, Dahl\u00f6 M, Alvarsson J, Spjuth O. SciPipe: A workflow library for agile development of complex and dynamic bioinformatics pipelines. GigaScience. 2019;8(5):giz044.",
+        "journal-title": "GigaScience"
+      },
+      {
+        "key": "3673_CR69",
+        "unstructured": "Voss K, Auwera GV der, Gentry J. Full-stack genomics pipelining with GATK4 + WDL + Cromwell. F1000Research. 2017 8;6(1381). Available from: https://f1000research.com/slides/6-1381. Cited 2024 Jan 26."
+      },
+      {
+        "issue": "4",
+        "key": "3673_CR70",
+        "doi-asserted-by": "crossref",
+        "first-page": "314",
+        "DOI": "10.1038/nbt.3772",
+        "volume": "35",
+        "author": "J Vivian",
+        "year": "2017",
+        "unstructured": "Vivian J, Rao AA, Nothaft FA, Ketchum C, Armstrong J, Novak A, et al. Toil enables reproducible, open source, big biomedical data analyses. Nat Biotechnol. 2017;35(4):314\u20136.",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "key": "3673_CR71",
+        "unstructured": "Amstutz P, Crusoe MR, Tijani\u0107 N, Chapman B, Chilton J, Heuer M, et al. Common Workflow Language, v1.0. figshare; 2016. Available from: https://figshare.com/articles/dataset/Common_Workflow_Language_draft_3/3115156/2. Cited 2024 Jan 25."
+      }
+    ],
+    "container-title": ["Genome Biology"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s13059-025-03673-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s13059-025-03673-9/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s13059-025-03673-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2025, 7, 29]],
+      "date-time": "2025-07-29T11:15:03Z",
+      "timestamp": 1753787703000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03673-9"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2025, 7, 29]]
+    },
+    "references-count": 71,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [[2025, 12]]
+      }
+    },
+    "alternative-id": ["3673"],
+    "URL": "https://doi.org/10.1186/s13059-025-03673-9",
+    "relation": {},
+    "ISSN": ["1474-760X"],
+    "issn-type": [
+      {
+        "value": "1474-760X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [[2025, 7, 29]]
+    },
+    "assertion": [
+      {
+        "value": "30 May 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "27 June 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "29 July 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Several Seqera employees are active promoters of nf-core. Seqera also provides direct infrastructure support (e.g. Wave) to the nf-core project as well as direct support to Nextflow and nf-core development. The Centre for Genomic Regulation and CN hold Seqera stocks and phantom stocks respectively. The CN lab at the Centre for Genomic Regulation receives support from Seqera.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "228"
   }
 }
