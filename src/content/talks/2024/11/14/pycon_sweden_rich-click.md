@@ -11,6 +11,8 @@ eventURLs:
   - https://pretalx.com/pyconse-2024/talk/XP7GWN/
 pdfURLs:
   - /talks/2024/11/14/pycon_sweden_rich-click/Ewels-PyCon-Sweden-2024.pdf
+youtubeIDs:
+  - vGSYj_5tGmY
 date: 2024-11-14
 ---
 
