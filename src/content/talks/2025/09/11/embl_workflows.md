@@ -9,6 +9,7 @@ logoImageDark: /talks/2025/09/11/embl_workflows/EMBL_logo_white.svg
 #   -
 pdfURLs:
   - /talks/2025/09/11/embl_workflows/PhilEwels_-_EMBL_workflows.pdf
+  - /talks/2025/09/11/PhilEwels_-_EMBL_workflows.pdf
 date: 2025-09-11
 ---
 
