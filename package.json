@@ -28,7 +28,7 @@
     "@iconify-json/simple-icons": "^1.2.19",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.16",
-    "astro": "^5.2.4",
+    "astro": "^5.13.7",
     "astro-icon": "^1.1.5",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
