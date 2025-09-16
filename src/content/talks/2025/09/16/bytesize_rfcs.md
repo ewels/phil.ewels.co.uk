@@ -9,8 +9,8 @@ eventURLs:
   - https://nf-co.re/events/2025/bytesize_rfcs
 pdfURLs:
   - /talks/2025/09/16/bytesize_rfcs/nf-core_Bytesize_-_RFCs.pdf
-# youtubeIDs:
-#   -
+youtubeIDs:
+  - JxIpiMclO8Q
 date: 2025-09-16
 ---
 
