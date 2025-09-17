@@ -7,7 +7,7 @@ heroImage: /images/projects/parkingalert_hero.png
 iconImage: /images/projects/parkingalert_logo.svg
 noIconPadding: true
 personal: true
-pubDate: 2022-09-11
+order: 20
 ---
 
 [ParkingAlert.se](https://parkingalert.se) is a website that you can save to your phone home-screen.
