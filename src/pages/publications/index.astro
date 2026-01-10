@@ -60,6 +60,7 @@ function short_authors(authors) {
             subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
             description={short_authors(pub.author)}
             url={"/publications/" + post.slug}
+            doi={post.data.doi}
           />
         </section>
       );
