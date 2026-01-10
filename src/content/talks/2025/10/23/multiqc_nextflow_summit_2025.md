@@ -6,9 +6,9 @@ type: Conference talk
 logoImage: /talks/2025/10/23/multiqc_nextflow_summit_2025/nextflow_summit_2024.svg
 logoImageDark: /talks/2025/10/23/multiqc_nextflow_summit_2025/nextflow_summit_2024_darkbg.svg
 eventURLs:
-- https://summit.nextflow.io/2025/virtual/agenda/10-years-of-multiqc/
+  - https://summit.nextflow.io/2025/virtual/agenda/10-years-of-multiqc/
 pdfURLs:
-- /talks/2025/10/23/multiqc_nextflow_summit_2025/MultiQC_-_Nextflow_Summit_2025.pdf
+  - /talks/2025/10/23/multiqc_nextflow_summit_2025/MultiQC_-_Nextflow_Summit_2025.pdf
 date: 2025-10-23
 ---
 
