@@ -4,7 +4,8 @@ description: Automatic terminal screenshots for documentation.
 projectURL: https://ewels.github.io/rich-codex/
 github: ewels/rich-codex
 heroImage: /images/projects/rich-codex_hero.svg
-iconImage: /images/projects/rich-codex_icon.png
+iconImage: /images/projects/rich-codex_icon_light.svg
+iconImageDark: /images/projects/rich-codex_icon_dark.svg
 personal: true
 order: 15
 ---
