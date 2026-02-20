@@ -20121,5 +20121,613 @@
       }
     ],
     "article-number": "228"
+  },
+  "10.1016/j.mcpro.2026.101530": {
+    "indexed": {
+      "date-parts": [[2026, 2, 20]],
+      "date-time": "2026-02-20T02:09:43Z",
+      "timestamp": 1771553383550,
+      "version": "3.50.1"
+    },
+    "reference-count": 28,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2026, 2, 1]],
+          "date-time": "2026-02-01T00:00:00Z",
+          "timestamp": 1769904000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [[2026, 2, 1]],
+          "date-time": "2026-02-01T00:00:00Z",
+          "timestamp": 1769904000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [[2026, 2, 17]],
+          "date-time": "2026-02-17T00:00:00Z",
+          "timestamp": 1771286400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 16,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100010269",
+        "name": "Wellcome Trust",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100010269",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": ["mcponline.org", "elsevier.com", "sciencedirect.com"],
+      "crossmark-restriction": true
+    },
+    "short-container-title": ["Molecular &amp; Cellular Proteomics"],
+    "published-print": {
+      "date-parts": [[2026, 2]]
+    },
+    "DOI": "10.1016/j.mcpro.2026.101530",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2026, 2, 18]],
+      "date-time": "2026-02-18T00:34:52Z",
+      "timestamp": 1771374892000
+    },
+    "page": "101530",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": ["pmultiqc: An open-source, lightweight, and metadata-oriented QC reporting library for MS proteomics"],
+    "prefix": "10.1016",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0004-8120-9339",
+        "authenticated-orcid": false,
+        "given": "Qi-Xuan",
+        "family": "Yue",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Chengxin",
+        "family": "Dai",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Selvakumar",
+        "family": "Kamatchinathan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Chakradhar",
+        "family": "Bandla",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8833-7617",
+        "authenticated-orcid": false,
+        "given": "Henry",
+        "family": "Webel",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9107-4299",
+        "authenticated-orcid": false,
+        "given": "Asier",
+        "family": "Larrea",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3105-1359",
+        "authenticated-orcid": false,
+        "given": "Wout",
+        "family": "Bittremieux",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7522-4007",
+        "authenticated-orcid": false,
+        "given": "Julian",
+        "family": "Uszkoreit",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0118-9434",
+        "authenticated-orcid": false,
+        "given": "Tom David",
+        "family": "M\u00fcller",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4279-9565",
+        "authenticated-orcid": false,
+        "given": "Jinqiu",
+        "family": "Xiao",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8597-205X",
+        "authenticated-orcid": false,
+        "given": "Juergen",
+        "family": "Cox",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7695-3698",
+        "authenticated-orcid": false,
+        "given": "Fengchao",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": false,
+        "given": "Philip",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Vadim",
+        "family": "Demichev",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1739-4598",
+        "authenticated-orcid": false,
+        "given": "Oliver",
+        "family": "Kohlbacher",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2833-6070",
+        "authenticated-orcid": false,
+        "given": "Timo",
+        "family": "Sachsenberg",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5756-3988",
+        "authenticated-orcid": false,
+        "given": "Chris",
+        "family": "Bielow",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mingze",
+        "family": "Bai",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6579-6941",
+        "authenticated-orcid": false,
+        "given": "Yasset",
+        "family": "Perez-Riverol",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib1",
+        "article-title": "Quality Control in the Mass Spectrometry Proteomics Core: A Practical Primer",
+        "volume": "35",
+        "author": "Neely",
+        "year": "2024",
+        "journal-title": "J Biomol Tech"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "697",
+        "DOI": "10.1002/mas.21544",
+        "article-title": "Quality control in mass spectrometry-based proteomics",
+        "volume": "37",
+        "author": "Bittremieux",
+        "year": "2018",
+        "journal-title": "Mass Spectrom Rev"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "D543",
+        "DOI": "10.1093/nar/gkae1011",
+        "article-title": "The PRIDE database at 20 years: 2025 update",
+        "volume": "53",
+        "author": "Perez-Riverol",
+        "year": "2025",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib4",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/pmic.201600159",
+        "article-title": "Computational quality control tools for mass spectrometry proteomics",
+        "volume": "17",
+        "author": "Bittremieux",
+        "year": "2017",
+        "journal-title": "Proteomics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "305",
+        "DOI": "10.1074/mcp.O115.050229",
+        "article-title": "PRIDE Inspector Toolsuite: Moving Toward a Universal Visualization Tool for Proteomics Data Standard Formats and Quality Assessment of ProteomeXchange Datasets",
+        "volume": "15",
+        "author": "Perez-Riverol",
+        "year": "2016",
+        "journal-title": "Mol Cell Proteomics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "777",
+        "DOI": "10.1021/acs.jproteome.5b00780",
+        "article-title": "Proteomics Quality Control: Quality Control Software for MaxQuant Results",
+        "volume": "15",
+        "author": "Bielow",
+        "year": "2016",
+        "journal-title": "J Proteome Res"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1335",
+        "DOI": "10.1074/mcp.M116.064774",
+        "article-title": "MSstatsQC: Longitudinal System Suitability Monitoring and Quality Control for Targeted Proteomic Experiments",
+        "volume": "16",
+        "author": "Dogu",
+        "year": "2017",
+        "journal-title": "Mol Cell Proteomics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "2908",
+        "DOI": "10.1021/acs.jproteome.8b00173",
+        "article-title": "rawDiag: An R Package Supporting Rational LC-MS Method Optimization for Bottom-up Proteomics",
+        "volume": "17",
+        "author": "Trachsel",
+        "year": "2018",
+        "journal-title": "J Proteome Res"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1038/s41592-019-0638-x",
+        "article-title": "DIA-NN: neural networks and interference correction enable deep proteome coverage in high throughput",
+        "volume": "17",
+        "author": "Demichev",
+        "year": "2020",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1563",
+        "DOI": "10.1038/s41587-021-00968-7",
+        "article-title": "MaxDIA enables library-based and library-free data-independent acquisition proteomics",
+        "volume": "39",
+        "author": "Sinitcyn",
+        "year": "2021",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "5854",
+        "DOI": "10.1038/s41467-021-26111-3",
+        "article-title": "A proteomics sample metadata representation for multiomics integration and big data analysis",
+        "volume": "12",
+        "author": "Dai",
+        "year": "2021",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "3047",
+        "DOI": "10.1093/bioinformatics/btw354",
+        "article-title": "MultiQC: summarize analysis results for multiple tools and samples in a single report",
+        "volume": "32",
+        "author": "Ewels",
+        "year": "2016",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1367",
+        "DOI": "10.1038/nbt.1511",
+        "article-title": "MaxQuant enables high peptide identification rates, individualized p.p.b.-range mass accuracies and proteome-wide protein quantification",
+        "volume": "26",
+        "author": "Cox",
+        "year": "2008",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "1603",
+        "DOI": "10.1038/s41592-024-02343-1",
+        "article-title": "quantms: a cloud-based pipeline for quantitative proteomics enables the reanalysis of public proteomics data",
+        "volume": "21",
+        "author": "Dai",
+        "year": "2024",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "3329",
+        "DOI": "10.1038/s41467-025-58728-z",
+        "article-title": "MSFragger-DDA+ enhances peptide identification sensitivity with full isolation window search",
+        "volume": "16",
+        "author": "Yu",
+        "year": "2025",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "513",
+        "DOI": "10.1038/nmeth.4256",
+        "article-title": "MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry-based proteomics",
+        "volume": "14",
+        "author": "Kong",
+        "year": "2017",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "475",
+        "DOI": "10.1038/s41592-018-0046-7",
+        "article-title": "Bioconda: sustainable and comprehensive software distribution for the life sciences",
+        "volume": "15",
+        "author": "Gruning",
+        "year": "2018",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "2580",
+        "DOI": "10.1093/bioinformatics/btx192",
+        "article-title": "BioContainers: an open-source and community-driven framework for software standardization",
+        "volume": "33",
+        "author": "da Veiga Leprevost",
+        "year": "2017",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1038/s41592-024-02197-7",
+        "article-title": "OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data",
+        "volume": "21",
+        "author": "Pfeuffer",
+        "year": "2024",
+        "journal-title": "Nat Methods"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib20",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.1021/acs.jproteome.8b00717",
+        "article-title": "Pyteomics 4.0: Five Years of Development of a Python Proteomics Framework",
+        "volume": "18",
+        "author": "Levitsky",
+        "year": "2019",
+        "journal-title": "J Proteome Res"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1038/s41586-020-2649-2",
+        "article-title": "Array programming with NumPy",
+        "volume": "585",
+        "author": "Harris",
+        "year": "2020",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "3816",
+        "DOI": "10.1021/acs.jproteome.7b00474",
+        "article-title": "Quantitative Proteomics for the Comprehensive Analysis of Stress Responses of Lactobacillus paracasei subsp. paracasei F19",
+        "volume": "16",
+        "author": "Schott",
+        "year": "2017",
+        "journal-title": "J Proteome Res"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "430",
+        "DOI": "10.1074/mcp.M114.044321",
+        "article-title": "Abundance-based classifier for the prediction of mass spectrometric peptide detectability upon enrichment (PPA)",
+        "volume": "14",
+        "author": "Muntel",
+        "year": "2015",
+        "journal-title": "Mol Cell Proteomics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "170",
+        "DOI": "10.1016/j.jprot.2016.08.002",
+        "article-title": "In-depth analysis of protein inference algorithms using multiple search engines and well-defined metrics",
+        "volume": "150",
+        "author": "Audain",
+        "year": "2017",
+        "journal-title": "J Proteomics"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "449",
+        "DOI": "10.1089/omi.2011.0156",
+        "article-title": "Prediction of missed proteolytic cleavages for the selection of surrogate peptides for quantitative proteomics",
+        "volume": "16",
+        "author": "Lawless",
+        "year": "2012",
+        "journal-title": "OMICS"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "5760",
+        "DOI": "10.1021/pr400763d",
+        "article-title": "Evaluation of interspecimen trypsin digestion efficiency prior to multiple reaction monitoring-based absolute protein quantification with native protein calibrators",
+        "volume": "12",
+        "author": "van den Broek",
+        "year": "2013",
+        "journal-title": "J Proteome Res"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib27",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1038/sdata.2016.18",
+        "article-title": "The FAIR Guiding Principles for scientific data management and stewardship",
+        "volume": "3",
+        "author": "Wilkinson",
+        "year": "2016",
+        "journal-title": "Sci Data"
+      },
+      {
+        "key": "10.1016/j.mcpro.2026.101530_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1875",
+        "DOI": "10.1021/jasms.4c00174",
+        "article-title": "Communicating Mass Spectrometry Quality Information in mzQC with Python, R, and Java",
+        "volume": "35",
+        "author": "Bielow",
+        "year": "2024",
+        "journal-title": "J Am Soc Mass Spectrom"
+      }
+    ],
+    "container-title": ["Molecular &amp; Cellular Proteomics"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1535947626000265?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1535947626000265?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2026, 2, 20]],
+      "date-time": "2026-02-20T01:34:32Z",
+      "timestamp": 1771551272000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1535947626000265"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2026, 2]]
+    },
+    "references-count": 28,
+    "alternative-id": ["S1535947626000265"],
+    "URL": "https://doi.org/10.1016/j.mcpro.2026.101530",
+    "relation": {},
+    "ISSN": ["1535-9476"],
+    "issn-type": [
+      {
+        "value": "1535-9476",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [[2026, 2]]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "pmultiqc: An open-source, lightweight, and metadata-oriented QC reporting library for MS proteomics",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Molecular & Cellular Proteomics",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.mcpro.2026.101530",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2026 THE AUTHORS. Published by Elsevier Inc on behalf of American Society for Biochemistry and Molecular Biology.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "101530"
   }
 }
