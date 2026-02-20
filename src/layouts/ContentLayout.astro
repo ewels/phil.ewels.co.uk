@@ -31,7 +31,7 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
             <img
               src={entry.data.iconImage}
               alt={entry.data.title}
-              class="not-prose hidden max-h-28 w-full max-w-60 lg:block dark:hidden"
+              class="not-prose hidden max-h-28 w-full max-w-60 dark:hidden lg:block"
             />
           )
         }
@@ -49,7 +49,7 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
             <img
               src={entry.data.logoImage}
               alt={entry.data.title}
-              class="not-prose block max-h-28 w-full max-w-80 lg:max-w-60 dark:hidden"
+              class="not-prose block max-h-28 w-full max-w-80 dark:hidden lg:max-w-60"
             />
           )
         }
@@ -58,7 +58,7 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
             <img
               src={entry.data.logoImageDark ?? entry.data.logoImage}
               alt={entry.data.title}
-              class="not-prose hidden max-h-28 w-full max-w-80 lg:max-w-60 dark:block"
+              class="not-prose hidden max-h-28 w-full max-w-80 dark:block lg:max-w-60"
             />
           )
         }

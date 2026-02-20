@@ -1,15 +1,15 @@
 ---
 title: The Bioinformatics CRO Webinar
-description: 'Reproducible Bioinformatics at Scale: nf-core + Nextflow'
+description: "Reproducible Bioinformatics at Scale: nf-core + Nextflow"
 online: true
 type: Invited speaker
 logoImage: /talks/2026/02/18/the_bioinformatics_cro/bioinformatics-cro.png
 eventURLs:
-- https://www.bioinformaticscro.com/webinar/reproducible-bioinformatics-scale-nf-core-nextflow/
+  - https://www.bioinformaticscro.com/webinar/reproducible-bioinformatics-scale-nf-core-nextflow/
 pdfURLs:
-- /talks/2026/02/18/the_bioinformatics_cro/nextflow-nf-core-webinar.pdf
+  - /talks/2026/02/18/the_bioinformatics_cro/nextflow-nf-core-webinar.pdf
 youtubeIDs:
-- 7TtIlOZHDT8
+  - 7TtIlOZHDT8
 date: 2026-02-18
 ---
 

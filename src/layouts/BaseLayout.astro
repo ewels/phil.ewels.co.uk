@@ -18,11 +18,11 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
     <div class="flex flex-row">
       <div id="page_container" class="grid max-h-dvh w-full grid-flow-col" style="grid-auto-columns: max-content auto;">
         <div
-          class="col-start-2 row-start-1 mr-0 flex h-dvh grow flex-col overflow-y-auto bg-white/95 backdrop-blur-xl duration-500 xl:mr-10 dark:bg-black/80"
+          class="col-start-2 row-start-1 mr-0 flex h-dvh grow flex-col overflow-y-auto bg-white/95 backdrop-blur-xl duration-500 dark:bg-black/80 xl:mr-10"
           id="mainpage"
         >
           <Header title={SITE_TITLE} />
-          <main class="grow p-4 text-black md:p-10 dark:text-zinc-200">
+          <main class="grow p-4 text-black dark:text-zinc-200 md:p-10">
             <slot />
           </main>
           <Footer />
