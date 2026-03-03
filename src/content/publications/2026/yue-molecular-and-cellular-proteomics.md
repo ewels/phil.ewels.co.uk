@@ -1,7 +1,7 @@
 ---
 doi: 10.1016/j.mcpro.2026.101530
 title: "pmultiqc: An open-source, lightweight, and metadata-oriented QC reporting library for MS proteomics"
-journal: Molecular &amp; Cellular Proteomics
+journal: Molecular & Cellular Proteomics
 pubDate: 2026-02-01
 ---
 
