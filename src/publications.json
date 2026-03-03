@@ -20729,5 +20729,1630 @@
       }
     ],
     "article-number": "101530"
+  },
+  "10.1126/science.adt1522": {
+    "indexed": {
+      "date-parts": [[2026, 2, 26]],
+      "date-time": "2026-02-26T20:05:07Z",
+      "timestamp": 1772136307133,
+      "version": "3.50.1"
+    },
+    "reference-count": 171,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "6788",
+    "license": [
+      {
+        "start": {
+          "date-parts": [[2027, 2, 26]],
+          "date-time": "2027-02-26T00:00:00Z",
+          "timestamp": 1803600000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 365,
+        "URL": "https://www.science.org/content/page/science-licenses-journal-article-reuse"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": ["1258828"],
+        "award-info": [
+          {
+            "award-number": ["1258828"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": ["DEB-1754397"],
+        "award-info": [
+          {
+            "award-number": ["DEB-1754397"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": ["HI1423/4-1"],
+        "award-info": [
+          {
+            "award-number": ["HI1423/4-1"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": ["SCHU 2546/7-1"],
+        "award-info": [
+          {
+            "award-number": ["SCHU 2546/7-1"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": ["415542650"],
+        "award-info": [
+          {
+            "award-number": ["415542650"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": ["423957469"],
+        "award-info": [
+          {
+            "award-number": ["423957469"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004063",
+        "name": "Knut och Alice Wallenbergs Stiftelse",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100004063",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100005930",
+        "name": "ASCRS Research Foundation",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100005930",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003495",
+        "name": "Hessen State Ministry of Higher Education, Research and the Arts",
+        "doi-asserted-by": "crossref",
+        "award": ["LOEWE/1/10/519/03/03.001(0014"],
+        "award-info": [
+          {
+            "award-number": ["LOEWE/1/10/519/03/03.001(0014"]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003495",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": ["www.science.org"],
+      "crossmark-restriction": true
+    },
+    "short-container-title": ["Science"],
+    "published-print": {
+      "date-parts": [[2026, 2, 26]]
+    },
+    "abstract": "<jats:p>\n                    High-sugar diets cause human metabolic diseases, yet several bird lineages convergently adapted to feeding on sugar-rich nectar or fruits. We investigated the underlying molecular mechanisms in hummingbirds, parrots, honeyeaters, and sunbirds by generating nine new genomes and 90 tissue-specific transcriptomes. Comparative screens revealed an excess of repeated selection in both protein-coding and regulatory sequences in sugar-feeding birds, suggesting reuse of genetic elements. Sequence or expression changes in sugar-feeders affect genes involved in blood pressure regulation and lipid, amino acid, and carbohydrate metabolism, with experiments showing functional changes in honeyeater hexokinase 3.\n                    <jats:italic toggle=\"yes\">MLXIPL</jats:italic>\n                    , a key regulator of sugar and lipid homeostasis, showed convergent sequence and regulatory changes across all sugar-feeding clades; experiments revealed enhanced sugar-induced transcriptional activity of hummingbird\n                    <jats:italic toggle=\"yes\">MLXIPL</jats:italic>\n                    , highlighting its adaptive role in high-sugar diets.\n                  </jats:p>",
+    "DOI": "10.1126/science.adt1522",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [[2026, 2, 26]],
+      "date-time": "2026-02-26T19:01:33Z",
+      "timestamp": 1772132493000
+    },
+    "update-policy": "https://doi.org/10.34133/aaas_crossmark",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": ["Convergent and lineage-specific genomic changes shape adaptations in sugar-consuming birds"],
+    "prefix": "10.1126",
+    "volume": "391",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6769-7223",
+        "authenticated-orcid": true,
+        "given": "Ekaterina",
+        "family": "Osipova",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Informatics Group, Harvard University, Cambridge, MA, USA."
+          },
+          {
+            "name": "LOEWE Centre for Translational Biodiversity Genomics, Frankfurt, Germany."
+          },
+          {
+            "name": "Senckenberg Research Institute, Frankfurt, Germany."
+          },
+          {
+            "name": "Faculty of Biosciences, Goethe-University, Frankfurt, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2234-9380",
+        "authenticated-orcid": true,
+        "given": "Meng-Ching",
+        "family": "Ko",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolution of Sensory and Physiological Systems, Max Planck Institute for Biological Intelligence, Martinsried, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3352-093X",
+        "authenticated-orcid": true,
+        "given": "Konstantin M.",
+        "family": "Petricek",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Pharmacology, Max Rubner Center (MRC) for Cardiovascular Metabolic Renal Research, Charite-Universit\u00e4tsmedizin Berlin, corporate Member of Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2484-2897",
+        "authenticated-orcid": true,
+        "given": "Simon Yung Wa",
+        "family": "Sin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Biological Sciences, The University of Hong Kong, Hong Kong."
+          },
+          {
+            "name": "Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA, USA."
+          },
+          {
+            "name": "Museum of Comparative Zoology, Harvard University, Cambridge, MA, USA."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8293-4816",
+        "authenticated-orcid": true,
+        "given": "Thomas",
+        "family": "Brown",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0915-3316",
+        "authenticated-orcid": true,
+        "given": "Sylke",
+        "family": "Winkler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8134-5929",
+        "authenticated-orcid": true,
+        "given": "Martin",
+        "family": "Pippel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden."
+          },
+          {
+            "name": "National Bioinformatics Infrastructure Sweden (NBIS), Science for Life Laboratory, Stockholm, Sweden."
+          }
+        ]
+      },
+      {
+        "given": "Julia",
+        "family": "Jarrells",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-8390-291X",
+        "authenticated-orcid": true,
+        "given": "Susanne",
+        "family": "Weiche",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Center for Molecular and Cellular Bioengineering (CMCB), TP Core Facility EM and Histology, Technische Universitat Dresden, Dresden, Germany."
+          }
+        ]
+      },
+      {
+        "given": "Mai-Britt",
+        "family": "Mosbech",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratories, Department of Immunology, Genetics and Pathology, Uppsala University, Uppsala, Sweden."
+          }
+        ]
+      },
+      {
+        "given": "Fanny",
+        "family": "Taborsak-Lines",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratories, Division of Gene Technology, KTH Royal Institute of Technology, Uppsala, Sweden."
+          }
+        ]
+      },
+      {
+        "given": "Chuan",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory, Department of Biosciences and Nutrition, Karolinska Institutet, Stockholm, Sweden."
+          },
+          {
+            "name": "National Genomics Infrastructure (NGI), Science for Life Laboratory, Stockholm, Sweden."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4048-6637",
+        "authenticated-orcid": true,
+        "given": "Orlando",
+        "family": "Contreras-Lopez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratories, Division of Gene Technology, KTH Royal Institute of Technology, Uppsala, Sweden."
+          },
+          {
+            "name": "National Genomics Infrastructure (NGI), Science for Life Laboratory, Stockholm, Sweden."
+          }
+        ]
+      },
+      {
+        "given": "Remi-Andre",
+        "family": "Olsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "National Genomics Infrastructure (NGI), Science for Life Laboratory, Stockholm, Sweden."
+          },
+          {
+            "name": "Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4101-2502",
+        "authenticated-orcid": true,
+        "given": "Philip",
+        "family": "Ewels",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University, Stockholm, Sweden."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9668-941X",
+        "authenticated-orcid": true,
+        "given": "Daniel",
+        "family": "Mendez-Aranda",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolution of Sensory and Physiological Systems, Max Planck Institute for Biological Intelligence, Martinsried, Germany."
+          },
+          {
+            "name": "Molecular Physiology of Somatic Sensation, Max-Delbr\u00fcck-Centrum for Molecular Medicine, Berlin, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1909-7004",
+        "authenticated-orcid": true,
+        "given": "Andrea H.",
+        "family": "Gaede",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Royal Veterinary College, London, UK."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6554-8091",
+        "authenticated-orcid": true,
+        "given": "Keren",
+        "family": "Sadanandan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolution of Sensory and Physiological Systems, Max Planck Institute for Biological Intelligence, Martinsried, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1276-7618",
+        "authenticated-orcid": true,
+        "given": "Gabriel Weijie",
+        "family": "Low",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolution of Sensory and Physiological Systems, Max Planck Institute for Biological Intelligence, Martinsried, Germany."
+          },
+          {
+            "name": "National Parks Board Singapore, Singapore, Singapore."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7871-3404",
+        "authenticated-orcid": true,
+        "given": "Amanda",
+        "family": "Monte",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Neurobiology, Max Planck Institute for Biological Intelligence, Seewiesen, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-9616-4197",
+        "authenticated-orcid": true,
+        "given": "Ninon",
+        "family": "Ballerst\u00e4dt",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5043-0389",
+        "authenticated-orcid": true,
+        "given": "Nicolas M.",
+        "family": "Adreani",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biology Department, Faculty of Sciences, Universidad de la Rep\u00fablica, Montevideo, Uruguay."
+          },
+          {
+            "name": "Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Konstanz, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4090-2570",
+        "authenticated-orcid": true,
+        "given": "Lucia",
+        "family": "Mentesana",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biology Department, Faculty of Sciences, Universidad de la Rep\u00fablica, Montevideo, Uruguay."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0981-9456",
+        "authenticated-orcid": true,
+        "given": "Auguste",
+        "family": "von Bayern",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolution of Intelligent Minds Research Group, Max Planck Institute for Biological Intelligence, Seewiesen, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4067-5312",
+        "authenticated-orcid": true,
+        "given": "Alejandro",
+        "family": "Rico-Guevara",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Biology, University of Washington, Seattle, WA, USA."
+          },
+          {
+            "name": "Burke Museum of Natural History and Culture, University of Washington, Seattle, WA, USA."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2535-6217",
+        "authenticated-orcid": true,
+        "given": "Scott V.",
+        "family": "Edwards",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA, USA."
+          },
+          {
+            "name": "Museum of Comparative Zoology, Harvard University, Cambridge, MA, USA."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-2147-5863",
+        "authenticated-orcid": true,
+        "given": "Carolina",
+        "family": "Frankl-Vilches",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Neurobiology, Max Planck Institute for Biological Intelligence, Seewiesen, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7623-9227",
+        "authenticated-orcid": true,
+        "given": "Heiner",
+        "family": "Kuhl",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Neurobiology, Max Planck Institute for Biological Intelligence, Seewiesen, Germany."
+          },
+          {
+            "name": "Ecotoxicological Laboratory, German Environment Agency, Berlin, Germany."
+          }
+        ]
+      },
+      {
+        "given": "Antje",
+        "family": "Bakker",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Neurobiology, Max Planck Institute for Biological Intelligence, Seewiesen, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6602-2291",
+        "authenticated-orcid": true,
+        "given": "Manfred",
+        "family": "Gahr",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Behavioural Neurobiology, Max Planck Institute for Biological Intelligence, Seewiesen, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1364-3617",
+        "authenticated-orcid": true,
+        "given": "Douglas L.",
+        "family": "Altshuler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Zoology, University of British Columbia, Vancouver, BC, Canada."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3176-4452",
+        "authenticated-orcid": true,
+        "given": "William A.",
+        "family": "Buttemer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Science, University of Wollongong, Wollongong, NSW, Australia."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3720-1052",
+        "authenticated-orcid": true,
+        "given": "Michael",
+        "family": "Schupp",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Pharmacology, Max Rubner Center (MRC) for Cardiovascular Metabolic Renal Research, Charite-Universit\u00e4tsmedizin Berlin, corporate Member of Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7601-8894",
+        "authenticated-orcid": true,
+        "given": "Maude W.",
+        "family": "Baldwin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Evolution of Sensory and Physiological Systems, Max Planck Institute for Biological Intelligence, Martinsried, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3024-1449",
+        "authenticated-orcid": true,
+        "given": "Michael",
+        "family": "Hiller",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "LOEWE Centre for Translational Biodiversity Genomics, Frankfurt, Germany."
+          },
+          {
+            "name": "Senckenberg Research Institute, Frankfurt, Germany."
+          },
+          {
+            "name": "Faculty of Biosciences, Goethe-University, Frankfurt, Germany."
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1673-9216",
+        "authenticated-orcid": true,
+        "given": "Timothy B.",
+        "family": "Sackton",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Informatics Group, Harvard University, Cambridge, MA, USA."
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "reference": [
+      {
+        "key": "e_1_3_2_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1242/jeb.054387"
+      },
+      {
+        "key": "e_1_3_2_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00606-003-0276-7"
+      },
+      {
+        "key": "e_1_3_2_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/anbo.2000.1331"
+      },
+      {
+        "key": "e_1_3_2_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1098/rstb.2021.0163"
+      },
+      {
+        "key": "e_1_3_2_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1369527"
+      },
+      {
+        "key": "e_1_3_2_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00394-016-1340-8"
+      },
+      {
+        "key": "e_1_3_2_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cbpb.2022.110778"
+      },
+      {
+        "key": "e_1_3_2_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cbpb.2008.05.007"
+      },
+      {
+        "key": "e_1_3_2_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/microarrays6020007"
+      },
+      {
+        "key": "e_1_3_2_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psj.2022.102403"
+      },
+      {
+        "key": "e_1_3_2_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1242/jeb.229989"
+      },
+      {
+        "key": "e_1_3_2_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-025-08811-8"
+      },
+      {
+        "key": "e_1_3_2_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1890/13-1917.1"
+      },
+      {
+        "key": "e_1_3_2_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-ecolsys-110218-024845"
+      },
+      {
+        "key": "e_1_3_2_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1442-9993.1989.tb01457.x"
+      },
+      {
+        "key": "e_1_3_2_17_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1242/jeb.243096"
+      },
+      {
+        "key": "e_1_3_2_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jmor.21513"
+      },
+      {
+        "key": "e_1_3_2_19_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.isci.2021.102717"
+      },
+      {
+        "key": "e_1_3_2_20_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1152/ajpregu.00137.2006"
+      },
+      {
+        "key": "e_1_3_2_21_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.0908-8857.2004.03083.x"
+      },
+      {
+        "key": "e_1_3_2_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1469-7998.1998.tb00023.x"
+      },
+      {
+        "key": "e_1_3_2_23_2",
+        "first-page": "239",
+        "article-title": "A qualitative analysis of the kidney structure of Meliphagid honeyeaters from wet and arid environments",
+        "volume": "182",
+        "author": "Casotti G.",
+        "year": "1993",
+        "unstructured": "G. Casotti, K. C. Richardson, A qualitative analysis of the kidney structure of Meliphagid honeyeaters from wet and arid environments. J. Anat. 182, 239\u2013247 (1993). 8376198",
+        "journal-title": "J. Anat."
+      },
+      {
+        "key": "e_1_3_2_24_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.abn7050"
+      },
+      {
+        "key": "e_1_3_2_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/gigascience/giy009"
+      },
+      {
+        "key": "e_1_3_2_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.276779.122"
+      },
+      {
+        "key": "e_1_3_2_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1255097"
+      },
+      {
+        "key": "e_1_3_2_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.abf6505"
+      },
+      {
+        "key": "e_1_3_2_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msx319"
+      },
+      {
+        "key": "e_1_3_2_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.abn3107"
+      },
+      {
+        "key": "e_1_3_2_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-020-2873-9"
+      },
+      {
+        "key": "e_1_3_2_32_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-021-03451-0"
+      },
+      {
+        "key": "e_1_3_2_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-020-2486-3"
+      },
+      {
+        "key": "e_1_3_2_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2527/jas2016.94supplement4184x"
+      },
+      {
+        "key": "e_1_3_2_35_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msv022"
+      },
+      {
+        "key": "e_1_3_2_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41559-022-01932-7"
+      },
+      {
+        "key": "e_1_3_2_37_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/mec.14462"
+      },
+      {
+        "key": "e_1_3_2_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msu309"
+      },
+      {
+        "key": "e_1_3_2_39_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aat7244"
+      },
+      {
+        "key": "e_1_3_2_40_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.3715005"
+      },
+      {
+        "key": "e_1_3_2_41_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msz049"
+      },
+      {
+        "key": "e_1_3_2_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.1630"
+      },
+      {
+        "key": "e_1_3_2_43_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cmet.2017.07.004"
+      },
+      {
+        "key": "e_1_3_2_44_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.161284298"
+      },
+      {
+        "key": "e_1_3_2_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/672013"
+      },
+      {
+        "key": "e_1_3_2_46_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jas/skx084"
+      },
+      {
+        "key": "e_1_3_2_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0139517"
+      },
+      {
+        "key": "e_1_3_2_48_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2527/jas.2012-5100"
+      },
+      {
+        "key": "e_1_3_2_49_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1365-2435.12202"
+      },
+      {
+        "key": "e_1_3_2_50_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cels.2018.06.003"
+      },
+      {
+        "key": "e_1_3_2_51_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.R109.025544"
+      },
+      {
+        "key": "e_1_3_2_52_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1175689"
+      },
+      {
+        "key": "e_1_3_2_53_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.2007391117"
+      },
+      {
+        "key": "e_1_3_2_54_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ki.2009.360"
+      },
+      {
+        "key": "e_1_3_2_55_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-018-0353-2"
+      },
+      {
+        "key": "e_1_3_2_56_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/nu15071778"
+      },
+      {
+        "key": "e_1_3_2_57_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0969-2126(98)00006-9"
+      },
+      {
+        "key": "e_1_3_2_58_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0003-9861(87)90506-6"
+      },
+      {
+        "key": "e_1_3_2_59_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S. Heumann F. Falkenberg G. Pfleiderer Purification and immunological characterization of the human hexokinase isoenzymes I and III (ATP-d-hexose 6-phosphotransferase EC 2.7.1.1). Biochim. Biophys. Acta Enzymol. 334 328\u2013342 (1974). 10.1016/0005-2744(74)90176-4",
+        "DOI": "10.1016/0005-2744(74)90176-4"
+      },
+      {
+        "key": "e_1_3_2_60_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0020-711X(75)90126-3"
+      },
+      {
+        "key": "e_1_3_2_61_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0006-291X(64)90038-5"
+      },
+      {
+        "key": "e_1_3_2_62_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1042/bj2420895"
+      },
+      {
+        "key": "e_1_3_2_63_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0305-0491(78)90030-5"
+      },
+      {
+        "key": "e_1_3_2_64_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bies.200900167"
+      },
+      {
+        "key": "e_1_3_2_65_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1242/jeb.00241"
+      },
+      {
+        "key": "e_1_3_2_66_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/ps/86.5.909"
+      },
+      {
+        "key": "e_1_3_2_67_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cbpa.2022.111204"
+      },
+      {
+        "key": "e_1_3_2_68_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cbpa.2018.10.010"
+      },
+      {
+        "key": "e_1_3_2_69_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1096/fj.12-218230"
+      },
+      {
+        "key": "e_1_3_2_70_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.0505860102"
+      },
+      {
+        "key": "e_1_3_2_71_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fendo.2024.1293221"
+      },
+      {
+        "key": "e_1_3_2_72_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/JCI31538"
+      },
+      {
+        "key": "e_1_3_2_73_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jne.13488"
+      },
+      {
+        "key": "e_1_3_2_74_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tips.2011.07.006"
+      },
+      {
+        "key": "e_1_3_2_75_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ygcen.2008.10.016"
+      },
+      {
+        "key": "e_1_3_2_76_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.domaniend.2003.09.004"
+      },
+      {
+        "key": "e_1_3_2_77_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-020-63549-9"
+      },
+      {
+        "key": "e_1_3_2_78_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-024-07019-6"
+      },
+      {
+        "key": "e_1_3_2_79_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00125-009-1345-4"
+      },
+      {
+        "key": "e_1_3_2_80_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/cells11121886"
+      },
+      {
+        "key": "e_1_3_2_81_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00424-005-1479-2"
+      },
+      {
+        "key": "e_1_3_2_82_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/dom.12347"
+      },
+      {
+        "key": "e_1_3_2_83_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1089/rej.2014.1561"
+      },
+      {
+        "key": "e_1_3_2_84_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0005-2760(74)90163-5"
+      },
+      {
+        "key": "e_1_3_2_85_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41574-023-00809-4"
+      },
+      {
+        "key": "e_1_3_2_86_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.0401516101"
+      },
+      {
+        "key": "e_1_3_2_87_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/jci.insight.96703"
+      },
+      {
+        "key": "e_1_3_2_88_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42255-020-0222-9"
+      },
+      {
+        "key": "e_1_3_2_89_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cmet.2021.09.010"
+      },
+      {
+        "key": "e_1_3_2_90_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/JCI96702"
+      },
+      {
+        "key": "e_1_3_2_91_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2337/db05-0822"
+      },
+      {
+        "key": "e_1_3_2_92_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0149682"
+      },
+      {
+        "key": "e_1_3_2_93_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1042/BJ20071156"
+      },
+      {
+        "key": "e_1_3_2_94_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1210/en.2004-1378"
+      },
+      {
+        "key": "e_1_3_2_95_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.M110.216234"
+      },
+      {
+        "key": "e_1_3_2_96_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12915-025-02156-4"
+      },
+      {
+        "key": "e_1_3_2_97_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-024-07305-3"
+      },
+      {
+        "key": "e_1_3_2_98_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-018-07122-z"
+      },
+      {
+        "key": "e_1_3_2_99_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. Selberg N. Clark T. B. Sackton S. V. Muse A. G. Lucaci S. Weaver A. Nekrutenko M. Chikina S. L. Kosakovsky Pond Minus the error: Testing for positive selection in the presence of residual alignment errors. bioRxiv 2024.11.13.620707 [Preprint] (2025); https://doi.org/10.1101/2024.11.13.620707.",
+        "DOI": "10.1101/2024.11.13.620707"
+      },
+      {
+        "key": "e_1_3_2_100_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msaa037"
+      },
+      {
+        "key": "e_1_3_2_101_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cub.2021.08.018"
+      },
+      {
+        "key": "e_1_3_2_102_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-023-44186-y"
+      },
+      {
+        "key": "e_1_3_2_103_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41559-024-02485-7"
+      },
+      {
+        "key": "e_1_3_2_104_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arr.2011.12.002"
+      },
+      {
+        "key": "e_1_3_2_105_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1098/rstb.2015.0384"
+      },
+      {
+        "key": "e_1_3_2_106_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/gigascience/giac025"
+      },
+      {
+        "key": "e_1_3_2_107_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/d11070109"
+      },
+      {
+        "key": "e_1_3_2_108_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cub.2014.03.016"
+      },
+      {
+        "key": "e_1_3_2_109_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01584197.2017.1387030"
+      },
+      {
+        "key": "e_1_3_2_110_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01584197.2019.1595662"
+      },
+      {
+        "key": "e_1_3_2_111_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1813206116"
+      },
+      {
+        "key": "e_1_3_2_112_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1534/g3.120.401373"
+      },
+      {
+        "key": "e_1_3_2_113_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/genetics/iyab210"
+      },
+      {
+        "key": "e_1_3_2_114_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03949370.2023.2181873"
+      },
+      {
+        "key": "e_1_3_2_115_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btt702"
+      },
+      {
+        "key": "e_1_3_2_116_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4035"
+      },
+      {
+        "key": "e_1_3_2_117_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btaa025"
+      },
+      {
+        "key": "e_1_3_2_118_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btp324"
+      },
+      {
+        "key": "e_1_3_2_119_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btp698"
+      },
+      {
+        "key": "e_1_3_2_120_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pcbi.1007273"
+      },
+      {
+        "key": "e_1_3_2_121_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/gigascience/giab100"
+      },
+      {
+        "key": "e_1_3_2_122_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13059-020-02134-9"
+      },
+      {
+        "key": "e_1_3_2_123_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41587-020-0711-0"
+      },
+      {
+        "key": "e_1_3_2_124_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42003-020-1094-y"
+      },
+      {
+        "key": "e_1_3_2_125_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/bts174"
+      },
+      {
+        "key": "e_1_3_2_126_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.2280"
+      },
+      {
+        "key": "e_1_3_2_127_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btq683"
+      },
+      {
+        "key": "e_1_3_2_128_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btu280"
+      },
+      {
+        "key": "e_1_3_2_129_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/2047-217X-1-18"
+      },
+      {
+        "key": "e_1_3_2_130_2",
+        "unstructured": "S. Andrews FastQC: A quality control tool for high throughput sequence data. (Babraham Bioinformatics 2010)."
+      },
+      {
+        "key": "e_1_3_2_131_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btu170"
+      },
+      {
+        "key": "e_1_3_2_132_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1017351108"
+      },
+      {
+        "key": "e_1_3_2_133_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41587-020-0439-x"
+      },
+      {
+        "key": "e_1_3_2_134_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.214874.116"
+      },
+      {
+        "key": "e_1_3_2_135_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aal3327"
+      },
+      {
+        "key": "e_1_3_2_136_2",
+        "unstructured": "A. F. A. Smit R. Hubley RepeatModeler Open-1.0 (2008\u20132015); www.repeatmasker.org."
+      },
+      {
+        "key": "e_1_3_2_137_2",
+        "unstructured": "A. F. A. Smit R. Hubley P. Green RepeatMasker Open-3.0 (1996\u20132010); www.repeatmasker.org."
+      },
+      {
+        "key": "e_1_3_2_138_2",
+        "unstructured": "R. S. Harris \u201cImproved pairwise alignment of genomic DNA \u201d thesis The Pennsylvania State University (2007)."
+      },
+      {
+        "key": "e_1_3_2_139_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1932072100"
+      },
+      {
+        "key": "e_1_3_2_140_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btx024"
+      },
+      {
+        "key": "e_1_3_2_141_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/gigascience/giz132"
+      },
+      {
+        "key": "e_1_3_2_142_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.infsof.2005.09.005"
+      },
+      {
+        "key": "e_1_3_2_143_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msaa191"
+      },
+      {
+        "key": "e_1_3_2_144_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2105-7-62"
+      },
+      {
+        "key": "e_1_3_2_145_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/gb-2008-9-1-r7"
+      },
+      {
+        "key": "e_1_3_2_146_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msy159"
+      },
+      {
+        "key": "e_1_3_2_147_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12862-019-1350-2"
+      },
+      {
+        "key": "e_1_3_2_148_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msad150"
+      },
+      {
+        "key": "e_1_3_2_149_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.xinn.2021.100141"
+      },
+      {
+        "key": "e_1_3_2_150_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msm088"
+      },
+      {
+        "key": "e_1_3_2_151_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gky427"
+      },
+      {
+        "key": "e_1_3_2_152_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pro.4792"
+      },
+      {
+        "key": "e_1_3_2_153_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btt128"
+      },
+      {
+        "key": "e_1_3_2_154_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.097857.109"
+      },
+      {
+        "key": "e_1_3_2_155_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/mst010"
+      },
+      {
+        "key": "e_1_3_2_156_2",
+        "unstructured": "C. Creevey N. Weeks ChrisCreevey/catsequences: Version 1.4 Zenodo (2023); https://doi.org/10.5281/zenodo.7956648."
+      },
+      {
+        "key": "e_1_3_2_157_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msad195"
+      },
+      {
+        "key": "e_1_3_2_158_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bib/bbq072"
+      },
+      {
+        "key": "e_1_3_2_159_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/molbev/msh039"
+      },
+      {
+        "key": "e_1_3_2_160_2",
+        "unstructured": "Addgene pCoofy6 (plasmid #43990); https://www.addgene.org/43990/."
+      },
+      {
+        "key": "e_1_3_2_161_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6750-13-12"
+      },
+      {
+        "key": "e_1_3_2_162_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.RA120.015293"
+      },
+      {
+        "key": "e_1_3_2_163_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0013823"
+      },
+      {
+        "key": "e_1_3_2_164_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pep.2005.01.016"
+      },
+      {
+        "key": "e_1_3_2_165_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bcp.2019.08.017"
+      },
+      {
+        "key": "e_1_3_2_166_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/cshperspect.a040543"
+      },
+      {
+        "key": "e_1_3_2_167_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/cshperspect.a040535"
+      },
+      {
+        "key": "e_1_3_2_168_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00109-012-0894-z"
+      },
+      {
+        "key": "e_1_3_2_169_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41574-019-0256-9"
+      },
+      {
+        "key": "e_1_3_2_170_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bbalip.2016.08.011"
+      },
+      {
+        "key": "e_1_3_2_171_2",
+        "unstructured": "M.-C. Ko E. Osipova Nectar genomics v.1.0.1 Zenodo (2025); https://zenodo.org/doi/10.5281/zenodo.17403725."
+      },
+      {
+        "key": "e_1_3_2_172_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nrendo.2014.171"
+      }
+    ],
+    "container-title": ["Science"],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/science.adt1522",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/science.adt1522",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [[2026, 2, 26]],
+      "date-time": "2026-02-26T19:02:06Z",
+      "timestamp": 1772132526000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/science.adt1522"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [[2026, 2, 26]]
+    },
+    "references-count": 171,
+    "journal-issue": {
+      "issue": "6788",
+      "published-print": {
+        "date-parts": [[2026, 2, 26]]
+      }
+    },
+    "alternative-id": ["10.1126/science.adt1522"],
+    "URL": "https://doi.org/10.1126/science.adt1522",
+    "relation": {},
+    "ISSN": ["0036-8075", "1095-9203"],
+    "issn-type": [
+      {
+        "value": "0036-8075",
+        "type": "print"
+      },
+      {
+        "value": "1095-9203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [[2026, 2, 26]]
+    },
+    "assertion": [
+      {
+        "value": "2024-09-13",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-07-10",
+        "order": 1,
+        "name": "revised",
+        "label": "Revised",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-11-08",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-02-26",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "eadt1522"
   }
 }
