@@ -12,9 +12,13 @@ if (author.given && author.family) {
   longname = author.given + " " + author.family;
   shortname = author.family + " " + author.given.substr(0, 1);
 }
+const isMe = longname && longname.includes("Ewels");
 ---
 
-<span title={longname}>
+<span
+  title={longname}
+  class:list={[{ "rounded bg-yellow-100 px-1.5 py-0.5 font-semibold dark:bg-yellow-900/40": isMe }]}
+>
   {
     author.ORCID ? (
       <a href={author.ORCID} target="_blank">
