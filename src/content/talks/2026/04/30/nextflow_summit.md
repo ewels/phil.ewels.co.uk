@@ -16,6 +16,8 @@ pdfURLs:
 date: 2026-04-30
 ---
 
+![Photo of talk](/talks/2026/04/30/nextflow_summit_2026_boston/summit_phil.jpg)
+
 ## Abstract
 
 AI capabilities have shifted in 2026: we’ve reached a threshold where domain experts can create production-quality tool rewrites in days, without prior experience of the programming language. [RustQC](https://seqeralabs.github.io/RustQC/), a single Rust binary that replaces fifteen RNA-seq QC tools with a 60× speedup, was built in only a few weeks despite me never having written Rust code before. I wasn't alone: multiple teams have been independently producing similar AI-assisted rewrites within weeks of each other.
