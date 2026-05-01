@@ -16,7 +16,7 @@
     "@astrojs/svelte": "^7.2.5",
     "astro-icon": "^1.1.5",
     "astro-tooltips": "^0.6.2",
-    "svelte": "^5.51.3"
+    "svelte": "^5.55.5"
   },
   "devDependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -28,7 +28,7 @@
     "@iconify-json/simple-icons": "^1.2.65",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.19",
-    "astro": "^5.16.8",
+    "astro": "^6.1.6",
     "astro-icon": "^1.1.5",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
