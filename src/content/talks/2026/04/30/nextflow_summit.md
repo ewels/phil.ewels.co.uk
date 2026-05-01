@@ -9,8 +9,8 @@ logoImage: /talks/2025/10/23/multiqc_nextflow_summit_2025/nextflow_summit_2024.s
 logoImageDark: /talks/2025/10/23/multiqc_nextflow_summit_2025/nextflow_summit_2024_darkbg.svg
 eventURLs:
   - https://summit.nextflow.io/2026/boston/agenda/rustqc-and-rewrites-bio/
-# pdfURLs:
-#  - /talks/2026/02/18/the_bioinformatics_cro/nextflow-nf-core-webinar.pdf
+pdfURLs:
+  - /talks/2026/04/30/nextflow_summit_2026_boston/boston26-phil.pdf
 # youtubeIDs:
 #  - 7TtIlOZHDT8
 date: 2026-04-30
