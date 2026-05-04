@@ -28,16 +28,17 @@ const education = (await getCollection("education"))
 const workplaces_edu = workplaces.concat(education);
 const workplaces_edu_count = (await getCollection("workplaces")).length + (await getCollection("education")).length;
 
-const projects = (await getCollection("projects"))
+const all_projects = await getCollection("projects");
+const projects = all_projects
+  .filter((p) => p.data.featured === true)
   .sort((a, b) => a.data.order - b.data.order)
-  .filter((p) => p.data.personal != true && p.data.archived != true)
   .map((item) => ({
     url: "/projects/" + item.slug,
     title: item.data.title,
     iconImage: item.data.iconImage,
     iconImageDark: item.data.iconImageDark,
   }));
-const projects_count = (await getCollection("projects")).length;
+const projects_count = all_projects.length;
 
 const talks = await getCollection("talks");
 ---

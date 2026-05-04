@@ -7,6 +7,7 @@ github: nextflow-io/nextflow
 iconImage: /images/projects/nextflow.svg
 logoImage: /images/projects/nextflow_logo.svg
 logoImageDark: /images/projects/nextflow_logo_dark.svg
+featured: true
 order: 30
 ---
 

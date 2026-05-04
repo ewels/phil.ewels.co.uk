@@ -8,6 +8,7 @@ logoImage: /images/projects/rustqc-logo.svg
 logoImageDark: /images/projects/rustqc-logo-dark.svg
 heroImage: /images/projects/rustqc-benchmark.png
 heroImageDark: /images/projects/rustqc-benchmark-dark.png
+featured: true
 order: 32
 ---
 

@@ -4,6 +4,7 @@ description: A manifesto for AI-assisted modernisation of bioinformatics softwar
 projectURL: https://rewrites.bio
 github: seqeralabs/rewrites.bio
 iconImage: /images/projects/rewrites-bio-icon.svg
+featured: true
 order: 34
 ---
 
