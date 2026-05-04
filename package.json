@@ -13,28 +13,28 @@
     "add_pub": "python add_pub.py"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.2.5",
+    "@astrojs/svelte": "^8.1.0",
     "astro-icon": "^1.1.5",
     "astro-tooltips": "^0.6.2",
-    "svelte": "^5.51.3"
+    "svelte": "^5.55.5"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/sitemap": "^3.6.1",
-    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/sitemap": "^3.7.2",
     "@iconify-json/bi": "^1.2.7",
-    "@iconify-json/flag": "^1.2.10",
+    "@iconify-json/flag": "^1.2.12",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.65",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@iconify-json/simple-icons": "^1.2.80",
     "@tailwindcss/typography": "^0.5.19",
-    "astro": "^5.16.8",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.2.1",
     "astro-icon": "^1.1.5",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "prettier-plugin-svelte": "^3.4.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "sass": "^1.97.2"
+    "prettier-plugin-svelte": "^3.5.1",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "sass": "^1.99.0",
+    "tailwindcss": "^4.2.4"
   }
 }

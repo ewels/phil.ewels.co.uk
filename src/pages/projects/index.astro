@@ -26,7 +26,7 @@ const projects = await getCollection("projects");
             imgDark={p.data.iconImageDark ?? p.data.iconImage}
             noIconPadding={p.data.noIconPadding}
             description={p.data.description}
-            url={"/projects/" + p.slug}
+            url={"/projects/" + p.id}
           />
         ))
     }
@@ -41,14 +41,14 @@ const projects = await getCollection("projects");
             imgDark={p.data.iconImageDark ?? p.data.iconImage}
             noIconPadding={p.data.noIconPadding}
             description={p.data.description}
-            url={"/projects/" + p.slug}
+            url={"/projects/" + p.id}
             badge="Archived"
           />
         ))
     }
   </ul>
 
-  <h2 class="mb-2 mt-12 text-3xl font-bold" id="personal-projects">Personal projects</h2>
+  <h2 class="mt-12 mb-2 text-3xl font-bold" id="personal-projects">Personal projects</h2>
   <p class="mb-5 text-base font-light opacity-80">
     Hobby projects are one of the ways that I experiment and learn new things. I generally only build what I need, and
     sometimes something useful comes out.
@@ -64,7 +64,7 @@ const projects = await getCollection("projects");
             imgDark={p.data.iconImageDark ?? p.data.iconImage}
             noIconPadding={p.data.noIconPadding}
             description={p.data.description}
-            url={"/projects/" + p.slug}
+            url={"/projects/" + p.id}
           />
         ))
     }

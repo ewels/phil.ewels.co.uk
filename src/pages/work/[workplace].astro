@@ -1,18 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import ContentLayout from "@layouts/ContentLayout.astro";
 
 export async function getStaticPaths() {
   const workEntries = await getCollection("workplaces");
   return workEntries.map((entry) => ({
-    params: { workplace: entry.slug },
+    params: { workplace: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <ContentLayout entry={entry} Content={Content} back_to_text="workplaces" back_to_link="/work/" />

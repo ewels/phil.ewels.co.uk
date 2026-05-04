@@ -4,7 +4,7 @@
 import "../styles/global.css";
 
 import { Tooltips } from "astro-tooltips";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
@@ -74,4 +74,4 @@ const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : S
 <!-- Tooltips -->
 <Tooltips placement="top" delay={[0, 100]} />
 
-<ViewTransitions />
+<ClientRouter />

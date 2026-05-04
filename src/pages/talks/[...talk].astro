@@ -2,19 +2,19 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Button from "@components/Button.astro";
 import Label from "@components/Label.astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
   const talkEntries = await getCollection("talks");
   return talkEntries.map((entry) => ({
-    params: { talk: entry.slug },
+    params: { talk: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} image={entry.data.heroImage}>
@@ -98,34 +98,31 @@ const { Content } = await entry.render();
         ))
     }
   </div>
-  <article class="prose prose-lg mb-12 mt-8 max-w-none text-justify dark:prose-invert prose-img:mx-auto">
+  <article class="prose prose-lg dark:prose-invert prose-img:mx-auto mt-8 mb-12 max-w-none text-justify">
     <Content />
   </article>
   <div class="my-8">
     {
       entry.data.youtubeIDs &&
         entry.data.youtubeIDs.map((youtubeID) => (
-          <div class="aspect-h-9 aspect-w-16">
-            <iframe
-              class="border border-zinc-700"
-              src={"https://www.youtube.com/embed/" + youtubeID}
-              allowfullscreen
-              class="absolute left-0 top-0 h-full w-full"
-            />
-          </div>
+          <iframe
+            class="aspect-video w-full border border-zinc-700"
+            src={"https://www.youtube.com/embed/" + youtubeID}
+            loading="lazy"
+            allowfullscreen
+          />
         ))
     }
     {
       entry.data.pdfURLs &&
         entry.data.pdfURLs.map((pdf) => (
-          <div class="aspect-h-10 aspect-w-16 mt-8">
-            <iframe
-              class="border border-zinc-700"
-              src={pdf + "#view=fit"}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
-          </div>
+          <iframe
+            class="mt-8 aspect-[16/10] w-full border border-zinc-700"
+            src={pdf + "#view=fit"}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            loading="lazy"
+            allowfullscreen
+          />
         ))
     }
   </div>

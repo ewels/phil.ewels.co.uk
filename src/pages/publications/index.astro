@@ -19,7 +19,7 @@ function short_authors(authors) {
   }
   return authors
     .map((author) =>
-      author.family ? author.family + " " + (author.given ?? "" ? author.given.substr(0, 1) : "") : author.name,
+      author.family ? author.family + " " + ((author.given ?? "") ? author.given.substr(0, 1) : "") : author.name,
     )
     .join(", ");
 }
@@ -54,12 +54,12 @@ function short_authors(authors) {
       }
       return (
         <section>
-          {year_heading && <h2 class="mb-4 mt-20 text-2xl font-bold">{year_heading}</h2>}
+          {year_heading && <h2 class="mt-20 mb-4 text-2xl font-bold">{year_heading}</h2>}
           <HorizontalCard
             title={post.data.title}
             subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
             description={short_authors(pub.author)}
-            url={"/publications/" + post.slug}
+            url={"/publications/" + post.id}
             doi={post.data.doi}
           />
         </section>

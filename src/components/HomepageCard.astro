@@ -13,7 +13,7 @@ interface Props {
 const { title, description, href, btn_text, btn_badge, items, plus } = Astro.props;
 ---
 
-<div class="flex flex-col justify-between rounded border shadow dark:border-zinc-700">
+<div class="flex flex-col justify-between rounded-sm border shadow-sm dark:border-zinc-700">
   <h2 class="m-5 text-2xl"><a href={href}>{title}</a></h2>
   <p class="mx-5 mb-5 grow self-stretch">{description}</p>
   {
@@ -24,7 +24,7 @@ const { title, description, href, btn_text, btn_badge, items, plus } = Astro.pro
             <a
               href={item.url}
               title={item.title}
-              class="w-12 rounded border p-2 shadow transition-colors hover:border-gray-400 hover:bg-zinc-50 dark:border-gray-700 hover:dark:border-gray-500 dark:hover:bg-zinc-700"
+              class="w-12 rounded-sm border p-2 shadow-sm transition-colors hover:border-gray-400 hover:bg-zinc-50 dark:border-gray-700 hover:dark:border-gray-500 dark:hover:bg-zinc-700"
             >
               <img src={item.iconImage} alt={item.title} class="block dark:hidden" />
               <img src={item.iconImageDark ?? item.iconImage} alt={item.title} class="hidden dark:block" />
@@ -34,7 +34,7 @@ const { title, description, href, btn_text, btn_badge, items, plus } = Astro.pro
           <div class="flex items-center">
             <a
               href={href}
-              class="ml-2 inline-block rounded-full bg-sky-800/20 px-2 py-1 text-xs font-bold leading-none text-black/40 dark:bg-sky-800 dark:text-white/70"
+              class="ml-2 inline-block rounded-full bg-sky-800/20 px-2 py-1 text-xs leading-none font-bold text-black/40 dark:bg-sky-800 dark:text-white/70"
             >
               +{plus}
             </a>
@@ -51,7 +51,7 @@ const { title, description, href, btn_text, btn_badge, items, plus } = Astro.pro
       >
         {btn_text}
         {btn_badge && (
-          <span class="ml-2 inline-block rounded-full bg-sky-800/20 px-2 py-1 text-xs font-bold leading-none text-black/40 dark:bg-sky-800 dark:text-white/70">
+          <span class="ml-2 inline-block rounded-full bg-sky-800/20 px-2 py-1 text-xs leading-none font-bold text-black/40 dark:bg-sky-800 dark:text-white/70">
             {btn_badge}
           </span>
         )}

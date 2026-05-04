@@ -13,7 +13,7 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
       </a>
     )
   }
-  <article class="prose prose-lg max-w-none dark:prose-invert prose-img:mx-auto md:justify-center">
+  <article class="prose prose-lg dark:prose-invert prose-img:mx-auto max-w-none md:justify-center">
     <div class="mb-6 flex flex-row lg:items-center lg:justify-between">
       <h1 class={"title my-2 text-4xl font-bold " + (entry.data.logoImage ? "hidden lg:inline" : "")}>
         {entry.data.title}
@@ -25,13 +25,13 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
           )
         }
       </h1>
-      <div class="mt-4 flex-shrink-0 lg:ml-8 lg:mt-0">
+      <div class="mt-4 shrink-0 lg:mt-0 lg:ml-8">
         {
           entry.data.iconImage && !entry.data.logoImage && (
             <img
               src={entry.data.iconImage}
               alt={entry.data.title}
-              class="not-prose hidden max-h-28 w-full max-w-60 dark:hidden lg:block"
+              class="not-prose hidden max-h-28 w-full max-w-60 lg:block dark:hidden"
             />
           )
         }
@@ -49,7 +49,7 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
             <img
               src={entry.data.logoImage}
               alt={entry.data.title}
-              class="not-prose block max-h-28 w-full max-w-80 dark:hidden lg:max-w-60"
+              class="not-prose block max-h-28 w-full max-w-80 lg:max-w-60 dark:hidden"
             />
           )
         }
@@ -58,7 +58,7 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
             <img
               src={entry.data.logoImageDark ?? entry.data.logoImage}
               alt={entry.data.title}
-              class="not-prose hidden max-h-28 w-full max-w-80 dark:block lg:max-w-60"
+              class="not-prose hidden max-h-28 w-full max-w-80 lg:max-w-60 dark:block"
             />
           )
         }

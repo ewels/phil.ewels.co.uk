@@ -22,7 +22,7 @@
 </script>
 
 <button
-  class="rounded-full border bg-gray-100 px-2 py-1 shadow-sm dark:border-transparent dark:bg-zinc-800 dark:shadow-black/50"
+  class="rounded-full border bg-gray-100 px-2 py-1 shadow-xs dark:border-transparent dark:bg-zinc-800 dark:shadow-black/50"
   title="Toggle between light and dark theme"
   on:click={() => toggleDarkMode()}
 >

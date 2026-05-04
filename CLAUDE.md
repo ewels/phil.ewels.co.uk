@@ -140,7 +140,6 @@ Dark mode is class-based using localStorage with system preference fallback. The
 Two Python scripts manage content:
 
 1. **add_pub.py**: Fetches publication metadata from Crossref API, updates JSON cache, creates markdown files
-
    - Uses Rich for CLI output, requests for HTTP, PyYAML for frontmatter
    - Handles JATS XML abstract conversion to Markdown
    - Checks existing files by scanning directories for matching DOI

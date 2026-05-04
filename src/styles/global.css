@@ -1,3 +1,51 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Mona-Sans", system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.875rem;
+  --text-xs--line-height: 1.5rem;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.5rem;
+  --text-base: 1.125rem;
+  --text-base--line-height: 2rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 2rem;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.6;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 2.5rem;
+  --text-3xl: 2.5rem;
+  --text-3xl--line-height: 3.5rem;
+  --text-4xl: 3rem;
+  --text-4xl--line-height: 4rem;
+  --text-5xl: 4rem;
+  --text-5xl--line-height: 5rem;
+  --text-6xl: 5rem;
+  --text-6xl--line-height: 6.5rem;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 5.5rem;
+  --text-8xl--line-height: 1;
+  --text-9xl: 7.5rem;
+  --text-9xl--line-height: 1;
+}
+
+/* Preserve Tailwind v3 default border color (gray-200) instead of v4's currentColor */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
 @font-face {
   font-family: "Mona-Sans";
   src:
@@ -16,7 +64,7 @@ body {
   margin: 0;
 }
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-  @apply mx-1 rounded bg-blue-200 px-1 py-0.5 dark:bg-blue-900;
+  @apply mx-1 rounded-sm bg-blue-200 px-1 py-0.5 dark:bg-blue-900;
 }
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before,
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
