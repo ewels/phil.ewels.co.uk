@@ -11,8 +11,8 @@ eventURLs:
   - https://summit.nextflow.io/2026/boston/agenda/rustqc-and-rewrites-bio/
 pdfURLs:
   - /talks/2026/04/30/nextflow_summit_2026_boston/boston26-phil.pdf
-# youtubeIDs:
-#  - 7TtIlOZHDT8
+youtubeIDs:
+  - LbA_d4oOpDQ
 date: 2026-04-30
 ---
 
