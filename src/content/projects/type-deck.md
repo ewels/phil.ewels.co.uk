@@ -1,7 +1,7 @@
 ---
 title: Type Deck
 description: A Stream Deck plugin that types preset text into the focused app, with optional human-like timing, typos, and jitter.
-projectURL: https://github.com/ewels/type-deck
+projectURL: https://marketplace.elgato.com/product/type-deck-437fd2bf-0b88-473f-826b-fd8ed1dcfb74
 github: ewels/type-deck
 iconImage: /images/projects/type-deck_icon.png
 logoImage: /images/projects/type-deck_logo.svg
@@ -10,7 +10,7 @@ personal: true
 order: 25
 ---
 
-[**Type Deck**](https://github.com/ewels/type-deck) is a [Stream Deck](https://www.elgato.com/stream-deck) plugin that types preset text into the focused application when you press a key, with optional human-like timing, typos, and jitter so the output doesn't look obviously automated.
+[**Type Deck**](https://marketplace.elgato.com/product/type-deck-437fd2bf-0b88-473f-826b-fd8ed1dcfb74) ([ewels/type-deck](https://github.com/ewels/type-deck) is a [Stream Deck](https://www.elgato.com/stream-deck) plugin that types preset text into the focused application when you press a key, with optional human-like timing, typos, and jitter so the output doesn't look obviously automated.
 
 It's useful for things like inserting boilerplate snippets, demo scripts, prepared answers, or replaying short typed sequences while screen-sharing.
 
@@ -28,7 +28,8 @@ It's useful for things like inserting boilerplate snippets, demo scripts, prepar
 - **Template variables.** Inline tokens like `{date}`, `{time}`, `{clipboard}` and `{counter}` are expanded at type-time.
 - **Cancel or queue.** Pressing the key while it's already typing either aborts the current run (default) or queues another to start immediately after.
 
-Download the latest release and source code from [GitHub](https://github.com/ewels/type-deck).
-Hopefully coming to the Elgato Stream Deck Plugin marketplace soon.
+Try it out by installing from the [Elgato Marketplace](https://marketplace.elgato.com/product/type-deck-437fd2bf-0b88-473f-826b-fd8ed1dcfb74).
+
+Find the latest release and source code on [GitHub](https://github.com/ewels/type-deck).
 
 ![Type-Deck](/images/projects/type-deck_screenshot.png)
