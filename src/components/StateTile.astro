@@ -1,0 +1,9 @@
+---
+const { img, label } = Astro.props;
+---
+
+<div class="flex flex-col items-center rounded-lg border border-gray-200 p-4 text-center dark:border-gray-700">
+  <img src={img} alt={`${label} key`} width="112" height="112" class="h-24 w-24 rounded-lg shadow-md" />
+  <p class="mt-3 font-semibold text-gray-900 dark:text-gray-100">{label}</p>
+  <p class="mt-1 text-sm text-gray-600 dark:text-gray-400"><slot /></p>
+</div>

@@ -6,7 +6,7 @@ const projectsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    projectURL: z.string().url(),
+    projectURL: z.string().url().optional(),
     github: z
       .string()
       .regex(/^[a-zA-Z0-9._-]+(\/[a-zA-Z0-9._-]+)?$/)

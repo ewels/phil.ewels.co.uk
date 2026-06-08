@@ -1,0 +1,97 @@
+---
+title: DeckCal
+description: A Stream Deck plugin that turns a key into a live countdown to your next Google Calendar meeting, with a press to join it.
+github: ewels/deckcal
+iconImage: /images/projects/deckcal_icon.svg
+logoImage: /images/projects/deckcal_logo.svg
+logoImageDark: /images/projects/deckcal_logo_dark.svg
+personal: true
+order: 26
+---
+
+import StateTile from "@components/StateTile.astro";
+import ActionRow from "@components/ActionRow.astro";
+
+[**DeckCal**](https://github.com/ewels/deckcal) is a [Stream Deck](https://www.elgato.com/stream-deck) plugin that turns a key into a live indicator for your Google Calendar.
+
+The key shows a countdown to the next meeting (or the time remaining in the current one), with a progress bar across the top, a yellow fill in the last few minutes before it starts, and a footer band for out-of-office or focus-time overlaps. Press the key to join the current meeting, open its URL in a chosen app, or jump to the next meeting's notes doc.
+
+## At a glance
+
+<div class="not-prose my-8 grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-4">
+  <StateTile img="/images/projects/deckcal_state_idle.png" label="Idle">
+    Nothing on the calendar today any time soon.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_countdown.png" label="Countdown to the next meeting">
+    Time remaining, with a blue bar.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_imminent.png" label="Imminent">
+    In the last 5 minutes a yellow block gradually fills the key.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_now.gif" label="Meeting starts">
+    Flashes <code>NOW</code> until you press. Pressing opens the meeting.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_ongoing.png" label="In the meeting">
+    Time remaining, with a green bar showing time elapsed.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_tomorrow.png" label="Beyond today">
+    Distant events are dimmed; events tomorrow show the time of day instead of a countdown.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_focus.png" label="Focus time">
+    Purple footer band, so you can still see the next regular meeting.
+  </StateTile>
+  <StateTile img="/images/projects/deckcal_state_ooo.png" label="Out of office">
+    Grey footer band so you can still see the next meeting.
+  </StateTile>
+</div>
+
+## Multi-key sweep
+
+Place several **Meeting countdown** (or **Upcoming meeting**) keys next to each other and the yellow imminent-fill bar sweeps across them as a single band in the last few minutes before a meeting — a much more visible cue than a single key can give on its own.
+
+<video
+  src="/images/projects/deckcal_sweep.mp4"
+  autoplay
+  loop
+  muted
+  playsinline
+  controls
+  class="w-full rounded-lg shadow-md"
+>
+  Your browser does not support the video tag.
+</video>
+
+## Actions
+
+<div class="not-prose my-8 grid gap-6 sm:grid-cols-2">
+  <div class="divide-y divide-gray-200 rounded-lg border border-gray-200 dark:divide-gray-700 dark:border-gray-700">
+    <ActionRow img="/images/projects/deckcal_action_countdown.svg" title="Meeting countdown">
+      The ongoing meeting if you're in one, otherwise the next upcoming meeting. The "do everything" action.
+    </ActionRow>
+    <ActionRow img="/images/projects/deckcal_action_upcoming.svg" title="Upcoming meeting">
+      Only the next upcoming meeting. Ignores meetings already in progress.
+    </ActionRow>
+  </div>
+  <div class="divide-y divide-gray-200 rounded-lg border border-gray-200 dark:divide-gray-700 dark:border-gray-700">
+    <ActionRow img="/images/projects/deckcal_action_ongoing.svg" title="Ongoing meeting">
+      Only the meeting you're currently in. Idle when nothing is happening.
+    </ActionRow>
+    <ActionRow img="/images/projects/deckcal_action_alert.svg" title="Meeting alert">
+      A blank tile that only lights up the moment a meeting starts. Short press dismisses, long press joins.
+    </ActionRow>
+  </div>
+</div>
+
+## Features
+
+- **Live countdown and progress bar.** Time remaining to (or within) a meeting, with a coloured bar that fills as the meeting elapses.
+- **Imminent-fill cue.** In the last few minutes a yellow block gradually fills the key. Place several keys side by side and the fill sweeps across them as one band — far more visible than a single key.
+- **Press to join.** Pressing opens the current Google Meet, Zoom, or Teams meeting. Long press opens the meeting's first attached doc.
+- **Multiple Google accounts.** Sign in with one or more accounts and tick exactly which calendars feed the countdown.
+- **Special events.** Out-of-office and focus-time events get their own footer band so you can still see your next regular meeting.
+
+## Privacy
+
+No Google Cloud setup is required to use a release build. The plugin authenticates with a loopback PKCE flow ([RFC 8252](https://datatracker.ietf.org/doc/html/rfc8252)) — your credentials never leave your machine.
+
+Find the latest release and source code on [GitHub](https://github.com/ewels/deckcal).
