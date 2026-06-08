@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://astro-modern-personal-website.netlify.app/sitemap-index.xml
+Sitemap: https://phil.ewels.co.uk/sitemap-index.xml
