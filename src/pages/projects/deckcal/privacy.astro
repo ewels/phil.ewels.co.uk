@@ -1,0 +1,71 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const title = "DeckCal Privacy Policy";
+const description =
+  "Privacy policy for DeckCal, an open-source Stream Deck plugin that shows a live Google Calendar countdown.";
+---
+
+<BaseLayout title={title} description={description}>
+  <a href="/projects/deckcal/" class="text-xs opacity-30">&laquo; Back to DeckCal</a>
+  <article class="prose prose-lg dark:prose-invert max-w-none md:justify-center">
+    <h1 class="title my-2 text-4xl font-bold">DeckCal Privacy Policy</h1>
+
+    <p><strong>Effective date:</strong> 8 June 2026</p>
+
+    <p>
+      DeckCal is an open-source <a href="https://www.elgato.com/stream-deck">Stream Deck</a> plugin that turns a key into
+      a live countdown to your next Google Calendar meeting. It reads your calendar to show this information. It never modifies
+      your calendar. The plugin runs entirely on your own computer. The developer operates no servers and collects no data.
+    </p>
+
+    <h2>Google user data the app accesses</h2>
+    <p>
+      With your permission, DeckCal accesses your Google Calendar data on a read-only basis, using the
+      <code>https://www.googleapis.com/auth/calendar.readonly</code> scope. This is the only Google scope the plugin requests.
+      It allows the plugin to read your events. It does not allow the plugin to create, change, or delete any calendar data.
+    </p>
+
+    <h2>How the data is used</h2>
+    <p>
+      Your calendar data is used solely to display meeting information on your Stream Deck keys. Specifically, the
+      plugin shows:
+    </p>
+    <ul>
+      <li>A countdown to your next meeting, and the time remaining in a meeting you are currently in.</li>
+      <li>A progress bar and the visual state of the upcoming or ongoing meeting.</li>
+      <li>Details of the next or ongoing meeting (such as its title and join link) so you can open or join it.</li>
+    </ul>
+    <p>The data is not used for any other purpose.</p>
+
+    <h2>How the data is stored and handled</h2>
+    <p>
+      DeckCal has no backend. There is no server operated by the developer. OAuth tokens and the calendar event data the
+      plugin fetches are stored locally on your own computer, inside Stream Deck's plugin settings. No data is ever sent
+      to, or stored on, any server operated by the developer.
+    </p>
+    <p>Your data is not shared with any third parties. The plugin contains no analytics and no tracking.</p>
+
+    <h2>Data retention, deletion, and revoking access</h2>
+    <p>
+      Because all data is stored locally, you remain in control of it. You can sign out within the plugin at any time,
+      which removes the stored tokens from your computer. You can also revoke DeckCal's access to your Google account at
+      any time from your Google Account permissions page:
+      <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+    </p>
+
+    <h2>Limited Use disclosure</h2>
+    <p>
+      DeckCal's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy"
+        >Google API Services User Data Policy</a
+      >, including the Limited Use requirements.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have any questions about this privacy policy, please contact the developer, Phil Ewels, at
+      <a href="mailto:ewelsphil@gmail.com">ewelsphil@gmail.com</a>.
+    </p>
+  </article>
+</BaseLayout>
