@@ -1,0 +1,42 @@
+---
+title: Contributor Graphs
+description: A command-line tool that renders contributor timelines for any git or GitHub repository, as a publication-ready SVG and a self-contained interactive HTML page.
+projectURL: https://ewels.github.io/contributor-graphs/
+github: ewels/contributor-graphs
+iconImage: /images/projects/contributor-graphs_icon.svg
+logoImage: /images/projects/contributor-graphs_logo.svg
+logoImageDark: /images/projects/contributor-graphs_logo_dark.svg
+personal: true
+order: 5
+---
+
+[**Contributor Graphs**](https://ewels.github.io/contributor-graphs/) ([ewels/contributor-graphs](https://github.com/ewels/contributor-graphs)) is a command-line tool that renders contributor timelines for any git or GitHub repository. A single run produces two files: a publication-ready SVG for embedding, and a self-contained interactive HTML page.
+
+The x-axis is time, from a project's first commit to today; each row is a contributor. Bars are shaded by monthly commit activity, so it's easy to see who was active when and how a project grew over the years.
+
+<video
+  src="/images/projects/contributor-graphs_demo.mp4"
+  poster="/images/projects/contributor-graphs_screenshot.png"
+  autoplay
+  loop
+  muted
+  playsinline
+  controls
+  class="w-full rounded-lg shadow-md"
+>
+  Your browser does not support the video tag.
+</video>
+
+## Features
+
+- **Works with anything.** A local path, a GitHub slug (`nf-core/rnaseq`), any git URL, or a bare owner that expands to all of its repositories.
+- **Many repos, one timeline.** Pool the histories of as many repos and whole orgs as you like into a single chart, with commits shared across them deduplicated by SHA.
+- **GitHub enrichment.** Resolves real names, usernames and avatars via the GitHub API, using your `gh` CLI token automatically to dodge rate limits.
+- **Identity merging.** Folds together the many name and email spellings a single person accumulates over the years, with a manual override for the stragglers.
+- **Affiliation grouping.** Auto-detects organisations from GitHub profiles and colours by them, with an option to collapse the chart to one row per affiliation and a curation file for time-bounded affiliations.
+- **Interactive HTML.** Search, sort, filter, drag-to-zoom, hover for detail, light / dark / Wikipedia themes, and SVG/PNG export — all embedded in one file, no server needed.
+- **One binary.** A single Rust binary with no runtime to install, plus Cargo and Docker distributions.
+
+Try it out and browse live examples in the [documentation](https://ewels.github.io/contributor-graphs/).
+
+Find the latest release and source code on [GitHub](https://github.com/ewels/contributor-graphs).
