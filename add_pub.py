@@ -115,9 +115,9 @@ def create_markdown(md_path: Path, doi: str, slug: str, journal: str, pub: dict)
     # Create the publication markdown file
     print(f"[magenta]Creating [green]'{doi}': [yellow]{md_path}")
     md_path.parent.mkdir(parents=True, exist_ok=True)
-    with md_path.open("w") as f:
+    with md_path.open("w", encoding="utf-8") as f:
         f.write("---\n")
-        f.write(yaml.dump(frontmatter, sort_keys=False, width=180))
+        f.write(yaml.dump(frontmatter, sort_keys=False, width=180, allow_unicode=True))
         f.write(f"{pubDate}\n")  # No quote marks
         f.write("---\n\n")
         abstract_replace = {

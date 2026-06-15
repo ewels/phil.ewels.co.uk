@@ -1,6 +1,6 @@
 ---
 doi: 10.1038/ncomms5640
-title: "Understanding functional miRNA\u2013target interactions in vivo by site-specific genome engineering"
+title: "Understanding functional miRNA–target interactions in vivo by site-specific genome engineering"
 journal: Nature Communications
 pubDate: 2014-08-19
 ---

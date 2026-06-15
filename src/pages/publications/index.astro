@@ -31,6 +31,19 @@ function all_authors(authors) {
     .join(" ");
 }
 
+// Preprints are identified by their hosting server rather than a peer-reviewed journal.
+const PREPRINT_SERVERS = ["biorxiv", "medrxiv", "arxiv", "research square"];
+const isPreprint = (journal: string) => PREPRINT_SERVERS.includes(journal.trim().toLowerCase());
+
+const flagChips = [
+  {
+    key: "preprint",
+    label: "Preprint",
+    icon: "bi:file-earmark-text",
+    count: pubs.filter((p) => isPreprint(p.data.journal)).length,
+  },
+];
+
 // Group into [{ year, pubs }] preserving the descending-date sort.
 const byYear: { year: number; pubs: typeof pubs }[] = [];
 for (const post of pubs) {
@@ -64,7 +77,7 @@ for (const post of pubs) {
     icon="simple-icons:researchgate"
   />
 
-  <FilterBar noun="publication" placeholder="Search by title, journal or author…" />
+  <FilterBar noun="publication" placeholder="Search by title, journal or author…" flags={flagChips} />
 
   <div data-find-results>
     {
@@ -80,7 +93,9 @@ for (const post of pubs) {
                 description={short_authors(pub.author)}
                 url={"/publications/" + post.id}
                 doi={post.data.doi}
+                badge={isPreprint(post.data.journal) ? "Preprint" : undefined}
                 data-search={[post.data.title, post.data.journal, all_authors(pub.author)].filter(Boolean).join(" ")}
+                data-preprint={String(isPreprint(post.data.journal))}
               />
             );
           })}

@@ -58,15 +58,16 @@ const { noun = "item", placeholder = "Search…", flags = [] } = Astro.props;
     const flagChips = Array.from(bar.querySelectorAll<HTMLButtonElement>("[data-chip-flag]"));
     const groups = Array.from(results.querySelectorAll<HTMLElement>("[data-find-group]"));
 
-    // Pre-compute a normalised haystack per card once.
+    // Flag keys are driven by the chips, so each page defines its own (keynote, preprint, …).
+    const flagKeys = flagChips.map((c) => c.dataset.key || "").filter(Boolean);
+
+    // Pre-compute a normalised haystack and flag map per card once.
     const norm = (s: string) => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-    const items = Array.from(results.querySelectorAll<HTMLElement>(".horizontal-card-container")).map((el) => ({
-      el,
-      hay: norm(el.dataset.search || ""),
-      keynote: el.dataset.keynote === "true",
-      video: el.dataset.video === "true",
-      slides: el.dataset.slides === "true",
-    }));
+    const items = Array.from(results.querySelectorAll<HTMLElement>(".horizontal-card-container")).map((el) => {
+      const flags: Record<string, boolean> = {};
+      for (const k of flagKeys) flags[k] = el.dataset[k] === "true";
+      return { el, hay: norm(el.dataset.search || ""), flags };
+    });
 
     bar.hidden = false; // progressive enhancement: reveal once wired
 
@@ -97,7 +98,7 @@ const { noun = "item", placeholder = "Search…", flags = [] } = Astro.props;
       for (const it of items) {
         const okText = !q || it.hay.includes(q);
         let okFlags = true;
-        for (const f of flagFilters) if (!(it as any)[f]) okFlags = false;
+        for (const f of flagFilters) if (!it.flags[f]) okFlags = false;
         const show = okText && okFlags;
         it.el.hidden = !show;
         if (show) visible++;

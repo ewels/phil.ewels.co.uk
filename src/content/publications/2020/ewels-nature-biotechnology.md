@@ -9,3 +9,7 @@ tags:
 projects:
   - nf-core
 ---
+
+> **Preprint:** an earlier version of this work was posted on bioRxiv as [nf-core: Community curated bioinformatics pipelines](/publications/2019/ewels-biorxiv).
+
+nf-core is a community effort to build and maintain a curated set of bioinformatics analysis pipelines using Nextflow. This paper introduces the framework, describing the guidelines, code templates and tooling that keep nf-core pipelines portable, reproducible and consistent across different compute environments.
