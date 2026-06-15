@@ -19,6 +19,7 @@ const {
   hasYouTube,
   hasDownload,
   doi,
+  ...rest
 } = Astro.props;
 import { Icon } from "astro-icon/components";
 
@@ -62,7 +63,7 @@ function yearRange(startDate: Date, endDate: Date) {
 }
 ---
 
-<div class="horizontal-card-container">
+<div class="horizontal-card-container" {...rest}>
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4" data-astro-reload={doi ? true : undefined}>
     {img && <img src={img} alt={title} class={"block dark:hidden" + (noIconPadding ? "" : " p-2")} />}
     {
@@ -116,6 +117,11 @@ function yearRange(startDate: Date, endDate: Date) {
   .horizontal-card-container {
     @apply -mx-4 border-t border-slate-300 border-l-blue-500 bg-white px-4 transition-[border,margin,padding] ease-in-out last-of-type:border-b hover:border-l-8 md:-mx-10 md:px-10 md:hover:-mr-10 md:hover:pr-8 dark:border-zinc-600 dark:border-l-blue-500 dark:bg-black/20;
 
+    /* When filtering hides the DOM-last card, the last *visible* card keeps the divider */
+    &.is-last-visible {
+      @apply border-b;
+    }
+
     a img {
       @apply w-12 rounded-sm border shadow-sm;
     }
@@ -130,6 +136,6 @@ function yearRange(startDate: Date, endDate: Date) {
     }
   }
   .badge {
-    @apply mx-2 inline-block rounded-full bg-indigo-500/10 px-2 py-1 align-middle text-xs leading-none text-indigo-500;
+    @apply mx-2 inline-flex items-center rounded-full border border-gray-400 bg-gray-50 px-3 py-1 align-middle text-xs leading-none whitespace-nowrap text-slate-700 dark:border-zinc-600 dark:bg-gray-800 dark:text-slate-200;
   }
 </style>

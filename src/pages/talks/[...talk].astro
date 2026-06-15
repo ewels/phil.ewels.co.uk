@@ -52,14 +52,14 @@ const { Content } = await render(entry);
     }
   </div>
   <h2 class="mt-0 text-xl">{entry.data.description}</h2>
-  <div class="my-3">
+  <div class="my-3 flex flex-wrap items-center gap-2">
     <Label>{entry.data.type}</Label>
     {entry.data.keynote && <Label>Keynote Speaker</Label>}
     <Label>{entry.data.date.toISOString().split("T")[0]}</Label>
     {
       entry.data.online && (
         <Label>
-          Online <Icon name="bi:globe" class="ml-2 inline" />
+          Online <Icon name="bi:globe" class="w-[14px]" />
         </Label>
       )
     }
@@ -67,7 +67,7 @@ const { Content } = await render(entry);
       entry.data.location && (
         <Label>
           {entry.data.location}
-          {entry.data.countryFlag && <Icon name={"flag:" + entry.data.countryFlag + "-4x3"} class="ml-2 inline" />}
+          {entry.data.countryFlag && <Icon name={"flag:" + entry.data.countryFlag + "-4x3"} class="w-[14px]" />}
         </Label>
       )
     }

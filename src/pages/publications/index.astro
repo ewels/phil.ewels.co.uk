@@ -5,12 +5,12 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 import HomepageButton from "@components/HomepageButton.astro";
+import FilterBar from "@components/FilterBar.astro";
 
 import publications from "../../publications.json";
 const pubs = (await getCollection("publications")).sort(
   (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 );
-var year = null;
 
 function short_authors(authors) {
   const num_authors = 10;
@@ -22,6 +22,25 @@ function short_authors(authors) {
       author.family ? author.family + " " + ((author.given ?? "") ? author.given.substr(0, 1) : "") : author.name,
     )
     .join(", ");
+}
+
+// Full author list (untruncated) for searching.
+function all_authors(authors) {
+  return authors
+    .map((author) => (author.family ? `${author.family} ${author.given ?? ""}` : (author.name ?? "")))
+    .join(" ");
+}
+
+// Group into [{ year, pubs }] preserving the descending-date sort.
+const byYear: { year: number; pubs: typeof pubs }[] = [];
+for (const post of pubs) {
+  const year = publications[post.data.doi].published["date-parts"][0][0];
+  let group = byYear.at(-1);
+  if (!group || group.year !== year) {
+    group = { year, pubs: [] };
+    byYear.push(group);
+  }
+  group.pubs.push(post);
 }
 ---
 
@@ -44,26 +63,29 @@ function short_authors(authors) {
     title="Research Gate"
     icon="simple-icons:researchgate"
   />
-  {
-    pubs.map((post) => {
-      const pub = publications[post.data.doi];
-      var year_heading = null;
-      if (year != pub.published["date-parts"][0][0]) {
-        year = pub.published["date-parts"][0][0];
-        year_heading = year;
-      }
-      return (
-        <section>
-          {year_heading && <h2 class="mt-20 mb-4 text-2xl font-bold">{year_heading}</h2>}
-          <HorizontalCard
-            title={post.data.title}
-            subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
-            description={short_authors(pub.author)}
-            url={"/publications/" + post.id}
-            doi={post.data.doi}
-          />
+
+  <FilterBar noun="publication" placeholder="Search by title, journal or author…" />
+
+  <div data-find-results>
+    {
+      byYear.map((group) => (
+        <section data-find-group>
+          <h2 class="mt-20 mb-4 text-2xl font-bold">{group.year}</h2>
+          {group.pubs.map((post) => {
+            const pub = publications[post.data.doi];
+            return (
+              <HorizontalCard
+                title={post.data.title}
+                subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
+                description={short_authors(pub.author)}
+                url={"/publications/" + post.id}
+                doi={post.data.doi}
+                data-search={[post.data.title, post.data.journal, all_authors(pub.author)].filter(Boolean).join(" ")}
+              />
+            );
+          })}
         </section>
-      );
-    })
-  }
+      ))
+    }
+  </div>
 </BaseLayout>

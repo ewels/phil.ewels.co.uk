@@ -1,7 +1,9 @@
 ---
-const { href } = Astro.props;
+
 ---
 
-<span class="mr-2 inline rounded-full border bg-slate-500/10 px-2 py-1 text-xs">
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border border-gray-400 bg-gray-50 px-3 py-1 text-xs whitespace-nowrap text-slate-700 dark:border-zinc-600 dark:bg-gray-800 dark:text-slate-200"
+>
   <slot />
 </span>

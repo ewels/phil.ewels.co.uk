@@ -1,0 +1,194 @@
+---
+import { Icon } from "astro-icon/components";
+
+// noun: singular noun used in the empty-state copy ("talk" -> "talks")
+// placeholder: search input placeholder
+// flags: optional [{ key, label, count, icon }] independent multi-select chips
+const { noun = "item", placeholder = "Search…", flags = [] } = Astro.props;
+---
+
+{/* Hidden until JS removes the attribute: the list is fully usable without it. */}
+<div class="find-bar" data-find-bar data-noun={noun} hidden>
+  <div class="find-row">
+    <div class="find-search">
+      <Icon name="bi:search" class="find-search__icon" />
+      <input
+        type="search"
+        data-find-search
+        class="find-search__input"
+        placeholder={placeholder}
+        aria-label={placeholder}
+        autocomplete="off"
+        spellcheck="false"
+        enterkeyhint="search"
+      />
+    </div>
+    {
+      flags.length > 0 && (
+        <div class="find-flags" role="group" aria-label={`Filter ${noun}s by content`}>
+          {flags.map((f) => (
+            <button type="button" class="chip" data-chip-flag data-key={f.key} aria-pressed="false">
+              {f.icon && <Icon name={f.icon} class="chip__icon" />}
+              {f.label} <span class="chip__count">{f.count}</span>
+            </button>
+          ))}
+        </div>
+      )
+    }
+  </div>
+
+  <div class="find-empty" data-find-empty hidden>
+    <p data-find-empty-text></p>
+    <button type="button" class="chip" data-find-clear>Clear filters</button>
+  </div>
+</div>
+
+<script>
+  function initFind() {
+    const bar = document.querySelector<HTMLElement>("[data-find-bar]");
+    const results = document.querySelector<HTMLElement>("[data-find-results]");
+    if (!bar || !results) return;
+
+    const input = bar.querySelector<HTMLInputElement>("[data-find-search]");
+    const emptyEl = bar.querySelector<HTMLElement>("[data-find-empty]");
+    const emptyText = bar.querySelector<HTMLElement>("[data-find-empty-text]");
+    const clearBtn = bar.querySelector<HTMLButtonElement>("[data-find-clear]");
+    const noun = bar.dataset.noun || "item";
+
+    const flagChips = Array.from(bar.querySelectorAll<HTMLButtonElement>("[data-chip-flag]"));
+    const groups = Array.from(results.querySelectorAll<HTMLElement>("[data-find-group]"));
+
+    // Pre-compute a normalised haystack per card once.
+    const norm = (s: string) => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+    const items = Array.from(results.querySelectorAll<HTMLElement>(".horizontal-card-container")).map((el) => ({
+      el,
+      hay: norm(el.dataset.search || ""),
+      keynote: el.dataset.keynote === "true",
+      video: el.dataset.video === "true",
+      slides: el.dataset.slides === "true",
+    }));
+
+    bar.hidden = false; // progressive enhancement: reveal once wired
+
+    const flagFilters = new Set<string>();
+
+    function syncFromURL() {
+      const p = new URLSearchParams(location.search);
+      if (input) input.value = p.get("q") || "";
+      flagFilters.clear();
+      (p.get("flags") || "")
+        .split(",")
+        .filter(Boolean)
+        .forEach((f) => flagFilters.add(f));
+      flagChips.forEach((c) => c.setAttribute("aria-pressed", String(flagFilters.has(c.dataset.key || ""))));
+    }
+
+    function writeToURL(q: string) {
+      const p = new URLSearchParams();
+      if (q) p.set("q", q);
+      if (flagFilters.size) p.set("flags", Array.from(flagFilters).join(","));
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+    }
+
+    function apply() {
+      const q = norm((input?.value || "").trim());
+      let visible = 0;
+      for (const it of items) {
+        const okText = !q || it.hay.includes(q);
+        let okFlags = true;
+        for (const f of flagFilters) if (!(it as any)[f]) okFlags = false;
+        const show = okText && okFlags;
+        it.el.hidden = !show;
+        if (show) visible++;
+      }
+      for (const g of groups) {
+        const vis = g.querySelectorAll<HTMLElement>(".horizontal-card-container:not([hidden])");
+        g.hidden = vis.length === 0;
+        g.querySelectorAll(".is-last-visible").forEach((e) => e.classList.remove("is-last-visible"));
+        if (vis.length) vis[vis.length - 1].classList.add("is-last-visible");
+      }
+
+      const active = q !== "" || flagFilters.size > 0;
+      if (emptyEl) emptyEl.hidden = !(active && visible === 0);
+      if (emptyText)
+        emptyText.textContent = q ? `No ${noun}s match “${input?.value.trim()}”.` : `No ${noun}s match those filters.`;
+
+      writeToURL(input?.value.trim() || "");
+    }
+
+    let t: number | undefined;
+    input?.addEventListener("input", () => {
+      window.clearTimeout(t);
+      t = window.setTimeout(apply, 120);
+    });
+    input?.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && input.value) {
+        input.value = "";
+        apply();
+      }
+    });
+
+    flagChips.forEach((chip) =>
+      chip.addEventListener("click", () => {
+        const key = chip.dataset.key || "";
+        const on = chip.getAttribute("aria-pressed") !== "true";
+        chip.setAttribute("aria-pressed", String(on));
+        on ? flagFilters.add(key) : flagFilters.delete(key);
+        apply();
+      }),
+    );
+
+    clearBtn?.addEventListener("click", () => {
+      if (input) input.value = "";
+      flagFilters.clear();
+      flagChips.forEach((c) => c.setAttribute("aria-pressed", "false"));
+      apply();
+      input?.focus();
+    });
+
+    syncFromURL();
+    apply();
+  }
+
+  initFind();
+  document.addEventListener("astro:after-swap", initFind);
+</script>
+
+<style>
+  @reference "../styles/global.css";
+
+  .find-bar {
+    @apply mt-10 mb-2;
+  }
+  .find-row {
+    @apply flex flex-wrap items-center gap-x-4 gap-y-3;
+  }
+  .find-search {
+    @apply relative flex min-w-[15rem] flex-1 items-center;
+  }
+  .find-search__icon {
+    @apply pointer-events-none absolute left-3 w-[18px] text-gray-400 dark:text-gray-500;
+  }
+  .find-search__input {
+    @apply w-full rounded-md border border-gray-400 bg-white/70 py-2 pr-3 pl-10 text-base text-black transition-colors placeholder:text-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:border-zinc-600 dark:bg-black/30 dark:text-white dark:placeholder:text-gray-500 dark:focus:bg-black/50;
+  }
+  .find-flags {
+    @apply flex flex-wrap gap-2;
+  }
+  .chip {
+    @apply inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-gray-400 bg-gray-50 px-3 py-1 text-xs whitespace-nowrap text-slate-700 transition-colors hover:border-blue-400 hover:text-blue-600 dark:border-zinc-600 dark:bg-gray-800 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-300;
+  }
+  .chip[aria-pressed="true"] {
+    @apply border-blue-500 bg-blue-500 text-white hover:border-blue-500 hover:text-white dark:border-blue-500 dark:bg-blue-500 dark:text-white;
+  }
+  .chip__icon {
+    @apply w-[14px];
+  }
+  .chip__count {
+    @apply text-[0.7rem] tabular-nums opacity-55;
+  }
+  .find-empty {
+    @apply mt-8 mb-4 flex flex-col items-start gap-3 text-base text-gray-600 dark:text-gray-300;
+  }
+</style>

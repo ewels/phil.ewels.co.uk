@@ -4,11 +4,30 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
+import FilterBar from "@components/FilterBar.astro";
 
 const talks = (await getCollection("talks")).sort(
   (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
 );
-var year: number = -1;
+
+// Group into [{ year, talks }] preserving the descending-date sort.
+const byYear: { year: number; talks: typeof talks }[] = [];
+for (const talk of talks) {
+  const year = talk.data.date.getFullYear();
+  let group = byYear.at(-1);
+  if (!group || group.year !== year) {
+    group = { year, talks: [] };
+    byYear.push(group);
+  }
+  group.talks.push(talk);
+}
+
+const count = (predicate: (t: (typeof talks)[number]) => boolean) => talks.filter(predicate).length;
+const flagChips = [
+  { key: "keynote", label: "Keynote", icon: "bi:star-fill", count: count((t) => Boolean(t.data.keynote)) },
+  { key: "video", label: "Video", icon: "mdi:youtube", count: count((t) => Boolean(t.data.youtubeIDs?.length)) },
+  { key: "slides", label: "Slides", icon: "bi:file-earmark-pdf", count: count((t) => Boolean(t.data.pdfURLs?.length)) },
+];
 ---
 
 <BaseLayout title="Talks">
@@ -16,34 +35,40 @@ var year: number = -1;
   <PageTitle>Talks</PageTitle>
   <p class="mb-3 text-xl">A highlight of my work is giving presentations.</p>
   <p class="mb-5 text-base font-light opacity-80">
-    Science and software is only useful if people know about it. A joy of working in open-souce is the ability to share
+    Science and software is only useful if people know about it. A joy of working in open-source is the ability to share
     tools and communities with others. The talks and training that I give are below, with slides and YouTube recordings
     wherever possible.
   </p>
-  {
-    talks.map((post) => {
-      var year_heading = null;
-      if (year != post.data.date.getFullYear()) {
-        year = post.data.date.getFullYear();
-        year_heading = year;
-      }
-      return (
-        <section>
-          {year_heading && <h2 class="mt-20 mb-4 text-2xl font-bold">{year_heading}</h2>}
-          <HorizontalCard
-            title={post.data.title}
-            description={post.data.description}
-            talk_online={post.data.online}
-            talk_type={post.data.type}
-            countryFlag={post.data.countryFlag}
-            url={"/talks/" + post.id}
-            postDate={post.data.date}
-            hasYouTube={post.data.youtubeIDs}
-            hasDownload={post.data.pdfURLs}
-            badge={post.data.keynote ? "Keynote" : null}
-          />
+
+  <FilterBar noun="talk" placeholder="Search talks by title, topic or place…" flags={flagChips} />
+
+  <div data-find-results>
+    {
+      byYear.map((group) => (
+        <section data-find-group>
+          <h2 class="mt-20 mb-4 text-2xl font-bold">{group.year}</h2>
+          {group.talks.map((post) => (
+            <HorizontalCard
+              title={post.data.title}
+              description={post.data.description}
+              talk_online={post.data.online}
+              talk_type={post.data.type}
+              countryFlag={post.data.countryFlag}
+              url={"/talks/" + post.id}
+              postDate={post.data.date}
+              hasYouTube={post.data.youtubeIDs}
+              hasDownload={post.data.pdfURLs}
+              badge={post.data.keynote ? "Keynote" : null}
+              data-search={[post.data.title, post.data.description, post.data.location, post.data.type]
+                .filter(Boolean)
+                .join(" ")}
+              data-keynote={String(Boolean(post.data.keynote))}
+              data-video={String(Boolean(post.data.youtubeIDs?.length))}
+              data-slides={String(Boolean(post.data.pdfURLs?.length))}
+            />
+          ))}
         </section>
-      );
-    })
-  }
+      ))
+    }
+  </div>
 </BaseLayout>
