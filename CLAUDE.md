@@ -177,7 +177,7 @@ Automatic deployment via GitHub Actions ([.github/workflows/deploy.yml](/.github
 ## Important Notes
 
 - **Main branch**: The default branch is `main` (not `master`)
-- **PR base**: When creating pull requests, target the `2016` branch (not `main`)
+- **PR base**: When creating pull requests, target the `main` branch (the default branch, which deploys the live site via GitHub Actions)
 - **No server-side code**: Everything is statically generated at build time
 - **Large JSON file**: `src/publications.json` is ~718KB and should be updated via script only
 - **TypeScript aliases**: Use `@components/*` and `@layouts/*` for imports (configured in [tsconfig.json](tsconfig.json))
