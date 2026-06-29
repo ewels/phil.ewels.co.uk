@@ -6,6 +6,8 @@ github: ewels/mkdocs-quiz
 heroImage: /images/projects/mkdocs-quiz_hero.png
 heroImageDark: /images/projects/mkdocs-quiz_hero_dark.png
 iconImage: /images/projects/mkdocs-quiz_icon.svg
+logoImage: /images/projects/mkdocs-quiz_logo.svg
+logoImageDark: /images/projects/mkdocs-quiz_logo_dark.svg
 personal: true
 order: 16
 ---
