@@ -1,0 +1,42 @@
+---
+title: gfm-tidy
+description: A userscript that adds buttons to GitHub's markdown toolbar, and lets you reorder or hide the rest.
+github: ewels/gfm-tidy
+iconImage: /images/projects/gfm-tidy_icon.svg
+personal: true
+order: 19
+---
+
+[**gfm-tidy**](https://github.com/ewels/gfm-tidy) is a userscript that adds extra buttons to GitHub's markdown comment toolbar, and gives you control over which of GitHub's own buttons you keep. It works on issues, pull requests, review comments and discussions.
+
+It exists because AI agents write annoying GitHub comments: text hard-wrapped at 80 columns (GitHub renders a single line break as a `<br>`, so every wrap shows up), commit hashes in backticks (which stops GitHub linking them), and code indented to wherever it happened to sit in the source.
+
+The buttons:
+
+- **Unwrap** joins hard-wrapped lines back into full-length paragraphs and frees commit hashes from their backticks, leaving code fences, tables, lists and headings alone
+- **Dedent** strips the leading whitespace common to every line
+- **Details** wraps the text in a `<details>` box, with the `<summary>` placeholder selected so you can type over it
+- **Alerts** inserts a GitHub alert, one button per kind: Note, Tip, Important, Warning and Caution
+- **Configure** opens a panel where you can drag any toolbar button into a new order, hide it, or add separators, including GitHub's own buttons
+
+{/* The source video is padded with black below the content, so crop to the top 2/3 */}
+
+<div class="w-full overflow-hidden rounded-lg shadow-md" style="aspect-ratio: 2050 / 1536">
+  <video
+    src="https://github.com/user-attachments/assets/271c9fcc-7a62-4c1e-b409-9bc1460a02a5"
+    autoplay
+    loop
+    muted
+    playsinline
+    controls
+    class="h-full w-full object-cover object-top"
+  >
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+Changes apply immediately with no page reload, and undo works as you'd expect. The layout is stored by the userscript manager, so it follows you between machines.
+
+One file, no build step, no dependencies. Install [Violentmonkey](https://violentmonkey.github.io/) or [Tampermonkey](https://www.tampermonkey.net/), then open [`gfm-tidy.user.js`](https://raw.githubusercontent.com/ewels/gfm-tidy/main/gfm-tidy.user.js) and confirm the prompt. Updates are automatic.
+
+See the [source code and installation instructions on GitHub](https://github.com/ewels/gfm-tidy).
