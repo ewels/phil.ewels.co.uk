@@ -44,6 +44,19 @@ const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : S
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
     set_theme();
   });
+
+  // Autoplay videos sit frozen on their first frame after a client-side navigation
+  // until you refresh. ClientRouter builds the new page outside the HTML parser, and
+  // the `muted` property is only initialised from the attribute for parser-created
+  // elements -- so the video arrives unmuted, fails the autoplay policy and never
+  // starts. Re-assert muted from the attribute, then start it by hand.
+  document.addEventListener("astro:page-load", function () {
+    document.querySelectorAll("video[autoplay]").forEach(function (video) {
+      video.muted = video.defaultMuted;
+      // Still rejects if the autoplay policy says no; nothing we can do there.
+      video.play()?.catch(function () {});
+    });
+  });
 </script>
 
 <!-- Global Metadata -->
