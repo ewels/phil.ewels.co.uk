@@ -2,6 +2,8 @@
 import NavItem from "@components/SideBar/NavItem.astro";
 import SocialIcon from "@components/SideBar/SocialIcon.astro";
 import DarkModeToggle from "@components/DarkModeToggle.svelte";
+
+import { PROFILE_LINKS } from "../config";
 ---
 
 <div
@@ -53,18 +55,10 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
       <DarkModeToggle client:only="svelte" />
     </div>
     <div class="social-icons mt-3 flex justify-between border-t border-zinc-300 px-6 py-8 dark:border-zinc-700">
-      <SocialIcon href="https://github.com/ewels/" icon="mdi:github" label="GitHub" />
-      <SocialIcon href="https://bsky.app/profile/ewels.bsky.social" icon="simple-icons:bluesky" label="Bluesky" />
-      <SocialIcon href="http://uk.linkedin.com/in/philewels" icon="mdi:linkedin" label="LinkedIn" />
-      <SocialIcon href="http://twitter.com/tallphil" icon="bi:twitter-x" label="X (twitter)" />
-      <SocialIcon href="https://genomic.social/@ewels" icon="mdi:mastodon" label="Mastodon" />
-      <SocialIcon href="http://orcid.org/0000-0003-4101-2502" icon="simple-icons:orcid" label="ORCiD" />
+      {PROFILE_LINKS.filter((link) => link.sidebar !== false).map((link) => (
+        <SocialIcon href={link.href} icon={link.icon} label={link.label} />
+      ))}
       {/*
-      <SocialIcon
-        href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
-        icon="simple-icons:googlescholar"
-        label="Google Scholar"
-      />
       <SocialIcon
         href="http://www.researchgate.net/profile/Philip_Ewels"
         icon="simple-icons:researchgate"

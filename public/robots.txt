@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://phil.ewels.co.uk/sitemap-index.xml
+
+# Markdown for LLMs and agents: https://llmstxt.org/
+# Index:        https://phil.ewels.co.uk/llms.txt
+# Whole site:   https://phil.ewels.co.uk/llms-full.txt
+# Any page:     append .md to its URL

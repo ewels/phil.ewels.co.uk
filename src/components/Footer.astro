@@ -2,6 +2,14 @@
 import DarkModeToggle from "@components/DarkModeToggle.svelte";
 
 import { Icon } from "astro-icon/components";
+
+import { getLlmPages } from "../lib/llm-pages";
+
+// A content page can offer its own Markdown source; the homepage and the index pages
+// have no single source to offer, so they point at the site-wide index instead.
+const pathname = Astro.url.pathname.replace(/\/$/, "");
+const has_markdown = (await getLlmPages()).some((page) => page.path === pathname);
+const markdown_href = has_markdown ? `${pathname}.md` : "/llms.txt";
 ---
 
 <footer class="mt-8 block border-t py-6 text-center text-xs dark:border-zinc-700">
@@ -20,6 +28,11 @@ import { Icon } from "astro-icon/components";
     <br class="md:hidden" />
     <a href="https://github.com/ewels/phil.ewels.co.uk/" target="_blank">
       <span class="underline">See source code</span> <Icon name="mdi:github" size="24px" class="inline" />
+    </a>
+    <span class="mx-2 hidden md:inline">|</span>
+    <br class="md:hidden" />
+    <a href={markdown_href}>
+      <span class="underline">Read as Markdown</span> <Icon name="simple-icons:markdown" size="24px" class="inline" />
     </a>
   </div>
   <div class="float-right mr-6 hidden text-black md:block dark:text-zinc-200">
