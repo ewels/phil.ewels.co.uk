@@ -75,6 +75,13 @@ const { entry, Content, back_to_text = false, back_to_link = false, is_archived 
         )
       }
       {
+        entry.data.marketplaceURL && (
+          <Button href={entry.data.marketplaceURL} icon="simple-icons:elgato" classes="mr-4 mt-3">
+            Elgato Marketplace
+          </Button>
+        )
+      }
+      {
         entry.data.github && (
           <Button href={"https://github.com/" + entry.data.github} icon="mdi:github" classes="mt-3">
             {entry.data.github}
