@@ -7,6 +7,7 @@ import { Tooltips } from "astro-tooltips";
 import { ClientRouter } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { getLlmPages } from "../lib/llm-pages";
 
 export interface Props {
   title: string;
@@ -17,6 +18,13 @@ export interface Props {
 const { title, description, image = "/social_img.png" } = Astro.props;
 
 const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+
+// Point crawlers at the Markdown source, but only for pages that actually have
+// one — both sides of this come from the same list, so they cannot drift.
+const pathname = Astro.url.pathname.replace(/\/$/, "");
+const markdown_url = (await getLlmPages()).some((page) => page.path === pathname)
+  ? new URL(`${pathname}.md`, Astro.site)
+  : null;
 ---
 
 <script is:inline>
@@ -44,6 +52,19 @@ const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : S
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
     set_theme();
   });
+
+  // Autoplay videos sit frozen on their first frame after a client-side navigation
+  // until you refresh. ClientRouter builds the new page outside the HTML parser, and
+  // the `muted` property is only initialised from the attribute for parser-created
+  // elements — so the video arrives unmuted, fails the autoplay policy and never
+  // starts. Re-assert muted from the attribute, then start it by hand.
+  document.addEventListener("astro:page-load", function () {
+    document.querySelectorAll("video[autoplay]").forEach(function (video) {
+      video.muted = video.defaultMuted;
+      // Still rejects if the autoplay policy says no; nothing we can do there.
+      video.play()?.catch(function () {});
+    });
+  });
 </script>
 
 <!-- Global Metadata -->
@@ -56,6 +77,7 @@ const page_title = title && title != SITE_TITLE ? `${title} | ${SITE_TITLE}` : S
 <title>{page_title}</title>
 <meta name="title" content={page_title} />
 <meta name="description" content={description} />
+{markdown_url && <link rel="alternate" type="text/markdown" href={markdown_url} title="Markdown source" />}
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />

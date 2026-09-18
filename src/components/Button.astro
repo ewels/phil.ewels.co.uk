@@ -7,24 +7,20 @@ var btn_classes = "not-prose " + (icon ? "icon " : "") + (classes ? classes : ""
 const target = href.startsWith("http") ? "_blank" : "_self";
 ---
 
-{
-  type && (
-    <button type={type} class={btn_classes} id={id}>
-      {icon && <Icon name={icon} size={24} class="mr-2 inline-block" />}
-      <slot />
-      {iconAfter && <Icon name={iconAfter} size={18} class="ml-2 inline-block" />}
-    </button>
-  )
-}
-{
-  !type && (
-    <a href={href} class={btn_classes} target={target}>
-      {icon && <Icon name={icon} size={24} class="mr-2 inline-block" />}
-      <slot />
-      {iconAfter && <Icon name={iconAfter} size={18} class="ml-2 inline-block" />}
-    </a>
-  )
-}
+{type && (
+  <button type={type} class={btn_classes} id={id}>
+    {icon && <Icon name={icon} size={24} class="mr-2 inline-block" />}
+    <slot />
+    {iconAfter && <Icon name={iconAfter} size={18} class="ml-2 inline-block" />}
+  </button>
+)}
+{!type && (
+  <a href={href} class={btn_classes} target={target}>
+    {icon && <Icon name={icon} size={24} class="mr-2 inline-block" />}
+    <slot />
+    {iconAfter && <Icon name={iconAfter} size={18} class="ml-2 inline-block" />}
+  </a>
+)}
 
 <style>
   @reference "../styles/global.css";

@@ -6,6 +6,7 @@ import PageTitle from "@components/PageTitle.astro";
 import HomepageButton from "@components/HomepageButton.astro";
 import HomepageCard from "@components/HomepageCard.astro";
 import publications from "../publications.json";
+import { PROFILE_LINKS } from "../config";
 
 const workplaces = (await getCollection("workplaces"))
   .sort((a, b) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf())
@@ -55,26 +56,16 @@ const talks = await getCollection("talks");
     </p>
   </div>
   <div class="mb-5 text-center md:text-left">
-    <HomepageButton href="https://github.com/ewels/" title="GitHub" icon="mdi:github" />
-    <HomepageButton href="https://bsky.app/profile/ewels.bsky.social" title="Bluesky" icon="simple-icons:bluesky" />
-    <HomepageButton href="http://uk.linkedin.com/in/philewels" title="LinkedIn" icon="mdi:linkedin" />
-    <HomepageButton href="http://twitter.com/tallphil" title="X (Twitter)" icon="bi:twitter-x" />
-    <HomepageButton href="https://genomic.social/@ewels" title="Mastodon" icon="mdi:mastodon" />
-    <HomepageButton href="http://orcid.org/0000-0003-4101-2502" title="ORCiD" icon="simple-icons:orcid" />
-    <HomepageButton
-      href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
-      title="Google Scholar"
-      icon="simple-icons:googlescholar"
-    />
-    {
-      /*
+    {PROFILE_LINKS.map((link) => (
+      <HomepageButton href={link.href} title={link.label} icon={link.icon} />
+    ))}
+    {/*
     <HomepageButton
       href="http://www.researchgate.net/profile/Philip_Ewels"
       title="Research Gate"
       icon="simple-icons:researchgate"
     />
-    */
-    }
+    */}
   </div>
 
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2">

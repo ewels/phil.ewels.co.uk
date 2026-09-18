@@ -66,15 +66,13 @@ function yearRange(startDate: Date, endDate: Date) {
 <div class="horizontal-card-container" {...rest}>
   <a href={url} target={target} class="horizontal-card py-2 2xl:p-4" data-astro-reload={doi ? true : undefined}>
     {img && <img src={img} alt={title} class={"block dark:hidden" + (noIconPadding ? "" : " p-2")} />}
-    {
-      (img || imgDark) && (
-        <img
-          src={imgDark ?? img}
-          alt={title}
-          class={"hidden dark:block dark:border-gray-700" + (noIconPadding ? "" : " p-2")}
-        />
-      )
-    }
+    {(img || imgDark) && (
+      <img
+        src={imgDark ?? img}
+        alt={title}
+        class={"hidden dark:block dark:border-gray-700" + (noIconPadding ? "" : " p-2")}
+      />
+    )}
     <div class="w-full grow">
       <h1 class={subtitle ? "text-lg" : "text-xl"}>
         {title}
@@ -83,11 +81,9 @@ function yearRange(startDate: Date, endDate: Date) {
       {subtitle && <h2 class="text-l">{subtitle} </h2>}
       <p class="text-1xl block py-1 font-light text-gray-500 dark:text-gray-300">
         {countryFlagIcon && <Icon name={countryFlagIcon} class="mr-2 hidden w-[18px] md:inline-block dark:md:hidden" />}
-        {
-          countryFlagIconDark && (
-            <Icon name={countryFlagIconDark} class="mr-2 hidden w-[18px] md:hidden dark:md:inline-block" />
-          )
-        }
+        {countryFlagIconDark && (
+          <Icon name={countryFlagIconDark} class="mr-2 hidden w-[18px] md:hidden dark:md:inline-block" />
+        )}
         {postDate && <Fragment set:html={dateString(postDate)} />}
         {postDate && description && <span class="mx-2">&bull;</span>}
         {description}

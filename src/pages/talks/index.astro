@@ -43,32 +43,30 @@ const flagChips = [
   <FilterBar noun="talk" placeholder="Search talks by title, topic or place…" flags={flagChips} />
 
   <div data-find-results>
-    {
-      byYear.map((group) => (
-        <section data-find-group>
-          <h2 class="mt-20 mb-4 text-2xl font-bold">{group.year}</h2>
-          {group.talks.map((post) => (
-            <HorizontalCard
-              title={post.data.title}
-              description={post.data.description}
-              talk_online={post.data.online}
-              talk_type={post.data.type}
-              countryFlag={post.data.countryFlag}
-              url={"/talks/" + post.id}
-              postDate={post.data.date}
-              hasYouTube={post.data.youtubeIDs}
-              hasDownload={post.data.pdfURLs}
-              badge={post.data.keynote ? "Keynote" : null}
-              data-search={[post.data.title, post.data.description, post.data.location, post.data.type]
-                .filter(Boolean)
-                .join(" ")}
-              data-keynote={String(Boolean(post.data.keynote))}
-              data-video={String(Boolean(post.data.youtubeIDs?.length))}
-              data-slides={String(Boolean(post.data.pdfURLs?.length))}
-            />
-          ))}
-        </section>
-      ))
-    }
+    {byYear.map((group) => (
+      <section data-find-group>
+        <h2 class="mt-20 mb-4 text-2xl font-bold">{group.year}</h2>
+        {group.talks.map((post) => (
+          <HorizontalCard
+            title={post.data.title}
+            description={post.data.description}
+            talk_online={post.data.online}
+            talk_type={post.data.type}
+            countryFlag={post.data.countryFlag}
+            url={"/talks/" + post.id}
+            postDate={post.data.date}
+            hasYouTube={post.data.youtubeIDs}
+            hasDownload={post.data.pdfURLs}
+            badge={post.data.keynote ? "Keynote" : null}
+            data-search={[post.data.title, post.data.description, post.data.location, post.data.type]
+              .filter(Boolean)
+              .join(" ")}
+            data-keynote={String(Boolean(post.data.keynote))}
+            data-video={String(Boolean(post.data.youtubeIDs?.length))}
+            data-slides={String(Boolean(post.data.pdfURLs?.length))}
+          />
+        ))}
+      </section>
+    ))}
   </div>
 </BaseLayout>
