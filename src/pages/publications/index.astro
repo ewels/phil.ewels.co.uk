@@ -80,27 +80,25 @@ for (const post of pubs) {
   <FilterBar noun="publication" placeholder="Search by title, journal or author…" flags={flagChips} />
 
   <div data-find-results>
-    {
-      byYear.map((group) => (
-        <section data-find-group>
-          <h2 class="mt-20 mb-4 text-2xl font-bold">{group.year}</h2>
-          {group.pubs.map((post) => {
-            const pub = publications[post.data.doi];
-            return (
-              <HorizontalCard
-                title={post.data.title}
-                subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
-                description={short_authors(pub.author)}
-                url={"/publications/" + post.id}
-                doi={post.data.doi}
-                badge={isPreprint(post.data.journal) ? "Preprint" : undefined}
-                data-search={[post.data.title, post.data.journal, all_authors(pub.author)].filter(Boolean).join(" ")}
-                data-preprint={String(isPreprint(post.data.journal))}
-              />
-            );
-          })}
-        </section>
-      ))
-    }
+    {byYear.map((group) => (
+      <section data-find-group>
+        <h2 class="mt-20 mb-4 text-2xl font-bold">{group.year}</h2>
+        {group.pubs.map((post) => {
+          const pub = publications[post.data.doi];
+          return (
+            <HorizontalCard
+              title={post.data.title}
+              subtitle={post.data.journal + " (" + pub.published["date-parts"][0][0] + ")"}
+              description={short_authors(pub.author)}
+              url={"/publications/" + post.id}
+              doi={post.data.doi}
+              badge={isPreprint(post.data.journal) ? "Preprint" : undefined}
+              data-search={[post.data.title, post.data.journal, all_authors(pub.author)].filter(Boolean).join(" ")}
+              data-preprint={String(isPreprint(post.data.journal))}
+            />
+          );
+        })}
+      </section>
+    ))}
   </div>
 </BaseLayout>

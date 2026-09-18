@@ -8,13 +8,13 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
   class="sidebar sticky top-0 col-start-1 row-start-1 -ml-96 grid h-dvh w-screen max-w-96 overflow-x-hidden bg-white/90 duration-500 xl:ml-0 dark:bg-black/80"
   id="sidebar"
 >
-  <div
-    class="menu flex flex-col flex-nowrap overflow-y-auto border-r border-black/10 pt-5 text-black backdrop-blur-xs dark:border-white/10 dark:text-white"
-  >
+  <div class="menu flex flex-col flex-nowrap overflow-y-auto border-r border-black/10 pt-5 text-black backdrop-blur-xs dark:border-white/10 dark:text-white">
     <span
       onclick="openCloseMenu()"
-      class="mr-3 ml-5 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden">&#10005;</span
+      class="mr-3 ml-5 cursor-pointer text-2xl opacity-50 transition-opacity hover:opacity-100 md:hidden"
     >
+      &#10005;
+    </span>
     <div class="mt-2 flex items-center">
       <hr class="w-1/6 border-zinc-400/60 lg:w-1/5 dark:border-zinc-600" />
       <a href="/" class="m-auto flex grow items-center justify-center">
@@ -29,12 +29,24 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
     </div>
     <span class="mt-8 hidden text-center text-5xl font-thin lg:block">Phil Ewels</span>
     <ul class="my-menu-items mx-5 my-8">
-      <NavItem href="/" icon="bi:house-door">Home</NavItem>
-      <NavItem href="/work" icon="bi:person-circle">Where I've worked</NavItem>
-      <NavItem href="/projects" icon="bi:journal-bookmark-fill">Projects</NavItem>
-      <NavItem href="/talks" icon="bi:easel">Talks</NavItem>
-      <NavItem href="/publications" icon="bi:file-earmark-text">Publications</NavItem>
-      <NavItem href="/contact" icon="bi:envelope">Contact me</NavItem>
+      <NavItem href="/" icon="bi:house-door">
+        Home
+      </NavItem>
+      <NavItem href="/work" icon="bi:person-circle">
+        Where I've worked
+      </NavItem>
+      <NavItem href="/projects" icon="bi:journal-bookmark-fill">
+        Projects
+      </NavItem>
+      <NavItem href="/talks" icon="bi:easel">
+        Talks
+      </NavItem>
+      <NavItem href="/publications" icon="bi:file-earmark-text">
+        Publications
+      </NavItem>
+      <NavItem href="/contact" icon="bi:envelope">
+        Contact me
+      </NavItem>
     </ul>
     <div class="flex-grow"></div>
     <div class="p-2 text-center">
@@ -47,8 +59,7 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
       <SocialIcon href="http://twitter.com/tallphil" icon="bi:twitter-x" label="X (twitter)" />
       <SocialIcon href="https://genomic.social/@ewels" icon="mdi:mastodon" label="Mastodon" />
       <SocialIcon href="http://orcid.org/0000-0003-4101-2502" icon="simple-icons:orcid" label="ORCiD" />
-      {
-        /*
+      {/*
       <SocialIcon
         href="https://scholar.google.se/citations?user=KJt8R0kAAAAJ&view_op=list_works&sortby=pubdate"
         icon="simple-icons:googlescholar"
@@ -59,8 +70,7 @@ import DarkModeToggle from "@components/DarkModeToggle.svelte";
         icon="simple-icons:researchgate"
         label="Research Gate"
       />
-      */
-      }
+      */}
     </div>
   </div>
 </div>

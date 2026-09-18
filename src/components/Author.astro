@@ -19,16 +19,14 @@ const isMe = longname && longname.includes("Ewels");
   title={longname}
   class:list={[{ "rounded bg-yellow-100 px-1.5 py-0.5 font-semibold dark:bg-yellow-900/40": isMe }]}
 >
-  {
-    author.ORCID ? (
-      <a href={author.ORCID} target="_blank">
-        <Icon name="simple-icons:orcid" size="16px" class="inline opacity-50" />
-        {shortname}
-      </a>
-    ) : (
-      <>{shortname}</>
-    )
-  }
+  {author.ORCID ? (
+    <a href={author.ORCID} target="_blank">
+      <Icon name="simple-icons:orcid" size="16px" class="inline opacity-50" />
+      {shortname}
+    </a>
+  ) : (
+    <>{shortname}</>
+  )}
 </span>
 
 <style>

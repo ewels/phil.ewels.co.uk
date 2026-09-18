@@ -33,44 +33,40 @@ const education = (await getCollection("education")).sort(
   </p>
   <ul>
     <!--List the array of astronaut info-->
-    {
-      workplaces.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.data.title}
-            img={post.data.iconImage}
-            imgDark={post.data.iconImageDark ?? post.data.iconImage}
-            description={post.data.location}
-            startDate={post.data.startDate}
-            endDate={post.data.endDate}
-            countryFlag={post.data.countryFlag}
-            tags={[post.data.numPositions + " position" + (post.data.numPositions > 1 ? "s" : "")]}
-            url={"/work/" + post.id}
-          />
-        </>
-      ))
-    }
+    {workplaces.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.iconImage}
+          imgDark={post.data.iconImageDark ?? post.data.iconImage}
+          description={post.data.location}
+          startDate={post.data.startDate}
+          endDate={post.data.endDate}
+          countryFlag={post.data.countryFlag}
+          tags={[post.data.numPositions + " position" + (post.data.numPositions > 1 ? "s" : "")]}
+          url={"/work/" + post.id}
+        />
+      </>
+    ))}
   </ul>
 
   <h2 class="mt-12 mb-8 text-3xl font-bold">Education</h2>
   <ul>
     <!--List the array of astronaut info-->
-    {
-      education.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.data.title}
-            subtitle={post.data.subtitle}
-            img={post.data.iconImage}
-            imgDark={post.data.iconImageDark ?? post.data.iconImage}
-            description={post.data.location}
-            startDate={post.data.startDate}
-            endDate={post.data.endDate}
-            countryFlag={post.data.countryFlag}
-            url={"/education/" + post.id}
-          />
-        </>
-      ))
-    }
+    {education.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          subtitle={post.data.subtitle}
+          img={post.data.iconImage}
+          imgDark={post.data.iconImageDark ?? post.data.iconImage}
+          description={post.data.location}
+          startDate={post.data.startDate}
+          endDate={post.data.endDate}
+          countryFlag={post.data.countryFlag}
+          url={"/education/" + post.id}
+        />
+      </>
+    ))}
   </ul>
 </BaseLayout>

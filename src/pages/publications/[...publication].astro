@@ -21,10 +21,18 @@ const pub_year = pub.published["date-parts"][0][0];
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-  <a href="/publications/" class="text-xs opacity-30">&laquo; Back to publications</a>
+  <a href="/publications/" class="text-xs opacity-30">
+    &laquo; Back to publications
+  </a>
   <h1 class="mb-4 text-xl font-bold md:text-3xl">{entry.data.title}</h1>
-  <h2 class="mb-2"><span class="mr-2 italic">{entry.data.journal}</span> ({pub_year})</h2>
-  <h3 class="authors mb-4">{pub.author.map((author) => <Author author={author} />)}</h3>
+  <h2 class="mb-2">
+    <span class="mr-2 italic">{entry.data.journal}</span> ({pub_year})
+  </h2>
+  <h3 class="authors mb-4">
+    {pub.author.map((author) => (
+      <Author author={author} />
+    ))}
+  </h3>
 
   <div class="flex flex-row py-8">
     <div class="basis-1/2">
@@ -34,13 +42,12 @@ const pub_year = pub.published["date-parts"][0][0];
 
     <div class="basis-1/2 py-3 md:text-right">
       <p class="mb-5">
-        <Button href={pub.URL} iconAfter="mdi:open-in-new">View publication</Button>
+        <Button href={pub.URL} iconAfter="mdi:open-in-new">
+          View publication
+        </Button>
       </p>
       <p>
-        <abbr title="Digital Object Identifier">DOI</abbr>:
-        <span class="ml-1 opacity-50">
-          {entry.data.doi}
-        </span>
+        <abbr title="Digital Object Identifier">DOI</abbr>:<span class="ml-1 opacity-50">{entry.data.doi}</span>
       </p>
     </div>
   </div>

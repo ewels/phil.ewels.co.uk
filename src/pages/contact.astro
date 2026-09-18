@@ -10,9 +10,8 @@ import Button from "@components/Button.astro";
   <PageTitle>Contact Me</PageTitle>
   <p class="mb-3 text-xl">Interested in working together, or something that I can help with? Let's get in touch.</p>
   <p class="mb-8 text-base font-light opacity-80">
-    If you need help with nf-core pipelines or specific projects such as MultiQC, please use the <a
-      href="https://community.seqera.io/">community support channels</a
-    >
+    If you need help with nf-core pipelines or specific projects such as MultiQC, please use the{" "}
+    <a href="https://community.seqera.io/">community support channels</a>
     and GitHub issues where possible.
   </p>
   <div class="mb-5 text-center md:text-left">
@@ -38,7 +37,9 @@ import Button from "@components/Button.astro";
       <textarea name="message" rows="8"></textarea>
     </label>
     <div class="flex items-center gap-4">
-      <Button id="submit-btn" type="submit" icon="mdi:email">Send email</Button>
+      <Button id="submit-btn" type="submit" icon="mdi:email">
+        Send email
+      </Button>
       <span id="contact-form-status"></span>
     </div>
   </form>

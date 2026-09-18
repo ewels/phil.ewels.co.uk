@@ -23,23 +23,23 @@ const { noun = "item", placeholder = "Search…", flags = [] } = Astro.props;
         enterkeyhint="search"
       />
     </div>
-    {
-      flags.length > 0 && (
-        <div class="find-flags" role="group" aria-label={`Filter ${noun}s by content`}>
-          {flags.map((f) => (
-            <button type="button" class="chip" data-chip-flag data-key={f.key} aria-pressed="false">
-              {f.icon && <Icon name={f.icon} class="chip__icon" />}
-              {f.label} <span class="chip__count">{f.count}</span>
-            </button>
-          ))}
-        </div>
-      )
-    }
+    {flags.length > 0 && (
+      <div class="find-flags" role="group" aria-label={`Filter ${noun}s by content`}>
+        {flags.map((f) => (
+          <button type="button" class="chip" data-chip-flag data-key={f.key} aria-pressed="false">
+            {f.icon && <Icon name={f.icon} class="chip__icon" />}
+            {f.label} <span class="chip__count">{f.count}</span>
+          </button>
+        ))}
+      </div>
+    )}
   </div>
 
   <div class="find-empty" data-find-empty hidden>
     <p data-find-empty-text></p>
-    <button type="button" class="chip" data-find-clear>Clear filters</button>
+    <button type="button" class="chip" data-find-clear>
+      Clear filters
+    </button>
   </div>
 </div>
 
