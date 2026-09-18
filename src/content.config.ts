@@ -7,6 +7,7 @@ const projectsCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     projectURL: z.string().url().optional(),
+    marketplaceURL: z.string().url().optional(),
     github: z
       .string()
       .regex(/^[a-zA-Z0-9._-]+(\/[a-zA-Z0-9._-]+)?$/)

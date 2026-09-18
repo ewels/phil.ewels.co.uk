@@ -1,7 +1,7 @@
 ---
 title: Type Deck
 description: A Stream Deck plugin that types preset text into the focused app, with optional human-like timing, typos, and jitter.
-projectURL: https://marketplace.elgato.com/product/type-deck-437fd2bf-0b88-473f-826b-fd8ed1dcfb74
+marketplaceURL: https://marketplace.elgato.com/product/type-deck-437fd2bf-0b88-473f-826b-fd8ed1dcfb74
 github: ewels/type-deck
 iconImage: /images/projects/type-deck_icon.png
 logoImage: /images/projects/type-deck_logo.svg
