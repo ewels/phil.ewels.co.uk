@@ -71,7 +71,7 @@ Questions came in from phones too. I could moderate them (on my phone) and put t
 at which point one of the moderator's NPC characters in the game walked up with a "?" and asked it in a speech bubble.
 People could send emoji reactions which floated up over the game, and when enough arrived at once the pixel crowd stood up.
 
-You can play it below, or at at Or [https://ewels.github.io/scverse2026-keynote/](https://ewels.github.io/scverse2026-keynote/) - click the game, then use the arrow keys to walk and space to take action:
+You can play it below, or at [https://ewels.github.io/scverse2026-keynote/](https://ewels.github.io/scverse2026-keynote/) - click the game, then use the arrow keys to walk and space to take action:
 
 <iframe
   src="https://ewels.github.io/scverse2026-keynote/"
