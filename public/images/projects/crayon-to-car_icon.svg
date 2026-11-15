@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -24 48 48">
+  <style>
+    .k { color: #17161b; }
+    @media (prefers-color-scheme: dark) { .k { color: #ffe500; } }
+  </style>
+  <defs>
+    <g id="t"><circle r="9" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M0-19V19M-19 0H19" stroke="currentColor" stroke-width="2.6"/><circle r="3.4" fill="currentColor"/></g>
+  </defs>
+  <use href="#t" color="#009fe3" opacity="0.9" x="-3.8" y="2.3"/>
+  <use href="#t" color="#e4007c" opacity="0.9" x="3.8" y="-1.5"/>
+  <use href="#t" class="k" x="0.8" y="3.8"/>
+</svg>

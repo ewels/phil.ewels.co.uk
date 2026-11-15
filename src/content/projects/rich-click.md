@@ -8,7 +8,7 @@ iconImage: /images/projects/rich-click-icon.png
 logoImage: /images/projects/rich-click-logo.png
 logoImageDark: /images/projects/rich-click-logo-darkmode.png
 personal: true
-order: 10
+order: 20
 ---
 
 [**rich-click**](https://ewels.github.io/rich-click/latest/) is a powerful Python library that transforms the appearance of command-line interfaces by bringing beautiful, colorful formatting to Click-based applications.

@@ -7,7 +7,7 @@ iconImage: /images/projects/starlight-codeblocks_icon.svg
 logoImage: /images/projects/starlight-codeblocks_logo.svg
 logoImageDark: /images/projects/starlight-codeblocks_logo_dark.svg
 personal: true
-order: 17.5
+order: 60
 ---
 
 [**starlight-codeblocks**](https://ewels.github.io/starlight-codeblocks/) is a plugin for [Astro Starlight](https://starlight.astro.build/) that adds 26 features to code blocks. It builds on [Expressive Code](https://expressive-code.com/), which already renders every code block in Starlight, so existing code blocks keep working.

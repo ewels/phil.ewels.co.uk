@@ -7,7 +7,7 @@ iconImage: /images/projects/starlight-quiz_icon.svg
 logoImage: /images/projects/starlight-quiz_logo.svg
 logoImageDark: /images/projects/starlight-quiz_logo_dark.svg
 personal: true
-order: 17
+order: 50
 ---
 
 [**starlight-quiz**](https://ewels.github.io/starlight-quiz/) is a plugin for [Astro Starlight](https://starlight.astro.build/) that lets you build interactive quizzes inside your markdown documentation, handy for tutorials and educational content.

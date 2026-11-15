@@ -7,7 +7,7 @@ heroImage: /images/projects/pocket-money_featured.png
 iconImage: /images/projects/pocket-money_favicon.png
 logoImage: /images/projects/pocket-money_icon.svg
 personal: true
-order: 30
+order: 130
 ---
 
 [**Pocket Money**](https://ewels.github.io/pocket-money/) is a family pocket money tracking app that I built to help manage my daughter's allowance and savings.

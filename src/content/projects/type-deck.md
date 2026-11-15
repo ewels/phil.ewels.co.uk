@@ -7,7 +7,7 @@ iconImage: /images/projects/type-deck_icon.png
 logoImage: /images/projects/type-deck_logo.svg
 logoImageDark: /images/projects/type-deck_logo_dark.svg
 personal: true
-order: 25
+order: 110
 ---
 
 [**Type Deck**](https://marketplace.elgato.com/product/type-deck-437fd2bf-0b88-473f-826b-fd8ed1dcfb74) ([ewels/type-deck](https://github.com/ewels/type-deck) is a [Stream Deck](https://www.elgato.com/stream-deck) plugin that types preset text into the focused application when you press a key, with optional human-like timing, typos, and jitter so the output doesn't look obviously automated.

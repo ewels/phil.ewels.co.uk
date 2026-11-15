@@ -9,7 +9,7 @@ iconImage: /images/projects/mkdocs-quiz_icon.svg
 logoImage: /images/projects/mkdocs-quiz_logo.svg
 logoImageDark: /images/projects/mkdocs-quiz_logo_dark.svg
 personal: true
-order: 16
+order: 40
 ---
 
 [**mkdocs-quiz**](https://ewels.github.io/mkdocs-quiz/) is a plugin for [MkDocs](https://www.mkdocs.org/) that lets you build interactive quizzes inside your markdown documentation, handy for tutorials and educational content.

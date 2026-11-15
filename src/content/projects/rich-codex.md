@@ -7,7 +7,7 @@ heroImage: /images/projects/rich-codex_hero.svg
 iconImage: /images/projects/rich-codex_icon_light.svg
 iconImageDark: /images/projects/rich-codex_icon_dark.svg
 personal: true
-order: 15
+order: 30
 ---
 
 [**rich-codex**](https://ewels.github.io/rich-codex/) is a GitHub Action and command-line tool that automatically generates terminal screenshot images for documentation.

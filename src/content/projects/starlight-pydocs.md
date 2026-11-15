@@ -7,7 +7,7 @@ iconImage: /images/projects/starlight-pydocs_icon.svg
 logoImage: /images/projects/starlight-pydocs_logo.svg
 logoImageDark: /images/projects/starlight-pydocs_logo_dark.svg
 personal: true
-order: 18
+order: 70
 ---
 
 [**starlight-pydocs**](https://ewels.github.io/starlight-pydocs/) generates Python API reference documentation for [Astro Starlight](https://starlight.astro.build/) and plain [Astro](https://astro.build/) sites. It reads your package with [Griffe](https://mkdocstrings.github.io/griffe/) and renders the result with Astro components, one page per module.
