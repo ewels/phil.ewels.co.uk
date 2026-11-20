@@ -8,6 +8,8 @@ type: Conference talk
 logoImage: /talks/2024/11/14/pycon_sweden_rich-click/pycon_sweden_logo.png
 eventURLs:
   - https://pycon.se/
+pdfURLs:
+  - /talks/2026/11/19/pycon_sweden_2026/Ewels-PyCon-Sweden-2026.pdf
 date: 2026-11-19
 ---
 
